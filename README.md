@@ -21,7 +21,7 @@ dx bundle --web --release
 
 如果要添加新的方案，需要对 [`schemes.json`](./assets/trainer/schemes.json) 作出修改。
 
-```json
+```json5
 {
     "id": "xin_fangan_id",
     "full_name": "新方案名称",
