@@ -1,0 +1,26 @@
+[
+    {
+        "id": "yuhao_star",
+        "full_name": "宇浩星陈",
+        "zigen_url": "./zigen/yuhao_star.json",
+        "zigen_font": "./Yuniversus.woff"
+    },
+    {
+        "id": "yuhao_ming",
+        "full_name": "宇浩日月（建设中）",
+        "zigen_url": "./zigen/yuhao_ming.json",
+        "zigen_font": "./Yuniversus.woff"
+    },
+    {
+        "id": "yuhao_joy",
+        "full_name": "宇浩卿云（不可用）",
+        "zigen_url": "./zigen/yuhao_joy.json",
+        "zigen_font": "./Yuniversus.woff"
+    },
+    {
+        "id": "yuhao_light",
+        "full_name": "宇浩光华（不可用）",
+        "zigen_url": "./zigen/yuhao_light.json",
+        "zigen_font": "./Yuniversus.woff"
+    }
+]
