@@ -1,0 +1,3201 @@
+[
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "卜",
+          "⺊"
+        ],
+        "code": "bbu",
+        "classify": "通",
+        "description": "卜 <b>bǔ</b>"
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "bo",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "bo",
+        "classify": "繁",
+        "description": "无读音 <b>Ø</b>"
+      },
+      {
+        "zigens": [
+          "虎",
+          "虍",
+          ""
+        ],
+        "code": "bhu",
+        "classify": "通",
+        "description": "虎 <b>hǔ</b>"
+      },
+      {
+        "zigens": [
+          "鹵"
+        ],
+        "code": "blu",
+        "classify": "繁",
+        "description": "鹵 <b>lǔ</b>"
+      }
+    ],
+    "description": "这类字根以卜起笔。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "灬"
+        ],
+        "code": "bbi",
+        "classify": "通",
+        "description": "灬 biāo → <b>bi</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "馬",
+          ""
+        ],
+        "code": "bma",
+        "classify": "繁",
+        "description": "馬 <b>mǎ</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "魚"
+        ],
+        "code": "be",
+        "classify": "繁",
+        "description": "魚 yú = ü → <b>e</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "亦"
+        ],
+        "code": "bi",
+        "classify": "通",
+        "description": "亦 yì → <b>i</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "爪"
+        ],
+        "code": "bsa",
+        "classify": "通",
+        "description": "爪 zhuǎ → <b>sa</b>"
+      },
+      {
+        "zigens": [
+          "瓜"
+        ],
+        "code": "bga",
+        "classify": "通",
+        "description": "瓜 guā → <b>ga</b>"
+      }
+    ],
+    "description": "这类字根皆形似‘爪’字。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "未"
+        ],
+        "code": "bo",
+        "classify": "通",
+        "description": "未 wèi = uèi → <b>o</b>"
+      },
+      {
+        "zigens": [
+          "末"
+        ],
+        "code": "bmo",
+        "classify": "通",
+        "description": "末 <b>mò</b>"
+      }
+    ],
+    "description": "这类字根与‘未’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "示"
+        ],
+        "code": "bka",
+        "classify": "通",
+        "description": "示 shì → <b>ka</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "乙",
+          "亅",
+          "乚"
+        ],
+        "code": "ci",
+        "classify": "通",
+        "description": "乙 yǐ → <b>i</b>"
+      }
+    ],
+    "description": "注意：包含所有折笔。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "飛"
+        ],
+        "code": "cfo",
+        "classify": "繁",
+        "description": "飛 fēi → <b>fo</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "co",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "世"
+        ],
+        "code": "cka",
+        "classify": "通",
+        "description": "世 shì → <b>ka</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "又"
+        ],
+        "code": "cu",
+        "classify": "通",
+        "description": "又 yòu = iòu → <b>u</b>"
+      },
+      {
+        "zigens": [
+          "女"
+        ],
+        "code": "cne",
+        "classify": "通",
+        "description": "女 nǚ → <b>ne</b>"
+      }
+    ],
+    "description": "这类字根皆形似‘又’字。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "马"
+        ],
+        "code": "cma",
+        "classify": "简",
+        "description": "马 <b>mǎ</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "禾"
+        ],
+        "code": "che",
+        "classify": "通",
+        "description": "禾 <b>hé</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "生"
+        ],
+        "code": "cke",
+        "classify": "通",
+        "description": "生 shēng → <b>ke</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "來"
+        ],
+        "code": "cle",
+        "classify": "繁",
+        "description": "來 lái → <b>le</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "氵"
+        ],
+        "code": "cko",
+        "classify": "通",
+        "description": "水 shuǐ = shuěi → <b>ko</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "口"
+        ],
+        "code": "dke",
+        "classify": "通",
+        "description": "口 kǒu → <b>ke</b>"
+      },
+      {
+        "zigens": [
+          "〇"
+        ],
+        "code": "dli",
+        "classify": "通",
+        "description": "零 líng → <b>li</b>"
+      },
+      {
+        "zigens": [
+          "ㄩ",
+          "屮",
+          ""
+        ],
+        "code": "do",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      }
+    ],
+    "description": "这类字根有一定的方框属性。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "彑",
+          ""
+        ],
+        "code": "dji",
+        "classify": "通",
+        "description": "彑 <b>jì</b><br>（通‘彐’）"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "母"
+        ],
+        "code": "dme",
+        "classify": "通",
+        "description": "母 mǔ → <b>me</b> <br>（声母右手韵码左手）"
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "do",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      }
+    ],
+    "description": "这类字根皆形似‘母’字。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "言"
+        ],
+        "code": "de",
+        "classify": "通",
+        "description": "言 yán = ián → <b>e</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "金"
+        ],
+        "code": "djo",
+        "classify": "通",
+        "description": "金 jīn → <b>jo</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "己"
+        ],
+        "code": "dji",
+        "classify": "通",
+        "description": "己 <b>jǐ</b>"
+      },
+      {
+        "zigens": [
+          "已"
+        ],
+        "code": "di",
+        "classify": "通",
+        "description": "已 yǐ → <b>i</b>"
+      }
+    ],
+    "description": "这类字根与‘己’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "长"
+        ],
+        "code": "dre",
+        "classify": "简",
+        "description": "长 cháng → <b>re</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "宀"
+        ],
+        "code": "dme",
+        "classify": "通",
+        "description": "宀 miǎn → <b>me</b> <br>（声母右手韵码左手）"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "廴"
+        ],
+        "code": "do",
+        "classify": "通",
+        "description": "廴 yín = ín → <b>o</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "皮"
+        ],
+        "code": "dpi",
+        "classify": "通",
+        "description": "皮 <b>pí</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "一"
+        ],
+        "code": "fi",
+        "classify": "通",
+        "description": "一 yī → <b>ī</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "匚"
+        ],
+        "code": "ffe",
+        "classify": "通",
+        "description": "方 fāng → <b>fe</b>"
+      },
+      {
+        "zigens": [
+          "丂"
+        ],
+        "code": "fki",
+        "classify": "通",
+        "description": "丂 kào → <b>ki</b>"
+      },
+      {
+        "zigens": [
+          "牙"
+        ],
+        "code": "fa",
+        "classify": "通",
+        "description": "牙 yá = iá → <b>a</b>"
+      }
+    ],
+    "description": "这类字根皆有‘匚’成分。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "",
+          ""
+        ],
+        "code": "fo",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "fde",
+        "classify": "繁",
+        "description": " dòu → <b>de</b>"
+      },
+      {
+        "zigens": [
+          "",
+          "",
+          ""
+        ],
+        "code": "fo",
+        "classify": "繁",
+        "description": "无读音 <b>Ø</b>"
+      }
+    ],
+    "description": "这类字根与‘亞’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "丿"
+        ],
+        "code": "fpe",
+        "classify": "通",
+        "description": "撇 piě → <b>pe</b>"
+      },
+      {
+        "zigens": [
+          "乃"
+        ],
+        "code": "fne",
+        "classify": "通",
+        "description": "乃 nǎi → <b>ne</b>"
+      },
+      {
+        "zigens": [
+          "手",
+          "龵"
+        ],
+        "code": "fke",
+        "classify": "通",
+        "description": "手 shǒu → <b>ke</b>"
+      }
+    ],
+    "description": "这类字根以撇起笔。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "甲"
+        ],
+        "code": "fja",
+        "classify": "通",
+        "description": "甲 jiā → <b>ja</b>"
+      },
+      {
+        "zigens": [
+          "电"
+        ],
+        "code": "fdi",
+        "classify": "通",
+        "description": "电 diàn → <b>di</b> <br>（声母左手韵码右手）"
+      },
+      {
+        "zigens": [
+          "鱼"
+        ],
+        "code": "fe",
+        "classify": "通",
+        "description": "鱼 yú = ǘ → <b>e</b>"
+      }
+    ],
+    "description": "这类字根皆有‘出头田’成分。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "而"
+        ],
+        "code": "fo",
+        "classify": "通",
+        "description": "而 ér → <b>o</b>"
+      },
+      {
+        "zigens": [
+          "面"
+        ],
+        "code": "fme",
+        "classify": "通",
+        "description": "面 miàn → <b>me</b> <br>（声母右手韵码左手）"
+      }
+    ],
+    "description": "这类字根与‘而’（丆+冂）相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "目"
+        ],
+        "code": "gme",
+        "classify": "通",
+        "description": "目 mù → <b>me</b> <br>（声母右手韵码左手）"
+      },
+      {
+        "zigens": [
+          "皿"
+        ],
+        "code": "gmo",
+        "classify": "通",
+        "description": "皿 mǐn → <b>mo</b>"
+      },
+      {
+        "zigens": [
+          "罒"
+        ],
+        "code": "go",
+        "classify": "通",
+        "description": "罒 wǎng = uáng → <b>o</b>"
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "go",
+        "classify": "繁",
+        "description": "无读音 <b>Ø</b>"
+      },
+      {
+        "zigens": [
+          "見"
+        ],
+        "code": "gje",
+        "classify": "繁",
+        "description": "見 jiàn → <b>je</b> <br>（声母右手韵码左手）"
+      },
+      {
+        "zigens": [
+          "貝"
+        ],
+        "code": "gbo",
+        "classify": "繁",
+        "description": "貝 bèi → <b>bo</b>"
+      },
+      {
+        "zigens": [
+          "頁"
+        ],
+        "code": "ge",
+        "classify": "繁",
+        "description": "頁 yè = iè → <b>e</b>"
+      }
+    ],
+    "description": "这类字根皆有‘目’成分。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "厂",
+          "丆"
+        ],
+        "code": "ga",
+        "classify": "通",
+        "description": "厂 ān → <b>a</b><br>（取古音）"
+      },
+      {
+        "zigens": [
+          "广"
+        ],
+        "code": "ggo",
+        "classify": "通",
+        "description": "广 guǎng → <b>go</b>"
+      },
+      {
+        "zigens": [
+          "疒"
+        ],
+        "code": "gne",
+        "classify": "通",
+        "description": "疒 <b>nè</b><br>（生僻字）"
+      },
+      {
+        "zigens": [
+          "鹿",
+          ""
+        ],
+        "code": "glu",
+        "classify": "通",
+        "description": "鹿 <b>lù</b>"
+      },
+      {
+        "zigens": [
+          "麻"
+        ],
+        "code": "gma",
+        "classify": "通",
+        "description": "麻 <b>má</b>"
+      }
+    ],
+    "description": "这类字根皆有‘厂’成分。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "儿",
+          ""
+        ],
+        "code": "go",
+        "classify": "通",
+        "description": "儿 ér → <b>o</b>"
+      },
+      {
+        "zigens": [
+          "九"
+        ],
+        "code": "gju",
+        "classify": "通",
+        "description": "九 jiǔ = jiǒu → <b>ju</b>"
+      }
+    ],
+    "description": "这类字根皆形似‘儿’字。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "牛",
+          "⺧"
+        ],
+        "code": "gnu",
+        "classify": "通",
+        "description": "牛 niú = nióu → <b>nu</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "豕",
+          ""
+        ],
+        "code": "gka",
+        "classify": "通",
+        "description": "豕 shi → <b>ka</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "夭"
+        ],
+        "code": "gi",
+        "classify": "通",
+        "description": "夭 yāo = iāo → <b>i</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "扌"
+        ],
+        "code": "gke",
+        "classify": "通",
+        "description": "手 shǒu → <b>ke</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "革"
+        ],
+        "code": "gge",
+        "classify": "通",
+        "description": "革 <b>gé</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "冂",
+          "",
+          "",
+          "勹",
+          ""
+        ],
+        "code": "ho",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "习"
+        ],
+        "code": "hxi",
+        "classify": "通",
+        "description": "习 <b>xí</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "贝"
+        ],
+        "code": "hbo",
+        "classify": "简",
+        "description": "贝 bèi → <b>bo</b>"
+      },
+      {
+        "zigens": [
+          "页"
+        ],
+        "code": "he",
+        "classify": "简",
+        "description": "页 yè = ie → <b>e</b>"
+      },
+      {
+        "zigens": [
+          "冊",
+          ""
+        ],
+        "code": "hce",
+        "classify": "通",
+        "description": "冊 <b>cè</b>"
+      },
+      {
+        "zigens": [
+          "田"
+        ],
+        "code": "hti",
+        "classify": "通",
+        "description": "田 tián → <b>ti</b> <br>（声母左手韵码右手）"
+      }
+    ],
+    "description": "这类字根皆有‘冂’成分，且框内有笔画。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "自"
+        ],
+        "code": "hzi",
+        "classify": "通",
+        "description": "自 <b>zì</b>"
+      },
+      {
+        "zigens": [
+          "其"
+        ],
+        "code": "hqi",
+        "classify": "通",
+        "description": "其 <b>qí</b>"
+      }
+    ],
+    "description": "这类字根皆有‘出头目’成分。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "止",
+          "龰"
+        ],
+        "code": "hsi",
+        "classify": "通",
+        "description": "止 zhǐ → <b>si</b>"
+      },
+      {
+        "zigens": [
+          "走"
+        ],
+        "code": "hze",
+        "classify": "通",
+        "description": "走 zǒu → <b>ze</b>"
+      },
+      {
+        "zigens": [
+          "齒"
+        ],
+        "code": "hri",
+        "classify": "繁",
+        "description": "齒 chǐ → <b>ri</b>"
+      }
+    ],
+    "description": "这类字根以止起笔。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "亥"
+        ],
+        "code": "hhe",
+        "classify": "通",
+        "description": "亥 hài → <b>he</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "辰"
+        ],
+        "code": "hre",
+        "classify": "通",
+        "description": "辰 chén → <b>re</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "日",
+          "",
+          ""
+        ],
+        "code": "ji",
+        "classify": "通",
+        "description": "日 rì → <b>i</b><br>（r视为零声母）"
+      },
+      {
+        "zigens": [
+          "曰"
+        ],
+        "code": "je",
+        "classify": "通",
+        "description": "曰 yuē = ǖe → <b>e</b>"
+      },
+      {
+        "zigens": [
+          "早"
+        ],
+        "code": "jzi",
+        "classify": "通",
+        "description": "早 zǎo → <b>zi</b>"
+      }
+    ],
+    "description": "这类字根以日起笔。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "臣"
+        ],
+        "code": "jre",
+        "classify": "通",
+        "description": "臣 chén → <b>re</b>"
+      },
+      {
+        "zigens": [
+          "",
+          ""
+        ],
+        "code": "ji",
+        "classify": "通",
+        "description": "𦣞/颐 yí → <b>i</b>"
+      }
+    ],
+    "description": "这类字根与‘臣’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "甶",
+          ""
+        ],
+        "code": "jfu",
+        "classify": "通",
+        "description": "甶 <b>fú</b>"
+      },
+      {
+        "zigens": [
+          "鬼",
+          ""
+        ],
+        "code": "jgo",
+        "classify": "通",
+        "description": "鬼 guǐ → <b>go</b>"
+      }
+    ],
+    "description": "这类字根以甶起笔。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "门"
+        ],
+        "code": "jme",
+        "classify": "通",
+        "description": "门 mén → <b>me</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "心",
+          "忄"
+        ],
+        "code": "jxo",
+        "classify": "通",
+        "description": "心 xīn → <b>xo</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "上",
+          "",
+          "丄"
+        ],
+        "code": "jke",
+        "classify": "通",
+        "description": "上 shàng → <b>ke</b>"
+      },
+      {
+        "zigens": [
+          "工"
+        ],
+        "code": "jgi",
+        "classify": "通",
+        "description": "工 gōng → <b>gi</b>"
+      }
+    ],
+    "description": "这类字根皆有‘丄’成分。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "寸"
+        ],
+        "code": "jci",
+        "classify": "通",
+        "description": "寸 cùn → <b>ci</b>"
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "jo",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      }
+    ],
+    "description": "这类字根与‘寸’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "瓦"
+        ],
+        "code": "ja",
+        "classify": "通",
+        "description": "瓦 wǎ = uǎ → <b>a</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "丰"
+        ],
+        "code": "jfe",
+        "classify": "通",
+        "description": "丰 fēng → <b>fe</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "刀"
+        ],
+        "code": "jdi",
+        "classify": "通",
+        "description": "刀 dāo → <b>di</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "夕"
+        ],
+        "code": "jxi",
+        "classify": "通",
+        "description": "夕 <b>xī</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "矢"
+        ],
+        "code": "jka",
+        "classify": "通",
+        "description": "矢 shǐ → <b>ki</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "舟"
+        ],
+        "code": "jse",
+        "classify": "通",
+        "description": "舟 zhōu → <b>se</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "巳"
+        ],
+        "code": "jsi",
+        "classify": "通",
+        "description": "巳 <b>sì</b>"
+      },
+      {
+        "zigens": [
+          "巴"
+        ],
+        "code": "jba",
+        "classify": "通",
+        "description": "巴 <b>bā</b>"
+      }
+    ],
+    "description": "这类字根皆有‘巳’成分。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "川",
+          "巛",
+          "巜"
+        ],
+        "code": "jri",
+        "classify": "通",
+        "description": "川 chuān → <b>ri</b>"
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "jo",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      }
+    ],
+    "description": "这类字根与‘川’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "咼",
+          "冎"
+        ],
+        "code": "jga",
+        "classify": "通",
+        "description": "咼 guǎ → <b>ga</b>"
+      },
+      {
+        "zigens": [
+          "骨"
+        ],
+        "code": "jgu",
+        "classify": "通",
+        "description": "骨 <b>gǔ</b>"
+      }
+    ],
+    "description": "这类字根皆有骨字头。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "三"
+        ],
+        "code": "ksa",
+        "classify": "通",
+        "description": "三 sān → <b>sa</b>"
+      },
+      {
+        "zigens": [
+          "彡",
+          ""
+        ],
+        "code": "kka",
+        "classify": "通",
+        "description": "彡 shān → <b>ka</b>"
+      },
+      {
+        "zigens": [
+          "彳"
+        ],
+        "code": "kri",
+        "classify": "通",
+        "description": "彳 chì → <b>ri</b>"
+      },
+      {
+        "zigens": [
+          "纟",
+          ""
+        ],
+        "code": "ksi",
+        "classify": "通",
+        "description": "丝 <b>sī</b>"
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "ko",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      }
+    ],
+    "description": "这类字根皆与‘彡’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "弋"
+        ],
+        "code": "ki",
+        "classify": "通",
+        "description": "弋 yì → <b>i</b>"
+      },
+      {
+        "zigens": [
+          "戈"
+        ],
+        "code": "kge",
+        "classify": "通",
+        "description": "戈 <b>gē</b>"
+      },
+      {
+        "zigens": [
+          "戊"
+        ],
+        "code": "ku",
+        "classify": "通",
+        "description": "戊 wù → <b>u</b>"
+      }
+    ],
+    "description": "这类字根与‘弋’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "白"
+        ],
+        "code": "kbe",
+        "classify": "通",
+        "description": "白 bái → <b>be</b>"
+      },
+      {
+        "zigens": [
+          "臼",
+          "⺽"
+        ],
+        "code": "kju",
+        "classify": "通",
+        "description": "臼 jìù = jiòu → <b>ju</b>"
+      }
+    ],
+    "description": "这类字根与‘白’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "下"
+        ],
+        "code": "kxa",
+        "classify": "通",
+        "description": "下 xià → <b>xa</b>"
+      },
+      {
+        "zigens": [
+          "丁",
+          "丅"
+        ],
+        "code": "kdi",
+        "classify": "通",
+        "description": "丁 dīng → <b>di</b>"
+      }
+    ],
+    "description": "这类字根与‘下’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "且"
+        ],
+        "code": "kqe",
+        "classify": "通",
+        "description": "且 qiě → <b>qe</b>"
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "ko",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      }
+    ],
+    "description": "这类字根与‘且’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "入"
+        ],
+        "code": "ke",
+        "classify": "通",
+        "description": "入 rù → <b>e </b><br>（r视为零声母）"
+      },
+      {
+        "zigens": [
+          "八"
+        ],
+        "code": "kba",
+        "classify": "通",
+        "description": "八 <b>bā</b>"
+      }
+    ],
+    "description": "这类字根皆由撇、捺组成。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "丬"
+        ],
+        "code": "kqo",
+        "classify": "通",
+        "description": "爿 qiáng → <b>qo</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "囗"
+        ],
+        "code": "ko",
+        "classify": "通",
+        "description": "围 wéi = uéi → <b>o</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "之"
+        ],
+        "code": "ksi",
+        "classify": "通",
+        "description": "之 zhī → <b>si</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "弓"
+        ],
+        "code": "kgi",
+        "classify": "通",
+        "description": "弓 gōng → <b>gi</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "千"
+        ],
+        "code": "kqi",
+        "classify": "通",
+        "description": "千 qiān → <b>qi</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "古"
+        ],
+        "code": "kgu",
+        "classify": "通",
+        "description": "古 <b>gǔ</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "里"
+        ],
+        "code": "kli",
+        "classify": "通",
+        "description": "里 <b>lǐ</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "甫"
+        ],
+        "code": "kfu",
+        "classify": "通",
+        "description": "甫 <b>fǔ</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "辛"
+        ],
+        "code": "kxo",
+        "classify": "通",
+        "description": "辛 xīn → <b>xo</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "丨"
+        ],
+        "code": "lgi",
+        "classify": "通",
+        "description": "丨 gǔn = guěn → <b>gi</b>"
+      },
+      {
+        "zigens": [
+          "〢",
+          "〣"
+        ],
+        "code": "lo",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      },
+      {
+        "zigens": [
+          "非"
+        ],
+        "code": "lfo",
+        "classify": "通",
+        "description": "非 fēi → <b>fo</b>"
+      }
+    ],
+    "description": "这类字根有两根平行的竖笔。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "小",
+          "",
+          "⺌",
+          "⺍",
+          ""
+        ],
+        "code": "lxi",
+        "classify": "通",
+        "description": "小 xiǎo → <b>xi</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "穴"
+        ],
+        "code": "lxe",
+        "classify": "通",
+        "description": "穴 xuè = xüè → <b>xe</b>"
+      },
+      {
+        "zigens": [
+          "亠"
+        ],
+        "code": "lte",
+        "classify": "通",
+        "description": "文字头 tóu → <b>te</b>"
+      },
+      {
+        "zigens": [
+          "亡"
+        ],
+        "code": "lo",
+        "classify": "通",
+        "description": "亡 wáng = uáng → <b>o</b>"
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "llo",
+        "classify": "通",
+        "description": "𣎆 luò → <b>lo</b>"
+      },
+      {
+        "zigens": [
+          "",
+          "",
+          ""
+        ],
+        "code": "lo",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      },
+      {
+        "zigens": [
+          "高"
+        ],
+        "code": "lgi",
+        "classify": "通",
+        "description": "高 gāo → <b>gi</b>"
+      },
+      {
+        "zigens": [
+          "方"
+        ],
+        "code": "lfe",
+        "classify": "通",
+        "description": "方 fāng → <b>fe</b>"
+      }
+    ],
+    "description": "这类字根以亠起笔。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "了"
+        ],
+        "code": "lle",
+        "classify": "通",
+        "description": "了 <b>le</b>"
+      },
+      {
+        "zigens": [
+          "子"
+        ],
+        "code": "lzi",
+        "classify": "通",
+        "description": "子 <b>zǐ</b>"
+      },
+      {
+        "zigens": [
+          "予"
+        ],
+        "code": "le",
+        "classify": "通",
+        "description": "予 yǔ = ǚ → <b>e</b>"
+      },
+      {
+        "zigens": [
+          "干"
+        ],
+        "code": "lga",
+        "classify": "通",
+        "description": "干 gān → <b>ga</b>"
+      }
+    ],
+    "description": "这类字根中心有一个明显的竖。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "匕"
+        ],
+        "code": "lbi",
+        "classify": "通",
+        "description": "匕 <b>bi</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "兀"
+        ],
+        "code": "lu",
+        "classify": "通",
+        "description": "兀 wù → <b>ū</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "正"
+        ],
+        "code": "lse",
+        "classify": "通",
+        "description": "正 zheng → <b>se</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "欠"
+        ],
+        "code": "lqi",
+        "classify": "通",
+        "description": "欠 qiān → <b>qi</b> <br>（声母左手韵码右手）"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "饣"
+        ],
+        "code": "lka",
+        "classify": "通",
+        "description": "食 shi → <b>ka</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "曲"
+        ],
+        "code": "lqe",
+        "classify": "通",
+        "description": "曲 qǔ = qǚ → <b>qe</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "向"
+        ],
+        "code": "lxo",
+        "classify": "通",
+        "description": "向 xiàng → <b>xo</b>"
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "lxo",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      }
+    ],
+    "description": "这类字根与‘向’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "糸"
+        ],
+        "code": "lsi",
+        "classify": "通",
+        "description": "糸 <b>sī</b>"
+      },
+      {
+        "zigens": [
+          "幺"
+        ],
+        "code": "li",
+        "classify": "通",
+        "description": "幺 yāo = iāo → <b>i</b>"
+      }
+    ],
+    "description": "这类字根以幺起笔。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "辶",
+          "⻍"
+        ],
+        "code": "lro",
+        "classify": "通",
+        "description": "辶 chuò → <b>ro</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "長",
+          "镸"
+        ],
+        "code": "lre",
+        "classify": "通",
+        "description": "長（长） cháng → <b>re</b>"
+      },
+      {
+        "zigens": [
+          "髟"
+        ],
+        "code": "lbi",
+        "classify": "通",
+        "description": "髟 biāo → <b>bi</b>"
+      }
+    ],
+    "description": "这类字根与‘長’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "耳"
+        ],
+        "code": "mo",
+        "classify": "通",
+        "description": "耳 ěr → <b>o</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "艹",
+          "卄",
+          "廾",
+          "",
+          "",
+          ""
+        ],
+        "code": "mci",
+        "classify": "通",
+        "description": "草 cǎo → <b>ci</b>"
+      },
+      {
+        "zigens": [
+          "卅"
+        ],
+        "code": "msa",
+        "classify": "通",
+        "description": "卅 <b>sà</b>"
+      },
+      {
+        "zigens": [
+          "卌"
+        ],
+        "code": "mxi",
+        "classify": "通",
+        "description": "卌 <b>xì</b>"
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "mo",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      }
+    ],
+    "description": "这类字根皆有‘艹’成分。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "mzo",
+        "classify": "通",
+        "description": "左 zuǒ → <b>zo</b>"
+      },
+      {
+        "zigens": [
+          "不"
+        ],
+        "code": "mbu",
+        "classify": "通",
+        "description": "不<b>bù</b>"
+      }
+    ],
+    "description": "这类字根皆有‘’部件。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "冖",
+          "⺈",
+          ""
+        ],
+        "code": "mo",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "七"
+        ],
+        "code": "mqi",
+        "classify": "通",
+        "description": "七 <b>qī</b>"
+      },
+      {
+        "zigens": [
+          "乜"
+        ],
+        "code": "mme",
+        "classify": "通",
+        "description": "乜 miē → <b>me</b>"
+      },
+      {
+        "zigens": [
+          "也"
+        ],
+        "code": "me",
+        "classify": "通",
+        "description": "也 yě = iě → <b>e</b>"
+      }
+    ],
+    "description": "这类字根与‘七’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "",
+          ""
+        ],
+        "code": "mo",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      },
+      {
+        "zigens": [
+          "丑"
+        ],
+        "code": "mre",
+        "classify": "通",
+        "description": "丑 chǒu → <b>re</b>"
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "mu",
+        "classify": "通",
+        "description": "五 wǔ → <b>u</b>"
+      }
+    ],
+    "description": "这类字根皆有‘’部件。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "艮"
+        ],
+        "code": "mge",
+        "classify": "通",
+        "description": "艮 gěn → <b>ge</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "mdo",
+        "classify": "通",
+        "description": "𠂤 duī = duēi → <b>do</b><br>（‘𠂤’为‘堆’古字）"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "丶",
+          "乀"
+        ],
+        "code": "ndi",
+        "classify": "通",
+        "description": "点 diǎn → <b>di</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "月",
+          ""
+        ],
+        "code": "ne",
+        "classify": "通",
+        "description": "月 yuè = üè → <b>e</b>"
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "no",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      }
+    ],
+    "description": "这类字根以月起笔。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "亍"
+        ],
+        "code": "nru",
+        "classify": "通",
+        "description": "亍 chù → <b>ru</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "缶"
+        ],
+        "code": "nfe",
+        "classify": "通",
+        "description": "缶 fǒu → <b>fe</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "壬"
+        ],
+        "code": "no",
+        "classify": "通",
+        "description": "壬 rén → <b>o </b><br>（r视为零声母）"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "足"
+        ],
+        "code": "nzu",
+        "classify": "通",
+        "description": "足 <b>zú</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "厶",
+          ""
+        ],
+        "code": "nsi",
+        "classify": "通",
+        "description": "厶 <b>sī</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "大"
+        ],
+        "code": "pda",
+        "classify": "通",
+        "description": "大 <b>dà</b>"
+      },
+      {
+        "zigens": [
+          "夫"
+        ],
+        "code": "pfu",
+        "classify": "通",
+        "description": "夫 <b>fū</b>"
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "pdi",
+        "classify": "通",
+        "description": " <b>dí</b>"
+      }
+    ],
+    "description": "这类字根与‘大’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "雨"
+        ],
+        "code": "pe",
+        "classify": "通",
+        "description": "雨 yǔ = ǚ → <b>e</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "犬",
+          "犭"
+        ],
+        "code": "pqi",
+        "classify": "通",
+        "description": "犬 quǎn → <b>qi</b>"
+      },
+      {
+        "zigens": [
+          "豸"
+        ],
+        "code": "psi",
+        "classify": "通",
+        "description": "豸 zhì → <b>si</b>"
+      }
+    ],
+    "description": "这类字根与‘犭’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "几"
+        ],
+        "code": "qji",
+        "classify": "通",
+        "description": "几 <b>jǐ</b>"
+      },
+      {
+        "zigens": [
+          "殳"
+        ],
+        "code": "qku",
+        "classify": "通",
+        "description": "殳 shǔ → <b>ku</b>"
+      },
+      {
+        "zigens": [
+          "風"
+        ],
+        "code": "qfe",
+        "classify": "繁",
+        "description": "風 fēng → <b>fe</b>"
+      }
+    ],
+    "description": "这类字根以几起笔。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "虫"
+        ],
+        "code": "qho",
+        "classify": "通",
+        "description": "虫 huǐ = huěi → <b>ho</b><br>（取古音）"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "卯"
+        ],
+        "code": "qmi",
+        "classify": "通",
+        "description": "卯 mǎo → <b>mi</b>"
+      },
+      {
+        "zigens": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "code": "qo",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      },
+      {
+        "zigens": [
+          "丱"
+        ],
+        "code": "qgi",
+        "classify": "通",
+        "description": "丱 guàn → <b>gi</b>"
+      }
+    ],
+    "description": "这类字根与‘卯’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "丩",
+          ""
+        ],
+        "code": "qo",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "王"
+        ],
+        "code": "ro",
+        "classify": "通",
+        "description": "王 wáng = uáng → <b>o</b>"
+      },
+      {
+        "zigens": [
+          "毛"
+        ],
+        "code": "rmi",
+        "classify": "通",
+        "description": "毛 máo → <b>mi</b>"
+      }
+    ],
+    "description": "这类字根皆形似‘王’字。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "丌"
+        ],
+        "code": "rji",
+        "classify": "通",
+        "description": "丌 <b>jì</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "文"
+        ],
+        "code": "ri",
+        "classify": "通",
+        "description": "文 wén = uén → <b>i</b>"
+      },
+      {
+        "zigens": [
+          "立"
+        ],
+        "code": "rli",
+        "classify": "通",
+        "description": "立 <b>lì</b>"
+      }
+    ],
+    "description": "这类字根与‘文’（亠+ㄨ）相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "石"
+        ],
+        "code": "rka",
+        "classify": "通",
+        "description": "石 shí → <b>ka</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "㔾",
+          "",
+          "卩"
+        ],
+        "code": "rje",
+        "classify": "通",
+        "description": "节下半 jié → <b>je</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "身"
+        ],
+        "code": "rke",
+        "classify": "通",
+        "description": "身 shēn → <b>ke</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "黑"
+        ],
+        "code": "rho",
+        "classify": "通",
+        "description": "黑 hēi → <b>ho</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "車",
+          "",
+          "叀"
+        ],
+        "code": "rre",
+        "classify": "繁",
+        "description": "車（车）chē → <b>re</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "烏",
+          ""
+        ],
+        "code": "ru",
+        "classify": "繁",
+        "description": "烏（乌） wū → <b>ū</b>"
+      },
+      {
+        "zigens": [
+          "鳥",
+          ""
+        ],
+        "code": "rni",
+        "classify": "繁",
+        "description": "鳥（鸟） niǎo → <b>ni</b>"
+      }
+    ],
+    "description": "这类字根与‘鳥’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "門"
+        ],
+        "code": "rme",
+        "classify": "繁",
+        "description": "門（门） mén → <b>me</b>"
+      },
+      {
+        "zigens": [
+          "鬥"
+        ],
+        "code": "rde",
+        "classify": "繁",
+        "description": "鬥（斗） dòu → <b>de</b>"
+      }
+    ],
+    "description": "这类字根与‘門’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "木",
+          "朩"
+        ],
+        "code": "sme",
+        "classify": "通",
+        "description": "木 mù → <b>me</b> <br>（声母右手韵码左手）"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "二",
+          "⺀",
+          "冫",
+          ""
+        ],
+        "code": "so",
+        "classify": "通",
+        "description": "二 èr → <b>o</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "彐",
+          ""
+        ],
+        "code": "sji",
+        "classify": "通",
+        "description": "彐 <b>jì</b>"
+      },
+      {
+        "zigens": [
+          "肀"
+        ],
+        "code": "sji",
+        "classify": "通",
+        "description": "聿 yù = ǜ → <b>e</b>"
+      },
+      {
+        "zigens": [
+          "隶"
+        ],
+        "code": "sli",
+        "classify": "通",
+        "description": "隶 <b>lì</b>"
+      }
+    ],
+    "description": "这类字根皆有‘彐’部件。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "尸",
+          ""
+        ],
+        "code": "ska",
+        "classify": "通",
+        "description": "尸 shī → <b>ka</b>"
+      },
+      {
+        "zigens": [
+          "户",
+          "戸"
+        ],
+        "code": "shu",
+        "classify": "通",
+        "description": "户 <b>hù</b>"
+      }
+    ],
+    "description": "这类字根与‘尸’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "片"
+        ],
+        "code": "spe",
+        "classify": "通",
+        "description": "片 piàn → <b>pe</b> <br>（声母右手韵码左手）"
+      },
+      {
+        "zigens": [
+          "爿"
+        ],
+        "code": "spa",
+        "classify": "通",
+        "description": "爿 pán → <b>pa</b>"
+      }
+    ],
+    "description": "这类字根与‘片’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "尤"
+        ],
+        "code": "su",
+        "classify": "通",
+        "description": "尤 yóu = ióu → <b>u</b>"
+      },
+      {
+        "zigens": [
+          "尢"
+        ],
+        "code": "so",
+        "classify": "通",
+        "description": "尢 wáng = uáng → <b>o</b>"
+      }
+    ],
+    "description": "这类字根与‘尤’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "用"
+        ],
+        "code": "si",
+        "classify": "通",
+        "description": "用 yòng = iòng → <b>i</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "至"
+        ],
+        "code": "ssi",
+        "classify": "通",
+        "description": "至 zhì → <b>si</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "舌"
+        ],
+        "code": "ske",
+        "classify": "通",
+        "description": "舌 shé → <b>ke</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "so",
+        "classify": "通",
+        "description": "爲（为）wéi = uéi → <b>o</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "十"
+        ],
+        "code": "tka",
+        "classify": "通",
+        "description": "十 shi → <b>ka</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "巾"
+        ],
+        "code": "tjo",
+        "classify": "通",
+        "description": "巾 jīn → <b>jo</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "由"
+        ],
+        "code": "tu",
+        "classify": "通",
+        "description": "由 yóu = ióu → <b>u</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "火"
+        ],
+        "code": "tho",
+        "classify": "通",
+        "description": "火 huǒ → <b>ho</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "衤"
+        ],
+        "code": "ti",
+        "classify": "通",
+        "description": "衣 yī → <b>i</b>"
+      },
+      {
+        "zigens": [
+          "",
+          "",
+          ""
+        ],
+        "code": "to",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      }
+    ],
+    "description": "这类字根源于‘衣’。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "尚"
+        ],
+        "code": "tke",
+        "classify": "通",
+        "description": "尚 shàng → <b>ke</b>"
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "to",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      }
+    ],
+    "description": "这类字根与‘尚’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "夊"
+        ],
+        "code": "tpe",
+        "classify": "通",
+        "description": "夊 pū → <b>pe</b> <br>（声母右手韵码左手）"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "土"
+        ],
+        "code": "vdu",
+        "classify": "通",
+        "description": "杜 <b>dù</b><br>（生僻音）"
+      },
+      {
+        "zigens": [
+          "士",
+          "龶"
+        ],
+        "code": "vke",
+        "classify": "通",
+        "description": "生 shēng → <b>ke</b><br>（音随‘龶’）"
+      },
+      {
+        "zigens": [
+          "耂"
+        ],
+        "code": "vo",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      },
+      {
+        "zigens": [
+          "壴"
+        ],
+        "code": "vsu",
+        "classify": "通",
+        "description": "壴 zhú → <b>su</b>"
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "vo",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      }
+    ],
+    "description": "这类字根以土起笔。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "乂",
+          ""
+        ],
+        "code": "vi",
+        "classify": "通",
+        "description": "乂 yì → <b>i</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "ス",
+          "マ",
+          "癶"
+        ],
+        "code": "vo",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      },
+      {
+        "zigens": [
+          
+        ],
+        "code": "vo",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      }
+    ],
+    "description": "这类字根皆有‘ス’（横折+点）成分。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "⺁"
+        ],
+        "code": "vi",
+        "classify": "通",
+        "description": "⺁ yì → <b>ì</b><br>（生僻字）"
+      },
+      {
+        "zigens": [
+          "斤"
+        ],
+        "code": "vjo",
+        "classify": "通",
+        "description": "斤 jīn → <b>jo</b>"
+      },
+      {
+        "zigens": [
+          "戶"
+        ],
+        "code": "vhu",
+        "classify": "通",
+        "description": "戶 <b>hù</b>"
+      }
+    ],
+    "description": "这类字根以𠂆起笔。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "见"
+        ],
+        "code": "vje",
+        "classify": "简",
+        "description": "见 jiàn → <b>je</b> <br>（声母右手韵码左手）"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "山"
+        ],
+        "code": "vka",
+        "classify": "通",
+        "description": "山 shān → <b>ka</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "讠"
+        ],
+        "code": "ve",
+        "classify": "通",
+        "description": "言 yán = ián → <b>e</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "米"
+        ],
+        "code": "vmi",
+        "classify": "通",
+        "description": "米 <b>mǐ</b>"
+      },
+      {
+        "zigens": [
+          "业"
+        ],
+        "code": "ve",
+        "classify": "通",
+        "description": "业 yè = ie → <b>e</b>"
+      }
+    ],
+    "description": "这类字根与‘米’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "车"
+        ],
+        "code": "vre",
+        "classify": "通",
+        "description": "车 chē → <b>re</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "人",
+          "亻"
+        ],
+        "code": "wo",
+        "classify": "通",
+        "description": "人 rén → <b>o</b><br>（r视为零声母）"
+      },
+      {
+        "zigens": [
+          "合"
+        ],
+        "code": "whe",
+        "classify": "通",
+        "description": "合 <b>hé</b>"
+      },
+      {
+        "zigens": [
+          "",
+          ""
+        ],
+        "code": "wo",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      },
+      {
+        "zigens": [
+          "僉"
+        ],
+        "code": "wqi",
+        "classify": "繁",
+        "description": "僉 qiān → <b>qi</b> <br>（声母左手韵码右手）"
+      },
+      {
+        "zigens": [
+          "食"
+        ],
+        "code": "wka",
+        "classify": "通",
+        "description": "食 shí → <b>ka</b>"
+      }
+    ],
+    "description": "这类字根以人起笔。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "隹"
+        ],
+        "code": "wco",
+        "classify": "通",
+        "description": "隹 cuī = cuēi → <b>co</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "禺"
+        ],
+        "code": "we",
+        "classify": "通",
+        "description": "yǔ = ǚ → <b>e</b>"
+      },
+      {
+        "zigens": [
+          "申"
+        ],
+        "code": "wke",
+        "classify": "通",
+        "description": "shēn → <b>ke</b>"
+      }
+    ],
+    "description": "这类字根与‘申’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "水"
+        ],
+        "code": "wko",
+        "classify": "通",
+        "description": "水 shuǐ = shuěi → <b>ko</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "力"
+        ],
+        "code": "wli",
+        "classify": "通",
+        "description": "力 <b>lì</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "䒑",
+          "丷",
+          ""
+        ],
+        "code": "xci",
+        "classify": "通",
+        "description": "草 cǎo → <b>ci</b>"
+      },
+      {
+        "zigens": [
+          "羊",
+          "⺷",
+          ""
+        ],
+        "code": "xo",
+        "classify": "通",
+        "description": "yáng = iáng → <b>o</b>"
+      }
+    ],
+    "description": "这类字根以‘䒑’起笔。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "乌"
+        ],
+        "code": "xu",
+        "classify": "简",
+        "description": "乌 wū → <b>ū</b>"
+      },
+      {
+        "zigens": [
+          "鸟",
+          ""
+        ],
+        "code": "xni",
+        "classify": "简",
+        "description": "鸟 niǎo → <b>ni</b>"
+      }
+    ],
+    "description": "这类字根与‘鸟’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "钅"
+        ],
+        "code": "xjo",
+        "classify": "简",
+        "description": "金 jīn → <b>jo</b>"
+      },
+      {
+        "zigens": [
+          "竹",
+          "⺮",
+          ""
+        ],
+        "code": "ysu",
+        "classify": "通",
+        "description": "zhú → <b>su</b>"
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "yo",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      },
+      {
+        "zigens": [
+          "气"
+        ],
+        "code": "yqi",
+        "classify": "通",
+        "description": "气 <b>qì</b>"
+      }
+    ],
+    "description": "这类字根以左上角的撇起笔。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "西"
+        ],
+        "code": "yxi",
+        "classify": "通",
+        "description": "西 <b>xī</b>"
+      },
+      {
+        "zigens": [
+          "酉"
+        ],
+        "code": "yu",
+        "classify": "通",
+        "description": "酉 yǒu = iǒu → <b>u</b>"
+      }
+    ],
+    "description": "这类字根与‘西’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "刂"
+        ],
+        "code": "ydi",
+        "classify": "通",
+        "description": "刀 dāo → <b>di</b>"
+      }
+    ]
+  }
+]
