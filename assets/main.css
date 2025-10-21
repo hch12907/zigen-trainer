@@ -205,9 +205,15 @@ nav a:hover {
     cursor: text;
 }
 
+.trainer-zigen-input:focus {
+    outline: none;
+}
+
 .trainer-zigen-group-answer {
     font-size: 18px;
     font-weight: bold;
+    /* 使用可分辨小写L和大写i的无衬字体 */
+    font-family: 'Noto Sans', 'Source Sans', 'Source Sans Pro', sans-serif;
 }
 
 .trainer-zigen-group-answer > p {
