@@ -5,7 +5,7 @@
 # HTML title tag content
 title = "zigen-trainer"
 
-base_path = "zigen-trainer"
+# base_path = ""
 
 # include `assets` in web platform
 [web.resource]
