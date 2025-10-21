@@ -65,9 +65,9 @@ async fn handle_key_event(
 
         // 根据用户作答耗时判断该字根的难度，以秒为单位。
         let easy_time = if !confusable {
-            1.5 + (expected_answer.len() as f64) * 0.5
+            2.0 + (expected_answer.len() as f64) * 0.35
         } else {
-            1.5 + (expected_answer.len() as f64) * 0.35
+            2.0 + (expected_answer.len() as f64) * 0.25
         };
 
         let time_diff = (Utc::now() - *start_time.borrow()).as_seconds_f64();
@@ -280,7 +280,7 @@ pub fn Card(props: CardProps) -> Element {
             if *asked_hint.read() {
                 div {
                     class: "trainer-zigen-description",
-                    "{description}"
+                    dangerous_inner_html: "{description}",
                 }
             }
         }
