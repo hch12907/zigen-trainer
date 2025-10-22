@@ -16,7 +16,7 @@ pub struct CardProps {
 async fn handle_key_event(
     input_boxes: &mut Memo<Vec<Vec<char>>>,
     event: Event<KeyboardData>,
-    mut asked_hint: Signal<bool>,
+    mut asked_hint: Memo<bool>,
     mut is_wrong: Signal<bool>,
     confusable: bool,
     expected_answer: &String,
@@ -145,7 +145,7 @@ fn clear_input(input_boxes: &mut Memo<Vec<Vec<char>>>) {
 pub fn Card(props: CardProps) -> Element {
     let start_time = use_hook(|| Rc::new(RefCell::new(Utc::now())));
 
-    let asked_hint = use_signal(|| false);
+    let asked_hint = use_memo(move || (props.zigens)().is_new_card());
     let is_wrong = use_signal(|| false);
 
     let zigens = (props.zigens)();

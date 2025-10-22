@@ -13,6 +13,12 @@ pub struct ZigenCard {
     pub card: Card,
 }
 
+impl ZigenCard {
+    pub fn is_new_card(&self) -> bool {
+        self.card == Card::New
+    }
+}
+
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Rating {
     Again,
