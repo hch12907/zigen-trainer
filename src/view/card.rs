@@ -4,9 +4,8 @@ use std::rc::Rc;
 use chrono::{DateTime, Utc};
 use dioxus::prelude::*;
 // use dioxus_sdk::utils::timing::use_debounce;
-use rs_fsrs::Rating;
 
-use crate::user_state::ZigenCard;
+use crate::scheduler::{Rating, ZigenCard};
 
 #[derive(PartialEq, Clone, Props)]
 pub struct CardProps {

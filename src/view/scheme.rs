@@ -35,9 +35,8 @@ pub fn Scheme(props: SchemeProps) -> Element {
             zigens.read();
 
             let user_state = &*user_state.borrow();
-            let pending = user_state.current_progress().pending_cards();
+            let completed = user_state.current_progress().reviewed_cards();
             let total = user_state.current_progress().total_cards();
-            let completed = total - pending;
 
             (completed as f64 / total as f64 * 100.0, completed, total)
         })

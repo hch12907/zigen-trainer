@@ -1,4 +1,5 @@
 mod component;
+mod scheduler;
 mod scheme;
 mod user_state;
 mod view;

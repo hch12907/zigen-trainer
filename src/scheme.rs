@@ -20,9 +20,14 @@ pub struct Scheme {
 
 #[derive(Clone, Debug, PartialEq, Eq, Default)]
 pub struct SchemeOptions {
+    /// 乱序模式
     pub shuffle: bool,
+    /// 简繁通练
     pub combined_training: bool,
+    /// 繁体优先
     pub prioritize_trad: bool,
+    /// 养老模式
+    pub adept: bool,
 }
 
 /// 一个方案的字根集。
@@ -30,7 +35,7 @@ pub struct SchemeOptions {
 pub struct LoadedScheme(pub Vec<SchemeZigen>);
 
 impl LoadedScheme {
-    pub fn sort_to_options(&mut self, options: SchemeOptions) {
+    pub fn sort_to_options(&mut self, options: &SchemeOptions) {
         let mut simps = Vec::new();
         let mut trads = Vec::new();
         let mut uncommons = Vec::new();

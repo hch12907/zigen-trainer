@@ -13,6 +13,7 @@ pub fn Welcome(props: WelcomeProps) -> Element {
     let mut shuffle = use_signal(|| false);
     let mut combined_training = use_signal(|| true);
     let mut prioritize_trad = use_signal(|| false);
+    let mut adept = use_signal(|| false);
 
     let schemes = use_resource(move || async move {
         let schemes = Request::get("./assets/trainer/schemes.json")
@@ -107,6 +108,20 @@ pub fn Welcome(props: WelcomeProps) -> Element {
                                 r#for: "prioritize_trad",
                                 "繁体优先"
                             }
+
+                            input {
+                                r#type: "checkbox",
+                                id: "adept",
+                                checked: adept(),
+                                onchange: move |_event| {
+                                    adept.set(!adept());
+                                }
+                            }
+
+                            label {
+                                r#for: "adept",
+                                "养老模式"
+                            }
                         }
 
                         button {
@@ -124,7 +139,8 @@ pub fn Welcome(props: WelcomeProps) -> Element {
                                 let options = SchemeOptions {
                                     shuffle: shuffle(),
                                     combined_training: combined_training(),
-                                    prioritize_trad: prioritize_trad()
+                                    prioritize_trad: prioritize_trad(),
+                                    adept: adept(),
                                 };
                                 props.on_scheme_selected.call((scheme.unwrap(), options));
                             },
