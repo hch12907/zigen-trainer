@@ -2792,7 +2792,12 @@
         "code": "Dn",
         "classify": "繁",
         "description": "鳥（鸟）<b>n</b>iǎo"
-      },
+      }
+    ]
+  },
+    {
+    "type": "混",
+    "groups": [
       {
         "zigens": [
           "乌"
@@ -2892,7 +2897,12 @@
         "code": "Jb",
         "classify": "繁",
         "description": "貝（贝）<b>b</b>èi"
-      },
+      }
+    ]
+  },
+  {
+    "type": "混",
+    "groups": [
       {
         "zigens": [
           "见"
@@ -2908,7 +2918,12 @@
         "code": "Jj",
         "classify": "繁",
         "description": "見（见）<b>j</b>iàn"
-      },
+      }
+    ]
+  },
+  {
+    "type": "混",
+    "groups": [
       {
         "zigens": [
           "页"
