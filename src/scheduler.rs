@@ -136,6 +136,27 @@ impl<Param: ScheduleParam> Scheduler<Param> {
         this
     }
 
+    // XXX: 热补丁，过了一段时日后记得删除！！！
+    pub fn hot_patch_bug(&mut self) {
+        for card in &mut self.new_cards {
+            card.zigen.as_raw_parts_mut().0.retain(|group| {
+                !group.zigens.is_empty()
+            })
+        }
+
+        for card in &mut self.learning_cards {
+            card.zigen.as_raw_parts_mut().0.retain(|group| {
+                !group.zigens.is_empty()
+            })
+        }
+
+        for card in &mut self.reviewing_cards {
+            card.zigen.as_raw_parts_mut().0.retain(|group| {
+                !group.zigens.is_empty()
+            })
+        }
+    }
+
     fn populate_learning_cards(&mut self) {
         if self.learning_cards.len() < Param::LEARNING_CARDS && !self.new_cards.is_empty() {
             let diff = Param::LEARNING_CARDS - self.learning_cards.len();
