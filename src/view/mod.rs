@@ -20,14 +20,10 @@ static SCHEMES: Asset = asset!(
 );
 
 #[used]
-static GITHUB_LIGHT: Asset = asset!(
-    "/assets/github-light.png"
-);
+static GITHUB_LIGHT: Asset = asset!("/assets/github-light.png");
 
 #[used]
-static GITHUB_DARK: Asset = asset!(
-    "/assets/github-dark.png"
-);
+static GITHUB_DARK: Asset = asset!("/assets/github-dark.png");
 
 #[component]
 pub fn Trainer() -> Element {

@@ -37,7 +37,9 @@ pub struct LoadedScheme<Z>(pub Vec<SchemeZigen<Z>>);
 
 impl LoadedScheme<ZigenConfusableUnpopulated> {
     pub fn populate_confusables(self) -> LoadedScheme<ZigenConfusable> {
-        let mut populated_confusables = self.0.iter()
+        let mut populated_confusables = self
+            .0
+            .iter()
             .filter_map(|zigen| match zigen {
                 SchemeZigen::Confusable(con) => Some(con.zigens.as_slice()),
                 _ => None,
@@ -46,7 +48,8 @@ impl LoadedScheme<ZigenConfusableUnpopulated> {
             .map(|x| (x.clone(), None))
             .collect::<HashMap<_, _>>();
 
-        self.0.iter()
+        self.0
+            .iter()
             .filter_map(|zigen| match zigen {
                 SchemeZigen::Category(cat) => Some(&cat.groups),
                 _ => None,
@@ -54,26 +57,38 @@ impl LoadedScheme<ZigenConfusableUnpopulated> {
             .for_each(|groups| {
                 for group in groups.iter() {
                     if populated_confusables.contains_key(&group.zigens[0]) {
-                        *populated_confusables.get_mut(&group.zigens[0]).unwrap() = Some(group.clone());
+                        *populated_confusables.get_mut(&group.zigens[0]).unwrap() =
+                            Some(group.clone());
                     }
                 }
             });
 
-        let new_scheme = self.0.into_iter()
-            .map(|zigen| match zigen {
-                SchemeZigen::Category(cat) => SchemeZigen::Category(cat),
-                SchemeZigen::Confusable(con) => SchemeZigen::Confusable({
-                    let new_con = ZigenConfusable {
-                        groups: con.zigens.iter()
-                            .map(|z| populated_confusables.remove(z).unwrap().expect("混淆集使用的字根不在字根码表内，或不属于代表性字根"))
-                            .collect(),
-                        description: con.description.to_owned(),
-                    };
+        let new_scheme =
+            self.0
+                .into_iter()
+                .map(|zigen| match zigen {
+                    SchemeZigen::Category(cat) => SchemeZigen::Category(cat),
+                    SchemeZigen::Confusable(con) => SchemeZigen::Confusable({
+                        let new_con = ZigenConfusable {
+                            groups: con
+                                .zigens
+                                .iter()
+                                .map(|z| {
+                                    populated_confusables
+                                        .remove(z)
+                                        .unwrap()
+                                        .expect(
+                                            "混淆集使用的字根不在字根码表内，或不属于代表性字根",
+                                        )
+                                })
+                                .collect(),
+                            description: con.description.to_owned(),
+                        };
 
-                    new_con
-                }),
-            })
-            .collect::<Vec<_>>();
+                        new_con
+                    }),
+                })
+                .collect::<Vec<_>>();
 
         LoadedScheme(new_scheme)
     }
@@ -85,10 +100,15 @@ impl LoadedScheme<ZigenConfusable> {
         let mut trads = Vec::new();
         let mut uncommons = Vec::new();
 
-        let confusables = self.0.iter().filter(|zigens| match zigens {
-            SchemeZigen::Category(_) => false,
-            SchemeZigen::Confusable(_) => true,
-        }).cloned().collect::<Vec<_>>();
+        let confusables = self
+            .0
+            .iter()
+            .filter(|zigens| match zigens {
+                SchemeZigen::Category(_) => false,
+                SchemeZigen::Confusable(_) => true,
+            })
+            .cloned()
+            .collect::<Vec<_>>();
 
         let categories = self.0.iter().filter_map(|zigens| match zigens {
             SchemeZigen::Category(cat) => Some((&cat.groups, &cat.description)),

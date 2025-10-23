@@ -137,9 +137,7 @@ impl<Param: ScheduleParam> Scheduler<Param> {
     }
 
     fn populate_learning_cards(&mut self) {
-        if self.learning_cards.len() < Param::LEARNING_CARDS 
-            && !self.new_cards.is_empty()
-        {
+        if self.learning_cards.len() < Param::LEARNING_CARDS && !self.new_cards.is_empty() {
             let diff = Param::LEARNING_CARDS - self.learning_cards.len();
             let split_off = diff.min(self.new_cards.len());
 
@@ -148,7 +146,10 @@ impl<Param: ScheduleParam> Scheduler<Param> {
                 let end = self.new_cards.len();
 
                 let dummy = ZigenCard {
-                    zigen: SchemeZigen::Category(ZigenCategory { groups: Vec::new(), description: String::new() }),
+                    zigen: SchemeZigen::Category(ZigenCategory {
+                        groups: Vec::new(),
+                        description: String::new(),
+                    }),
                     card: Card::New,
                 };
 
@@ -164,13 +165,16 @@ impl<Param: ScheduleParam> Scheduler<Param> {
 
     fn use_review_card(&self) -> bool {
         let learn_review_ratio = if self.new_cards.is_empty() {
-            self.learning_cards.iter().filter(|card| match card.card {
-                Card::Learning { attempts, .. } => {
-                    attempts < Param::MAX_LEARNING_ATTEMPTS as i32
-                },
-                Card::New => true,
-                _ => unreachable!()
-            }).count()
+            self.learning_cards
+                .iter()
+                .filter(|card| match card.card {
+                    Card::Learning { attempts, .. } => {
+                        attempts < Param::MAX_LEARNING_ATTEMPTS as i32
+                    }
+                    Card::New => true,
+                    _ => unreachable!(),
+                })
+                .count()
         } else {
             Param::LEARN_REVIEW_RATIO
         };
@@ -236,19 +240,22 @@ impl<Param: ScheduleParam> Scheduler<Param> {
                     *due = Utc::now() + Duration::minutes(1);
 
                     (true, *last_interval as usize)
-                },
+                }
 
                 _ => unreachable!(),
             };
 
-            tracing::debug!("did a review card: back_to_learn={back_to_learn}, interval={interval}");
+            tracing::debug!(
+                "did a review card: back_to_learn={back_to_learn}, interval={interval}"
+            );
 
             if back_to_learn && !self.learning_cards.is_empty() {
                 card.card = Card::Learning {
                     attempts: 1,
                     last_reviewed: Utc::now(),
                 };
-                self.learning_cards.insert(Param::LEARNING_INTERVALS_F[0], card);
+                self.learning_cards
+                    .insert(Param::LEARNING_INTERVALS_F[0], card);
             } else {
                 let at = interval.min(self.reviewing_cards.len());
                 self.reviewing_cards.insert(at, card);
@@ -278,49 +285,17 @@ impl<Param: ScheduleParam> Scheduler<Param> {
                         (true, usize::MAX)
                     } else {
                         let interval = if *attempts < 0 {
-                            let idx = ((-*attempts) as usize)
-                                .min(Param::LEARNING_INTERVALS_F.len() - 1);
+                            let idx =
+                                ((-*attempts) as usize).min(Param::LEARNING_INTERVALS_F.len() - 1);
                             Param::LEARNING_INTERVALS_F[idx]
                         } else {
-                            let idx = (*attempts as usize)
-                                .min(Param::LEARNING_INTERVALS_S.len() - 1);
+                            let idx =
+                                (*attempts as usize).min(Param::LEARNING_INTERVALS_S.len() - 1);
                             Param::LEARNING_INTERVALS_S[idx]
                         };
                         (false, interval)
                     }
                 }
-
-                // Card::Review {
-                //     last_interval,
-                //     repetition,
-                //     easiness_factor,
-                //     last_reviewed,
-                //     due,
-                // } if rating != Rating::Again => {
-                //     *last_interval = match *repetition {
-                //         0 => 3.0,
-                //         1 => 6.0,
-                //         _ => (*last_interval * *easiness_factor).round(),
-                //     };
-
-                //     *repetition += 1;
-
-                //     let difficulty = match rating {
-                //         Rating::Again => 3.0,
-                //         Rating::Hard => 2.0,
-                //         Rating::Good => 1.0,
-                //         Rating::Easy => 0.0,
-                //     };
-                //     *easiness_factor += 0.1 - difficulty * (0.08 + difficulty * 0.2);
-                //     *easiness_factor = easiness_factor.max(1.3);
-
-                //     *last_reviewed = Utc::now();
-                //     *due = Utc::now() + Duration::days(1);
-
-                //     tracing::debug!("did a review card in learning queue: EF={}, interval={}", *easiness_factor, *last_interval);
-
-                //     (true, *last_interval as usize)
-                // }
 
                 c @ Card::New => {
                     *c = Card::Learning {
@@ -350,8 +325,8 @@ impl<Param: ScheduleParam> Scheduler<Param> {
                 let can_flush = self.learning_cards.iter().all(|card| match card.card {
                     Card::Learning { attempts, .. } => {
                         attempts >= Param::MAX_LEARNING_ATTEMPTS as i32
-                    },
-                    _ => unreachable!()
+                    }
+                    _ => unreachable!(),
                 });
 
                 if can_flush {
@@ -385,9 +360,10 @@ impl<Param: ScheduleParam> Scheduler<Param> {
                     interval = 1;
                 }
 
-                self.reviewing_cards.insert(interval.min(self.reviewing_cards.len()), card);
-                self.done_learning = self.done_learning
-                    .min(Param::LEARN_REVIEW_RATIO / 2); // 防止出现重复卡片
+                self.reviewing_cards
+                    .insert(interval.min(self.reviewing_cards.len()), card);
+                self.done_learning =
+                    self.done_learning.min(Param::LEARN_REVIEW_RATIO / 2); // 防止出现重复卡片
             }
 
             self.done_learning += 1;
@@ -397,7 +373,9 @@ impl<Param: ScheduleParam> Scheduler<Param> {
     }
 
     pub fn reviewed_cards(&self) -> usize {
-        let not_yet_learned = self.learning_cards.iter()
+        let not_yet_learned = self
+            .learning_cards
+            .iter()
             .filter(|card| card.card == Card::New)
             .count();
 

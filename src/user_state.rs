@@ -5,7 +5,9 @@ use dioxus_logger::tracing;
 use gloo_storage::{LocalStorage, Storage};
 use serde::{Deserialize, Serialize};
 
-use crate::scheduler::{Card, Rating, ScheduleParamsAdept, ScheduleParamsNovice, Scheduler, ZigenCard};
+use crate::scheduler::{
+    Card, Rating, ScheduleParamsAdept, ScheduleParamsNovice, Scheduler, ZigenCard,
+};
 use crate::scheme::{LoadedScheme, SchemeOptions, ZigenConfusableUnpopulated};
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
@@ -57,8 +59,10 @@ impl UserState {
                 })
                 .collect::<Vec<ZigenCard>>();
 
-            self.progresses
-                .insert(scheme_id.to_owned(), TrainProgress::new(cards, options.adept));
+            self.progresses.insert(
+                scheme_id.to_owned(),
+                TrainProgress::new(cards, options.adept),
+            );
         }
     }
 
@@ -105,15 +109,6 @@ impl TrainProgress {
             },
         }
     }
-
-    // pub fn add_card(&mut self, mut card: ZigenCard, rating: Rating) {
-    //     card.fsrs_card = FSRS::default().next(card.fsrs_card, Utc::now(), rating).card;
-    //     tracing::info!("new due date for this card: {:?}", card.fsrs_card.due);
-
-    //     if !self.cards.insert(card) {
-    //         tracing::warn!("inserted a card that already exists!")
-    //     }
-    // }
 
     pub fn rate_card(&mut self, rating: Rating) {
         match &mut self.scheduler {
