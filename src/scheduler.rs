@@ -87,6 +87,7 @@ pub struct Scheduler<P: ScheduleParam> {
 
 pub trait ScheduleParam {
     /// 学习：复习的比例，N张：1张
+    /// 至于学习、复习具体的定义是什么，可以阅读 ReviewStatus 的文档。
     const LEARN_REVIEW_RATIO: usize;
     /// 连续正确回答多少次后，认定用户已经学会一张卡片（从学习阶段转入复习阶段）
     const MAX_LEARNING_ATTEMPTS: usize;
@@ -118,6 +119,20 @@ impl ScheduleParam for ScheduleParamsAdept {
     const MAX_LEARNING_ATTEMPTS: usize = 2;
     const LEARNING_INTERVALS_S: &'static [usize] = &[3, 6];
     const LEARNING_INTERVALS_F: &'static [usize] = &[2, 4];
+}
+
+/// 练习器将练习分成了三个阶段：
+/// - 学习：认识新卡片的阶段。
+/// - 复习：已经学习完毕后，巩固知识的阶段。
+/// - 穿插类复习：在学习阶段，为了不让已学习知识自然衰退，间隔性展出旧卡片。
+#[derive(Clone, Debug, PartialEq, Eq)]
+enum ReviewStatus {
+    /// 学习
+    Learn,
+    /// 穿插性复习
+    ReviewIntersperse,
+    /// 复习
+    Review,
 }
 
 impl<Param: ScheduleParam> Scheduler<Param> {
@@ -184,7 +199,8 @@ impl<Param: ScheduleParam> Scheduler<Param> {
         }
     }
 
-    fn use_review_card(&self) -> bool {
+    /// 用户当前处于什么练习阶段。
+    fn review_status(&self) -> ReviewStatus {
         let learn_review_ratio = if self.new_cards.is_empty() {
             self.learning_cards
                 .iter()
@@ -200,21 +216,32 @@ impl<Param: ScheduleParam> Scheduler<Param> {
             Param::LEARN_REVIEW_RATIO
         };
 
-        (self.done_learning >= learn_review_ratio && self.reviewing_cards.len() > 0)
-            || self.learning_cards.is_empty()
+        if self.done_learning >= learn_review_ratio && self.reviewing_cards.len() > 0 {
+            if !self.learning_cards.is_empty() {
+                ReviewStatus::ReviewIntersperse
+            } else {
+                ReviewStatus::Review
+            }
+        } else {
+            ReviewStatus::Learn
+        }
     }
 
     pub fn get_card(&self) -> &ZigenCard {
-        if self.use_review_card() {
-            self.reviewing_cards.front().unwrap()
-        } else {
-            self.learning_cards.front().unwrap()
+        match self.review_status() {
+            ReviewStatus::Review => self.reviewing_cards.front().unwrap(),
+            ReviewStatus::ReviewIntersperse => self.reviewing_cards.back().unwrap(),
+            ReviewStatus::Learn => self.learning_cards.front().unwrap()
         }
     }
 
     pub fn rate_card(&mut self, rating: Rating) {
-        if self.use_review_card() {
-            let mut card = self.reviewing_cards.pop_front().unwrap();
+        if self.review_status() != ReviewStatus::Learn {
+            let mut card = if self.review_status() == ReviewStatus::Review {
+                self.reviewing_cards.pop_front().unwrap()
+            } else {
+                self.reviewing_cards.pop_back().unwrap()
+            };
             assert!(matches!(card.card, Card::Review { .. }));
 
             let (back_to_learn, interval) = match card.card {
