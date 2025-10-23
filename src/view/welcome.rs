@@ -1,4 +1,5 @@
 use crate::scheme::{Scheme, SchemeOptions};
+use crate::user_state::UserState;
 use dioxus::prelude::*;
 use gloo_net::http::Request;
 
@@ -24,9 +25,15 @@ pub fn Welcome(props: WelcomeProps) -> Element {
             .await
             .map_err(|err| err.to_string());
 
-        // 加载后，默认选择第一个选项
+        let user_state = UserState::read_from_local_storage();
+        let user_scheme = user_state.current_scheme();
+
+        // 加载后，如果用户未曾进行过字根练习，默认选择第一个选项，
+        // 否则选择用户上一次练习过的方案
         if let Ok(ref schemes) = schemes {
-            if let Some(first) = schemes.first() {
+            if !user_scheme.is_empty() && schemes.iter().any(|scheme| scheme.id == user_scheme) {
+                selected_scheme.set(user_scheme.to_owned());
+            } else if let Some(first) = schemes.first() {
                 selected_scheme.set(first.id.clone());
             }
         }
@@ -59,6 +66,7 @@ pub fn Welcome(props: WelcomeProps) -> Element {
                                 option {
                                     key: "{scheme.id}",
                                     value: "{scheme.id}",
+                                    selected: selected_scheme() == scheme.id,
                                     "{scheme.full_name}",
                                 }
                             }

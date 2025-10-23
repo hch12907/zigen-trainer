@@ -66,6 +66,10 @@ impl UserState {
         }
     }
 
+    pub fn current_scheme(&self) -> &str {
+        &self.current_scheme
+    }
+
     pub fn current_progress(&self) -> &TrainProgress {
         &self.progresses[&self.current_scheme]
     }
