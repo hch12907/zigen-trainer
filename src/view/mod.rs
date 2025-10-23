@@ -19,6 +19,16 @@ static SCHEMES: Asset = asset!(
     AssetOptions::folder().with_hash_suffix(false)
 );
 
+#[used]
+static GITHUB_LIGHT: Asset = asset!(
+    "/assets/github-light.png"
+);
+
+#[used]
+static GITHUB_DARK: Asset = asset!(
+    "/assets/github-dark.png"
+);
+
 #[component]
 pub fn Trainer() -> Element {
     let mut scheme: Signal<Option<Scheme>> = use_signal(|| None);
@@ -94,6 +104,25 @@ pub fn Trainer() -> Element {
                             "重启？（将会重置所有进度！）"
                         } else {
                             "重启"
+                        }
+                    }
+                }
+
+                a {
+                    class: "nav-right",
+                    href: "https://github.com/hch12907/zigen-trainer",
+
+                    picture {
+                        source {
+                            "srcset": GITHUB_LIGHT,
+                            "media": "(prefers-color-scheme: light)",
+                        }
+                        source {
+                            "srcset": GITHUB_DARK,
+                            "media": "(prefers-color-scheme: dark)",
+                        }
+                        img {
+                            src: GITHUB_LIGHT,
                         }
                     }
                 }
