@@ -313,6 +313,14 @@
       },
       {
         "zigens": [
+          ""
+        ],
+        "code": "Do",
+        "classify": "通",
+        "description": "无读音 <b>Ø</b>"
+      },
+      {
+        "zigens": [
           "〇"
         ],
         "code": "Dli",
@@ -322,8 +330,7 @@
       {
         "zigens": [
           "ㄩ",
-          "屮",
-          ""
+          "屮"
         ],
         "code": "Do",
         "classify": "通",
@@ -657,7 +664,7 @@
         ],
         "code": "Go",
         "classify": "通",
-        "description": "罒 wǎng = uáng → <b>o</b>"
+        "description": "网 wǎng = uáng → <b>o</b><br>（网与罒同源）"
       },
       {
         "zigens": [
