@@ -10,7 +10,7 @@ pub use welcome::*;
 
 use dioxus::prelude::*;
 
-use crate::scheme::{LoadedScheme, Scheme, SchemeOptions};
+use crate::scheme::{LoadedScheme, Scheme, SchemeOptions, ZigenConfusableUnpopulated};
 use crate::user_state::UserState;
 
 #[used]
@@ -56,7 +56,7 @@ pub fn Trainer() -> Element {
                 .send()
                 .await
                 .map_err(|err| err.to_string())?
-                .json::<LoadedScheme>()
+                .json::<LoadedScheme<ZigenConfusableUnpopulated>>()
                 .await
                 .map_err(|err| err.to_string())
                 .map(|loaded| (scheme.id.clone(), loaded))

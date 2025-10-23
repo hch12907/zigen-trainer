@@ -2734,212 +2734,46 @@
   },
   {
     "type": "混",
-    "groups": [
-      {
-        "zigens": [
-          "車"
-        ],
-        "code": "Dc",
-        "classify": "繁",
-        "description": "車（车）<b>c</b>hē"
-      },
-      {
-        "zigens": [
-          "车"
-        ],
-        "code": "Xj",
-        "classify": "繁",
-        "description": "车 <b>j</b>ū<br>（取非常用音）"
-      }
-    ]
+    "zigens": ["車", "车"]
   },
   {
     "type": "混",
-    "groups": [
-      {
-        "zigens": [
-          "长"
-        ],
-        "code": "Nc",
-        "classify": "简",
-        "description": "长 <b>c</b>háng"
-      },
-      {
-        "zigens": [
-          "長"
-        ],
-        "code": "Uc",
-        "classify": "繁",
-        "description": "長（长） <b>c</b>háng"
-      }
-    ]
+    "zigens": ["长", "長"]
   },
   {
     "type": "混",
-    "groups": [
-      {
-        "zigens": [
-          "鸟"
-        ],
-        "code": "Mn",
-        "classify": "简",
-        "description": "鸟 <b>n</b>iǎo"
-      },
-      {
-        "zigens": [
-          "鳥"
-        ],
-        "code": "Dn",
-        "classify": "繁",
-        "description": "鳥（鸟）<b>n</b>iǎo"
-      }
-    ]
-  },
-    {
-    "type": "混",
-    "groups": [
-      {
-        "zigens": [
-          "乌"
-        ],
-        "code": "Mw",
-        "classify": "简",
-        "description": "乌 <b>w</b>ū"
-      },
-      {
-        "zigens": [
-          "烏"
-        ],
-        "code": "Dw",
-        "classify": "繁",
-        "description": "烏（乌） <b>w</b>ū"
-      }
-    ]
+    "zigens": ["鸟", "鳥"]
   },
   {
     "type": "混",
-    "groups": [
-      {
-        "zigens": [
-          "马"
-        ],
-        "code": "Bm",
-        "classify": "简",
-        "description": "马 <b>m</b>ǎ"
-      },
-      {
-        "zigens": [
-          "馬"
-        ],
-        "code": "Wm",
-        "classify": "繁",
-        "description": "馬（马）<b>m</b>ǎ"
-      }
-    ]
+    "zigens": ["乌", "烏"]
   },
   {
     "type": "混",
-    "groups": [
-      {
-        "zigens": [
-          "鱼"
-        ],
-        "code": "Xv",
-        "classify": "简",
-        "description": "鱼 y<b>ǘ</b>"
-      },
-      {
-        "zigens": [
-          "魚"
-        ],
-        "code": "Vv",
-        "classify": "繁",
-        "description": "魚 y<b>ü</b>"
-      }
-    ]
+    "zigens": ["马", "馬"]
   },
   {
     "type": "混",
-    "groups": [
-      {
-        "zigens": [
-          "门"
-        ],
-        "code": "Tm",
-        "classify": "简",
-        "description": "门 <b>m</b>én"
-      },
-      {
-        "zigens": [
-          "門"
-        ],
-        "code": "Dm",
-        "classify": "繁",
-        "description": "門（门）<b>m</b>én"
-      }
-    ]
+    "zigens": ["鱼", "魚"]
   },
   {
     "type": "混",
-    "groups": [
-      {
-        "zigens": [
-          "贝"
-        ],
-        "code": "Cb",
-        "classify": "简",
-        "description": "贝 <b>b</b>èi"
-      },
-      {
-        "zigens": [
-          "貝"
-        ],
-        "code": "Jb",
-        "classify": "繁",
-        "description": "貝（贝）<b>b</b>èi"
-      }
-    ]
+    "zigens": ["门", "門"]
   },
   {
     "type": "混",
-    "groups": [
-      {
-        "zigens": [
-          "见"
-        ],
-        "code": "Cj",
-        "classify": "简",
-        "description": "见 <b>j</b>iàn"
-      },
-      {
-        "zigens": [
-          "見"
-        ],
-        "code": "Jj",
-        "classify": "繁",
-        "description": "見（见）<b>j</b>iàn"
-      }
-    ]
+    "zigens": ["贝", "貝"]
   },
   {
     "type": "混",
-    "groups": [
-      {
-        "zigens": [
-          "页"
-        ],
-        "code": "Cy",
-        "classify": "简",
-        "description": "页 <b>y</b>è"
-      },
-      {
-        "zigens": [
-          "頁"
-        ],
-        "code": "Je",
-        "classify": "繁",
-        "description": "頁（页）y<b>è</b>"
-      }
-    ]
+    "zigens": ["见", "見"]
+  },
+  {
+    "type": "混",
+    "zigens": ["页", "頁"]
+  },
+  {
+    "type": "混",
+    "zigens": ["饣", "食"]
   }
 ]

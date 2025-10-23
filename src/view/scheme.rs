@@ -1,7 +1,7 @@
 use std::cell::RefCell;
 use std::rc::Rc;
 
-use crate::scheme::{LoadedScheme, SchemeOptions};
+use crate::scheme::{LoadedScheme, SchemeOptions, ZigenConfusableUnpopulated};
 use crate::user_state::UserState;
 use crate::view::card::Card;
 
@@ -12,7 +12,7 @@ use rand::seq::SliceRandom;
 #[derive(PartialEq, Clone, Props)]
 pub struct SchemeProps {
     scheme_id: String,
-    scheme: LoadedScheme,
+    scheme: LoadedScheme<ZigenConfusableUnpopulated>,
     options: SchemeOptions,
     on_scheme_completed: EventHandler<()>,
 }

@@ -1,3 +1,4 @@
+use std::collections::HashMap;
 use std::ops::Deref;
 
 use rand::seq::SliceRandom;
@@ -32,9 +33,53 @@ pub struct SchemeOptions {
 
 /// 一个方案的字根集。
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
-pub struct LoadedScheme(pub Vec<SchemeZigen>);
+pub struct LoadedScheme<Z>(pub Vec<SchemeZigen<Z>>);
 
-impl LoadedScheme {
+impl LoadedScheme<ZigenConfusableUnpopulated> {
+    pub fn populate_confusables(self) -> LoadedScheme<ZigenConfusable> {
+        let mut populated_confusables = self.0.iter()
+            .filter_map(|zigen| match zigen {
+                SchemeZigen::Confusable(con) => Some(con.zigens.as_slice()),
+                _ => None,
+            })
+            .flatten()
+            .map(|x| (x.clone(), None))
+            .collect::<HashMap<_, _>>();
+
+        self.0.iter()
+            .filter_map(|zigen| match zigen {
+                SchemeZigen::Category(cat) => Some(&cat.groups),
+                _ => None,
+            })
+            .for_each(|groups| {
+                for group in groups.iter() {
+                    if populated_confusables.contains_key(&group.zigens[0]) {
+                        *populated_confusables.get_mut(&group.zigens[0]).unwrap() = Some(group.clone());
+                    }
+                }
+            });
+
+        let new_scheme = self.0.into_iter()
+            .map(|zigen| match zigen {
+                SchemeZigen::Category(cat) => SchemeZigen::Category(cat),
+                SchemeZigen::Confusable(con) => SchemeZigen::Confusable({
+                    let new_con = ZigenConfusable {
+                        groups: con.zigens.iter()
+                            .map(|z| populated_confusables.remove(z).unwrap().expect("混淆集使用的字根不在字根码表内，或不属于代表性字根"))
+                            .collect(),
+                        description: con.description.to_owned(),
+                    };
+
+                    new_con
+                }),
+            })
+            .collect::<Vec<_>>();
+
+        LoadedScheme(new_scheme)
+    }
+}
+
+impl LoadedScheme<ZigenConfusable> {
     pub fn sort_to_options(&mut self, options: &SchemeOptions) {
         let mut simps = Vec::new();
         let mut trads = Vec::new();
@@ -119,17 +164,17 @@ impl LoadedScheme {
 /// 一个方案的字根集。
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 #[serde(tag = "type")]
-pub enum SchemeZigen {
+pub enum SchemeZigen<Z = ZigenConfusable> {
     /// 属于同一聚类，但编码不同的字根。
     #[serde(rename = "类")]
     Category(ZigenCategory),
 
     /// 容易被混淆或记错的几个字根。
     #[serde(rename = "混")]
-    Confusable(ZigenConfusable),
+    Confusable(Z),
 }
 
-impl SchemeZigen {
+impl SchemeZigen<ZigenConfusable> {
     pub fn as_raw_parts(&self) -> (&Vec<ZigenGroup>, &String) {
         let (zigen_groups, description) = match self {
             SchemeZigen::Category(cat) => (&cat.groups, &cat.description),
@@ -157,9 +202,20 @@ impl SchemeZigen {
 /// 学习者搞混。练习器会特意加强这类字根的学习强度。
 #[derive(Clone, Debug, PartialEq, Eq, Serialize, Deserialize)]
 pub struct ZigenConfusable {
-    pub groups: Vec<ZigenGroup>,
+    groups: Vec<ZigenGroup>,
     #[serde(default)]
-    pub description: String,
+    description: String,
+}
+
+/// 容易被混淆或记错的几个字根。
+///
+/// 这些字根未必属于同一个聚类，但是可能因为发音、外形、字源相似等因素，经常被
+/// 学习者搞混。练习器会特意加强这类字根的学习强度。
+#[derive(Clone, Debug, PartialEq, Eq, Serialize, Deserialize)]
+pub struct ZigenConfusableUnpopulated {
+    zigens: Vec<Zigen>,
+    #[serde(default)]
+    description: String,
 }
 
 /// 属于同一聚类的字根。这些字根的编码不一定相同（比如：宇浩星陈码中的Jm目和Jr日）。
@@ -185,7 +241,7 @@ pub struct ZigenGroup {
 }
 
 /// 单个字根。
-#[derive(Clone, Debug, PartialEq, Eq, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Eq, Hash, Serialize, Deserialize)]
 #[serde(transparent)]
 pub struct Zigen(pub String);
 

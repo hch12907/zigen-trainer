@@ -6,7 +6,7 @@ use gloo_storage::{LocalStorage, Storage};
 use serde::{Deserialize, Serialize};
 
 use crate::scheduler::{Card, Rating, ScheduleParamsAdept, ScheduleParamsNovice, Scheduler, ZigenCard};
-use crate::scheme::{LoadedScheme, SchemeOptions};
+use crate::scheme::{LoadedScheme, SchemeOptions, ZigenConfusableUnpopulated};
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct UserState {
@@ -38,13 +38,13 @@ impl UserState {
     pub fn try_initialize_scheme(
         &mut self,
         scheme_id: &str,
-        scheme: &LoadedScheme,
+        scheme: &LoadedScheme<ZigenConfusableUnpopulated>,
         options: SchemeOptions,
     ) {
         self.current_scheme = scheme_id.to_owned();
 
         if !self.progresses.contains_key(scheme_id) {
-            let mut scheme = scheme.clone();
+            let mut scheme = scheme.clone().populate_confusables();
             scheme.sort_to_options(&options);
             tracing::debug!("{:?}", &scheme);
 
