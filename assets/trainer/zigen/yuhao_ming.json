@@ -7,7 +7,7 @@
           "卜",
           "⺊"
         ],
-        "code": "bbu",
+        "code": "Bbu",
         "classify": "通",
         "description": "卜 <b>bǔ</b>"
       },
@@ -15,7 +15,7 @@
         "zigens": [
           ""
         ],
-        "code": "bo",
+        "code": "Bo",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       },
@@ -23,7 +23,7 @@
         "zigens": [
           ""
         ],
-        "code": "bo",
+        "code": "Bo",
         "classify": "繁",
         "description": "无读音 <b>Ø</b>"
       },
@@ -33,7 +33,7 @@
           "虍",
           ""
         ],
-        "code": "bhu",
+        "code": "Bhu",
         "classify": "通",
         "description": "虎 <b>hǔ</b>"
       },
@@ -41,7 +41,7 @@
         "zigens": [
           "鹵"
         ],
-        "code": "blu",
+        "code": "Blu",
         "classify": "繁",
         "description": "鹵 <b>lǔ</b>"
       }
@@ -55,7 +55,7 @@
         "zigens": [
           "灬"
         ],
-        "code": "bbi",
+        "code": "Bbi",
         "classify": "通",
         "description": "灬 biāo → <b>bi</b>"
       }
@@ -69,7 +69,7 @@
           "馬",
           ""
         ],
-        "code": "bma",
+        "code": "Bma",
         "classify": "繁",
         "description": "馬 <b>mǎ</b>"
       }
@@ -82,7 +82,7 @@
         "zigens": [
           "魚"
         ],
-        "code": "be",
+        "code": "Be",
         "classify": "繁",
         "description": "魚 yú = ü → <b>e</b>"
       }
@@ -95,7 +95,7 @@
         "zigens": [
           "亦"
         ],
-        "code": "bi",
+        "code": "Bi",
         "classify": "通",
         "description": "亦 yì → <b>i</b>"
       }
@@ -108,7 +108,7 @@
         "zigens": [
           "爪"
         ],
-        "code": "bsa",
+        "code": "Bsa",
         "classify": "通",
         "description": "爪 zhuǎ → <b>sa</b>"
       },
@@ -116,7 +116,7 @@
         "zigens": [
           "瓜"
         ],
-        "code": "bga",
+        "code": "Bga",
         "classify": "通",
         "description": "瓜 guā → <b>ga</b>"
       }
@@ -130,7 +130,7 @@
         "zigens": [
           "未"
         ],
-        "code": "bo",
+        "code": "Bo",
         "classify": "通",
         "description": "未 wèi = uèi → <b>o</b>"
       },
@@ -138,7 +138,7 @@
         "zigens": [
           "末"
         ],
-        "code": "bmo",
+        "code": "Bmo",
         "classify": "通",
         "description": "末 <b>mò</b>"
       }
@@ -152,7 +152,7 @@
         "zigens": [
           "示"
         ],
-        "code": "bka",
+        "code": "Bka",
         "classify": "通",
         "description": "示 shì → <b>ka</b>"
       }
@@ -167,7 +167,7 @@
           "亅",
           "乚"
         ],
-        "code": "ci",
+        "code": "Ci",
         "classify": "通",
         "description": "乙 yǐ → <b>i</b>"
       }
@@ -181,7 +181,7 @@
         "zigens": [
           "飛"
         ],
-        "code": "cfo",
+        "code": "Cfo",
         "classify": "繁",
         "description": "飛 fēi → <b>fo</b>"
       }
@@ -194,7 +194,7 @@
         "zigens": [
           ""
         ],
-        "code": "co",
+        "code": "Co",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       }
@@ -207,7 +207,7 @@
         "zigens": [
           "世"
         ],
-        "code": "cka",
+        "code": "Cka",
         "classify": "通",
         "description": "世 shì → <b>ka</b>"
       }
@@ -220,7 +220,7 @@
         "zigens": [
           "又"
         ],
-        "code": "cu",
+        "code": "Cu",
         "classify": "通",
         "description": "又 yòu = iòu → <b>u</b>"
       },
@@ -228,7 +228,7 @@
         "zigens": [
           "女"
         ],
-        "code": "cne",
+        "code": "Cne",
         "classify": "通",
         "description": "女 nǚ → <b>ne</b>"
       }
@@ -242,7 +242,7 @@
         "zigens": [
           "马"
         ],
-        "code": "cma",
+        "code": "Cma",
         "classify": "简",
         "description": "马 <b>mǎ</b>"
       }
@@ -255,7 +255,7 @@
         "zigens": [
           "禾"
         ],
-        "code": "che",
+        "code": "Che",
         "classify": "通",
         "description": "禾 <b>hé</b>"
       }
@@ -268,7 +268,7 @@
         "zigens": [
           "生"
         ],
-        "code": "cke",
+        "code": "Cke",
         "classify": "通",
         "description": "生 shēng → <b>ke</b>"
       }
@@ -281,7 +281,7 @@
         "zigens": [
           "來"
         ],
-        "code": "cle",
+        "code": "Cle",
         "classify": "繁",
         "description": "來 lái → <b>le</b>"
       }
@@ -294,7 +294,7 @@
         "zigens": [
           "氵"
         ],
-        "code": "cko",
+        "code": "Cko",
         "classify": "通",
         "description": "水 shuǐ = shuěi → <b>ko</b>"
       }
@@ -307,7 +307,7 @@
         "zigens": [
           "口"
         ],
-        "code": "dke",
+        "code": "Dke",
         "classify": "通",
         "description": "口 kǒu → <b>ke</b>"
       },
@@ -315,7 +315,7 @@
         "zigens": [
           "〇"
         ],
-        "code": "dli",
+        "code": "Dli",
         "classify": "通",
         "description": "零 líng → <b>li</b>"
       },
@@ -325,7 +325,7 @@
           "屮",
           ""
         ],
-        "code": "do",
+        "code": "Do",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       }
@@ -340,7 +340,7 @@
           "彑",
           ""
         ],
-        "code": "dji",
+        "code": "Dji",
         "classify": "通",
         "description": "彑 <b>jì</b><br>（通‘彐’）"
       }
@@ -353,7 +353,7 @@
         "zigens": [
           "母"
         ],
-        "code": "dme",
+        "code": "Dme",
         "classify": "通",
         "description": "母 mǔ → <b>me</b> <br>（声母右手韵码左手）"
       },
@@ -361,7 +361,7 @@
         "zigens": [
           ""
         ],
-        "code": "do",
+        "code": "Do",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       }
@@ -375,7 +375,7 @@
         "zigens": [
           "言"
         ],
-        "code": "de",
+        "code": "De",
         "classify": "通",
         "description": "言 yán = ián → <b>e</b>"
       }
@@ -388,7 +388,7 @@
         "zigens": [
           "金"
         ],
-        "code": "djo",
+        "code": "Djo",
         "classify": "通",
         "description": "金 jīn → <b>jo</b>"
       }
@@ -401,7 +401,7 @@
         "zigens": [
           "己"
         ],
-        "code": "dji",
+        "code": "Dji",
         "classify": "通",
         "description": "己 <b>jǐ</b>"
       },
@@ -409,7 +409,7 @@
         "zigens": [
           "已"
         ],
-        "code": "di",
+        "code": "Di",
         "classify": "通",
         "description": "已 yǐ → <b>i</b>"
       }
@@ -423,7 +423,7 @@
         "zigens": [
           "长"
         ],
-        "code": "dre",
+        "code": "Dre",
         "classify": "简",
         "description": "长 cháng → <b>re</b>"
       }
@@ -436,7 +436,7 @@
         "zigens": [
           "宀"
         ],
-        "code": "dme",
+        "code": "Dme",
         "classify": "通",
         "description": "宀 miǎn → <b>me</b> <br>（声母右手韵码左手）"
       }
@@ -449,7 +449,7 @@
         "zigens": [
           "廴"
         ],
-        "code": "do",
+        "code": "Do",
         "classify": "通",
         "description": "廴 yín = ín → <b>o</b>"
       }
@@ -462,7 +462,7 @@
         "zigens": [
           "皮"
         ],
-        "code": "dpi",
+        "code": "Dpi",
         "classify": "通",
         "description": "皮 <b>pí</b>"
       }
@@ -475,7 +475,7 @@
         "zigens": [
           "一"
         ],
-        "code": "fi",
+        "code": "Fi",
         "classify": "通",
         "description": "一 yī → <b>ī</b>"
       }
@@ -488,7 +488,7 @@
         "zigens": [
           "匚"
         ],
-        "code": "ffe",
+        "code": "Ffe",
         "classify": "通",
         "description": "方 fāng → <b>fe</b>"
       },
@@ -496,7 +496,7 @@
         "zigens": [
           "丂"
         ],
-        "code": "fki",
+        "code": "Fki",
         "classify": "通",
         "description": "丂 kào → <b>ki</b>"
       },
@@ -504,7 +504,7 @@
         "zigens": [
           "牙"
         ],
-        "code": "fa",
+        "code": "Fa",
         "classify": "通",
         "description": "牙 yá = iá → <b>a</b>"
       }
@@ -519,7 +519,7 @@
           "",
           ""
         ],
-        "code": "fo",
+        "code": "Fo",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       }
@@ -532,7 +532,7 @@
         "zigens": [
           ""
         ],
-        "code": "fde",
+        "code": "Fde",
         "classify": "繁",
         "description": " dòu → <b>de</b>"
       },
@@ -542,7 +542,7 @@
           "",
           ""
         ],
-        "code": "fo",
+        "code": "Fo",
         "classify": "繁",
         "description": "无读音 <b>Ø</b>"
       }
@@ -556,7 +556,7 @@
         "zigens": [
           "丿"
         ],
-        "code": "fpe",
+        "code": "Fpe",
         "classify": "通",
         "description": "撇 piě → <b>pe</b>"
       },
@@ -564,7 +564,7 @@
         "zigens": [
           "乃"
         ],
-        "code": "fne",
+        "code": "Fne",
         "classify": "通",
         "description": "乃 nǎi → <b>ne</b>"
       },
@@ -573,7 +573,7 @@
           "手",
           "龵"
         ],
-        "code": "fke",
+        "code": "Fke",
         "classify": "通",
         "description": "手 shǒu → <b>ke</b>"
       }
@@ -587,7 +587,7 @@
         "zigens": [
           "甲"
         ],
-        "code": "fja",
+        "code": "Fja",
         "classify": "通",
         "description": "甲 jiā → <b>ja</b>"
       },
@@ -595,7 +595,7 @@
         "zigens": [
           "电"
         ],
-        "code": "fdi",
+        "code": "Fdi",
         "classify": "通",
         "description": "电 diàn → <b>di</b> <br>（声母左手韵码右手）"
       },
@@ -603,7 +603,7 @@
         "zigens": [
           "鱼"
         ],
-        "code": "fe",
+        "code": "Fe",
         "classify": "通",
         "description": "鱼 yú = ǘ → <b>e</b>"
       }
@@ -617,7 +617,7 @@
         "zigens": [
           "而"
         ],
-        "code": "fo",
+        "code": "Fo",
         "classify": "通",
         "description": "而 ér → <b>o</b>"
       },
@@ -625,7 +625,7 @@
         "zigens": [
           "面"
         ],
-        "code": "fme",
+        "code": "Fme",
         "classify": "通",
         "description": "面 miàn → <b>me</b> <br>（声母右手韵码左手）"
       }
@@ -639,7 +639,7 @@
         "zigens": [
           "目"
         ],
-        "code": "gme",
+        "code": "Gme",
         "classify": "通",
         "description": "目 mù → <b>me</b> <br>（声母右手韵码左手）"
       },
@@ -647,7 +647,7 @@
         "zigens": [
           "皿"
         ],
-        "code": "gmo",
+        "code": "Gmo",
         "classify": "通",
         "description": "皿 mǐn → <b>mo</b>"
       },
@@ -655,7 +655,7 @@
         "zigens": [
           "罒"
         ],
-        "code": "go",
+        "code": "Go",
         "classify": "通",
         "description": "罒 wǎng = uáng → <b>o</b>"
       },
@@ -663,7 +663,7 @@
         "zigens": [
           ""
         ],
-        "code": "go",
+        "code": "Go",
         "classify": "繁",
         "description": "无读音 <b>Ø</b>"
       },
@@ -671,7 +671,7 @@
         "zigens": [
           "見"
         ],
-        "code": "gje",
+        "code": "Gje",
         "classify": "繁",
         "description": "見 jiàn → <b>je</b> <br>（声母右手韵码左手）"
       },
@@ -679,7 +679,7 @@
         "zigens": [
           "貝"
         ],
-        "code": "gbo",
+        "code": "Gbo",
         "classify": "繁",
         "description": "貝 bèi → <b>bo</b>"
       },
@@ -687,7 +687,7 @@
         "zigens": [
           "頁"
         ],
-        "code": "ge",
+        "code": "Ge",
         "classify": "繁",
         "description": "頁 yè = iè → <b>e</b>"
       }
@@ -702,7 +702,7 @@
           "厂",
           "丆"
         ],
-        "code": "ga",
+        "code": "Ga",
         "classify": "通",
         "description": "厂 ān → <b>a</b><br>（取古音）"
       },
@@ -710,7 +710,7 @@
         "zigens": [
           "广"
         ],
-        "code": "ggo",
+        "code": "Ggo",
         "classify": "通",
         "description": "广 guǎng → <b>go</b>"
       },
@@ -718,7 +718,7 @@
         "zigens": [
           "疒"
         ],
-        "code": "gne",
+        "code": "Gne",
         "classify": "通",
         "description": "疒 <b>nè</b><br>（生僻字）"
       },
@@ -727,7 +727,7 @@
           "鹿",
           ""
         ],
-        "code": "glu",
+        "code": "Glu",
         "classify": "通",
         "description": "鹿 <b>lù</b>"
       },
@@ -735,7 +735,7 @@
         "zigens": [
           "麻"
         ],
-        "code": "gma",
+        "code": "Gma",
         "classify": "通",
         "description": "麻 <b>má</b>"
       }
@@ -750,7 +750,7 @@
           "儿",
           ""
         ],
-        "code": "go",
+        "code": "Go",
         "classify": "通",
         "description": "儿 ér → <b>o</b>"
       },
@@ -758,7 +758,7 @@
         "zigens": [
           "九"
         ],
-        "code": "gju",
+        "code": "Gju",
         "classify": "通",
         "description": "九 jiǔ = jiǒu → <b>ju</b>"
       }
@@ -773,7 +773,7 @@
           "牛",
           "⺧"
         ],
-        "code": "gnu",
+        "code": "Gnu",
         "classify": "通",
         "description": "牛 niú = nióu → <b>nu</b>"
       }
@@ -787,7 +787,7 @@
           "豕",
           ""
         ],
-        "code": "gka",
+        "code": "Gka",
         "classify": "通",
         "description": "豕 shi → <b>ka</b>"
       }
@@ -800,7 +800,7 @@
         "zigens": [
           "夭"
         ],
-        "code": "gi",
+        "code": "Gi",
         "classify": "通",
         "description": "夭 yāo = iāo → <b>i</b>"
       }
@@ -813,7 +813,7 @@
         "zigens": [
           "扌"
         ],
-        "code": "gke",
+        "code": "Gke",
         "classify": "通",
         "description": "手 shǒu → <b>ke</b>"
       }
@@ -826,7 +826,7 @@
         "zigens": [
           "革"
         ],
-        "code": "gge",
+        "code": "Gge",
         "classify": "通",
         "description": "革 <b>gé</b>"
       }
@@ -843,7 +843,7 @@
           "勹",
           ""
         ],
-        "code": "ho",
+        "code": "Ho",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       }
@@ -856,7 +856,7 @@
         "zigens": [
           "习"
         ],
-        "code": "hxi",
+        "code": "Hxi",
         "classify": "通",
         "description": "习 <b>xí</b>"
       }
@@ -869,7 +869,7 @@
         "zigens": [
           "贝"
         ],
-        "code": "hbo",
+        "code": "Hbo",
         "classify": "简",
         "description": "贝 bèi → <b>bo</b>"
       },
@@ -877,7 +877,7 @@
         "zigens": [
           "页"
         ],
-        "code": "he",
+        "code": "He",
         "classify": "简",
         "description": "页 yè = ie → <b>e</b>"
       },
@@ -886,7 +886,7 @@
           "冊",
           ""
         ],
-        "code": "hce",
+        "code": "Hce",
         "classify": "通",
         "description": "冊 <b>cè</b>"
       },
@@ -894,7 +894,7 @@
         "zigens": [
           "田"
         ],
-        "code": "hti",
+        "code": "Hti",
         "classify": "通",
         "description": "田 tián → <b>ti</b> <br>（声母左手韵码右手）"
       }
@@ -908,7 +908,7 @@
         "zigens": [
           "自"
         ],
-        "code": "hzi",
+        "code": "Hzi",
         "classify": "通",
         "description": "自 <b>zì</b>"
       },
@@ -916,7 +916,7 @@
         "zigens": [
           "其"
         ],
-        "code": "hqi",
+        "code": "Hqi",
         "classify": "通",
         "description": "其 <b>qí</b>"
       }
@@ -931,7 +931,7 @@
           "止",
           "龰"
         ],
-        "code": "hsi",
+        "code": "Hsi",
         "classify": "通",
         "description": "止 zhǐ → <b>si</b>"
       },
@@ -939,7 +939,7 @@
         "zigens": [
           "走"
         ],
-        "code": "hze",
+        "code": "Hze",
         "classify": "通",
         "description": "走 zǒu → <b>ze</b>"
       },
@@ -947,7 +947,7 @@
         "zigens": [
           "齒"
         ],
-        "code": "hri",
+        "code": "Hri",
         "classify": "繁",
         "description": "齒 chǐ → <b>ri</b>"
       }
@@ -961,7 +961,7 @@
         "zigens": [
           "亥"
         ],
-        "code": "hhe",
+        "code": "Hhe",
         "classify": "通",
         "description": "亥 hài → <b>he</b>"
       }
@@ -974,7 +974,7 @@
         "zigens": [
           "辰"
         ],
-        "code": "hre",
+        "code": "Hre",
         "classify": "通",
         "description": "辰 chén → <b>re</b>"
       }
@@ -989,7 +989,7 @@
           "",
           ""
         ],
-        "code": "ji",
+        "code": "Ji",
         "classify": "通",
         "description": "日 rì → <b>i</b><br>（r视为零声母）"
       },
@@ -997,7 +997,7 @@
         "zigens": [
           "曰"
         ],
-        "code": "je",
+        "code": "Je",
         "classify": "通",
         "description": "曰 yuē = ǖe → <b>e</b>"
       },
@@ -1005,7 +1005,7 @@
         "zigens": [
           "早"
         ],
-        "code": "jzi",
+        "code": "Jzi",
         "classify": "通",
         "description": "早 zǎo → <b>zi</b>"
       }
@@ -1019,7 +1019,7 @@
         "zigens": [
           "臣"
         ],
-        "code": "jre",
+        "code": "Jre",
         "classify": "通",
         "description": "臣 chén → <b>re</b>"
       },
@@ -1028,7 +1028,7 @@
           "",
           ""
         ],
-        "code": "ji",
+        "code": "Ji",
         "classify": "通",
         "description": "𦣞/颐 yí → <b>i</b>"
       }
@@ -1043,7 +1043,7 @@
           "甶",
           ""
         ],
-        "code": "jfu",
+        "code": "Jfu",
         "classify": "通",
         "description": "甶 <b>fú</b>"
       },
@@ -1052,7 +1052,7 @@
           "鬼",
           ""
         ],
-        "code": "jgo",
+        "code": "Jgo",
         "classify": "通",
         "description": "鬼 guǐ → <b>go</b>"
       }
@@ -1066,7 +1066,7 @@
         "zigens": [
           "门"
         ],
-        "code": "jme",
+        "code": "Jme",
         "classify": "通",
         "description": "门 mén → <b>me</b>"
       }
@@ -1080,7 +1080,7 @@
           "心",
           "忄"
         ],
-        "code": "jxo",
+        "code": "Jxo",
         "classify": "通",
         "description": "心 xīn → <b>xo</b>"
       }
@@ -1095,7 +1095,7 @@
           "",
           "丄"
         ],
-        "code": "jke",
+        "code": "Jke",
         "classify": "通",
         "description": "上 shàng → <b>ke</b>"
       },
@@ -1103,7 +1103,7 @@
         "zigens": [
           "工"
         ],
-        "code": "jgi",
+        "code": "Jgi",
         "classify": "通",
         "description": "工 gōng → <b>gi</b>"
       }
@@ -1117,7 +1117,7 @@
         "zigens": [
           "寸"
         ],
-        "code": "jci",
+        "code": "Jci",
         "classify": "通",
         "description": "寸 cùn → <b>ci</b>"
       },
@@ -1125,7 +1125,7 @@
         "zigens": [
           ""
         ],
-        "code": "jo",
+        "code": "Jo",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       }
@@ -1139,7 +1139,7 @@
         "zigens": [
           "瓦"
         ],
-        "code": "ja",
+        "code": "Ja",
         "classify": "通",
         "description": "瓦 wǎ = uǎ → <b>a</b>"
       }
@@ -1152,7 +1152,7 @@
         "zigens": [
           "丰"
         ],
-        "code": "jfe",
+        "code": "Jfe",
         "classify": "通",
         "description": "丰 fēng → <b>fe</b>"
       }
@@ -1165,7 +1165,7 @@
         "zigens": [
           "刀"
         ],
-        "code": "jdi",
+        "code": "Jdi",
         "classify": "通",
         "description": "刀 dāo → <b>di</b>"
       }
@@ -1178,7 +1178,7 @@
         "zigens": [
           "夕"
         ],
-        "code": "jxi",
+        "code": "Jxi",
         "classify": "通",
         "description": "夕 <b>xī</b>"
       }
@@ -1191,7 +1191,7 @@
         "zigens": [
           "矢"
         ],
-        "code": "jka",
+        "code": "Jka",
         "classify": "通",
         "description": "矢 shǐ → <b>ki</b>"
       }
@@ -1204,7 +1204,7 @@
         "zigens": [
           "舟"
         ],
-        "code": "jse",
+        "code": "Jse",
         "classify": "通",
         "description": "舟 zhōu → <b>se</b>"
       }
@@ -1217,7 +1217,7 @@
         "zigens": [
           "巳"
         ],
-        "code": "jsi",
+        "code": "Jsi",
         "classify": "通",
         "description": "巳 <b>sì</b>"
       },
@@ -1225,7 +1225,7 @@
         "zigens": [
           "巴"
         ],
-        "code": "jba",
+        "code": "Jba",
         "classify": "通",
         "description": "巴 <b>bā</b>"
       }
@@ -1241,7 +1241,7 @@
           "巛",
           "巜"
         ],
-        "code": "jri",
+        "code": "Jri",
         "classify": "通",
         "description": "川 chuān → <b>ri</b>"
       },
@@ -1249,7 +1249,7 @@
         "zigens": [
           ""
         ],
-        "code": "jo",
+        "code": "Jo",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       }
@@ -1264,7 +1264,7 @@
           "咼",
           "冎"
         ],
-        "code": "jga",
+        "code": "Jga",
         "classify": "通",
         "description": "咼 guǎ → <b>ga</b>"
       },
@@ -1272,7 +1272,7 @@
         "zigens": [
           "骨"
         ],
-        "code": "jgu",
+        "code": "Jgu",
         "classify": "通",
         "description": "骨 <b>gǔ</b>"
       }
@@ -1286,7 +1286,7 @@
         "zigens": [
           "三"
         ],
-        "code": "ksa",
+        "code": "Ksa",
         "classify": "通",
         "description": "三 sān → <b>sa</b>"
       },
@@ -1295,7 +1295,7 @@
           "彡",
           ""
         ],
-        "code": "kka",
+        "code": "Kka",
         "classify": "通",
         "description": "彡 shān → <b>ka</b>"
       },
@@ -1303,7 +1303,7 @@
         "zigens": [
           "彳"
         ],
-        "code": "kri",
+        "code": "Kri",
         "classify": "通",
         "description": "彳 chì → <b>ri</b>"
       },
@@ -1312,7 +1312,7 @@
           "纟",
           ""
         ],
-        "code": "ksi",
+        "code": "Ksi",
         "classify": "通",
         "description": "丝 <b>sī</b>"
       },
@@ -1320,7 +1320,7 @@
         "zigens": [
           ""
         ],
-        "code": "ko",
+        "code": "Ko",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       }
@@ -1334,7 +1334,7 @@
         "zigens": [
           "弋"
         ],
-        "code": "ki",
+        "code": "Ki",
         "classify": "通",
         "description": "弋 yì → <b>i</b>"
       },
@@ -1342,7 +1342,7 @@
         "zigens": [
           "戈"
         ],
-        "code": "kge",
+        "code": "Kge",
         "classify": "通",
         "description": "戈 <b>gē</b>"
       },
@@ -1350,7 +1350,7 @@
         "zigens": [
           "戊"
         ],
-        "code": "ku",
+        "code": "Ku",
         "classify": "通",
         "description": "戊 wù → <b>u</b>"
       }
@@ -1364,7 +1364,7 @@
         "zigens": [
           "白"
         ],
-        "code": "kbe",
+        "code": "Kbe",
         "classify": "通",
         "description": "白 bái → <b>be</b>"
       },
@@ -1373,7 +1373,7 @@
           "臼",
           "⺽"
         ],
-        "code": "kju",
+        "code": "Kju",
         "classify": "通",
         "description": "臼 jìù = jiòu → <b>ju</b>"
       }
@@ -1387,7 +1387,7 @@
         "zigens": [
           "下"
         ],
-        "code": "kxa",
+        "code": "Kxa",
         "classify": "通",
         "description": "下 xià → <b>xa</b>"
       },
@@ -1396,7 +1396,7 @@
           "丁",
           "丅"
         ],
-        "code": "kdi",
+        "code": "Kdi",
         "classify": "通",
         "description": "丁 dīng → <b>di</b>"
       }
@@ -1410,7 +1410,7 @@
         "zigens": [
           "且"
         ],
-        "code": "kqe",
+        "code": "Kqe",
         "classify": "通",
         "description": "且 qiě → <b>qe</b>"
       },
@@ -1418,7 +1418,7 @@
         "zigens": [
           ""
         ],
-        "code": "ko",
+        "code": "Ko",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       }
@@ -1432,7 +1432,7 @@
         "zigens": [
           "入"
         ],
-        "code": "ke",
+        "code": "Ke",
         "classify": "通",
         "description": "入 rù → <b>e </b><br>（r视为零声母）"
       },
@@ -1440,7 +1440,7 @@
         "zigens": [
           "八"
         ],
-        "code": "kba",
+        "code": "Kba",
         "classify": "通",
         "description": "八 <b>bā</b>"
       }
@@ -1454,7 +1454,7 @@
         "zigens": [
           "丬"
         ],
-        "code": "kqo",
+        "code": "Kqo",
         "classify": "通",
         "description": "爿 qiáng → <b>qo</b>"
       }
@@ -1467,7 +1467,7 @@
         "zigens": [
           "囗"
         ],
-        "code": "ko",
+        "code": "Ko",
         "classify": "通",
         "description": "围 wéi = uéi → <b>o</b>"
       }
@@ -1480,7 +1480,7 @@
         "zigens": [
           "之"
         ],
-        "code": "ksi",
+        "code": "Ksi",
         "classify": "通",
         "description": "之 zhī → <b>si</b>"
       }
@@ -1493,7 +1493,7 @@
         "zigens": [
           "弓"
         ],
-        "code": "kgi",
+        "code": "Kgi",
         "classify": "通",
         "description": "弓 gōng → <b>gi</b>"
       }
@@ -1506,7 +1506,7 @@
         "zigens": [
           "千"
         ],
-        "code": "kqi",
+        "code": "Kqi",
         "classify": "通",
         "description": "千 qiān → <b>qi</b>"
       }
@@ -1519,7 +1519,7 @@
         "zigens": [
           "古"
         ],
-        "code": "kgu",
+        "code": "Kgu",
         "classify": "通",
         "description": "古 <b>gǔ</b>"
       }
@@ -1532,7 +1532,7 @@
         "zigens": [
           "里"
         ],
-        "code": "kli",
+        "code": "Kli",
         "classify": "通",
         "description": "里 <b>lǐ</b>"
       }
@@ -1545,7 +1545,7 @@
         "zigens": [
           "甫"
         ],
-        "code": "kfu",
+        "code": "Kfu",
         "classify": "通",
         "description": "甫 <b>fǔ</b>"
       }
@@ -1558,7 +1558,7 @@
         "zigens": [
           "辛"
         ],
-        "code": "kxo",
+        "code": "Kxo",
         "classify": "通",
         "description": "辛 xīn → <b>xo</b>"
       }
@@ -1571,7 +1571,7 @@
         "zigens": [
           "丨"
         ],
-        "code": "lgi",
+        "code": "Lgi",
         "classify": "通",
         "description": "丨 gǔn = guěn → <b>gi</b>"
       },
@@ -1580,7 +1580,7 @@
           "〢",
           "〣"
         ],
-        "code": "lo",
+        "code": "Lo",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       },
@@ -1588,7 +1588,7 @@
         "zigens": [
           "非"
         ],
-        "code": "lfo",
+        "code": "Lfo",
         "classify": "通",
         "description": "非 fēi → <b>fo</b>"
       }
@@ -1606,7 +1606,7 @@
           "⺍",
           ""
         ],
-        "code": "lxi",
+        "code": "Lxi",
         "classify": "通",
         "description": "小 xiǎo → <b>xi</b>"
       }
@@ -1619,7 +1619,7 @@
         "zigens": [
           "穴"
         ],
-        "code": "lxe",
+        "code": "Lxe",
         "classify": "通",
         "description": "穴 xuè = xüè → <b>xe</b>"
       },
@@ -1627,7 +1627,7 @@
         "zigens": [
           "亠"
         ],
-        "code": "lte",
+        "code": "Lte",
         "classify": "通",
         "description": "文字头 tóu → <b>te</b>"
       },
@@ -1635,7 +1635,7 @@
         "zigens": [
           "亡"
         ],
-        "code": "lo",
+        "code": "Lo",
         "classify": "通",
         "description": "亡 wáng = uáng → <b>o</b>"
       },
@@ -1643,7 +1643,7 @@
         "zigens": [
           ""
         ],
-        "code": "llo",
+        "code": "Llo",
         "classify": "通",
         "description": "𣎆 luò → <b>lo</b>"
       },
@@ -1653,7 +1653,7 @@
           "",
           ""
         ],
-        "code": "lo",
+        "code": "Lo",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       },
@@ -1661,7 +1661,7 @@
         "zigens": [
           "高"
         ],
-        "code": "lgi",
+        "code": "Lgi",
         "classify": "通",
         "description": "高 gāo → <b>gi</b>"
       },
@@ -1669,7 +1669,7 @@
         "zigens": [
           "方"
         ],
-        "code": "lfe",
+        "code": "Lfe",
         "classify": "通",
         "description": "方 fāng → <b>fe</b>"
       }
@@ -1683,7 +1683,7 @@
         "zigens": [
           "了"
         ],
-        "code": "lle",
+        "code": "Lle",
         "classify": "通",
         "description": "了 <b>le</b>"
       },
@@ -1691,7 +1691,7 @@
         "zigens": [
           "子"
         ],
-        "code": "lzi",
+        "code": "Lzi",
         "classify": "通",
         "description": "子 <b>zǐ</b>"
       },
@@ -1699,7 +1699,7 @@
         "zigens": [
           "予"
         ],
-        "code": "le",
+        "code": "Le",
         "classify": "通",
         "description": "予 yǔ = ǚ → <b>e</b>"
       },
@@ -1707,7 +1707,7 @@
         "zigens": [
           "干"
         ],
-        "code": "lga",
+        "code": "Lga",
         "classify": "通",
         "description": "干 gān → <b>ga</b>"
       }
@@ -1721,7 +1721,7 @@
         "zigens": [
           "匕"
         ],
-        "code": "lbi",
+        "code": "Lbi",
         "classify": "通",
         "description": "匕 <b>bi</b>"
       }
@@ -1734,7 +1734,7 @@
         "zigens": [
           "兀"
         ],
-        "code": "lu",
+        "code": "Lu",
         "classify": "通",
         "description": "兀 wù → <b>ū</b>"
       }
@@ -1747,7 +1747,7 @@
         "zigens": [
           "正"
         ],
-        "code": "lse",
+        "code": "Lse",
         "classify": "通",
         "description": "正 zheng → <b>se</b>"
       }
@@ -1760,7 +1760,7 @@
         "zigens": [
           "欠"
         ],
-        "code": "lqi",
+        "code": "Lqi",
         "classify": "通",
         "description": "欠 qiān → <b>qi</b> <br>（声母左手韵码右手）"
       }
@@ -1773,7 +1773,7 @@
         "zigens": [
           "饣"
         ],
-        "code": "lka",
+        "code": "Lka",
         "classify": "通",
         "description": "食 shi → <b>ka</b>"
       }
@@ -1786,7 +1786,7 @@
         "zigens": [
           "曲"
         ],
-        "code": "lqe",
+        "code": "Lqe",
         "classify": "通",
         "description": "曲 qǔ = qǚ → <b>qe</b>"
       }
@@ -1799,7 +1799,7 @@
         "zigens": [
           "向"
         ],
-        "code": "lxo",
+        "code": "Lxo",
         "classify": "通",
         "description": "向 xiàng → <b>xo</b>"
       },
@@ -1807,7 +1807,7 @@
         "zigens": [
           ""
         ],
-        "code": "lxo",
+        "code": "Lxo",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       }
@@ -1821,7 +1821,7 @@
         "zigens": [
           "糸"
         ],
-        "code": "lsi",
+        "code": "Lsi",
         "classify": "通",
         "description": "糸 <b>sī</b>"
       },
@@ -1829,7 +1829,7 @@
         "zigens": [
           "幺"
         ],
-        "code": "li",
+        "code": "Li",
         "classify": "通",
         "description": "幺 yāo = iāo → <b>i</b>"
       }
@@ -1844,7 +1844,7 @@
           "辶",
           "⻍"
         ],
-        "code": "lro",
+        "code": "Lro",
         "classify": "通",
         "description": "辶 chuò → <b>ro</b>"
       }
@@ -1858,7 +1858,7 @@
           "長",
           "镸"
         ],
-        "code": "lre",
+        "code": "Lre",
         "classify": "通",
         "description": "長（长） cháng → <b>re</b>"
       },
@@ -1866,7 +1866,7 @@
         "zigens": [
           "髟"
         ],
-        "code": "lbi",
+        "code": "Lbi",
         "classify": "通",
         "description": "髟 biāo → <b>bi</b>"
       }
@@ -1880,7 +1880,7 @@
         "zigens": [
           "耳"
         ],
-        "code": "mo",
+        "code": "Mo",
         "classify": "通",
         "description": "耳 ěr → <b>o</b>"
       }
@@ -1898,7 +1898,7 @@
           "",
           ""
         ],
-        "code": "mci",
+        "code": "Mci",
         "classify": "通",
         "description": "草 cǎo → <b>ci</b>"
       },
@@ -1906,7 +1906,7 @@
         "zigens": [
           "卅"
         ],
-        "code": "msa",
+        "code": "Msa",
         "classify": "通",
         "description": "卅 <b>sà</b>"
       },
@@ -1914,7 +1914,7 @@
         "zigens": [
           "卌"
         ],
-        "code": "mxi",
+        "code": "Mxi",
         "classify": "通",
         "description": "卌 <b>xì</b>"
       },
@@ -1922,7 +1922,7 @@
         "zigens": [
           ""
         ],
-        "code": "mo",
+        "code": "Mo",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       }
@@ -1936,7 +1936,7 @@
         "zigens": [
           ""
         ],
-        "code": "mzo",
+        "code": "Mzo",
         "classify": "通",
         "description": "左 zuǒ → <b>zo</b>"
       },
@@ -1944,7 +1944,7 @@
         "zigens": [
           "不"
         ],
-        "code": "mbu",
+        "code": "Mbu",
         "classify": "通",
         "description": "不<b>bù</b>"
       }
@@ -1960,7 +1960,7 @@
           "⺈",
           ""
         ],
-        "code": "mo",
+        "code": "Mo",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       }
@@ -1973,7 +1973,7 @@
         "zigens": [
           "七"
         ],
-        "code": "mqi",
+        "code": "Mqi",
         "classify": "通",
         "description": "七 <b>qī</b>"
       },
@@ -1981,7 +1981,7 @@
         "zigens": [
           "乜"
         ],
-        "code": "mme",
+        "code": "Mme",
         "classify": "通",
         "description": "乜 miē → <b>me</b>"
       },
@@ -1989,7 +1989,7 @@
         "zigens": [
           "也"
         ],
-        "code": "me",
+        "code": "Me",
         "classify": "通",
         "description": "也 yě = iě → <b>e</b>"
       }
@@ -2004,7 +2004,7 @@
           "",
           ""
         ],
-        "code": "mo",
+        "code": "Mo",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       },
@@ -2012,7 +2012,7 @@
         "zigens": [
           "丑"
         ],
-        "code": "mre",
+        "code": "Mre",
         "classify": "通",
         "description": "丑 chǒu → <b>re</b>"
       },
@@ -2020,7 +2020,7 @@
         "zigens": [
           ""
         ],
-        "code": "mu",
+        "code": "Mu",
         "classify": "通",
         "description": "五 wǔ → <b>u</b>"
       }
@@ -2034,7 +2034,7 @@
         "zigens": [
           "艮"
         ],
-        "code": "mge",
+        "code": "Mge",
         "classify": "通",
         "description": "艮 gěn → <b>ge</b>"
       }
@@ -2047,7 +2047,7 @@
         "zigens": [
           ""
         ],
-        "code": "mdo",
+        "code": "Mdo",
         "classify": "通",
         "description": "𠂤 duī = duēi → <b>do</b><br>（‘𠂤’为‘堆’古字）"
       }
@@ -2061,7 +2061,7 @@
           "丶",
           "乀"
         ],
-        "code": "ndi",
+        "code": "Ndi",
         "classify": "通",
         "description": "点 diǎn → <b>di</b>"
       }
@@ -2075,7 +2075,7 @@
           "月",
           ""
         ],
-        "code": "ne",
+        "code": "Ne",
         "classify": "通",
         "description": "月 yuè = üè → <b>e</b>"
       },
@@ -2083,7 +2083,7 @@
         "zigens": [
           ""
         ],
-        "code": "no",
+        "code": "No",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       }
@@ -2097,7 +2097,7 @@
         "zigens": [
           "亍"
         ],
-        "code": "nru",
+        "code": "Nru",
         "classify": "通",
         "description": "亍 chù → <b>ru</b>"
       }
@@ -2110,7 +2110,7 @@
         "zigens": [
           "缶"
         ],
-        "code": "nfe",
+        "code": "Nfe",
         "classify": "通",
         "description": "缶 fǒu → <b>fe</b>"
       }
@@ -2123,7 +2123,7 @@
         "zigens": [
           "壬"
         ],
-        "code": "no",
+        "code": "No",
         "classify": "通",
         "description": "壬 rén → <b>o </b><br>（r视为零声母）"
       }
@@ -2136,7 +2136,7 @@
         "zigens": [
           "足"
         ],
-        "code": "nzu",
+        "code": "Nzu",
         "classify": "通",
         "description": "足 <b>zú</b>"
       }
@@ -2150,7 +2150,7 @@
           "厶",
           ""
         ],
-        "code": "nsi",
+        "code": "Nsi",
         "classify": "通",
         "description": "厶 <b>sī</b>"
       }
@@ -2163,7 +2163,7 @@
         "zigens": [
           "大"
         ],
-        "code": "pda",
+        "code": "Pda",
         "classify": "通",
         "description": "大 <b>dà</b>"
       },
@@ -2171,7 +2171,7 @@
         "zigens": [
           "夫"
         ],
-        "code": "pfu",
+        "code": "Pfu",
         "classify": "通",
         "description": "夫 <b>fū</b>"
       },
@@ -2179,7 +2179,7 @@
         "zigens": [
           ""
         ],
-        "code": "pdi",
+        "code": "Pdi",
         "classify": "通",
         "description": " <b>dí</b>"
       }
@@ -2193,7 +2193,7 @@
         "zigens": [
           "雨"
         ],
-        "code": "pe",
+        "code": "Pe",
         "classify": "通",
         "description": "雨 yǔ = ǚ → <b>e</b>"
       }
@@ -2207,7 +2207,7 @@
           "犬",
           "犭"
         ],
-        "code": "pqi",
+        "code": "Pqi",
         "classify": "通",
         "description": "犬 quǎn → <b>qi</b>"
       },
@@ -2215,7 +2215,7 @@
         "zigens": [
           "豸"
         ],
-        "code": "psi",
+        "code": "Psi",
         "classify": "通",
         "description": "豸 zhì → <b>si</b>"
       }
@@ -2229,7 +2229,7 @@
         "zigens": [
           "几"
         ],
-        "code": "qji",
+        "code": "Qji",
         "classify": "通",
         "description": "几 <b>jǐ</b>"
       },
@@ -2237,7 +2237,7 @@
         "zigens": [
           "殳"
         ],
-        "code": "qku",
+        "code": "Qku",
         "classify": "通",
         "description": "殳 shǔ → <b>ku</b>"
       },
@@ -2245,7 +2245,7 @@
         "zigens": [
           "風"
         ],
-        "code": "qfe",
+        "code": "Qfe",
         "classify": "繁",
         "description": "風 fēng → <b>fe</b>"
       }
@@ -2259,7 +2259,7 @@
         "zigens": [
           "虫"
         ],
-        "code": "qho",
+        "code": "Qho",
         "classify": "通",
         "description": "虫 huǐ = huěi → <b>ho</b><br>（取古音）"
       }
@@ -2272,7 +2272,7 @@
         "zigens": [
           "卯"
         ],
-        "code": "qmi",
+        "code": "Qmi",
         "classify": "通",
         "description": "卯 mǎo → <b>mi</b>"
       },
@@ -2283,7 +2283,7 @@
           "",
           ""
         ],
-        "code": "qo",
+        "code": "Qo",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       },
@@ -2291,7 +2291,7 @@
         "zigens": [
           "丱"
         ],
-        "code": "qgi",
+        "code": "Qgi",
         "classify": "通",
         "description": "丱 guàn → <b>gi</b>"
       }
@@ -2306,7 +2306,7 @@
           "丩",
           ""
         ],
-        "code": "qo",
+        "code": "Qo",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       }
@@ -2319,7 +2319,7 @@
         "zigens": [
           "王"
         ],
-        "code": "ro",
+        "code": "Ro",
         "classify": "通",
         "description": "王 wáng = uáng → <b>o</b>"
       },
@@ -2327,7 +2327,7 @@
         "zigens": [
           "毛"
         ],
-        "code": "rmi",
+        "code": "Rmi",
         "classify": "通",
         "description": "毛 máo → <b>mi</b>"
       }
@@ -2341,7 +2341,7 @@
         "zigens": [
           "丌"
         ],
-        "code": "rji",
+        "code": "Rji",
         "classify": "通",
         "description": "丌 <b>jì</b>"
       }
@@ -2354,7 +2354,7 @@
         "zigens": [
           "文"
         ],
-        "code": "ri",
+        "code": "Ri",
         "classify": "通",
         "description": "文 wén = uén → <b>i</b>"
       },
@@ -2362,7 +2362,7 @@
         "zigens": [
           "立"
         ],
-        "code": "rli",
+        "code": "Rli",
         "classify": "通",
         "description": "立 <b>lì</b>"
       }
@@ -2376,7 +2376,7 @@
         "zigens": [
           "石"
         ],
-        "code": "rka",
+        "code": "Rka",
         "classify": "通",
         "description": "石 shí → <b>ka</b>"
       }
@@ -2391,7 +2391,7 @@
           "",
           "卩"
         ],
-        "code": "rje",
+        "code": "Rje",
         "classify": "通",
         "description": "节下半 jié → <b>je</b>"
       }
@@ -2404,7 +2404,7 @@
         "zigens": [
           "身"
         ],
-        "code": "rke",
+        "code": "Rke",
         "classify": "通",
         "description": "身 shēn → <b>ke</b>"
       }
@@ -2417,7 +2417,7 @@
         "zigens": [
           "黑"
         ],
-        "code": "rho",
+        "code": "Rho",
         "classify": "通",
         "description": "黑 hēi → <b>ho</b>"
       }
@@ -2432,7 +2432,7 @@
           "",
           "叀"
         ],
-        "code": "rre",
+        "code": "Rre",
         "classify": "繁",
         "description": "車（车）chē → <b>re</b>"
       }
@@ -2446,7 +2446,7 @@
           "烏",
           ""
         ],
-        "code": "ru",
+        "code": "Ru",
         "classify": "繁",
         "description": "烏（乌） wū → <b>ū</b>"
       },
@@ -2455,7 +2455,7 @@
           "鳥",
           ""
         ],
-        "code": "rni",
+        "code": "Rni",
         "classify": "繁",
         "description": "鳥（鸟） niǎo → <b>ni</b>"
       }
@@ -2469,7 +2469,7 @@
         "zigens": [
           "門"
         ],
-        "code": "rme",
+        "code": "Rme",
         "classify": "繁",
         "description": "門（门） mén → <b>me</b>"
       },
@@ -2477,7 +2477,7 @@
         "zigens": [
           "鬥"
         ],
-        "code": "rde",
+        "code": "Rde",
         "classify": "繁",
         "description": "鬥（斗） dòu → <b>de</b>"
       }
@@ -2492,7 +2492,7 @@
           "木",
           "朩"
         ],
-        "code": "sme",
+        "code": "Sme",
         "classify": "通",
         "description": "木 mù → <b>me</b> <br>（声母右手韵码左手）"
       }
@@ -2508,7 +2508,7 @@
           "冫",
           ""
         ],
-        "code": "so",
+        "code": "So",
         "classify": "通",
         "description": "二 èr → <b>o</b>"
       }
@@ -2522,7 +2522,7 @@
           "彐",
           ""
         ],
-        "code": "sji",
+        "code": "Sji",
         "classify": "通",
         "description": "彐 <b>jì</b>"
       },
@@ -2530,7 +2530,7 @@
         "zigens": [
           "肀"
         ],
-        "code": "sji",
+        "code": "Sji",
         "classify": "通",
         "description": "聿 yù = ǜ → <b>e</b>"
       },
@@ -2538,7 +2538,7 @@
         "zigens": [
           "隶"
         ],
-        "code": "sli",
+        "code": "Sli",
         "classify": "通",
         "description": "隶 <b>lì</b>"
       }
@@ -2553,7 +2553,7 @@
           "尸",
           ""
         ],
-        "code": "ska",
+        "code": "Ska",
         "classify": "通",
         "description": "尸 shī → <b>ka</b>"
       },
@@ -2562,7 +2562,7 @@
           "户",
           "戸"
         ],
-        "code": "shu",
+        "code": "Shu",
         "classify": "通",
         "description": "户 <b>hù</b>"
       }
@@ -2576,7 +2576,7 @@
         "zigens": [
           "片"
         ],
-        "code": "spe",
+        "code": "Spe",
         "classify": "通",
         "description": "片 piàn → <b>pe</b> <br>（声母右手韵码左手）"
       },
@@ -2584,7 +2584,7 @@
         "zigens": [
           "爿"
         ],
-        "code": "spa",
+        "code": "Spa",
         "classify": "通",
         "description": "爿 pán → <b>pa</b>"
       }
@@ -2598,7 +2598,7 @@
         "zigens": [
           "尤"
         ],
-        "code": "su",
+        "code": "Su",
         "classify": "通",
         "description": "尤 yóu = ióu → <b>u</b>"
       },
@@ -2606,7 +2606,7 @@
         "zigens": [
           "尢"
         ],
-        "code": "so",
+        "code": "So",
         "classify": "通",
         "description": "尢 wáng = uáng → <b>o</b>"
       }
@@ -2620,7 +2620,7 @@
         "zigens": [
           "用"
         ],
-        "code": "si",
+        "code": "Si",
         "classify": "通",
         "description": "用 yòng = iòng → <b>i</b>"
       }
@@ -2633,7 +2633,7 @@
         "zigens": [
           "至"
         ],
-        "code": "ssi",
+        "code": "Ssi",
         "classify": "通",
         "description": "至 zhì → <b>si</b>"
       }
@@ -2646,7 +2646,7 @@
         "zigens": [
           "舌"
         ],
-        "code": "ske",
+        "code": "Ske",
         "classify": "通",
         "description": "舌 shé → <b>ke</b>"
       }
@@ -2659,7 +2659,7 @@
         "zigens": [
           ""
         ],
-        "code": "so",
+        "code": "So",
         "classify": "通",
         "description": "爲（为）wéi = uéi → <b>o</b>"
       }
@@ -2672,7 +2672,7 @@
         "zigens": [
           "十"
         ],
-        "code": "tka",
+        "code": "Tka",
         "classify": "通",
         "description": "十 shi → <b>ka</b>"
       }
@@ -2685,7 +2685,7 @@
         "zigens": [
           "巾"
         ],
-        "code": "tjo",
+        "code": "Tjo",
         "classify": "通",
         "description": "巾 jīn → <b>jo</b>"
       }
@@ -2698,7 +2698,7 @@
         "zigens": [
           "由"
         ],
-        "code": "tu",
+        "code": "Tu",
         "classify": "通",
         "description": "由 yóu = ióu → <b>u</b>"
       }
@@ -2711,7 +2711,7 @@
         "zigens": [
           "火"
         ],
-        "code": "tho",
+        "code": "Tho",
         "classify": "通",
         "description": "火 huǒ → <b>ho</b>"
       }
@@ -2724,7 +2724,7 @@
         "zigens": [
           "衤"
         ],
-        "code": "ti",
+        "code": "Ti",
         "classify": "通",
         "description": "衣 yī → <b>i</b>"
       },
@@ -2734,7 +2734,7 @@
           "",
           ""
         ],
-        "code": "to",
+        "code": "To",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       }
@@ -2748,7 +2748,7 @@
         "zigens": [
           "尚"
         ],
-        "code": "tke",
+        "code": "Tke",
         "classify": "通",
         "description": "尚 shàng → <b>ke</b>"
       },
@@ -2756,7 +2756,7 @@
         "zigens": [
           ""
         ],
-        "code": "to",
+        "code": "To",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       }
@@ -2770,7 +2770,7 @@
         "zigens": [
           "夊"
         ],
-        "code": "tpe",
+        "code": "Tpe",
         "classify": "通",
         "description": "夊 pū → <b>pe</b> <br>（声母右手韵码左手）"
       }
@@ -2783,7 +2783,7 @@
         "zigens": [
           "土"
         ],
-        "code": "vdu",
+        "code": "Vdu",
         "classify": "通",
         "description": "杜 <b>dù</b><br>（生僻音）"
       },
@@ -2792,7 +2792,7 @@
           "士",
           "龶"
         ],
-        "code": "vke",
+        "code": "Vke",
         "classify": "通",
         "description": "生 shēng → <b>ke</b><br>（音随‘龶’）"
       },
@@ -2800,7 +2800,7 @@
         "zigens": [
           "耂"
         ],
-        "code": "vo",
+        "code": "Vo",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       },
@@ -2808,7 +2808,7 @@
         "zigens": [
           "壴"
         ],
-        "code": "vsu",
+        "code": "Vsu",
         "classify": "通",
         "description": "壴 zhú → <b>su</b>"
       },
@@ -2816,7 +2816,7 @@
         "zigens": [
           ""
         ],
-        "code": "vo",
+        "code": "Vo",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       }
@@ -2831,7 +2831,7 @@
           "乂",
           ""
         ],
-        "code": "vi",
+        "code": "Vi",
         "classify": "通",
         "description": "乂 yì → <b>i</b>"
       }
@@ -2846,15 +2846,7 @@
           "マ",
           "癶"
         ],
-        "code": "vo",
-        "classify": "通",
-        "description": "无读音 <b>Ø</b>"
-      },
-      {
-        "zigens": [
-          
-        ],
-        "code": "vo",
+        "code": "Vo",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       }
@@ -2868,7 +2860,7 @@
         "zigens": [
           "⺁"
         ],
-        "code": "vi",
+        "code": "Vi",
         "classify": "通",
         "description": "⺁ yì → <b>ì</b><br>（生僻字）"
       },
@@ -2876,7 +2868,7 @@
         "zigens": [
           "斤"
         ],
-        "code": "vjo",
+        "code": "Vjo",
         "classify": "通",
         "description": "斤 jīn → <b>jo</b>"
       },
@@ -2884,7 +2876,7 @@
         "zigens": [
           "戶"
         ],
-        "code": "vhu",
+        "code": "Vhu",
         "classify": "通",
         "description": "戶 <b>hù</b>"
       }
@@ -2898,7 +2890,7 @@
         "zigens": [
           "见"
         ],
-        "code": "vje",
+        "code": "Vje",
         "classify": "简",
         "description": "见 jiàn → <b>je</b> <br>（声母右手韵码左手）"
       }
@@ -2911,7 +2903,7 @@
         "zigens": [
           "山"
         ],
-        "code": "vka",
+        "code": "Vka",
         "classify": "通",
         "description": "山 shān → <b>ka</b>"
       }
@@ -2924,7 +2916,7 @@
         "zigens": [
           "讠"
         ],
-        "code": "ve",
+        "code": "Ve",
         "classify": "通",
         "description": "言 yán = ián → <b>e</b>"
       }
@@ -2937,7 +2929,7 @@
         "zigens": [
           "米"
         ],
-        "code": "vmi",
+        "code": "Vmi",
         "classify": "通",
         "description": "米 <b>mǐ</b>"
       },
@@ -2945,7 +2937,7 @@
         "zigens": [
           "业"
         ],
-        "code": "ve",
+        "code": "Ve",
         "classify": "通",
         "description": "业 yè = ie → <b>e</b>"
       }
@@ -2959,7 +2951,7 @@
         "zigens": [
           "车"
         ],
-        "code": "vre",
+        "code": "Vre",
         "classify": "通",
         "description": "车 chē → <b>re</b>"
       }
@@ -2973,7 +2965,7 @@
           "人",
           "亻"
         ],
-        "code": "wo",
+        "code": "Wo",
         "classify": "通",
         "description": "人 rén → <b>o</b><br>（r视为零声母）"
       },
@@ -2981,7 +2973,7 @@
         "zigens": [
           "合"
         ],
-        "code": "whe",
+        "code": "Whe",
         "classify": "通",
         "description": "合 <b>hé</b>"
       },
@@ -2990,7 +2982,7 @@
           "",
           ""
         ],
-        "code": "wo",
+        "code": "Wo",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       },
@@ -2998,7 +2990,7 @@
         "zigens": [
           "僉"
         ],
-        "code": "wqi",
+        "code": "Wqi",
         "classify": "繁",
         "description": "僉 qiān → <b>qi</b> <br>（声母左手韵码右手）"
       },
@@ -3006,7 +2998,7 @@
         "zigens": [
           "食"
         ],
-        "code": "wka",
+        "code": "Wka",
         "classify": "通",
         "description": "食 shí → <b>ka</b>"
       }
@@ -3020,7 +3012,7 @@
         "zigens": [
           "隹"
         ],
-        "code": "wco",
+        "code": "Wco",
         "classify": "通",
         "description": "隹 cuī = cuēi → <b>co</b>"
       }
@@ -3033,7 +3025,7 @@
         "zigens": [
           "禺"
         ],
-        "code": "we",
+        "code": "We",
         "classify": "通",
         "description": "yǔ = ǚ → <b>e</b>"
       },
@@ -3041,7 +3033,7 @@
         "zigens": [
           "申"
         ],
-        "code": "wke",
+        "code": "Wke",
         "classify": "通",
         "description": "shēn → <b>ke</b>"
       }
@@ -3055,7 +3047,7 @@
         "zigens": [
           "水"
         ],
-        "code": "wko",
+        "code": "Wko",
         "classify": "通",
         "description": "水 shuǐ = shuěi → <b>ko</b>"
       }
@@ -3068,7 +3060,7 @@
         "zigens": [
           "力"
         ],
-        "code": "wli",
+        "code": "Wli",
         "classify": "通",
         "description": "力 <b>lì</b>"
       }
@@ -3083,7 +3075,7 @@
           "丷",
           ""
         ],
-        "code": "xci",
+        "code": "Xci",
         "classify": "通",
         "description": "草 cǎo → <b>ci</b>"
       },
@@ -3093,7 +3085,7 @@
           "⺷",
           ""
         ],
-        "code": "xo",
+        "code": "Xo",
         "classify": "通",
         "description": "yáng = iáng → <b>o</b>"
       }
@@ -3107,7 +3099,7 @@
         "zigens": [
           "乌"
         ],
-        "code": "xu",
+        "code": "Xu",
         "classify": "简",
         "description": "乌 wū → <b>ū</b>"
       },
@@ -3116,7 +3108,7 @@
           "鸟",
           ""
         ],
-        "code": "xni",
+        "code": "Xni",
         "classify": "简",
         "description": "鸟 niǎo → <b>ni</b>"
       }
@@ -3130,7 +3122,7 @@
         "zigens": [
           "钅"
         ],
-        "code": "xjo",
+        "code": "Xjo",
         "classify": "简",
         "description": "金 jīn → <b>jo</b>"
       },
@@ -3140,7 +3132,7 @@
           "⺮",
           ""
         ],
-        "code": "ysu",
+        "code": "Ysu",
         "classify": "通",
         "description": "zhú → <b>su</b>"
       },
@@ -3148,7 +3140,7 @@
         "zigens": [
           ""
         ],
-        "code": "yo",
+        "code": "Yo",
         "classify": "通",
         "description": "无读音 <b>Ø</b>"
       },
@@ -3156,7 +3148,7 @@
         "zigens": [
           "气"
         ],
-        "code": "yqi",
+        "code": "Yqi",
         "classify": "通",
         "description": "气 <b>qì</b>"
       }
@@ -3170,7 +3162,7 @@
         "zigens": [
           "西"
         ],
-        "code": "yxi",
+        "code": "Yxi",
         "classify": "通",
         "description": "西 <b>xī</b>"
       },
@@ -3178,7 +3170,7 @@
         "zigens": [
           "酉"
         ],
-        "code": "yu",
+        "code": "Yu",
         "classify": "通",
         "description": "酉 yǒu = iǒu → <b>u</b>"
       }
@@ -3192,13 +3184,13 @@
         "zigens": [
           "刂"
         ],
-        "code": "ydi",
+        "code": "Ydi",
         "classify": "通",
         "description": "刀 dāo → <b>di</b>"
       }
     ]
   },
-    {
+  {
     "type": "混",
     "zigens": ["車", "车"]
   },
