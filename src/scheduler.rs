@@ -295,6 +295,8 @@ impl<Param: ScheduleParam> Scheduler<Param> {
                 };
                 self.learning_cards
                     .insert(Param::LEARNING_INTERVALS_F[0], card);
+            } else if self.review_status() == ReviewStatus::ReviewIntersperse {
+                self.reviewing_cards.push_front(card);
             } else {
                 let at = interval.min(self.reviewing_cards.len());
                 self.reviewing_cards.insert(at, card);
@@ -386,6 +388,20 @@ impl<Param: ScheduleParam> Scheduler<Param> {
                         let at = interval.min(self.reviewing_cards.len());
                         self.reviewing_cards.insert(at, card);
                     }
+
+                    self.reviewing_cards
+                        .make_contiguous()
+                        .sort_by(|card1, card2| match (&card1.card, &card2.card) {
+                            (
+                                Card::Review { last_reviewed, .. },
+                                Card::Review {
+                                    last_reviewed: last_reviewed2,
+                                    ..
+                                },
+                            ) => last_reviewed.cmp(last_reviewed2),
+
+                            _ => unreachable!(),
+                        });
                 }
             } else {
                 if interval == usize::MAX {
