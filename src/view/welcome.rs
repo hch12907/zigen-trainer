@@ -12,7 +12,7 @@ pub struct WelcomeProps {
 pub fn Welcome(props: WelcomeProps) -> Element {
     let mut selected_scheme = use_signal(|| String::new());
     let mut shuffle = use_signal(|| false);
-    let mut combined_training = use_signal(|| true);
+    let mut combined_training = use_signal(|| false);
     let mut prioritize_trad = use_signal(|| false);
     let mut adept = use_signal(|| false);
 
@@ -100,7 +100,7 @@ pub fn Welcome(props: WelcomeProps) -> Element {
 
                             label {
                                 r#for: "combined_training",
-                                "简繁通练"
+                                "简繁混练"
                             }
 
                             input {

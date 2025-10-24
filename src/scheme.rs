@@ -96,8 +96,8 @@ impl LoadedScheme<ZigenConfusableUnpopulated> {
 
 impl LoadedScheme<ZigenConfusable> {
     pub fn sort_to_options(&mut self, options: &SchemeOptions) {
-        let mut simps = Vec::new();
-        let mut trads = Vec::new();
+        let mut commons = Vec::new();
+        let mut outliers = Vec::new();
         let mut uncommons = Vec::new();
 
         let confusables = self
@@ -115,24 +115,25 @@ impl LoadedScheme<ZigenConfusable> {
             SchemeZigen::Confusable(_con) => None,
         });
 
-        for (cat, cat_desc) in categories {
-            let simp = ZigenCategory {
+        for (cat, cat_desc) in categories.clone() {
+            let common = ZigenCategory {
                 groups: cat
                     .iter()
                     .filter(|group| {
-                        (group.classify == ZigenClass::Simplified)
-                            || (!options.prioritize_trad && group.classify == ZigenClass::Common)
+                        ((!options.prioritize_trad && group.classify == ZigenClass::Simplified)
+                            || (options.prioritize_trad && group.classify == ZigenClass::Traditional))
+                            || (group.classify == ZigenClass::Common)
                     })
                     .cloned()
                     .collect::<Vec<_>>(),
                 description: cat_desc.to_owned(),
             };
-            let trad = ZigenCategory {
+            let outlier = ZigenCategory {
                 groups: cat
                     .iter()
                     .filter(|group| {
-                        (group.classify == ZigenClass::Traditional)
-                            || (options.prioritize_trad && group.classify == ZigenClass::Common)
+                        (options.prioritize_trad && group.classify == ZigenClass::Simplified)
+                            || (!options.prioritize_trad && group.classify == ZigenClass::Traditional)
                     })
                     .cloned()
                     .collect::<Vec<_>>(),
@@ -147,11 +148,15 @@ impl LoadedScheme<ZigenConfusable> {
                 description: cat_desc.to_owned(),
             };
 
-            if !simp.groups.is_empty() {
-                simps.push(SchemeZigen::Category(simp));
+            if !common.groups.is_empty() {
+                commons.push(SchemeZigen::Category(common));
             }
-            if !trad.groups.is_empty() {
-                trads.push(SchemeZigen::Category(trad));
+            if !outlier.groups.is_empty() {
+                if options.combined_training {
+                    commons.push(SchemeZigen::Category(outlier));
+                } else {
+                    outliers.push(SchemeZigen::Category(outlier));
+                }
             }
             if !uncommon.groups.is_empty() {
                 uncommons.push(SchemeZigen::Category(uncommon));
@@ -159,25 +164,15 @@ impl LoadedScheme<ZigenConfusable> {
         }
 
         if options.shuffle {
-            trads.shuffle(&mut rand::rng());
-            simps.shuffle(&mut rand::rng());
+            commons.shuffle(&mut rand::rng());
+            outliers.shuffle(&mut rand::rng());
+            uncommons.shuffle(&mut rand::rng());
         }
 
-        if options.prioritize_trad {
-            if options.combined_training {
-                trads.extend_from_slice(&simps);
-            }
-            trads.extend_from_slice(&uncommons);
-            trads.extend_from_slice(&confusables);
-            self.0 = trads;
-        } else {
-            if options.combined_training {
-                simps.extend_from_slice(&trads);
-            }
-            simps.extend_from_slice(&uncommons);
-            simps.extend_from_slice(&confusables);
-            self.0 = simps;
-        }
+        commons.extend_from_slice(&outliers);
+        commons.extend_from_slice(&uncommons);
+        commons.extend_from_slice(&confusables);
+        self.0 = commons;
     }
 }
 
