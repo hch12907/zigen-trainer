@@ -104,7 +104,7 @@ pub trait ScheduleParam {
 pub struct ScheduleParamsNovice;
 
 impl ScheduleParam for ScheduleParamsNovice {
-    const LEARN_REVIEW_RATIO: usize = 8;
+    const LEARN_REVIEW_RATIO: usize = 6;
     const MAX_LEARNING_ATTEMPTS: usize = 3;
     const LEARNING_INTERVALS_S: &'static [usize] = &[3, 6, 9];
     const LEARNING_INTERVALS_F: &'static [usize] = &[2, 4, 6];
@@ -181,20 +181,9 @@ impl<Param: ScheduleParam> Scheduler<Param> {
                 let start = self.new_cards.len() - split_off;
                 let end = self.new_cards.len();
 
-                let dummy = ZigenCard {
-                    zigen: SchemeZigen::Category(ZigenCategory {
-                        groups: Vec::new(),
-                        description: String::new(),
-                    }),
-                    card: Card::New,
-                };
-
-                for i in start..end {
-                    let card = std::mem::replace(&mut self.new_cards[i], dummy.clone());
+                self.new_cards.drain(start..end).for_each(|card| {
                     self.learning_cards.push_front(card);
-                }
-
-                self.new_cards.truncate(start);
+                });
             }
         }
     }
@@ -216,7 +205,9 @@ impl<Param: ScheduleParam> Scheduler<Param> {
             Param::LEARN_REVIEW_RATIO
         };
 
-        if self.done_learning >= learn_review_ratio && self.reviewing_cards.len() > 0 {
+        if self.done_learning >= learn_review_ratio
+            && self.reviewing_cards.len() > learn_review_ratio
+        {
             if !self.learning_cards.is_empty() {
                 ReviewStatus::ReviewIntersperse
             } else {
@@ -231,7 +222,7 @@ impl<Param: ScheduleParam> Scheduler<Param> {
         match self.review_status() {
             ReviewStatus::Review => self.reviewing_cards.front().unwrap(),
             ReviewStatus::ReviewIntersperse => self.reviewing_cards.back().unwrap(),
-            ReviewStatus::Learn => self.learning_cards.front().unwrap()
+            ReviewStatus::Learn => self.learning_cards.front().unwrap(),
         }
     }
 
