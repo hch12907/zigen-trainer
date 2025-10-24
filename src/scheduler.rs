@@ -102,7 +102,7 @@ pub trait ScheduleParam {
 pub struct ScheduleParamsNovice;
 
 impl ScheduleParam for ScheduleParamsNovice {
-    const LEARN_REVIEW_RATIO: usize = 8;
+    const LEARN_REVIEW_RATIO: usize = 6;
     const MAX_LEARNING_ATTEMPTS: usize = 3;
     const LEARNING_INTERVALS_S: &'static [usize] = &[3, 6, 9];
     const LEARNING_INTERVALS_F: &'static [usize] = &[2, 4, 6];
@@ -158,10 +158,9 @@ impl<Param: ScheduleParam, C> Scheduler<Param, C> {
                 let start = self.new_cards.len() - split_off;
                 let end = self.new_cards.len();
 
-                self.new_cards.drain(start..end)
-                    .for_each(|card| {
-                        self.learning_cards.push_front(card);
-                    });
+                self.new_cards.drain(start..end).for_each(|card| {
+                    self.learning_cards.push_front(card);
+                });
             }
         }
     }
@@ -183,7 +182,9 @@ impl<Param: ScheduleParam, C> Scheduler<Param, C> {
             Param::LEARN_REVIEW_RATIO
         };
 
-        if self.done_learning >= learn_review_ratio && self.reviewing_cards.len() > 0 {
+        if self.done_learning >= learn_review_ratio
+            && self.reviewing_cards.len() > learn_review_ratio
+        {
             if !self.learning_cards.is_empty() {
                 ReviewStatus::ReviewIntersperse
             } else {
@@ -198,7 +199,7 @@ impl<Param: ScheduleParam, C> Scheduler<Param, C> {
         match self.review_status() {
             ReviewStatus::Review => self.reviewing_cards.front().unwrap(),
             ReviewStatus::ReviewIntersperse => self.reviewing_cards.back().unwrap(),
-            ReviewStatus::Learn => self.learning_cards.front().unwrap()
+            ReviewStatus::Learn => self.learning_cards.front().unwrap(),
         }
     }
 
