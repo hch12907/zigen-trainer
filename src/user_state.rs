@@ -6,9 +6,11 @@ use gloo_storage::{LocalStorage, Storage};
 use serde::{Deserialize, Serialize};
 
 use crate::scheduler::{
-    Card, Rating, ScheduleParamsAdept, ScheduleParamsNovice, Scheduler, ZigenCard,
+    Card, FlashCard, Rating, ScheduleParamsAdept, ScheduleParamsNovice, Scheduler,
 };
-use crate::scheme::{LoadedScheme, SchemeOptions, ZigenConfusableUnpopulated};
+use crate::scheme::{LoadedScheme, SchemeOptions, SchemeZigen, ZigenConfusableUnpopulated};
+
+pub type ZigenCard = FlashCard<SchemeZigen>;
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct UserState {
@@ -55,7 +57,7 @@ impl UserState {
                 .into_iter()
                 .map(|zigen| ZigenCard {
                     card: Card::New,
-                    zigen: zigen.clone(),
+                    content: zigen.clone(),
                 })
                 .collect::<Vec<ZigenCard>>();
 
@@ -63,14 +65,6 @@ impl UserState {
                 scheme_id.to_owned(),
                 TrainProgress::new(cards, options.adept),
             );
-        } else {
-            // XXX: 热补丁，过了一段时日后记得删除！！！
-            if scheme_id == "yuhao_ming" {
-                match self.progresses.get_mut("yuhao_ming").unwrap().scheduler {
-                    UsedScheduler::Novice(ref mut scheduler) => scheduler.hot_patch_bug(),
-                    UsedScheduler::Adept(ref mut scheduler) => scheduler.hot_patch_bug(),
-                }
-            }
         }
     }
 
@@ -101,8 +95,8 @@ pub struct TrainProgress {
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 enum UsedScheduler {
-    Novice(Scheduler<ScheduleParamsNovice>),
-    Adept(Scheduler<ScheduleParamsAdept>),
+    Novice(Scheduler<ScheduleParamsNovice, SchemeZigen>),
+    Adept(Scheduler<ScheduleParamsAdept, SchemeZigen>),
 }
 
 impl TrainProgress {

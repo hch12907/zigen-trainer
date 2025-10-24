@@ -5,7 +5,8 @@ use chrono::{DateTime, Utc};
 use dioxus::prelude::*;
 // use dioxus_sdk::utils::timing::use_debounce;
 
-use crate::scheduler::{Rating, ZigenCard};
+use crate::scheduler::Rating;
+use crate::user_state::ZigenCard;
 
 #[derive(PartialEq, Clone, Props)]
 pub struct CardProps {
@@ -152,7 +153,7 @@ pub fn Card(props: CardProps) -> Element {
 
     let mut input_boxes = use_memo(move || {
         let zigens = (props.zigens)();
-        let (zigen_groups, _) = zigens.zigen.as_raw_parts();
+        let (zigen_groups, _) = zigens.content.as_raw_parts();
 
         let mut boxes = Vec::with_capacity(zigen_groups.len());
         for group in zigen_groups.iter() {
@@ -164,7 +165,7 @@ pub fn Card(props: CardProps) -> Element {
 
     let expected_answer = use_memo(move || {
         let zigens = (props.zigens)();
-        let (zigen_groups, _) = zigens.zigen.as_raw_parts();
+        let (zigen_groups, _) = zigens.content.as_raw_parts();
 
         zigen_groups
             .iter()
@@ -173,8 +174,8 @@ pub fn Card(props: CardProps) -> Element {
             .to_ascii_lowercase()
     });
 
-    let (zigen_groups, description) = zigens.zigen.as_raw_parts();
-    let confusable = matches!(zigens.zigen, crate::scheme::SchemeZigen::Confusable(_));
+    let (zigen_groups, description) = zigens.content.as_raw_parts();
+    let confusable = matches!(zigens.content, crate::scheme::SchemeZigen::Confusable(_));
 
     let start_time0 = start_time.clone();
     let start_time1 = start_time.clone();

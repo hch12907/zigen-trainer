@@ -5,15 +5,13 @@ use chrono::{DateTime, Duration, Utc};
 use dioxus_logger::tracing;
 use serde_derive::{Deserialize, Serialize};
 
-use crate::scheme::{SchemeZigen, ZigenCategory};
-
 #[derive(Clone, Debug, Deserialize, Serialize)]
-pub struct ZigenCard {
-    pub zigen: SchemeZigen,
+pub struct FlashCard<C> {
+    pub content: C,
     pub card: Card,
 }
 
-impl ZigenCard {
+impl<C> FlashCard<C> {
     pub fn is_new_card(&self) -> bool {
         self.card == Card::New
     }
@@ -73,10 +71,10 @@ pub enum Card {
 }
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
-pub struct Scheduler<P: ScheduleParam> {
-    new_cards: Vec<ZigenCard>,
-    learning_cards: VecDeque<ZigenCard>,
-    reviewing_cards: VecDeque<ZigenCard>,
+pub struct Scheduler<P: ScheduleParam, C> {
+    new_cards: Vec<FlashCard<C>>,
+    learning_cards: VecDeque<FlashCard<C>>,
+    reviewing_cards: VecDeque<FlashCard<C>>,
 
     /// 已成功连续学习 learning_cards 卡片的次数
     done_learning: usize,
@@ -135,8 +133,8 @@ enum ReviewStatus {
     Review,
 }
 
-impl<Param: ScheduleParam> Scheduler<Param> {
-    pub fn new(mut pending_cards: Vec<ZigenCard>) -> Self {
+impl<Param: ScheduleParam, C> Scheduler<Param, C> {
+    pub fn new(mut pending_cards: Vec<FlashCard<C>>) -> Self {
         pending_cards.reverse();
 
         let mut this = Self {
@@ -151,27 +149,6 @@ impl<Param: ScheduleParam> Scheduler<Param> {
         this
     }
 
-    // XXX: 热补丁，过了一段时日后记得删除！！！
-    pub fn hot_patch_bug(&mut self) {
-        for card in &mut self.new_cards {
-            card.zigen.as_raw_parts_mut().0.retain(|group| {
-                !group.zigens.is_empty()
-            })
-        }
-
-        for card in &mut self.learning_cards {
-            card.zigen.as_raw_parts_mut().0.retain(|group| {
-                !group.zigens.is_empty()
-            })
-        }
-
-        for card in &mut self.reviewing_cards {
-            card.zigen.as_raw_parts_mut().0.retain(|group| {
-                !group.zigens.is_empty()
-            })
-        }
-    }
-
     fn populate_learning_cards(&mut self) {
         if self.learning_cards.len() < Param::LEARNING_CARDS && !self.new_cards.is_empty() {
             let diff = Param::LEARNING_CARDS - self.learning_cards.len();
@@ -181,20 +158,10 @@ impl<Param: ScheduleParam> Scheduler<Param> {
                 let start = self.new_cards.len() - split_off;
                 let end = self.new_cards.len();
 
-                let dummy = ZigenCard {
-                    zigen: SchemeZigen::Category(ZigenCategory {
-                        groups: Vec::new(),
-                        description: String::new(),
-                    }),
-                    card: Card::New,
-                };
-
-                for i in start..end {
-                    let card = std::mem::replace(&mut self.new_cards[i], dummy.clone());
-                    self.learning_cards.push_front(card);
-                }
-
-                self.new_cards.truncate(start);
+                self.new_cards.drain(start..end)
+                    .for_each(|card| {
+                        self.learning_cards.push_front(card);
+                    });
             }
         }
     }
@@ -227,7 +194,7 @@ impl<Param: ScheduleParam> Scheduler<Param> {
         }
     }
 
-    pub fn get_card(&self) -> &ZigenCard {
+    pub fn get_card(&self) -> &FlashCard<C> {
         match self.review_status() {
             ReviewStatus::Review => self.reviewing_cards.front().unwrap(),
             ReviewStatus::ReviewIntersperse => self.reviewing_cards.back().unwrap(),
@@ -410,8 +377,6 @@ impl<Param: ScheduleParam> Scheduler<Param> {
 
                 self.reviewing_cards
                     .insert(interval.min(self.reviewing_cards.len()), card);
-                self.done_learning =
-                    self.done_learning.min(Param::LEARN_REVIEW_RATIO / 2); // 防止出现重复卡片
             }
 
             self.done_learning += 1;
