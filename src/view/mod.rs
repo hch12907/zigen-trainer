@@ -76,6 +76,8 @@ pub fn Trainer() -> Element {
     rsx! {
         div {
             nav {
+                class: "root-nav",
+
                 a {
                     onclick: move |_| scheme.set(None),
                     "首页"

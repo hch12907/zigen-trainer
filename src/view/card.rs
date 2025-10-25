@@ -13,9 +13,8 @@ pub struct CardProps {
     on_card_completed: EventHandler<Rating>,
 }
 
-async fn handle_key_event(
+async fn handle_input(
     input_boxes: &mut Memo<Vec<Vec<char>>>,
-    event: Event<KeyboardData>,
     mut asked_hint: Memo<bool>,
     mut is_wrong: Signal<bool>,
     confusable: bool,
@@ -23,34 +22,6 @@ async fn handle_key_event(
     start_time: Rc<RefCell<DateTime<Utc>>>,
     on_card_completed: EventHandler<Rating>,
 ) {
-    event.stop_propagation();
-
-    if event.is_composing() {
-        return;
-    }
-
-    match event.key() {
-        Key::Character(c) => {
-            let c = if c.len() == 1 {
-                c.chars().nth(0).unwrap()
-            } else {
-                return;
-            };
-
-            if c == ' ' {
-                asked_hint.set(true);
-            } else {
-                receive_input(input_boxes, c);
-            }
-        }
-
-        Key::Backspace => {
-            remove_input(input_boxes);
-        }
-
-        _ => (),
-    };
-
     let filled_up = input_boxes
         .read()
         .iter()
@@ -102,6 +73,96 @@ async fn handle_key_event(
     }
 }
 
+async fn handle_key_event(
+    input_boxes: &mut Memo<Vec<Vec<char>>>,
+    event: Event<KeyboardData>,
+    mut asked_hint: Memo<bool>,
+    is_wrong: Signal<bool>,
+    confusable: bool,
+    expected_answer: &String,
+    start_time: Rc<RefCell<DateTime<Utc>>>,
+    on_card_completed: EventHandler<Rating>,
+) {
+    event.stop_propagation();
+
+    if event.is_composing() {
+        return;
+    }
+
+    match event.key() {
+        Key::Character(c) => {
+            let c = if c.len() == 1 {
+                c.chars().nth(0).unwrap()
+            } else {
+                return;
+            };
+
+            if c == ' ' {
+                asked_hint.set(true);
+            } else {
+                receive_input(input_boxes, c);
+            }
+        }
+
+        Key::Backspace => {
+            remove_input(input_boxes);
+        }
+
+        _ => (),
+    };
+
+    event.prevent_default();
+
+    handle_input(
+        input_boxes,
+        asked_hint,
+        is_wrong,
+        confusable,
+        expected_answer,
+        start_time,
+        on_card_completed,
+    ).await
+}
+
+async fn handle_input_event(
+    input_boxes: &mut Memo<Vec<Vec<char>>>,
+    box_idx: usize,
+    event: Event<FormData>,
+    mut asked_hint: Memo<bool>,
+    is_wrong: Signal<bool>,
+    confusable: bool,
+    expected_answer: &String,
+    start_time: Rc<RefCell<DateTime<Utc>>>,
+    on_card_completed: EventHandler<Rating>,
+) {
+    let value = event.value();
+    
+    let value = if value.contains(' ') {
+        asked_hint.set(true);
+        value.trim_ascii()
+    } else {
+        value.as_str()
+    };
+
+    input_boxes.write()[box_idx].iter_mut().enumerate().for_each(|(i, c)| {
+        if let Some(v) = value.chars().nth(i) {
+            *c = v;
+        } else {
+            *c = ' ';
+        }
+    });
+
+    handle_input(
+        input_boxes,
+        asked_hint,
+        is_wrong,
+        confusable,
+        expected_answer,
+        start_time,
+        on_card_completed,
+    ).await;
+}
+
 fn receive_input(input_boxes: &mut Memo<Vec<Vec<char>>>, input: char) {
     let pos = input_boxes
         .read()
@@ -131,7 +192,18 @@ fn remove_input(input_boxes: &mut Memo<Vec<Vec<char>>>) {
 
     if let Some((i, j)) = pos {
         input_boxes.write()[i][j] = ' ';
+
+        if j == 0 {
+            move_focus(i.saturating_sub(1));
+        }
     }
+}
+
+fn move_focus(box_idx: usize) {
+    let _ = document::eval(r#"
+        let focus_on = await dioxus.recv();
+        document.getElementById("trainer_input_" + focus_on).focus();
+    "#).send(box_idx);
 }
 
 fn clear_input(input_boxes: &mut Memo<Vec<Vec<char>>>) {
@@ -175,6 +247,19 @@ pub fn Card(props: CardProps) -> Element {
 
     let (zigen_groups, description) = zigens.zigen.as_raw_parts();
     let confusable = matches!(zigens.zigen, crate::scheme::SchemeZigen::Confusable(_));
+
+    use_effect(move || {
+        let pos = input_boxes
+            .read()
+            .iter()
+            .enumerate()
+            .filter_map(|(i, box_group)| box_group.iter().position(|&c| c == ' ').map(|pos| (i, pos)))
+            .next();
+
+        if let Some((i, _j)) = pos {
+            move_focus(i);
+        }
+    });
 
     let start_time0 = start_time.clone();
     let start_time1 = start_time.clone();
@@ -254,6 +339,35 @@ pub fn Card(props: CardProps) -> Element {
                                         },
                                         "{input_boxes.read()[i][j]}"
                                     }
+                                }
+                            }
+                        }
+
+                        {
+                            let start_time2 = start_time1.clone();
+
+                            rsx! {
+                                input {
+                                    r#type: "text",
+                                    id: "trainer_input_{i}",
+                                    maxlength: "{group.code.chars().count()}",
+                                    oninput: move |event| {
+                                        let start_time2 = start_time2.clone();
+                                        async move {
+                                            handle_input_event(
+                                                &mut input_boxes,
+                                                i,
+                                                event,
+                                                asked_hint,
+                                                is_wrong,
+                                                confusable,
+                                                &*expected_answer.read(),
+                                                Rc::clone(&start_time2),
+                                                props.on_card_completed,
+                                            ).await
+                                        }
+                                    },
+                                    value: "{input_boxes.read()[i].iter().take_while(|c| **c != ' ').collect::<String>()}",
                                 }
                             }
                         }

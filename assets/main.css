@@ -25,7 +25,7 @@ body {
     font-family: zigen-font, sans-serif, 'Plangothic P0', 'Plangothic P1', 'WenJin Mincho Plane 0', 'WenJin Mincho Plane 1', 'WenJin Mincho Plane 2';
 }
 
-nav {
+.root-nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -65,6 +65,11 @@ nav picture, nav img {
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .trainer-welcome {
@@ -73,6 +78,7 @@ nav picture, nav img {
     align-items: center;
     justify-content: center;
     height: 100%;
+    padding-bottom: 2em;
 }
 
 .trainer-welcome > h1 {
@@ -121,9 +127,6 @@ nav picture, nav img {
 }
 
 .trainer-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 28px;
     background-color: var(--tertiary-bg-color);
@@ -168,9 +171,8 @@ nav picture, nav img {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    position: relative;
-    top: 28px;
-    height: calc(100% - 28px);
+    height: 100%;
+    width: 100%;
 }
 
 .trainer-zigen-group {
@@ -200,6 +202,10 @@ nav picture, nav img {
     align-items: center;
     justify-content: center;
     margin: 0 1em;
+}
+
+.trainer-zigen-inputs > input[type="text"] {
+    display: none;
 }
 
 .trainer-zigen-input {
@@ -256,5 +262,76 @@ nav picture, nav img {
 @keyframes flash-red-anim {
     50% {
         background-color: rgba(63, 10, 20, 0.5);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 100vw;
+        height: 100%;
+        margin: 0;
+    }
+
+    nav {
+        width: 100vw;
+    }
+
+    .trainer-root {
+        width: 100vw;
+        height: fit-content;
+        top: 28px;
+    }
+
+    .trainer-nav {
+        border-radius: 0;
+    }
+
+    .trainer-scheme-options {
+        display: grid;
+        grid-template-columns: 2fr 8fr;
+    }
+
+    .trainer-zigen-confusable {
+        position: absolute;
+        top: 48px;
+        left: 12px;
+        width: 1em;
+        line-height: 1.2;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .trainer-zigen-card {
+        margin-top: 1em;
+        align-content: center;
+        padding-bottom: 2em;
+    }
+
+    .trainer-zigen-group {
+        align-self: flex-start;
+        min-height: 160px;
+    }
+
+    .trainer-zigen-inputs > input[type="text"] {
+        display: block;
+        background-color: var(--tertiary-bg-color);
+        border: none;
+        width: 6em;
+        height: 2em;
+        color: var(--primary-color);
+        font-size: 1.1em;
+        font-weight: 400;
+        text-align: center
+    }
+
+    .trainer-zigen-input {
+        display: none;
+    }
+
+    .trainer-tips {
+        font-size: 20px;
+        background-color: color-mix(in srgb, var(--secondary-bg-color), transparent 50%);
+        padding: 1em;
+        border-radius: 6px;
     }
 }
