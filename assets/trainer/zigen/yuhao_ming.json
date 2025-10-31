@@ -150,7 +150,8 @@
     "groups": [
       {
         "zigens": [
-          "示"
+          "示",
+          "礻"
         ],
         "code": "Bka",
         "classify": "通",
@@ -2527,19 +2528,12 @@
       {
         "zigens": [
           "彐",
+          "肀",
           ""
         ],
         "code": "Sji",
         "classify": "通",
         "description": "彐 <b>jì</b>"
-      },
-      {
-        "zigens": [
-          "肀"
-        ],
-        "code": "Sji",
-        "classify": "通",
-        "description": "聿 yù = ǜ → <b>e</b>"
       },
       {
         "zigens": [
@@ -3244,5 +3238,9 @@
   {
     "type": "混",
     "zigens": ["讠", "言"]
+  },
+  {
+    "type": "混",
+    "zigens": ["水", "氵"]
   }
 ]
