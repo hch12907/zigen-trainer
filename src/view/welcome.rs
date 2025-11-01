@@ -153,7 +153,7 @@ pub fn Welcome(props: WelcomeProps) -> Element {
                                     adept: adept(),
                                     combine_mode: combine_mode(),
                                     limit_keys: if !limit_keys().is_empty() {
-                                        Some(limit_keys().chars().collect())
+                                        Some(limit_keys().chars().map(|c| c.to_ascii_uppercase()).collect())
                                     } else {
                                         None
                                     },

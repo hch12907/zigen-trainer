@@ -117,9 +117,10 @@ impl LoadedScheme<ZigenConfusable> {
                 SchemeZigen::Confusable(con) => {
                     let ZigenConfusable { groups, .. } = con;
                     if let Some(limit_keys) = &options.limit_keys {
-                        groups
-                            .iter()
-                            .all(|group| group.code.starts_with(limit_keys.as_slice()))
+                        groups.iter().all(|group| {
+                            limit_keys
+                                .contains(&group.code.chars().nth(0).unwrap().to_ascii_uppercase())
+                        })
                     } else {
                         true
                     }
@@ -145,7 +146,8 @@ impl LoadedScheme<ZigenConfusable> {
                     })
                     .filter(|group| {
                         if let Some(limit_keys) = &options.limit_keys {
-                            group.code.starts_with(limit_keys.as_slice())
+                            limit_keys
+                                .contains(&group.code.chars().nth(0).unwrap().to_ascii_uppercase())
                         } else {
                             true
                         }
@@ -164,7 +166,8 @@ impl LoadedScheme<ZigenConfusable> {
                     })
                     .filter(|group| {
                         if let Some(limit_keys) = &options.limit_keys {
-                            group.code.starts_with(limit_keys.as_slice())
+                            limit_keys
+                                .contains(&group.code.chars().nth(0).unwrap().to_ascii_uppercase())
                         } else {
                             true
                         }
@@ -179,7 +182,8 @@ impl LoadedScheme<ZigenConfusable> {
                     .filter(|group| group.classify == ZigenClass::Uncommon)
                     .filter(|group| {
                         if let Some(limit_keys) = &options.limit_keys {
-                            group.code.starts_with(limit_keys.as_slice())
+                            limit_keys
+                                .contains(&group.code.chars().nth(0).unwrap().to_ascii_uppercase())
                         } else {
                             true
                         }
