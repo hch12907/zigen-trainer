@@ -29,6 +29,18 @@ pub struct SchemeOptions {
     pub prioritize_trad: bool,
     /// 养老模式
     pub adept: bool,
+    /// 字根合并模式
+    pub combine_mode: CombineMode,
+    /// 仅训练键面
+    pub limit_keys: Option<Vec<char>>,
+}
+
+#[derive(Clone, Debug, PartialEq, Eq, Default)]
+pub enum CombineMode {
+    #[default]
+    Category,
+    Group,
+    None,
 }
 
 /// 一个方案的字根集。
@@ -74,12 +86,9 @@ impl LoadedScheme<ZigenConfusableUnpopulated> {
                                 .zigens
                                 .iter()
                                 .map(|z| {
-                                    populated_confusables
-                                        .remove(z)
-                                        .unwrap()
-                                        .expect(
-                                            "混淆集使用的字根不在字根码表内，或不属于代表性字根",
-                                        )
+                                    populated_confusables.remove(z).unwrap().expect(
+                                        "混淆集使用的字根不在字根码表内，或不属于代表性字根",
+                                    )
                                 })
                                 .collect(),
                             description: con.description.to_owned(),
@@ -105,7 +114,16 @@ impl LoadedScheme<ZigenConfusable> {
             .iter()
             .filter(|zigens| match zigens {
                 SchemeZigen::Category(_) => false,
-                SchemeZigen::Confusable(_) => true,
+                SchemeZigen::Confusable(con) => {
+                    let ZigenConfusable { groups, .. } = con;
+                    if let Some(limit_keys) = &options.limit_keys {
+                        groups
+                            .iter()
+                            .all(|group| group.code.starts_with(limit_keys.as_slice()))
+                    } else {
+                        true
+                    }
+                }
             })
             .cloned()
             .collect::<Vec<_>>();
@@ -121,8 +139,16 @@ impl LoadedScheme<ZigenConfusable> {
                     .iter()
                     .filter(|group| {
                         ((!options.prioritize_trad && group.classify == ZigenClass::Simplified)
-                            || (options.prioritize_trad && group.classify == ZigenClass::Traditional))
+                            || (options.prioritize_trad
+                                && group.classify == ZigenClass::Traditional))
                             || (group.classify == ZigenClass::Common)
+                    })
+                    .filter(|group| {
+                        if let Some(limit_keys) = &options.limit_keys {
+                            group.code.starts_with(limit_keys.as_slice())
+                        } else {
+                            true
+                        }
                     })
                     .cloned()
                     .collect::<Vec<_>>(),
@@ -133,7 +159,15 @@ impl LoadedScheme<ZigenConfusable> {
                     .iter()
                     .filter(|group| {
                         (options.prioritize_trad && group.classify == ZigenClass::Simplified)
-                            || (!options.prioritize_trad && group.classify == ZigenClass::Traditional)
+                            || (!options.prioritize_trad
+                                && group.classify == ZigenClass::Traditional)
+                    })
+                    .filter(|group| {
+                        if let Some(limit_keys) = &options.limit_keys {
+                            group.code.starts_with(limit_keys.as_slice())
+                        } else {
+                            true
+                        }
                     })
                     .cloned()
                     .collect::<Vec<_>>(),
@@ -143,23 +177,63 @@ impl LoadedScheme<ZigenConfusable> {
                 groups: cat
                     .iter()
                     .filter(|group| group.classify == ZigenClass::Uncommon)
+                    .filter(|group| {
+                        if let Some(limit_keys) = &options.limit_keys {
+                            group.code.starts_with(limit_keys.as_slice())
+                        } else {
+                            true
+                        }
+                    })
                     .cloned()
                     .collect::<Vec<_>>(),
                 description: cat_desc.to_owned(),
             };
 
+            let push_helper =
+                |dest: &mut Vec<SchemeZigen>, src: ZigenCategory| match options.combine_mode {
+                    CombineMode::Category => {
+                        dest.push(SchemeZigen::Category(src));
+                    }
+                    CombineMode::Group => dest.extend(src.groups.into_iter().map(|group| {
+                        SchemeZigen::Category(ZigenCategory {
+                            groups: vec![group],
+                            description: String::new(),
+                        })
+                    })),
+                    CombineMode::None => dest.extend(src.groups.into_iter().flat_map(|group| {
+                        let ZigenGroup {
+                            zigens,
+                            code,
+                            classify,
+                            description,
+                        } = group;
+
+                        zigens.into_iter().map(move |zigen| {
+                            SchemeZigen::Category(ZigenCategory {
+                                groups: vec![ZigenGroup {
+                                    zigens: vec![zigen],
+                                    code: code.clone(),
+                                    classify: classify.clone(),
+                                    description: description.clone(),
+                                }],
+                                description: String::new(),
+                            })
+                        })
+                    })),
+                };
+
             if !common.groups.is_empty() {
-                commons.push(SchemeZigen::Category(common));
+                push_helper(&mut commons, common);
             }
             if !outlier.groups.is_empty() {
                 if options.combined_training {
-                    commons.push(SchemeZigen::Category(outlier));
+                    push_helper(&mut commons, outlier);
                 } else {
-                    outliers.push(SchemeZigen::Category(outlier));
+                    push_helper(&mut outliers, outlier);
                 }
             }
             if !uncommon.groups.is_empty() {
-                uncommons.push(SchemeZigen::Category(uncommon));
+                push_helper(&mut uncommons, uncommon);
             }
         }
 

@@ -1,4 +1,4 @@
-use crate::scheme::{Scheme, SchemeOptions};
+use crate::scheme::{CombineMode, Scheme, SchemeOptions};
 use crate::user_state::UserState;
 use dioxus::prelude::*;
 use gloo_net::http::Request;
@@ -15,6 +15,8 @@ pub fn Welcome(props: WelcomeProps) -> Element {
     let mut combined_training = use_signal(|| false);
     let mut prioritize_trad = use_signal(|| false);
     let mut adept = use_signal(|| false);
+    let mut combine_mode = use_signal(|| CombineMode::Category);
+    let mut limit_keys = use_signal(|| String::new());
 
     let schemes = use_resource(move || async move {
         let schemes = Request::get("./assets/trainer/schemes.json")
@@ -149,11 +151,72 @@ pub fn Welcome(props: WelcomeProps) -> Element {
                                     combined_training: combined_training(),
                                     prioritize_trad: prioritize_trad(),
                                     adept: adept(),
+                                    combine_mode: combine_mode(),
+                                    limit_keys: if !limit_keys().is_empty() {
+                                        Some(limit_keys().chars().collect())
+                                    } else {
+                                        None
+                                    },
                                 };
                                 props.on_scheme_selected.call((scheme.unwrap(), options));
                             },
 
                             "开始练习"
+                        }
+
+                        details {
+                            class: "trainer-scheme-advanced-options",
+
+                            summary {
+                                "高级设置"
+                            }
+
+                            label {
+                                r#for: "trainer-combine-mode",
+                                "卡片合并模式："
+                            }
+
+                            select {
+                                class: "trainer-combine-mode-selector",
+                                id: "trainer-combine-mode",
+                                onchange: move |event| match event.value().as_str() {
+                                    "category" => combine_mode.set(CombineMode::Category),
+                                    "group" => combine_mode.set(CombineMode::Group),
+                                    "none" => combine_mode.set(CombineMode::None),
+                                    _ => (),
+                                },
+
+                                option {
+                                    value: "category",
+                                    selected: combine_mode() == CombineMode::Category,
+                                    "同聚类合并（适合新手）"
+                                }
+
+                                option {
+                                    value: "group",
+                                    selected: combine_mode() == CombineMode::Group,
+                                    "同归并合并"
+                                }
+
+                                option {
+                                    value: "none",
+                                    selected: combine_mode() == CombineMode::None,
+                                    "无合并"
+                                }
+                            }
+
+                            div { class: "break-flex-row" }
+
+                            label {
+                                r#for: "trainer-key-limit",
+                                "仅训练键面："
+                            }
+
+                            input {
+                                r#type: "text",
+                                placeholder: "ABCDE（留空以训练所有字根）",
+                                oninput: move |event| limit_keys.set(event.value().trim().to_owned()),
+                            }
                         }
                     }
                 },

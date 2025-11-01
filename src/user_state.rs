@@ -42,7 +42,7 @@ impl UserState {
         scheme_id: &str,
         scheme: &LoadedScheme<ZigenConfusableUnpopulated>,
         options: SchemeOptions,
-    ) {
+    ) -> Result<(), String> {
         self.current_scheme = scheme_id.to_owned();
 
         if !self.progresses.contains_key(scheme_id) {
@@ -59,6 +59,10 @@ impl UserState {
                 })
                 .collect::<Vec<ZigenCard>>();
 
+            if cards.is_empty() {
+                return Err(String::from("无练习卡片！"));
+            }
+
             self.progresses.insert(
                 scheme_id.to_owned(),
                 TrainProgress::new(cards, options.adept),
@@ -72,6 +76,8 @@ impl UserState {
                 }
             }
         }
+
+        Ok(())
     }
 
     pub fn current_scheme(&self) -> &str {
