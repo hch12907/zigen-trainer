@@ -109,11 +109,11 @@ pub fn Welcome(props: WelcomeProps) -> Element {
             class: "trainer-welcome",
 
             h1 {
-                "慧眼识根·字根练习器"
+                "慧眼识字根·字根练习器"
             }
 
             h2 {
-                "hch12907 制作"
+                "by hch12907"
             }
 
             match &*schemes.read_unchecked() {
