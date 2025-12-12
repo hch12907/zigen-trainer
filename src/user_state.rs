@@ -67,14 +67,6 @@ impl UserState {
                 scheme_id.to_owned(),
                 TrainProgress::new(cards, options.adept),
             );
-        } else {
-            // XXX: 热补丁，过了一段时日后记得删除！！！
-            if scheme_id == "yuhao_ming" {
-                match self.progresses.get_mut("yuhao_ming").unwrap().scheduler {
-                    UsedScheduler::Novice(ref mut scheduler) => scheduler.hot_patch_bug(),
-                    UsedScheduler::Adept(ref mut scheduler) => scheduler.hot_patch_bug(),
-                }
-            }
         }
 
         Ok(())
