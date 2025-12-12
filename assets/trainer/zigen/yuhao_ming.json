@@ -1805,19 +1805,12 @@
     "groups": [
       {
         "zigens": [
-          "向"
-        ],
-        "code": "Lxo",
-        "classify": "通",
-        "description": "向 xiàng → <b>xo</b>"
-      },
-      {
-        "zigens": [
+          "向",
           ""
         ],
         "code": "Lxo",
         "classify": "通",
-        "description": "无读音 <b>Ø</b>"
+        "description": "向 xiàng → <b>xo</b>"
       }
     ],
     "description": "这类字根与‘向’相似。"
