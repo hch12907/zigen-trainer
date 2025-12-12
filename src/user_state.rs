@@ -76,6 +76,16 @@ impl UserState {
         &self.current_scheme
     }
 
+    pub fn has_progress(&self, scheme_name: &str) -> bool {
+        self.progresses.contains_key(scheme_name)
+    }
+
+    pub fn reset_progress(&mut self, scheme_name: &str) {
+        if self.progresses.contains_key(scheme_name) {
+            self.progresses.remove(scheme_name);
+        }
+    }
+
     pub fn current_progress(&self) -> &TrainProgress {
         &self.progresses[&self.current_scheme]
     }

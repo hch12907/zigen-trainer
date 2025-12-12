@@ -10,6 +10,8 @@ pub struct WelcomeProps {
 
 #[component]
 pub fn Welcome(props: WelcomeProps) -> Element {
+    let user_state = UserState::read_from_local_storage();
+
     let mut selected_scheme = use_signal(|| String::new());
     let mut shuffle = use_signal(|| false);
     let mut combined_training = use_signal(|| false);
@@ -17,42 +19,101 @@ pub fn Welcome(props: WelcomeProps) -> Element {
     let mut adept = use_signal(|| false);
     let mut combine_mode = use_signal(|| CombineMode::Category);
     let mut limit_keys = use_signal(|| String::new());
+    let mut confirm_reset = use_signal(|| false);
 
-    let schemes = use_resource(move || async move {
-        let schemes = Request::get("./assets/trainer/schemes.json")
-            .send()
-            .await
-            .map_err(|err| err.to_string())?
-            .json::<Vec<Scheme>>()
-            .await
-            .map_err(|err| err.to_string());
+    let schemes = {
+        let user_state = user_state.clone();
 
-        let user_state = UserState::read_from_local_storage();
-        let user_scheme = user_state.current_scheme();
+        use_resource(move || {
+            let user_state = user_state.clone();
+            async move {
+                let schemes = Request::get("./assets/trainer/schemes.json")
+                    .send()
+                    .await
+                    .map_err(|err| err.to_string())?
+                    .json::<Vec<Scheme>>()
+                    .await
+                    .map_err(|err| err.to_string());
 
-        // 加载后，如果用户未曾进行过字根练习，默认选择第一个选项，
-        // 否则选择用户上一次练习过的方案
-        if let Ok(ref schemes) = schemes {
-            if !user_scheme.is_empty() && schemes.iter().any(|scheme| scheme.id == user_scheme) {
-                selected_scheme.set(user_scheme.to_owned());
-            } else if let Some(first) = schemes.first() {
-                selected_scheme.set(first.id.clone());
+                let user_scheme = user_state.current_scheme();
+
+                // 加载后，如果用户未曾进行过字根练习，默认选择第一个选项，
+                // 否则选择用户上一次练习过的方案
+                if let Ok(ref schemes) = schemes {
+                    if !user_scheme.is_empty() && schemes.iter().any(|scheme| scheme.id == user_scheme) {
+                        selected_scheme.set(user_scheme.to_owned());
+                    } else if let Some(first) = schemes.first() {
+                        selected_scheme.set(first.id.clone());
+                    }
+                }
+                
+                schemes
+            }
+        })
+    };
+
+    let show_continue = {
+        let selected_scheme = selected_scheme.clone();
+
+        use_memo(move || {
+            user_state.has_progress(&selected_scheme())
+        })
+    };
+
+    let make_button = |name: &'static str, onclicked: Option<Box<dyn Fn() -> bool>>| {
+        rsx! {
+            button {
+                onclick: move |_event| {
+                    let name = &*selected_scheme.read();
+                    let scheme = (*schemes
+                        .read_unchecked())
+                        .as_ref()
+                        .unwrap()
+                        .as_ref()
+                        .unwrap()
+                        .iter()
+                        .find(|s| s.id == *name)
+                        .cloned();
+                    let options = SchemeOptions {
+                        shuffle: shuffle(),
+                        combined_training: combined_training(),
+                        prioritize_trad: prioritize_trad(),
+                        adept: adept(),
+                        combine_mode: combine_mode(),
+                        limit_keys: if !limit_keys().is_empty() {
+                            Some(limit_keys().chars().map(|c| c.to_ascii_uppercase()).collect())
+                        } else {
+                            None
+                        },
+                    };
+                    let start_training = {
+                        if let Some(onclicked) = &onclicked {
+                            onclicked()
+                        } else {
+                            true
+                        }
+                    };
+
+                    if start_training {
+                        props.on_scheme_selected.call((scheme.unwrap(), options));
+                    }
+                },
+
+                "{name}"
             }
         }
-
-        schemes
-    });
+    };
 
     rsx! {
         div {
             class: "trainer-welcome",
 
             h1 {
-                "字根练习器"
+                "慧眼识根·字根练习器"
             }
 
             h2 {
-                "by hch12907"
+                "hch12907 制作"
             }
 
             match &*schemes.read_unchecked() {
@@ -62,7 +123,10 @@ pub fn Welcome(props: WelcomeProps) -> Element {
                         select {
                             class: "trainer-scheme-selector",
                             id: "trainer-scheme",
-                            onchange: move |event| selected_scheme.set(event.value()),
+                            onchange: move |event| {
+                                confirm_reset.set(false);
+                                selected_scheme.set(event.value())
+                            },
 
                             for scheme in read_schemes {
                                 option {
@@ -134,34 +198,37 @@ pub fn Welcome(props: WelcomeProps) -> Element {
                             }
                         }
 
-                        button {
-                            onclick: move |_event| {
-                                let name = &*selected_scheme.read();
-                                let scheme = (*schemes
-                                    .read_unchecked())
-                                    .as_ref()
-                                    .unwrap()
-                                    .as_ref()
-                                    .unwrap()
-                                    .iter()
-                                    .find(|s| s.id == *name)
-                                    .cloned();
-                                let options = SchemeOptions {
-                                    shuffle: shuffle(),
-                                    combined_training: combined_training(),
-                                    prioritize_trad: prioritize_trad(),
-                                    adept: adept(),
-                                    combine_mode: combine_mode(),
-                                    limit_keys: if !limit_keys().is_empty() {
-                                        Some(limit_keys().chars().map(|c| c.to_ascii_uppercase()).collect())
-                                    } else {
-                                        None
-                                    },
-                                };
-                                props.on_scheme_selected.call((scheme.unwrap(), options));
-                            },
+                        div {
+                            class: "trainer-welcome-buttons",
 
-                            "开始练习"
+                            if show_continue() {
+                                { make_button("继续练习", None) }
+                                { 
+                                    let confirm_reset = confirm_reset.clone();
+                                    let button_name = if confirm_reset() {
+                                        "重置练习（确认？）"
+                                    } else {
+                                        "重置练习"
+                                    };
+                                    make_button(button_name, Some(Box::new(move || {
+                                        let mut confirm_reset = confirm_reset;
+
+                                        if confirm_reset() {
+                                            let mut user_state = UserState::read_from_local_storage();
+                                            user_state.reset_progress(&selected_scheme());
+                                            user_state.write_to_local_storage();
+
+                                            confirm_reset.set(false);
+                                            true
+                                        } else {
+                                            confirm_reset.set(true);
+                                            false
+                                        }
+                                    })))
+                                }
+                            } else {
+                                { make_button("开始练习", None) }
+                            }
                         }
 
                         details {
