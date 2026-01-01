@@ -5,9 +5,7 @@
       {
         "zigens": [
           "二",
-          "冫",
-          "⺀",
-          ""
+          "冫"
         ],
         "code": "Ae",
         "classify": "通",
@@ -333,9 +331,7 @@
       {
         "zigens": [
           "高",
-          "",
-          "",
-          ""
+          ""
         ],
         "code": "Dg",
         "classify": "通",
@@ -368,19 +364,6 @@
         "code": "Dj",
         "classify": "通",
         "description": "见 <b>j</b>iàn"
-      }
-    ]
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          ""
-        ],
-        "code": "Dl",
-        "classify": "通",
-        "description": "𣎆 <b>l</b>uó"
       }
     ]
   },
@@ -606,6 +589,19 @@
         "code": "Er",
         "classify": "通",
         "description": "人 <b>r</b>én"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "水"
+        ],
+        "code": "Es",
+        "classify": "通",
+        "description": "水 <b>s</b>huǐ"
       }
     ]
   },
@@ -1221,6 +1217,20 @@
     "groups": [
       {
         "zigens": [
+          "⺀",
+          ""
+        ],
+        "code": "Je",
+        "classify": "通",
+        "description": "二点 <b>è</b>r"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
           "丱"
         ],
         "code": "Jg",
@@ -1679,19 +1689,6 @@
     "groups": [
       {
         "zigens": [
-          "了"
-        ],
-        "code": "Ll",
-        "classify": "通",
-        "description": "了 <b>l</b>e"
-      }
-    ]
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
           "世"
         ],
         "code": "Ls",
@@ -2025,8 +2022,21 @@
     "groups": [
       {
         "zigens": [
-          "氵",
-          "水"
+          "巳",
+          ""
+        ],
+        "code": "Ns",
+        "classify": "通",
+        "description": "巳 <b>s</b>ì"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "氵"
         ],
         "code": "Ns",
         "classify": "通",
@@ -2220,20 +2230,6 @@
         "code": "Os",
         "classify": "通",
         "description": "上 <b>s</b>hàng"
-      }
-    ]
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          "巳",
-          ""
-        ],
-        "code": "Os",
-        "classify": "通",
-        "description": "巳 <b>s</b>ì"
       }
     ]
   },
@@ -2731,6 +2727,19 @@
     "groups": [
       {
         "zigens": [
+          ""
+        ],
+        "code": "Sl",
+        "classify": "通",
+        "description": "𣎆 <b>l</b>uó"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
           "目"
         ],
         "code": "Sm",
@@ -2797,6 +2806,15 @@
       {
         "zigens": [
           ""
+        ],
+        "code": "Sv",
+        "classify": "通",
+        "description": "无读音 <b>v</b>"
+      },
+      {
+        "zigens": [
+          "",
+          ""
         ],
         "code": "Sv",
         "classify": "通",
@@ -3165,6 +3183,19 @@
         "code": "Vj",
         "classify": "通",
         "description": "<b>j</b>īn"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "了"
+        ],
+        "code": "Vl",
+        "classify": "通",
+        "description": "了 <b>l</b>e"
       }
     ]
   },
@@ -3602,6 +3633,10 @@
   {
     "type": "混",
     "zigens": ["讠", "言"]
+  },
+  {
+    "type": "混",
+    "zigens": ["氵", "水"]
   },
   {
     "type": "混",
