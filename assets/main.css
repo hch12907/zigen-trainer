@@ -63,8 +63,8 @@ nav picture, nav img {
 .trainer-root {
     background-color: var(--secondary-bg-color);
     width: 800px;
-    min-height: 540px;
-    max-height: 600px;
+    min-height: 580px;
+    max-height: 640px;
     overflow-y: auto;
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -219,6 +219,7 @@ nav picture, nav img {
     align-content: center;
     flex: 1;
     width: 100%;
+    font-family: zigen-font, var(--body-fonts);
 }
 
 .trainer-zigen-group {
@@ -240,7 +241,6 @@ nav picture, nav img {
     font-size: 30px;
     max-height: 3em;
     margin: 0.1em 0.5em;
-    font-family: zigen-font, var(--body-fonts);
 }
 
 .trainer-zigen-inputs {

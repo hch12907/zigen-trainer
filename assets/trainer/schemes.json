@@ -22,5 +22,11 @@
         "full_name": "宇浩光华",
         "zigen_url": "./zigen/yuhao_light.json",
         "zigen_font": "./Yuniversus.woff"
+    },
+    {
+        "id": "yuhao_ling",
+        "full_name": "宇浩灵明",
+        "zigen_url": "./zigen/yuhao_ling.json",
+        "zigen_font": "./Yuniversus.woff"
     }
 ]
