@@ -6,7 +6,7 @@ use gloo_storage::{LocalStorage, Storage};
 use serde::{Deserialize, Serialize};
 
 use crate::scheduler::{
-    Rating, ScheduleParamsAdept, ScheduleParamsNovice, Scheduler, ZigenCard,
+    Rating, ScheduleParamsAdept, ScheduleParamsNovice, Scheduler, SchedulerCard, ZigenCard
 };
 use crate::scheme::{LoadedScheme, SchemeOptions, ZigenConfusableUnpopulated};
 
@@ -54,11 +54,11 @@ impl UserState {
                 .0
                 .into_iter()
                 .map(|zigen| {
-                    let mut card = ZigenCard::default();
+                    let mut card = SchedulerCard::default();
                     *card.zigen_mut() = zigen.clone();
                     card
                 })
-                .collect::<Vec<ZigenCard>>();
+                .collect::<Vec<SchedulerCard>>();
 
             if cards.is_empty() {
                 return Err(String::from("无练习卡片！"));
@@ -115,7 +115,7 @@ enum UsedScheduler {
 }
 
 impl TrainProgress {
-    pub fn new(pending_cards: Vec<ZigenCard>, adept: bool) -> Self {
+    pub fn new(pending_cards: Vec<SchedulerCard>, adept: bool) -> Self {
         if pending_cards.is_empty() {
             tracing::error!("pending_cards 不能为空！");
             panic!("pending_cards is empty");
@@ -145,10 +145,10 @@ impl TrainProgress {
         }
     }
 
-    pub fn get_card(&self) -> &ZigenCard {
+    pub fn get_card(&self) -> Box<dyn ZigenCard> {
         match &self.scheduler {
-            UsedScheduler::Novice(scheduler) => scheduler.get_card(),
-            UsedScheduler::Adept(scheduler) => scheduler.get_card(),
+            UsedScheduler::Novice(scheduler) => Box::new(scheduler.get_card().clone()),
+            UsedScheduler::Adept(scheduler) => Box::new(scheduler.get_card().clone()),
         }
     }
 
