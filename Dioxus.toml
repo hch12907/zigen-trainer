@@ -3,7 +3,7 @@
 [web.app]
 
 # HTML title tag content
-title = "zigen-trainer"
+title = "慧眼识字根·字根练习器"
 
 # base_path = ""
 
