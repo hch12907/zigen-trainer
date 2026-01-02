@@ -267,6 +267,15 @@ pub enum SchemeZigen<Z = ZigenConfusable> {
     Confusable(Z),
 }
 
+impl<Z> Default for SchemeZigen<Z> {
+    fn default() -> Self {
+        Self::Category(ZigenCategory {
+            groups: Vec::new(),
+            description: String::new(),
+        })
+    }
+}
+
 impl SchemeZigen<ZigenConfusable> {
     pub fn as_raw_parts(&self) -> (&Vec<ZigenGroup>, &String) {
         let (zigen_groups, description) = match self {

@@ -6,7 +6,7 @@ use gloo_storage::{LocalStorage, Storage};
 use serde::{Deserialize, Serialize};
 
 use crate::scheduler::{
-    Card, Rating, ScheduleParamsAdept, ScheduleParamsNovice, Scheduler, ZigenCard,
+    Rating, ScheduleParamsAdept, ScheduleParamsNovice, Scheduler, ZigenCard,
 };
 use crate::scheme::{LoadedScheme, SchemeOptions, ZigenConfusableUnpopulated};
 
@@ -53,9 +53,10 @@ impl UserState {
             let cards = scheme
                 .0
                 .into_iter()
-                .map(|zigen| ZigenCard {
-                    card: Card::New,
-                    zigen: zigen.clone(),
+                .map(|zigen| {
+                    let mut card = ZigenCard::default();
+                    *card.zigen_mut() = zigen.clone();
+                    card
                 })
                 .collect::<Vec<ZigenCard>>();
 

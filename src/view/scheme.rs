@@ -1,9 +1,9 @@
 use std::cell::RefCell;
 use std::rc::Rc;
 
-use crate::scheduler::{Card, ZigenCard};
+use crate::scheduler::{ZigenCard};
 use crate::scheme::{
-    LoadedScheme, SchemeOptions, SchemeZigen, ZigenCategory, ZigenConfusableUnpopulated,
+    LoadedScheme, SchemeOptions, ZigenConfusableUnpopulated,
 };
 use crate::user_state::UserState;
 use crate::view::card::Card;
@@ -32,13 +32,7 @@ pub fn Scheme(props: SchemeProps) -> Element {
 
     let mut zigens = use_signal(|| match user_state.clone() {
         Ok(state) => state.borrow().current_progress().get_card().clone(),
-        Err(_) => ZigenCard {
-            zigen: SchemeZigen::Category(ZigenCategory {
-                groups: vec![],
-                description: String::new(),
-            }),
-            card: Card::New,
-        },
+        Err(_) => ZigenCard::default(),
     });
 
     let adept = use_signal(|| match user_state.clone() {
@@ -97,7 +91,7 @@ pub fn Scheme(props: SchemeProps) -> Element {
                         let mut new_card = user_state.borrow().current_progress().get_card().clone();
 
                         // 将同个聚类内的归并字根集的顺序打乱，避免发生“首尾记忆”效应（即：只记得前后的字根，中间的易忘）。
-                        new_card.zigen.as_raw_parts_mut().0.shuffle(&mut rand::rng());
+                        new_card.zigen_mut().as_raw_parts_mut().0.shuffle(&mut rand::rng());
                         zigens.set(new_card);
                     },
                 }
