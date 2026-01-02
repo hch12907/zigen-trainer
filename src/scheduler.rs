@@ -7,22 +7,30 @@ use serde_derive::{Deserialize, Serialize};
 
 use crate::scheme::{SchemeZigen};
 
+pub trait ZigenCard {
+    fn zigen(&self) -> &SchemeZigen;
+
+    fn zigen_mut(&mut self) -> &mut SchemeZigen;
+
+    fn is_new_card(&self) -> bool;
+}
+
 #[derive(Clone, Debug, Deserialize, Serialize, Default)]
-pub struct ZigenCard {
+pub struct SchedulerCard {
     zigen: SchemeZigen,
     card: Card,
 }
 
-impl ZigenCard {
-    pub fn zigen(&self) -> &SchemeZigen {
+impl ZigenCard for SchedulerCard {
+    fn zigen(&self) -> &SchemeZigen {
         &self.zigen
     }
 
-    pub fn zigen_mut(&mut self) -> &mut SchemeZigen {
+    fn zigen_mut(&mut self) -> &mut SchemeZigen {
         &mut self.zigen
     }
 
-    pub fn is_new_card(&self) -> bool {
+    fn is_new_card(&self) -> bool {
         self.card == Card::New
     }
 }
@@ -83,9 +91,9 @@ enum Card {
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
 pub struct Scheduler<P: ScheduleParam> {
-    new_cards: Vec<ZigenCard>,
-    learning_cards: VecDeque<ZigenCard>,
-    reviewing_cards: VecDeque<ZigenCard>,
+    new_cards: Vec<SchedulerCard>,
+    learning_cards: VecDeque<SchedulerCard>,
+    reviewing_cards: VecDeque<SchedulerCard>,
 
     /// 已成功连续学习 learning_cards 卡片的次数
     done_learning: usize,
@@ -145,7 +153,7 @@ enum ReviewStatus {
 }
 
 impl<Param: ScheduleParam> Scheduler<Param> {
-    pub fn new(mut pending_cards: Vec<ZigenCard>) -> Self {
+    pub fn new(mut pending_cards: Vec<SchedulerCard>) -> Self {
         pending_cards.reverse();
 
         let mut this = Self {
@@ -206,7 +214,7 @@ impl<Param: ScheduleParam> Scheduler<Param> {
         }
     }
 
-    pub fn get_card(&self) -> &ZigenCard {
+    pub fn get_card(&self) -> &SchedulerCard {
         match self.review_status() {
             ReviewStatus::Review => self.reviewing_cards.front().unwrap(),
             ReviewStatus::ReviewIntersperse => self.reviewing_cards.back().unwrap(),
