@@ -5,15 +5,23 @@ use chrono::{DateTime, Duration, Utc};
 use dioxus_logger::tracing;
 use serde_derive::{Deserialize, Serialize};
 
-use crate::scheme::{SchemeZigen, ZigenCategory};
+use crate::scheme::{SchemeZigen};
 
-#[derive(Clone, Debug, Deserialize, Serialize)]
+#[derive(Clone, Debug, Deserialize, Serialize, Default)]
 pub struct ZigenCard {
-    pub zigen: SchemeZigen,
-    pub card: Card,
+    zigen: SchemeZigen,
+    card: Card,
 }
 
 impl ZigenCard {
+    pub fn zigen(&self) -> &SchemeZigen {
+        &self.zigen
+    }
+
+    pub fn zigen_mut(&mut self) -> &mut SchemeZigen {
+        &mut self.zigen
+    }
+
     pub fn is_new_card(&self) -> bool {
         self.card == Card::New
     }
@@ -38,9 +46,10 @@ impl Rating {
     }
 }
 
-#[derive(Clone, Debug, Deserialize, Serialize, PartialEq)]
-pub enum Card {
+#[derive(Clone, Debug, Default, Deserialize, Serialize, PartialEq)]
+enum Card {
     /// 全新的，未曾学习过的卡片。
+    #[default]
     New,
 
     /// 正在学习的卡片。

@@ -224,7 +224,7 @@ pub fn Card(props: CardProps) -> Element {
 
     let mut input_boxes = use_memo(move || {
         let zigens = (props.zigens)();
-        let (zigen_groups, _) = zigens.zigen.as_raw_parts();
+        let (zigen_groups, _) = zigens.zigen().as_raw_parts();
 
         let mut boxes = Vec::with_capacity(zigen_groups.len());
         for group in zigen_groups.iter() {
@@ -236,7 +236,7 @@ pub fn Card(props: CardProps) -> Element {
 
     let expected_answer = use_memo(move || {
         let zigens = (props.zigens)();
-        let (zigen_groups, _) = zigens.zigen.as_raw_parts();
+        let (zigen_groups, _) = zigens.zigen().as_raw_parts();
 
         zigen_groups
             .iter()
@@ -245,8 +245,8 @@ pub fn Card(props: CardProps) -> Element {
             .to_ascii_lowercase()
     });
 
-    let (zigen_groups, description) = zigens.zigen.as_raw_parts();
-    let confusable = matches!(zigens.zigen, crate::scheme::SchemeZigen::Confusable(_));
+    let (zigen_groups, description) = zigens.zigen().as_raw_parts();
+    let confusable = matches!(zigens.zigen(), crate::scheme::SchemeZigen::Confusable(_));
 
     use_effect(move || {
         let pos = input_boxes
