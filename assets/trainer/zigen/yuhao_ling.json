@@ -524,6 +524,14 @@
         "code": "fe",
         "classify": "通",
         "description": "正 zhèng → v<b>e</b> <br>（z、zh作v但小根不取声母）"
+      },
+      {
+        "zigens": [
+          "世"
+        ],
+        "code": "fsi",
+        "classify": "通",
+        "description": "世 shì → <b>si</b>"
       }
     ],
     "description": "此类字根皆以‘一’开头。"
@@ -660,20 +668,6 @@
     "groups": [
       {
         "zigens": [
-          "世"
-        ],
-        "code": "gi",
-        "classify": "通",
-        "description": "世 shì → s<b>i</b> <br>（小根，不取声母）"
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
           "丰"
         ],
         "code": "ge",
@@ -688,12 +682,11 @@
     "groups": [
       {
         "zigens": [
-          "厶",
-          ""
+          "厶"
         ],
-        "code": "gsi",
+        "code": "gi",
         "classify": "通",
-        "description": "厶（私） <b>sī</b>"
+        "description": "厶（私） s<b>ī</b> <br>（小根，不取声母）"
       },
       {
         "zigens": [
@@ -790,6 +783,15 @@
         "code": "gu",
         "classify": "通",
         "description": "阝 f<b>ǔ</b> <br>（小根，不取声母） "
+      },
+      {
+        "zigens": [
+          "艮",
+          ""
+        ],
+        "code": "gge",
+        "classify": "通",
+        "description": "艮 gěn → <b>ge</b>"
       }
     ],
     "description": ""
@@ -1816,7 +1818,8 @@
       {
         "zigens": [
           "尸",
-          ""
+          "",
+          ""
         ],
         "code": "msi",
         "classify": "通",
@@ -1831,7 +1834,7 @@
       {
         "zigens": [
           "七",
-          "𫠠"
+          ""
         ],
         "code": "mi",
         "classify": "通",
@@ -1973,14 +1976,6 @@
         "code": "nsi",
         "classify": "通",
         "description": "食 shí → <b>si</b>"
-      },
-      {
-        "zigens": [
-          "艮"
-        ],
-        "code": "nge",
-        "classify": "通",
-        "description": "艮 gěn → <b>ge</b>"
       }
     ],
     "description": "此类字根皆含有‘人’部件。（而’艮‘与’食’同聚类）"
@@ -2230,9 +2225,9 @@
           "鬼",
           ""
         ],
-        "code": "pgi",
+        "code": "pi",
         "classify": "通",
-        "description": "鬼 guǐ → <b>gi</b><br>（跳过中间i、u音）"
+        "description": "鬼 guǐ → g<b>i</b><br>（跳过中间i、u音） <br>（小根，不取声母）"
       },
       {
         "zigens": [
@@ -2259,8 +2254,8 @@
       },
       {
         "zigens": [
-          "ス",
-          "マ"
+          "",
+          ""
         ],
         "code": "qo",
         "classify": "通",
@@ -2946,14 +2941,20 @@
         "zigens": [
           "乙",
           "乚",
-          "亅"
+          "乛",
+          "亅",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         "code": "wi",
         "classify": "通",
         "description": "乙 y<b>ǐ</b> <br>（基本笔画不取声母） "
       }
     ],
-    "description": ""
+    "description": "此类字根包含所有折笔。"
   },
   {
     "type": "类",
@@ -3080,7 +3081,8 @@
     "groups": [
       {
         "zigens": [
-          "习"
+          "习",
+          ""
         ],
         "code": "xi",
         "classify": "通",
