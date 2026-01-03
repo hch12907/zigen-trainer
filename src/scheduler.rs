@@ -44,7 +44,7 @@ pub enum Rating {
 }
 
 impl Rating {
-    fn difficulty(&self) -> f64 {
+    pub(crate) fn difficulty(&self) -> f64 {
         match self {
             Rating::Again => 3.0,
             Rating::Hard => 2.0,

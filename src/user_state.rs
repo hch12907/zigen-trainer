@@ -8,7 +8,8 @@ use serde::{Deserialize, Serialize};
 use crate::scheduler::{
     Rating, ScheduleParamsAdept, ScheduleParamsNovice, Scheduler, SchedulerCard, ZigenCard
 };
-use crate::scheme::{LoadedScheme, SchemeOptions, ZigenConfusableUnpopulated};
+use crate::scheduler_v2::{SchedulerV2, SchedulerV2Card};
+use crate::scheme::{LoadedScheme, SchemeOptions, SchemeZigen, ZigenConfusableUnpopulated};
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct UserState {
@@ -50,23 +51,13 @@ impl UserState {
             scheme.sort_to_options(&options);
             tracing::debug!("{:?}", &scheme);
 
-            let cards = scheme
-                .0
-                .into_iter()
-                .map(|zigen| {
-                    let mut card = SchedulerCard::default();
-                    *card.zigen_mut() = zigen.clone();
-                    card
-                })
-                .collect::<Vec<SchedulerCard>>();
-
-            if cards.is_empty() {
+            if scheme.0.is_empty() {
                 return Err(String::from("无练习卡片！"));
             }
 
             self.progresses.insert(
                 scheme_id.to_owned(),
-                TrainProgress::new(cards, options.adept),
+                TrainProgress::new(scheme.0, options.adept, options.v2_sched),
             );
         }
 
@@ -112,22 +103,53 @@ pub struct TrainProgress {
 enum UsedScheduler {
     Novice(Scheduler<ScheduleParamsNovice>),
     Adept(Scheduler<ScheduleParamsAdept>),
+    V2(SchedulerV2),
 }
 
 impl TrainProgress {
-    pub fn new(pending_cards: Vec<SchedulerCard>, adept: bool) -> Self {
-        if pending_cards.is_empty() {
-            tracing::error!("pending_cards 不能为空！");
-            panic!("pending_cards is empty");
-        }
+    pub fn new(zigens: Vec<SchemeZigen>, adept: bool, v2: bool) -> Self {
+        if v2 {
+            let pending_cards = zigens
+                .into_iter()
+                .map(|zigen| {
+                    let mut card = SchedulerV2Card::default();
+                    *card.zigen_mut() = zigen.clone();
+                    card
+                })
+                .collect::<Vec<SchedulerV2Card>>();
 
-        Self {
-            start_time: Utc::now(),
-            scheduler: if adept {
-                UsedScheduler::Adept(Scheduler::new(pending_cards))
-            } else {
-                UsedScheduler::Novice(Scheduler::new(pending_cards))
-            },
+            if pending_cards.is_empty() {
+                tracing::error!("pending_cards 不能为空！");
+                panic!("pending_cards is empty");
+            }
+
+            Self {
+                start_time: Utc::now(),
+                scheduler: UsedScheduler::V2(SchedulerV2::new(pending_cards, adept)),
+            }
+        } else {
+            let pending_cards = zigens
+                .into_iter()
+                .map(|zigen| {
+                    let mut card = SchedulerCard::default();
+                    *card.zigen_mut() = zigen.clone();
+                    card
+                })
+                .collect::<Vec<SchedulerCard>>();
+
+            if pending_cards.is_empty() {
+                tracing::error!("pending_cards 不能为空！");
+                panic!("pending_cards is empty");
+            }
+
+            Self {
+                start_time: Utc::now(),
+                scheduler: if adept {
+                    UsedScheduler::Adept(Scheduler::new(pending_cards))
+                } else {
+                    UsedScheduler::Novice(Scheduler::new(pending_cards))
+                },
+            }
         }
     }
 
@@ -135,6 +157,7 @@ impl TrainProgress {
         match &self.scheduler {
             UsedScheduler::Novice(scheduler) => scheduler.is_adept(),
             UsedScheduler::Adept(scheduler) => scheduler.is_adept(),
+            UsedScheduler::V2(scheduler) => scheduler.is_adept(),
         }
     }
 
@@ -142,13 +165,15 @@ impl TrainProgress {
         match &mut self.scheduler {
             UsedScheduler::Novice(scheduler) => scheduler.rate_card(rating),
             UsedScheduler::Adept(scheduler) => scheduler.rate_card(rating),
+            UsedScheduler::V2(scheduler) => scheduler.rate_card(rating),
         }
     }
 
-    pub fn get_card(&self) -> Box<dyn ZigenCard> {
-        match &self.scheduler {
+    pub fn get_card(&mut self) -> Box<dyn ZigenCard> {
+        match &mut self.scheduler {
             UsedScheduler::Novice(scheduler) => Box::new(scheduler.get_card().clone()),
             UsedScheduler::Adept(scheduler) => Box::new(scheduler.get_card().clone()),
+            UsedScheduler::V2(scheduler) => Box::new(scheduler.get_card().clone()),
         }
     }
 
@@ -156,6 +181,7 @@ impl TrainProgress {
         match &self.scheduler {
             UsedScheduler::Novice(scheduler) => scheduler.reviewed_cards(),
             UsedScheduler::Adept(scheduler) => scheduler.reviewed_cards(),
+            UsedScheduler::V2(scheduler) => scheduler.reviewed_cards(),
         }
     }
 
@@ -163,6 +189,7 @@ impl TrainProgress {
         match &self.scheduler {
             UsedScheduler::Novice(scheduler) => scheduler.total_cards(),
             UsedScheduler::Adept(scheduler) => scheduler.total_cards(),
+            UsedScheduler::V2(scheduler) => scheduler.total_cards(),
         }
     }
 }

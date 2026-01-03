@@ -36,9 +36,9 @@ async fn handle_input(
 
         // 根据用户作答耗时判断该字根的难度，以秒为单位。
         let easy_time = if !confusable {
-            2.0 + (expected_answer.len() as f64) * 0.35
+            2.0 + (expected_answer.len() as f64) * 0.3
         } else {
-            2.0 + (expected_answer.len() as f64) * 0.25
+            2.0 + (expected_answer.len() as f64) * 0.2
         };
 
         let time_diff = (Utc::now() - *start_time.borrow()).as_seconds_f64();

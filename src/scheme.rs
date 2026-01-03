@@ -33,6 +33,8 @@ pub struct SchemeOptions {
     pub combine_mode: CombineMode,
     /// 仅训练键面
     pub limit_keys: Option<Vec<char>>,
+    /// 使用V2调度器
+    pub v2_sched: bool,
 }
 
 #[derive(Clone, Debug, PartialEq, Eq, Default)]
