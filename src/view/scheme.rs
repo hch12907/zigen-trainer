@@ -31,7 +31,7 @@ pub fn Scheme(props: SchemeProps) -> Element {
     });
 
     let mut zigens = use_signal(|| match user_state.clone() {
-        Ok(state) => state.borrow().current_progress().get_card(),
+        Ok(state) => state.borrow_mut().current_progress_mut().get_card(),
         Err(_) => Box::new(SchedulerCard::default()),
     });
 
@@ -82,7 +82,7 @@ pub fn Scheme(props: SchemeProps) -> Element {
                         user_state.borrow_mut().current_progress_mut().rate_card(rating);
                         user_state.borrow().write_to_local_storage();
 
-                        let mut new_card = user_state.borrow().current_progress().get_card();
+                        let mut new_card = user_state.borrow_mut().current_progress_mut().get_card();
 
                         // 将同个聚类内的归并字根集的顺序打乱，避免发生“首尾记忆”效应（即：只记得前后的字根，中间的易忘）。
                         new_card.zigen_mut().as_raw_parts_mut().0.shuffle(&mut rand::rng());

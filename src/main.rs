@@ -1,5 +1,6 @@
 mod component;
 mod scheduler;
+mod scheduler_fsrs;
 mod scheme;
 mod user_state;
 mod view;

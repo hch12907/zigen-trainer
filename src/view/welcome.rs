@@ -19,6 +19,7 @@ pub fn Welcome(props: WelcomeProps) -> Element {
     let mut adept = use_signal(|| false);
     let mut combine_mode = use_signal(|| CombineMode::Category);
     let mut limit_keys = use_signal(|| String::new());
+    let mut fsrs = use_signal(|| false);
     let mut confirm_reset = use_signal(|| false);
 
     let schemes = {
@@ -85,6 +86,7 @@ pub fn Welcome(props: WelcomeProps) -> Element {
                         } else {
                             None
                         },
+                        fsrs: fsrs(),
                     };
                     let start_training = {
                         if let Some(onclicked) = &onclicked {
@@ -283,6 +285,22 @@ pub fn Welcome(props: WelcomeProps) -> Element {
                                 r#type: "text",
                                 placeholder: "ABCDE（留空以训练所有字根）",
                                 oninput: move |event| limit_keys.set(event.value().trim().to_owned()),
+                            }
+
+                            div { class: "break-flex-row" }
+
+                            label {
+                                r#for: "fsrs",
+                                "使用FSRS调度器："
+                            }
+
+                            input {
+                                r#type: "checkbox",
+                                id: "fsrs",
+                                checked: fsrs(),
+                                onchange: move |_event| {
+                                    fsrs.set(!fsrs());
+                                }
                             }
                         }
                     }
