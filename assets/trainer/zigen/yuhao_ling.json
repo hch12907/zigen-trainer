@@ -555,6 +555,30 @@
     "groups": [
       {
         "zigens": [
+          "",
+          "",
+          ""
+        ],
+        "code": "fo",
+        "classify": "繁",
+        "description": "<b>ø</b> 无读音字根"
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "fdo",
+        "classify": "繁",
+        "description": " dòu → <b>do</b>"
+      }
+    ],
+    "description": "此类字根皆含有’‘部件。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
           "女"
         ],
         "code": "fu",
@@ -2335,27 +2359,9 @@
         "code": "rye",
         "classify": "通",
         "description": "业 <b>yè</b>"
-      },
-      {
-        "zigens": [
-          "",
-          "",
-          ""
-        ],
-        "code": "ro",
-        "classify": "繁",
-        "description": "<b>ø</b> 无读音字根"
-      },
-      {
-        "zigens": [
-          ""
-        ],
-        "code": "rdo",
-        "classify": "繁",
-        "description": " dòu → <b>do</b>"
       }
     ],
-    "description": "此类字根在结构上与‘业’字形似。"
+    "description": ""
   },
   {
     "type": "类",
