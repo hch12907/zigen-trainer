@@ -46,9 +46,9 @@ impl Card {
                 difficulty: _,
                 last_reviewed,
             } => {
-                const W20: f64 = 11111.0;
+                const W20: f64 = 0.1542;
 
-                let time = now.signed_duration_since(last_reviewed).as_seconds_f64();
+                let time = now.signed_duration_since(last_reviewed).as_seconds_f64() * 0.2211;
                 let factor = 0.9f64.powf(-W20.recip()) - 1.0;
                 (1.0 + factor * time / stability).powf(-W20)
             }
@@ -58,10 +58,10 @@ impl Card {
     fn rate_card(&mut self, rating: Rating) {
         // 算法来源：https://expertium.github.io/Algorithm.html#short-term-s
 
-        const W0: f64 = 0.2120;
-        const W1: f64 = 1.2921;
-        const W2: f64 = 2.3065;
-        const W3: f64 = 8.2956;
+        const W0: f64 = 2.5821;
+        const W1: f64 = 7.9223;
+        const W2: f64 = 16.1813;
+        const W3: f64 = 20.2120;
         const W4: f64 = 6.4133;
         const W5: f64 = 0.8334;
         const W6: f64 = 3.0194;
