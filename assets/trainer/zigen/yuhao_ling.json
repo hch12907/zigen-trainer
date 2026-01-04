@@ -113,9 +113,9 @@
           "",
           ""
         ],
-        "code": "byi",
+        "code": "bi",
         "classify": "通",
-        "description": "、颐 <b>yí</b>"
+        "description": "（颐） <b>yí</b>"
       }
     ],
     "description": "此类字根皆形似‘臣’字。"
@@ -857,9 +857,9 @@
         "zigens": [
           "予"
         ],
-        "code": "hyu",
+        "code": "hu",
         "classify": "通",
-        "description": "予 <b>yǔ</b>"
+        "description": "予 y<b>ǔ</b> <br>（小根，不取声母）"
       }
     ],
     "description": "此类字根中心皆形似‘了’字。"
@@ -951,7 +951,8 @@
     "groups": [
       {
         "zigens": [
-          "示"
+          "示",
+          "礻"
         ],
         "code": "hsi",
         "classify": "通",
@@ -1628,7 +1629,8 @@
       },
       {
         "zigens": [
-          "千"
+          "千",
+          ""
         ],
         "code": "lqa",
         "classify": "通",
@@ -1967,7 +1969,7 @@
         ],
         "code": "na",
         "classify": "通",
-        "description": "僉 qiān → q<b>a</b> <br>（小根，不取声母）<br>（跳过中间i、u音）"
+        "description": "僉（佥） qiān → q<b>a</b> <br>（小根，不取声母）<br>（跳过中间i、u音）"
       },
       {
         "zigens": [
@@ -2162,7 +2164,8 @@
       {
         "zigens": [
           "勹",
-          ""
+          "",
+          ""
         ],
         "code": "pa",
         "classify": "通",
@@ -2501,7 +2504,8 @@
       {
         "zigens": [
           "羊",
-          "⺷"
+          "⺷",
+          "⺶"
         ],
         "code": "rya",
         "classify": "通",
@@ -2762,7 +2766,8 @@
     "groups": [
       {
         "zigens": [
-          "匕"
+          "匕",
+          ""
         ],
         "code": "ti",
         "classify": "通",
@@ -2889,6 +2894,7 @@
       {
         "zigens": [
           "水",
+          "氺",
           "氵"
         ],
         "code": "vi",
