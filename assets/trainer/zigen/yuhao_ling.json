@@ -2012,20 +2012,6 @@
     "groups": [
       {
         "zigens": [
-          "兀"
-        ],
-        "code": "nwu",
-        "classify": "通",
-        "description": "兀 <b>wù</b>"
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
           "囗"
         ],
         "code": "nwe",
@@ -2140,9 +2126,17 @@
         "code": "nyo",
         "classify": "通",
         "description": "酉 yǒu → <b>yo</b>"
+      },
+      {
+        "zigens": [
+          "兀"
+        ],
+        "code": "nwu",
+        "classify": "通",
+        "description": "兀 <b>wù</b>"
       }
     ],
-    "description": "此类字根皆形似‘西’字。"
+    "description": "此类字根皆含有‘兀’部件。"
   },
   {
     "type": "类",
