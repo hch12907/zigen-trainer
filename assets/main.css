@@ -194,6 +194,7 @@ nav picture, nav img {
     opacity: 1;
     background-color: transparent;
     font-weight: 600;
+    font-size: 20px;
     animation: tips-fade 1s 2s forwards;
 }
 
@@ -379,11 +380,10 @@ nav picture, nav img {
     }
 
     .trainer-tips {
-        font-size: 20px;
         background-color: color-mix(in srgb, var(--secondary-bg-color), transparent 50%);
-        padding: 0.5em;
+        padding: 0.5em 1.0em;
         border-radius: 6px;
-        width: calc(80% - 1em);
+        width: max-content;
         top: 50%;
     }
 }
