@@ -10,6 +10,7 @@ use crate::scheduler::{Rating, ZigenCard};
 #[derive(PartialEq, Clone, Props)]
 pub struct CardProps {
     zigens: ReadSignal<ZigenCard>,
+    adept: bool,
     on_card_completed: EventHandler<Rating>,
 }
 
@@ -217,7 +218,7 @@ fn clear_input(input_boxes: &mut Memo<Vec<Vec<char>>>) {
 pub fn Card(props: CardProps) -> Element {
     let start_time = use_hook(|| Rc::new(RefCell::new(Utc::now())));
 
-    let asked_hint = use_memo(move || (props.zigens)().is_new_card());
+    let asked_hint = use_memo(move || (props.zigens)().is_new_card() && !props.adept);
     let is_wrong = use_signal(|| false);
 
     let zigens = (props.zigens)();
