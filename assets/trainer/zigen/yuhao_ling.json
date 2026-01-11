@@ -830,7 +830,7 @@
           ""
         ],
         "code": "gma",
-        "classify": "通",
+        "classify": "繁",
         "description": "馬（马） <b>mǎ</b>"
       }
     ],
@@ -1417,7 +1417,7 @@
         ],
         "code": "kje",
         "classify": "通",
-        "description": "卩 jié → <b>je</b><br>（跳过中间i、u音）"
+        "description": "节 jié → <b>je</b><br>（跳过中间i、u音）"
       }
     ],
     "description": "此类字根皆形似‘力‘字。"
@@ -1782,7 +1782,7 @@
           "齒"
         ],
         "code": "lci",
-        "classify": "通",
+        "classify": "繁",
         "description": "齒（齿） chǐ → <b>ci</b>"
       }
     ],
@@ -1796,7 +1796,7 @@
           "飛"
         ],
         "code": "lfe",
-        "classify": "通",
+        "classify": "繁",
         "description": "飛（飞） fēi → <b>fe</b>"
       }
     ],
@@ -1993,7 +1993,7 @@
           "僉"
         ],
         "code": "na",
-        "classify": "通",
+        "classify": "繁",
         "description": "僉（佥） qiān → q<b>a</b> <br>（小根，不取声母）<br>（跳过中间i、u音）"
       },
       {
@@ -2422,7 +2422,7 @@
           "來"
         ],
         "code": "rla",
-        "classify": "通",
+        "classify": "繁",
         "description": "來（来） lái → <b>la</b>"
       }
     ],
@@ -2464,7 +2464,7 @@
           "鹵"
         ],
         "code": "rlu",
-        "classify": "通",
+        "classify": "繁",
         "description": "鹵（卤） <b>lǔ</b>"
       }
     ],
@@ -3041,7 +3041,7 @@
           "讠"
         ],
         "code": "wa",
-        "classify": "通",
+        "classify": "简",
         "description": "言 yán → y<b>a</b> <br>（小根，不取声母）"
       },
       {
@@ -3301,5 +3301,13 @@
   {
     "type": "混",
     "zigens": ["讠", "言"]
+  },
+  {
+    "type": "混",
+    "zigens": ["犬", "犭"]
+  },
+  {
+    "type": "混",
+    "zigens": ["艹", "丷", "䒑"]
   }
 ]

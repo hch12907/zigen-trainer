@@ -99,20 +99,6 @@
       },
       {
         "zigens": [
-          ""
-        ],
-        "code": "Bw",
-        "classify": "通",
-        "description": "五 <b>w</b>ǔ"
-      }
-    ],
-    "description": "这类字根以顺折起笔。"
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
           "弓"
         ],
         "code": "Bg",
@@ -128,6 +114,20 @@
         "code": "Bs",
         "classify": "通",
         "description": "尸 <b>s</b>hī"
+      }
+    ],
+    "description": "这类字根以顺折起笔。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "Bw",
+        "classify": "通",
+        "description": "五 <b>w</b>ǔ"
       },
       {
         "zigens": [
@@ -1019,14 +1019,6 @@
       },
       {
         "zigens": [
-          ""
-        ],
-        "code": "Jv",
-        "classify": "繁",
-        "description": "无声字根，取v。"
-      },
-      {
-        "zigens": [
           "下",
           "丅"
         ],
@@ -1073,9 +1065,17 @@
         "code": "Jz",
         "classify": "通",
         "description": "早 <b>z</b>ǎo"
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "Jv",
+        "classify": "繁",
+        "description": "无声字根，取v。"
       }
     ],
-    "description": "这类字根与‘日’字相似。"
+    "description": "这类字根含有类似‘日’字的部件。"
   },
   {
     "type": "类",
@@ -1268,7 +1268,13 @@
         "code": "Ks",
         "classify": "通",
         "description": "食 <b>s</b>hí"
-      },
+      }
+    ],
+    "description": "这类字根与‘八’相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
       {
         "zigens": [
           "",
@@ -1281,7 +1287,7 @@
         "description": "亞（亚）y<b>à</b>"
       }
     ],
-    "description": "这类字根与‘八’相似。"
+    "description": "此字根无聚类根据，属于零散字根。"
   },
   {
     "type": "类",
@@ -1562,7 +1568,13 @@
         "code": "Ml",
         "classify": "通",
         "description": "鹿 <b>l</b>ù"
-      },
+      }
+    ],
+    "description": "这类字根与‘广’字相似。"
+  },
+  {
+    "type": "类",
+    "groups": [
       {
         "zigens": [
           "辰",
@@ -1573,7 +1585,7 @@
         "description": "辰 <b>c</b>hén"
       }
     ],
-    "description": "这类字根与‘广’字相似。"
+    "description": "此字根无聚类根据，属于零散字根。"
   },
   {
     "type": "类",
@@ -1609,13 +1621,18 @@
       {
         "zigens": [
           "幺",
-          "厶",
-          ""
+          "厶"
         ],
         "code": "Na",
         "classify": "通",
         "description": "幺 y<b>ā</b>o"
-      },
+      }
+    ],
+    "description": "此字根无聚类根据，属于零散字根。"
+  },
+  {
+    "type": "类",
+    "groups": [
       {
         "zigens": [
           "匕"
@@ -1633,7 +1650,7 @@
         "description": "长 <b>c</b>háng"
       }
     ],
-    "description": "这类字根与‘厶’相似。（‘长’形似）"
+    "description": "这类字根与‘匕’相似。"
   },
   {
     "type": "类",

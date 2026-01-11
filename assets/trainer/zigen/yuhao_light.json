@@ -227,7 +227,7 @@
           "车"
         ],
         "code": "Hc",
-        "classify": "通",
+        "classify": "简",
         "description": "车 <b>c</b>hē"
       }
     ],
@@ -407,7 +407,7 @@
           "來"
         ],
         "code": "Dl",
-        "classify": "通",
+        "classify": "繁",
         "description": "來 <b>l</b>ái"
       },
       {
@@ -665,7 +665,7 @@
           ""
         ],
         "code": "Dm",
-        "classify": "通",
+        "classify": "繁",
         "description": "馬 <b>m</b>ǎ"
       }
     ],
@@ -901,7 +901,7 @@
           "讠"
         ],
         "code": "Oa",
-        "classify": "通",
+        "classify": "简",
         "description": "言 y<b>á</b>n"
       },
       {
@@ -993,7 +993,7 @@
           "僉"
         ],
         "code": "Rl",
-        "classify": "通",
+        "classify": "繁",
         "description": "臉右边 <b>l</b>iǎn"
       },
       {
@@ -1078,7 +1078,7 @@
           "乌"
         ],
         "code": "Ew",
-        "classify": "通",
+        "classify": "简",
         "description": "乌 <b>w</b>ū"
       },
       {
@@ -1087,7 +1087,7 @@
           ""
         ],
         "code": "Yw",
-        "classify": "通",
+        "classify": "繁",
         "description": "烏（乌） <b>w</b>ū"
       },
       {
@@ -1096,7 +1096,7 @@
           ""
         ],
         "code": "Ro",
-        "classify": "通",
+        "classify": "繁",
         "description": "鳥（鸟） niǎ<b>o</b>"
       },
       {
@@ -1105,7 +1105,7 @@
           ""
         ],
         "code": "Ya",
-        "classify": "通",
+        "classify": "简",
         "description": "鸟 ni<b>ǎ</b>o"
       },
       {
@@ -1113,7 +1113,7 @@
           "魚"
         ],
         "code": "Ty",
-        "classify": "通",
+        "classify": "繁",
         "description": "魚（鱼） <b>y</b>ú"
       },
       {
@@ -1121,7 +1121,7 @@
           "鱼"
         ],
         "code": "Qy",
-        "classify": "通",
+        "classify": "简",
         "description": "鱼 <b>yú</b>"
       },
       {
@@ -1129,7 +1129,7 @@
           ""
         ],
         "code": "Yv",
-        "classify": "通",
+        "classify": "繁",
         "description": "鱼 y<b>ú</b>"
       }
     ],
@@ -1218,7 +1218,7 @@
           "饣"
         ],
         "code": "Rs",
-        "classify": "通",
+        "classify": "简",
         "description": "食 s<b></b>hí"
       },
       {
@@ -1250,7 +1250,7 @@
           "風"
         ],
         "code": "Rf",
-        "classify": "通",
+        "classify": "繁",
         "description": "風（风） <b>f</b>ēng"
       }
     ],
@@ -1633,23 +1633,9 @@
     "groups": [
       {
         "zigens": [
-          "竹"
-        ],
-        "code": "Qk",
-        "classify": "通",
-        "description": "无理小码"
-      },
-      {
-        "zigens": [
+          "竹",
           "",
-          ""
-        ],
-        "code": "Qk",
-        "classify": "通",
-        "description": "<b></b>"
-      },
-      {
-        "zigens": [
+          "",
           "⺮"
         ],
         "code": "Qk",
@@ -1661,7 +1647,7 @@
           "钅"
         ],
         "code": "Tj",
-        "classify": "通",
+        "classify": "简",
         "description": "钅 <b>j</b>īn"
       },
       {
@@ -1700,7 +1686,7 @@
           "长"
         ],
         "code": "Th",
-        "classify": "通",
+        "classify": "简",
         "description": "长 c<b>h</b>áng"
       }
     ],
@@ -1724,7 +1710,7 @@
           "鹵"
         ],
         "code": "Kl",
-        "classify": "通",
+        "classify": "繁",
         "description": "鹵 <b>l</b>ǔ"
       },
       {
@@ -1756,7 +1742,7 @@
           "門"
         ],
         "code": "Kn",
-        "classify": "通",
+        "classify": "繁",
         "description": "門 mé<b>n</b>"
       },
       {
@@ -1764,7 +1750,7 @@
           "鬥"
         ],
         "code": "Nd",
-        "classify": "通",
+        "classify": "繁",
         "description": "鬥 <b>d</b>òu"
       },
       {
@@ -1790,7 +1776,7 @@
           "贝"
         ],
         "code": "Kb",
-        "classify": "通",
+        "classify": "简",
         "description": "贝 <b>b</b>èi"
       }
     ],
@@ -2040,15 +2026,15 @@
           ""
         ],
         "code": "Ja",
-        "classify": "通",
-        "description": "亞（亚）<b>y</b>à"
+        "classify": "繁",
+        "description": "亞（亚）y<b>à</b>"
       },
       {
         "zigens": [
           ""
         ],
         "code": "Jv",
-        "classify": "通",
+        "classify": "繁",
         "description": "无理小码"
       }
     ],
@@ -2070,7 +2056,7 @@
           "見"
         ],
         "code": "Mx",
-        "classify": "通",
+        "classify": "繁",
         "description": "見 <b>x</b>iàn<br>（非常用音）"
       },
       {
@@ -2078,7 +2064,7 @@
           "貝"
         ],
         "code": "Mb",
-        "classify": "通",
+        "classify": "繁",
         "description": "貝 <b>b</b>èi"
       }
     ],
@@ -2228,7 +2214,7 @@
           "齒"
         ],
         "code": "Mc",
-        "classify": "通",
+        "classify": "繁",
         "description": "齒 <b>c</b>hǐ"
       }
     ],
@@ -2475,7 +2461,7 @@
           ""
         ],
         "code": "Vs",
-        "classify": "通",
+        "classify": "简",
         "description": "丝 <b>s</b>ī"
       }
     ],
@@ -2668,7 +2654,7 @@
           "飛"
         ],
         "code": "Bk",
-        "classify": "通",
+        "classify": "繁",
         "description": "无理小码"
       }
     ],
