@@ -22,8 +22,6 @@ pub struct SchemeProps {
 
 #[component]
 pub fn Scheme(props: SchemeProps) -> Element {
-    let adept = props.options.adept;
-
     let user_state = use_hook(|| {
         let mut state = UserState::read_from_local_storage();
         let res = state.try_initialize_scheme(&props.scheme_id, &props.scheme, props.options);
@@ -41,6 +39,11 @@ pub fn Scheme(props: SchemeProps) -> Element {
             }),
             card: Card::New,
         },
+    });
+
+    let adept = use_signal(|| match user_state.clone() {
+        Ok(state) => state.borrow().current_progress().is_adept(),
+        Err(_) => false,
     });
 
     let progress = {
@@ -84,7 +87,7 @@ pub fn Scheme(props: SchemeProps) -> Element {
             Ok(user_state) => rsx! {
                 Card {
                     zigens: zigens,
-                    adept: adept,
+                    adept: adept(),
                     on_card_completed: move |rating| {
                         tracing::debug!("completed card! {rating:?}");
 

@@ -97,6 +97,8 @@ pub trait ScheduleParam {
     const LEARNING_INTERVALS_F: &'static [usize] /* [usize; Param::MAX_LEARNING_ATTEMPTS] */ ;
     /// 学习阶段的卡片数量，必须是 LEARNING_INTERVALS_S[-1] + 1
     const LEARNING_CARDS: usize = Self::LEARNING_INTERVALS_S[Self::MAX_LEARNING_ATTEMPTS - 1] + 1;
+    /// 是否为养老模式。
+    const IS_ADEPT: bool;
 }
 
 /// 适合初学者的调度参数。
@@ -108,6 +110,7 @@ impl ScheduleParam for ScheduleParamsNovice {
     const MAX_LEARNING_ATTEMPTS: usize = 3;
     const LEARNING_INTERVALS_S: &'static [usize] = &[3, 6, 9];
     const LEARNING_INTERVALS_F: &'static [usize] = &[2, 4, 6];
+    const IS_ADEPT: bool = false;
 }
 
 /// 适合养老的调度参数。
@@ -119,6 +122,7 @@ impl ScheduleParam for ScheduleParamsAdept {
     const MAX_LEARNING_ATTEMPTS: usize = 2;
     const LEARNING_INTERVALS_S: &'static [usize] = &[3, 6];
     const LEARNING_INTERVALS_F: &'static [usize] = &[2, 4];
+    const IS_ADEPT: bool = true;
 }
 
 /// 练习器将练习分成了三个阶段：
@@ -149,6 +153,10 @@ impl<Param: ScheduleParam> Scheduler<Param> {
 
         this.populate_learning_cards();
         this
+    }
+
+    pub fn is_adept(&self) -> bool {
+        Param::IS_ADEPT
     }
 
     fn populate_learning_cards(&mut self) {

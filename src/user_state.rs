@@ -130,6 +130,13 @@ impl TrainProgress {
         }
     }
 
+    pub fn is_adept(&self) -> bool {
+        match &self.scheduler {
+            UsedScheduler::Novice(scheduler) => scheduler.is_adept(),
+            UsedScheduler::Adept(scheduler) => scheduler.is_adept(),
+        }
+    }
+
     pub fn rate_card(&mut self, rating: Rating) {
         match &mut self.scheduler {
             UsedScheduler::Novice(scheduler) => scheduler.rate_card(rating),
