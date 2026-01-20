@@ -125,20 +125,6 @@
     "groups": [
       {
         "zigens": [
-          "舟"
-        ],
-        "code": "bvo",
-        "classify": "通",
-        "description": "舟 zhōu → <b>vo</b><br>（z、zh作v）"
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
           "虫"
         ],
         "code": "bo",
@@ -503,6 +489,20 @@
         "code": "dji",
         "classify": "通",
         "description": "斤 jīn → <b>ji</b>"
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "舟"
+        ],
+        "code": "dvo",
+        "classify": "通",
+        "description": "舟 zhōu → <b>vo</b><br>（z、zh作v）"
       }
     ],
     "description": ""
