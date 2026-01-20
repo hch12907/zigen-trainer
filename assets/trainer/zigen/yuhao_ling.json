@@ -481,6 +481,14 @@
         "code": "do",
         "classify": "通",
         "description": "<b>ø</b> 无读音字根"
+      },
+      {
+        "zigens": [
+          "曲"
+        ],
+        "code": "dku",
+        "classify": "通",
+        "description": "曲 qǔ → <b>ku</b> <br>（拼音q视作k）"
       }
     ],
     "description": ""
@@ -842,6 +850,20 @@
     "groups": [
       {
         "zigens": [
+          "气"
+        ],
+        "code": "gki",
+        "classify": "通",
+        "description": "气 qì → <b>ki</b> <br>（拼音q视作k）"
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
           "丁",
           "丅"
         ],
@@ -889,20 +911,6 @@
       }
     ],
     "description": "此类字根中心皆形似‘了’字。"
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          "其"
-        ],
-        "code": "hqi",
-        "classify": "通",
-        "description": "其 qí "
-      }
-    ],
-    "description": ""
   },
   {
     "type": "类",
@@ -957,20 +965,6 @@
       }
     ],
     "description": "此类字根皆含有‘日’部件。"
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          "犬"
-        ],
-        "code": "hqa",
-        "classify": "通",
-        "description": "犬 quǎn → <b>qa</b><br>（跳过中间i、u音）"
-      }
-    ],
-    "description": ""
   },
   {
     "type": "类",
@@ -1325,28 +1319,6 @@
     "groups": [
       {
         "zigens": [
-          "犭"
-        ],
-        "code": "kqa",
-        "classify": "通",
-        "description": "犬 quǎn → <b>qa</b> <br>（跳过中间i、u音）"
-      },
-      {
-        "zigens": [
-          "豸"
-        ],
-        "code": "kvi",
-        "classify": "通",
-        "description": "豸 zhì → <b>vi</b> <br>（z、zh作v）"
-      }
-    ],
-    "description": "此类字根皆与兽类相关。"
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
           "亍"
         ],
         "code": "kcu",
@@ -1617,14 +1589,6 @@
       },
       {
         "zigens": [
-          "曲"
-        ],
-        "code": "lqu",
-        "classify": "通",
-        "description": "曲 <b>qǔ</b>"
-      },
-      {
-        "zigens": [
           "鬥"
         ],
         "code": "ldo",
@@ -1658,9 +1622,9 @@
           "千",
           ""
         ],
-        "code": "lqa",
+        "code": "lka",
         "classify": "通",
-        "description": "千 qiān → <b>qa</b><br>（跳过中间i、u音）"
+        "description": "千 qiān → <b>ka</b><br>（跳过中间i、u音） <br>（拼音q视作k）"
       },
       {
         "zigens": [
@@ -1950,9 +1914,17 @@
         "code": "mga",
         "classify": "通",
         "description": "瓜 guā → <b>ga</b><br>（跳过中间i、u音）"
+      },
+      {
+        "zigens": [
+          "豸"
+        ],
+        "code": "mvi",
+        "classify": "通",
+        "description": "豸 zhì → <b>vi</b> <br>（z、zh作v）"
       }
     ],
-    "description": "此类字根皆形似‘爪’字。"
+    "description": "此类字根皆形似‘爪’字，或含有‘爫’结构。"
   },
   {
     "type": "类",
@@ -2098,14 +2070,6 @@
         "code": "no",
         "classify": "通",
         "description": "<b>ø</b> 无读音字根"
-      },
-      {
-        "zigens": [
-          "气"
-        ],
-        "code": "nqi",
-        "classify": "通",
-        "description": "气 <b>qì</b>"
       }
     ],
     "description": "此类字根皆含有‘’部件。"
@@ -2294,6 +2258,16 @@
     "groups": [
       {
         "zigens": [
+          "其"
+        ],
+        "code": "qki",
+        "classify": "通",
+        "description": "其 qí → <b>ki</b> <br>（拼音q视作k）"
+      },
+      {
+        "zigens": [
+          "卌",
+          "卅",
           "艹",
           "卄",
           "廾",
@@ -2301,28 +2275,12 @@
           "",
           ""
         ],
-        "code": "qa",
-        "classify": "通",
-        "description": "草字头 cǎo → <b>ca</b> <br>（小根，不取声母）"
-      },
-      {
-        "zigens": [
-          "卅"
-        ],
-        "code": "qsa",
-        "classify": "通",
-        "description": "卅 <b>sà</b>"
-      },
-      {
-        "zigens": [
-          "卌"
-        ],
         "code": "qi",
         "classify": "通",
         "description": "卌 x<b>ì</b> <br>（小根，不取声母）"
       }
     ],
-    "description": "此类字根皆含有‘廾’部件。"
+    "description": "此类字根皆含有‘卄’部件。"
   },
   {
     "type": "类",
@@ -2758,7 +2716,7 @@
         "zigens": [
           "欠"
         ],
-        "code": "tqa",
+        "code": "tka",
         "classify": "通",
         "description": "欠 qiān → <b>qa</b><br>（跳过中间i、u音）"
       }
@@ -3055,6 +3013,22 @@
         "code": "wo",
         "classify": "通",
         "description": "辶 chuò → c<b>o</b> <br>（小根，不取声母） <br>（跳过中间i、u音）"
+      },
+      {
+        "zigens": [
+          "犬"
+        ],
+        "code": "wa",
+        "classify": "通",
+        "description": "犬 quǎn → <b>qa</b> <br>（小根，不取声母） <br>（跳过中间i、u音）"
+      },
+      {
+        "zigens": [
+          "犭"
+        ],
+        "code": "wqa",
+        "classify": "通",
+        "description": "犬 quǎn → <b>qa</b> <br>（跳过中间i、u音）"
       }
     ],
     "description": "此类字根皆形似‘讠’部首。"
@@ -3311,6 +3285,6 @@
   },
   {
     "type": "混",
-    "zigens": ["艹", "丷", "䒑"]
+    "zigens": ["卌", "丷", "䒑"]
   }
 ]
