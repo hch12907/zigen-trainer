@@ -19,20 +19,6 @@
     "groups": [
       {
         "zigens": [
-          "九"
-        ],
-        "code": "bju",
-        "classify": "通",
-        "description": "九 jiǔ → <b>ju</b><br>（跳过中间i、u音）"
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
           "冖",
           "⺈"
         ],
@@ -2404,9 +2390,9 @@
           "卜",
           "⺊"
         ],
-        "code": "rbu",
+        "code": "rpu",
         "classify": "通",
-        "description": "卜 <b>bǔ</b>"
+        "description": "卜 <b>pǔ</b><br>（取生僻音）"
       },
       {
         "zigens": [
@@ -2637,9 +2623,17 @@
         "code": "so",
         "classify": "通",
         "description": "尢（尤） yóu → y<b>o</b> <br>（小根，不取声母）"
+      },
+      {
+        "zigens": [
+          "九"
+        ],
+        "code": "sju",
+        "classify": "通",
+        "description": "九 jiǔ → <b>ju</b><br>（跳过中间i、u音）"
       }
     ],
-    "description": ""
+    "description": "此类字根皆形似‘九’字。"
   },
   {
     "type": "类",
