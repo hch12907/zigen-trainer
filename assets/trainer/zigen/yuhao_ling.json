@@ -1651,6 +1651,15 @@
         "code": "lse",
         "classify": "通",
         "description": "舌 shé → <b>se</b>"
+      },
+      {
+        "zigens": [
+          "手",
+          "龵"
+        ],
+        "code": "lso",
+        "classify": "通",
+        "description": "手 shǒu → <b>so</b>"
       }
     ],
     "description": "此类字根中心皆形似‘十’字。"
@@ -2736,21 +2745,6 @@
         "code": "ti",
         "classify": "通",
         "description": "匕 b<b>í</b> <br>（小根，不取声母）"
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          "手",
-          "龵"
-        ],
-        "code": "tso",
-        "classify": "通",
-        "description": "手 shǒu → <b>so</b>"
       },
       {
         "zigens": [
@@ -2837,9 +2831,9 @@
         "zigens": [
           "且"
         ],
-        "code": "ve",
+        "code": "vke",
         "classify": "通",
-        "description": "且 qiě → q<b>e</b> <br>（小根，不取声母）<br>（跳过中间i、u音）"
+        "description": "且 qiě → q<b>e</b> <br>（跳过中间i、u音）"
       },
       {
         "zigens": [
