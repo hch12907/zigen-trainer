@@ -387,6 +387,9 @@ pub fn Card(props: CardProps) -> Element {
                                 dangerous_inner_html: "{group.description}"
                             }
                         }
+                        div {
+                            class: "trainer-zigen-group-pad",
+                        }
                     }
                 }
             }

@@ -222,6 +222,7 @@ nav picture, nav img {
     width: 100%;
     padding-top: 1em;
     font-family: zigen-font, var(--body-fonts);
+    gap: 0.5em;
 }
 
 .trainer-zigen-group {
@@ -230,7 +231,6 @@ nav picture, nav img {
     align-items: center;
     justify-content: center;
     background-color: color-mix(in srgb, var(--tertiary-bg-color), transparent 50%);
-    margin: 0.2em;
     border-radius: 6px;
     padding-bottom: 0.5em;
 }
@@ -264,7 +264,7 @@ nav picture, nav img {
     width: 40px;
     height: 40px;
     font-size: 20px;
-    margin: 0.1em;
+    margin: 0.2em;
     border-radius: 3px;
     font-weight: 600;
     background-color: var(--tertiary-bg-color);
@@ -293,7 +293,17 @@ nav picture, nav img {
 }
 
 .trainer-zigen-group-description > p {
-    margin: 0.2em 1em;
+    margin: 0.5em 1em;
+}
+
+.trainer-zigen-group-description::after {
+    content: "";
+    display: block;
+    flex: 1;
+}
+
+.trainer-zigen-group-pad {
+    flex: 1;
 }
 
 .trainer-zigen-description {
