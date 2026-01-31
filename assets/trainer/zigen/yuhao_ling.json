@@ -875,9 +875,9 @@
         "zigens": [
           "了"
         ],
-        "code": "hle",
+        "code": "hla",
         "classify": "通",
-        "description": "了 <b>le</b>"
+        "description": "了 <b>liǎo</b>"
       },
       {
         "zigens": [
@@ -1833,7 +1833,7 @@
         ],
         "code": "mi",
         "classify": "通",
-        "description": "七 q<b>ī</b> <br>（小根，不取声母）"
+        "description": "七 qī → k<b>i</b> <br>（小根，不取声母）"
       },
       {
         "zigens": [
@@ -1970,7 +1970,7 @@
         ],
         "code": "na",
         "classify": "繁",
-        "description": "僉（佥） qiān → q<b>a</b> <br>（小根，不取声母）<br>（跳过中间i、u音）"
+        "description": "僉（佥） qiān → k<b>a</b> <br>（小根，不取声母）<br>（跳过中间i、u音）"
       },
       {
         "zigens": [
@@ -2342,7 +2342,7 @@
         ],
         "code": "ra",
         "classify": "通",
-        "description": "丬 qiáng → q<b>a</b> <br>将字旁 jiāng → j<b>a</b><br>（小根，不取声母）"
+        "description": "丬 qiáng → k<b>a</b> <br>将字旁 jiāng → j<b>a</b><br>（小根，不取声母）"
       },
       {
         "zigens": [
@@ -2729,7 +2729,7 @@
         ],
         "code": "tka",
         "classify": "通",
-        "description": "欠 qiān → <b>qa</b><br>（跳过中间i、u音）"
+        "description": "欠 qiān → <b>ka</b><br>（跳过中间i、u音）<br>（拼音q视作k）"
       }
     ],
     "description": ""
@@ -2833,7 +2833,7 @@
         ],
         "code": "vke",
         "classify": "通",
-        "description": "且 qiě → q<b>e</b> <br>（跳过中间i、u音）"
+        "description": "且 qiě → <b>ke</b> <br>（跳过中间i、u音）<br>（拼音q视作k）"
       },
       {
         "zigens": [
@@ -3016,7 +3016,7 @@
         ],
         "code": "wa",
         "classify": "通",
-        "description": "犬 quǎn → <b>qa</b> <br>（小根，不取声母） <br>（跳过中间i、u音）"
+        "description": "犬 quǎn → k<b>a</b> <br>（小根，不取声母） <br>（跳过中间i、u音）"
       },
       {
         "zigens": [
@@ -3024,7 +3024,7 @@
         ],
         "code": "wka",
         "classify": "通",
-        "description": "犬 quǎn → <b>qa</b> <br>（跳过中间i、u音）<br>（拼音q视作k）"
+        "description": "犬 quǎn → <b>ka</b> <br>（跳过中间i、u音）<br>（拼音q视作k）"
       }
     ],
     "description": "此类字根皆形似‘讠’部首。"
