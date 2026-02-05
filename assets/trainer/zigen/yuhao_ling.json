@@ -1550,20 +1550,6 @@
     "groups": [
       {
         "zigens": [
-          "八"
-        ],
-        "code": "la",
-        "classify": "通",
-        "description": "八 b<b>ā</b> <br>（小根，不取声母）"
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
           "冂",
           "",
           ""
@@ -1716,6 +1702,14 @@
     "groups": [
       {
         "zigens": [
+          "八"
+        ],
+        "code": "la",
+        "classify": "通",
+        "description": "八 b<b>ā</b> <br>（小根，不取声母）"
+      },
+      {
+        "zigens": [
           "未"
         ],
         "code": "lwe",
@@ -1731,7 +1725,7 @@
         "description": "末 <b>mò</b>"
       }
     ],
-    "description": "此类字根皆形似‘未’字。"
+    "description": "此类字根皆含有‘八’部件。"
   },
   {
     "type": "类",
@@ -1797,12 +1791,19 @@
       },
       {
         "zigens": [
-          "牛",
-          "⺧"
+          "牛"
         ],
         "code": "mnu",
         "classify": "通",
         "description": "牛 niú → <b>nu</b><br>（跳过中间i、u音）"
+      },
+      {
+          "zigens": [
+          "⺧"
+        ],
+        "code": "mo",
+        "classify": "通",
+        "description": "<b>ø</b> 无读音字根<br>俗称告字头 t<b>ó</b>u"
       }
     ],
     "description": "此类字根皆形似‘车’字。"
