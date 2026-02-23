@@ -463,7 +463,7 @@
         "description": "曲 qǔ → <b>ku</b> <br>（拼音q视作k）"
       }
     ],
-    "description": ""
+    "description": "此类字根皆含有‘曲’部件。"
   },
   {
     "type": "类",
@@ -558,17 +558,9 @@
         "code": "fo",
         "classify": "繁",
         "description": "<b>ø</b> 无读音字根"
-      },
-      {
-        "zigens": [
-          ""
-        ],
-        "code": "fdo",
-        "classify": "繁",
-        "description": " dòu → <b>do</b>"
       }
     ],
-    "description": "此类字根皆含有’‘部件。"
+    "description": ""
   },
   {
     "type": "类",

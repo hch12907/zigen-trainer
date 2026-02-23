@@ -390,8 +390,7 @@
     "groups": [
       {
         "zigens": [
-          "厶",
-          ""
+          "厶"
         ],
         "code": "Dm",
         "classify": "通",
@@ -444,19 +443,6 @@
         "code": "Ed",
         "classify": "通",
         "description": "鬥（斗）<b>d</b>òu"
-      }
-    ]
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          ""
-        ],
-        "code": "Ed",
-        "classify": "通",
-        "description": " <b>d</b>òu"
       }
     ]
   },
@@ -1068,7 +1054,8 @@
     "groups": [
       {
         "zigens": [
-          "艮"
+          "艮",
+          ""
         ],
         "code": "Ig",
         "classify": "通",

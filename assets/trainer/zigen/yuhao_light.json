@@ -2028,7 +2028,6 @@
       {
         "zigens": [
           "",
-          "",
           "",
           ""
         ],
@@ -2433,8 +2432,7 @@
     "groups": [
       {
         "zigens": [
-          "厶",
-          ""
+          "厶"
         ],
         "code": "Vv",
         "classify": "通",
@@ -2508,11 +2506,12 @@
       },
       {
         "zigens": [
-          "艮"
+          "艮",
+          ""
         ],
-        "code": "Vn",
+        "code": "Cg",
         "classify": "通",
-        "description": "艮 gè<b>n</b>"
+        "description": "艮 <b>g</b>èn"
       }
     ],
     "description": ""

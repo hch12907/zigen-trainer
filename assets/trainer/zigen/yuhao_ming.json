@@ -551,14 +551,6 @@
     "groups": [
       {
         "zigens": [
-          ""
-        ],
-        "code": "Fde",
-        "classify": "繁",
-        "description": " dòu → <b>de</b>"
-      },
-      {
-        "zigens": [
           "",
           "",
           ""
@@ -568,7 +560,7 @@
         "description": "无读音 <b>Ø</b>"
       }
     ],
-    "description": "这类字根与‘亞’相似。"
+    "description": ""
   },
   {
     "type": "类",
@@ -1000,6 +992,20 @@
         "code": "Hre",
         "classify": "通",
         "description": "辰 chén → <b>re</b>"
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "艮",
+          ""
+        ],
+        "code": "Hge",
+        "classify": "通",
+        "description": "艮 gěn → <b>ge</b>"
       }
     ]
   },
@@ -2055,19 +2061,6 @@
     "groups": [
       {
         "zigens": [
-          "艮"
-        ],
-        "code": "Mge",
-        "classify": "通",
-        "description": "艮 gěn → <b>ge</b>"
-      }
-    ]
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
           ""
         ],
         "code": "Mdo",
@@ -2170,8 +2163,7 @@
     "groups": [
       {
         "zigens": [
-          "厶",
-          ""
+          "厶"
         ],
         "code": "Nsi",
         "classify": "通",
