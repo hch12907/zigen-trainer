@@ -6,7 +6,7 @@
 
 ```bash
 # 必要组件
-cargo install dioxus-cli@0.7.0-rc.2
+cargo install dioxus-cli@0.7.2
 
 # 本地调试用，localhost:8080
 dx serve
