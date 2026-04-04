@@ -196,7 +196,7 @@ pub fn Welcome(props: WelcomeProps) -> Element {
 
                             label {
                                 r#for: "adept",
-                                "养老模式"
+                                "复习模式"
                             }
                         }
 
@@ -291,7 +291,7 @@ pub fn Welcome(props: WelcomeProps) -> Element {
 
                             label {
                                 r#for: "sched_v2",
-                                "使用新型调度器："
+                                "使用新型调度器（BETA）："
                             }
 
                             input {

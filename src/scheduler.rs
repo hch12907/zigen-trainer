@@ -114,7 +114,7 @@ pub trait ScheduleParam {
     const LEARNING_INTERVALS_F: &'static [usize] /* [usize; Param::MAX_LEARNING_ATTEMPTS] */ ;
     /// 学习阶段的卡片数量，必须是 LEARNING_INTERVALS_S[-1] + 1
     const LEARNING_CARDS: usize = Self::LEARNING_INTERVALS_S[Self::MAX_LEARNING_ATTEMPTS - 1] + 1;
-    /// 是否为养老模式。
+    /// 是否为复习模式。
     const IS_ADEPT: bool;
 }
 
@@ -130,7 +130,7 @@ impl ScheduleParam for ScheduleParamsNovice {
     const IS_ADEPT: bool = false;
 }
 
-/// 适合养老的调度参数。
+/// 适合复习者的调度参数。
 #[derive(Clone, Debug)]
 pub struct ScheduleParamsAdept;
 

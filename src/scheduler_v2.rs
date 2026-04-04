@@ -138,7 +138,7 @@ enum ScheduleParam {
     /// 适合初学者的调度参数。
     #[default]
     Novice,
-    /// 适合养老的调度参数。
+    /// 适合复习者的调度参数。
     Adept,
 }
 

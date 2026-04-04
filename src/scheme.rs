@@ -27,7 +27,7 @@ pub struct SchemeOptions {
     pub combined_training: bool,
     /// 繁体优先
     pub prioritize_trad: bool,
-    /// 养老模式
+    /// 复习模式
     pub adept: bool,
     /// 字根合并模式
     pub combine_mode: CombineMode,
