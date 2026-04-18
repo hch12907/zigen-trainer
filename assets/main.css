@@ -52,6 +52,9 @@ nav a:hover {
 
 nav .nav-right {
     margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav picture, nav img {

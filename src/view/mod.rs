@@ -25,6 +25,12 @@ static GITHUB_LIGHT: Asset = asset!("/assets/github-light.png");
 #[used]
 static GITHUB_DARK: Asset = asset!("/assets/github-dark.png");
 
+#[used]
+static TUTORIAL_PAGE: Asset = asset!(
+    "/assets/tutorial.html",
+    AssetOptions::builder().with_hash_suffix(false)
+);
+
 #[component]
 pub fn Trainer() -> Element {
     let mut scheme: Signal<Option<Scheme>> = use_signal(|| None);
@@ -106,21 +112,30 @@ pub fn Trainer() -> Element {
                     }
                 }
 
-                a {
+                div {
                     class: "nav-right",
-                    href: "https://github.com/hch12907/zigen-trainer",
+                    a {
+                        onclick: move |_| {
+                            document::eval(r#"document.location.href = "./assets/tutorial.html""#);
+                        },
+                        "使用教程"
+                    }
 
-                    picture {
-                        source {
-                            "srcset": GITHUB_LIGHT,
-                            "media": "(prefers-color-scheme: light)",
-                        }
-                        source {
-                            "srcset": GITHUB_DARK,
-                            "media": "(prefers-color-scheme: dark)",
-                        }
-                        img {
-                            src: GITHUB_LIGHT,
+                    a {
+                        href: "https://github.com/hch12907/zigen-trainer",
+
+                        picture {
+                            source {
+                                "srcset": GITHUB_LIGHT,
+                                "media": "(prefers-color-scheme: light)",
+                            }
+                            source {
+                                "srcset": GITHUB_DARK,
+                                "media": "(prefers-color-scheme: dark)",
+                            }
+                            img {
+                                src: GITHUB_LIGHT,
+                            }
                         }
                     }
                 }
