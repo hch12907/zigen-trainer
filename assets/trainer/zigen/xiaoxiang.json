@@ -1,410 +1,1899 @@
 [
-  { "type": "类", "zigens": ["口"], "code": "le", "description": "口 kǒu" },
-  { "type": "类", "zigens": ["亻"], "code": "ld", "description": "人 rén（单人旁）" },
-  { "type": "类", "zigens": ["月"], "code": "ue", "description": "月 yuè" },
-  { "type": "类", "zigens": ["夕"], "code": "he", "description": "夕 xī" },
-  { "type": "类", "zigens": ["人"], "code": "sj", "description": "人 rén" },
-  { "type": "类", "zigens": ["辶"], "code": "ne", "description": "辶 chuò" },
-  { "type": "类", "zigens": ["手", "扌"], "code": "ck", "description": "此类字根皆与‘手’相关。" },
-  { "type": "类", "zigens": ["一"], "code": "sj", "description": "一 yī" },
-  { "type": "类", "zigens": ["厂"], "code": "bd", "description": "厂 chǎng" },
-  { "type": "类", "zigens": ["正"], "code": "tk", "description": "正 zhèng" },
-  { "type": "类", "zigens": ["十"], "code": "vi", "description": "十 shí" },
-  { "type": "类", "zigens": ["干"], "code": "rd", "description": "干 gān" },
-  { "type": "类", "zigens": ["千"], "code": "qe", "description": "千 qiān" },
-  { "type": "类", "zigens": ["壬"], "code": "nf", "description": "壬 rén" },
-  { "type": "类", "zigens": ["毛"], "code": "te", "description": "毛 máo" },
-  { "type": "类", "zigens": ["古"], "code": "wf", "description": "古 gǔ" },
-  { "type": "类", "zigens": ["舌"], "code": "yf", "description": "舌 shé" },
-  { "type": "类", "zigens": ["巾"], "code": "yf", "description": "巾 jīn" },
-  { "type": "类", "zigens": ["水", "氵", "氺"], "code": "of", "description": "此类字根皆含有‘氵’部件。" },
-  { "type": "类", "zigens": ["心"], "code": "ak", "description": "心 xīn" },
-  { "type": "类", "zigens": ["寸"], "code": "rk", "description": "寸 cùn" },
-  { "type": "类", "zigens": ["又"], "code": "xj", "description": "又 yòu" },
-  { "type": "类", "zigens": ["言", "讠"], "code": "sk", "description": "此类字根皆与‘言’相关。" },
-  { "type": "类", "zigens": ["日"], "code": "pe", "description": "日 rì" },
-  { "type": "类", "zigens": ["木"], "code": "xi", "description": "木 mù" },
-  { "type": "类", "zigens": ["丶"], "code": "gd", "description": "主 zhǔ / 顿号 dùn" },
-  { "type": "类", "zigens": ["土"], "code": "hf", "description": "土 tǔ" },
-  { "type": "类", "zigens": ["也"], "code": "hf", "description": "也 yě" },
-  { "type": "类", "zigens": ["上"], "code": "hf", "description": "上 shàng" },
-  { "type": "类", "zigens": ["士"], "code": "xf", "description": "士 shì" },
-  { "type": "类", "zigens": ["刂"], "code": "wj", "description": "刀 dāo（立刀旁）" },
-  { "type": "类", "zigens": ["刀"], "code": "te", "description": "刀 dāo" },
-  { "type": "类", "zigens": ["八"], "code": "ci", "description": "八 bā" },
-  { "type": "类", "zigens": ["未"], "code": "me", "description": "未 wèi" },
-  { "type": "类", "zigens": ["末"], "code": "rf", "description": "末 mò" },
-  { "type": "类", "zigens": ["大"], "code": "wk", "description": "大 dà" },
-  { "type": "类", "zigens": ["夫"], "code": "oi", "description": "夫 fū" },
-  { "type": "类", "zigens": ["女"], "code": "vk", "description": "女 nǚ" },
-  { "type": "类", "zigens": ["宀"], "code": "ai", "description": "宀 miǎn" },
-  { "type": "类", "zigens": ["穴"], "code": "ne", "description": "穴 xuè" },
-  { "type": "类", "zigens": ["力"], "code": "uf", "description": "力 lì" },
-  { "type": "类", "zigens": ["糸", "纟"], "code": "hk", "description": "此类字根皆与‘丝’相关。" },
-  { "type": "类", "zigens": ["阝"], "code": "ti", "description": "阝 fǔ（左耳旁）" },
-  { "type": "类", "zigens": ["艮"], "code": "lk", "description": "艮 gěn" },
-  { "type": "类", "zigens": ["禾"], "code": "gk", "description": "禾 hé" },
-  { "type": "类", "zigens": ["冂"], "code": "hd", "description": "冂 jiǒng" },
-  { "type": "类", "zigens": ["册"], "code": "vf", "description": "冊 cè" },
-  { "type": "类", "zigens": ["匕"], "code": "rj", "description": "匕 bǐ" },
-  { "type": "类", "zigens": ["子"], "code": "sj", "description": "子 zǐ" },
-  { "type": "类", "zigens": ["了"], "code": "ve", "description": "了 liǎo" },
-  { "type": "类", "zigens": ["予"], "code": "we", "description": "予 yǔ" },
-  { "type": "类", "zigens": ["斤"], "code": "vj", "description": "斤 jīn" },
-  { "type": "类", "zigens": ["门"], "code": "sf", "description": "门 mén" },
-  { "type": "类", "zigens": ["囗"], "code": "rk", "description": "围 wéi" },
-  { "type": "类", "zigens": ["王"], "code": "sd", "description": "王 wáng" },
-  { "type": "类", "zigens": ["艹"], "code": "qk", "description": "艹 cǎo" },
-  { "type": "类", "zigens": ["厶", "幺"], "code": "si", "description": "此类字根皆含有‘厶’部件。" },
-  { "type": "类", "zigens": ["火", "灬"], "code": "bi", "description": "此类字根皆与‘火’相关。" },
-  { "type": "类", "zigens": ["工"], "code": "nf", "description": "工 gōng" },
-  { "type": "类", "zigens": ["二", "冫"], "code": "od", "description": "此类字根皆含有‘二’部件（部分字形中“冫”与“二”一致）。" },
-  { "type": "类", "zigens": ["疒"], "code": "ok", "description": "疒 nè" },
-  { "type": "类", "zigens": ["文"], "code": "oe", "description": "文 wén" },
-  { "type": "类", "zigens": ["目"], "code": "cj", "description": "目 mù" },
-  { "type": "类", "zigens": ["羊", "⺷", "⺶"], "code": "ci", "description": "此类字根皆含有‘羊’部件。" },
-  { "type": "类", "zigens": ["小", "⺌", "⺍"], "code": "aj", "description": "此类字根皆含有‘⺌’部件。" },
-  { "type": "类", "zigens": ["米"], "code": "mk", "description": "米 mǐ" },
-  { "type": "类", "zigens": ["云"], "code": "ri", "description": "云 yún" },
-  { "type": "类", "zigens": ["戈"], "code": "ak", "description": "戈 gē" },
-  { "type": "类", "zigens": ["方"], "code": "pd", "description": "方 fāng" },
-  { "type": "类", "zigens": ["乛", "乙", "亅"], "code": "qi", "description": "此类字根包含所有折笔。" },
-  { "type": "类", "zigens": ["己"], "code": "rj", "description": "己 jǐ" },
-  { "type": "类", "zigens": ["已"], "code": "re", "description": "已 yǐ" },
-  { "type": "类", "zigens": ["巳"], "code": "rk", "description": "巳 sì" },
-  { "type": "类", "zigens": ["彳"], "code": "nd", "description": "彳 chì" },
-  { "type": "类", "zigens": ["卩"], "code": "he", "description": "节 jié" },
-  { "type": "类", "zigens": ["牛"], "code": "ud", "description": "牛 niú" },
-  { "type": "类", "zigens": ["丨"], "code": "vj", "description": "竖一 yī（基本笔画）" },
-  { "type": "类", "zigens": ["丰"], "code": "gd", "description": "丰 fēng" },
-  { "type": "类", "zigens": ["丿"], "code": "ud", "description": "丿 piě（基本笔画）" },
-  { "type": "类", "zigens": ["衣", "衤"], "code": "pf", "description": "此类字根皆形似‘衣’。" },
-  { "type": "类", "zigens": ["竹", "⺮"], "code": "oe", "description": "此类字根皆含有‘竹’头部件。" },
-  { "type": "类", "zigens": ["贝"], "code": "qj", "description": "贝 bèi" },
-  { "type": "类", "zigens": ["页"], "code": "oe", "description": "页 yè" },
-  { "type": "类", "zigens": ["至"], "code": "hk", "description": "至 zhì" },
-  { "type": "类", "zigens": ["车"], "code": "yd", "description": "车 chē" },
-  { "type": "类", "zigens": ["田"], "code": "me", "description": "田 tián" },
-  { "type": "类", "zigens": ["由"], "code": "af", "description": "由 yóu" },
-  { "type": "类", "zigens": ["申"], "code": "ai", "description": "申 shēn" },
-  { "type": "类", "zigens": ["电"], "code": "bd", "description": "电 diàn" },
-  { "type": "类", "zigens": ["鱼"], "code": "ni", "description": "鱼 yú" },
-  { "type": "类", "zigens": ["广"], "code": "rj", "description": "广 guǎng" },
-  { "type": "类", "zigens": ["见"], "code": "xj", "description": "见 jiàn" },
-  { "type": "类", "zigens": ["犬", "犭"], "code": "mi", "description": "此类字根皆形似‘犬’。" },
-  { "type": "类", "zigens": ["示", "礻"], "code": "gi", "description": "此类字根皆与‘示’相关。" },
-  { "type": "类", "zigens": ["立"], "code": "tk", "description": "立 lì" },
-  { "type": "类", "zigens": ["辛"], "code": "te", "description": "辛 xīn" },
-  { "type": "类", "zigens": ["尸"], "code": "nd", "description": "尸 shī" },
-  { "type": "类", "zigens": ["儿"], "code": "me", "description": "儿 ér" },
-  { "type": "类", "zigens": ["几"], "code": "cj", "description": "几 jǐ" },
-  { "type": "类", "zigens": ["彐"], "code": "bk", "description": "彐 jì" },
-  { "type": "类", "zigens": ["尢"], "code": "md", "description": "尢 yóu" },
-  { "type": "类", "zigens": ["者"], "code": "aj", "description": "者 zhě" },
-  { "type": "类", "zigens": ["弓"], "code": "tk", "description": "弓 gōng" },
-  { "type": "类", "zigens": ["户"], "code": "lk", "description": "户 hù" },
-  { "type": "类", "zigens": ["殳"], "code": "sk", "description": "殳 shū" },
-  { "type": "类", "zigens": ["京"], "code": "xd", "description": "京 jīng" },
-  { "type": "类", "zigens": ["白"], "code": "mf", "description": "白 bái" },
-  { "type": "类", "zigens": ["走"], "code": "lj", "description": "走 zǒu" },
-  { "type": "类", "zigens": ["隹"], "code": "ye", "description": "隹 zhuī" },
-  { "type": "类", "zigens": ["而"], "code": "vj", "description": "而 ér" },
-  { "type": "类", "zigens": ["面"], "code": "nk", "description": "面 miàn" },
-  { "type": "类", "zigens": ["矢"], "code": "we", "description": "矢 shǐ" },
-  { "type": "类", "zigens": ["勹"], "code": "ye", "description": "包字头 bāo" },
-  { "type": "类", "zigens": ["巴"], "code": "yd", "description": "巴 bā" },
-  { "type": "类", "zigens": ["止", "龰"], "code": "ne", "description": "此类字根皆含有‘止’部件。" },
-  { "type": "类", "zigens": ["齿"], "code": "qf", "description": "齿 chǐ" },
-  { "type": "类", "zigens": ["石"], "code": "cf", "description": "石 shí" },
-  { "type": "类", "zigens": ["不"], "code": "bk", "description": "不 bù" },
-  { "type": "类", "zigens": ["老", "耂"], "code": "yi", "description": "此类字根皆含有‘老’部件。" },
-  { "type": "类", "zigens": ["虫"], "code": "wd", "description": "虫 chóng" },
-  { "type": "类", "zigens": ["马"], "code": "ri", "description": "马 mǎ" },
-  { "type": "类", "zigens": ["高"], "code": "xk", "description": "高 gāo" },
-  { "type": "类", "zigens": ["足"], "code": "te", "description": "足 zú" },
-  { "type": "类", "zigens": ["用"], "code": "aj", "description": "用 yòng" },
-  { "type": "类", "zigens": ["弋"], "code": "be", "description": "弋 yì" },
-  { "type": "类", "zigens": ["皮"], "code": "me", "description": "皮 pí" },
-  { "type": "类", "zigens": ["业"], "code": "mf", "description": "业 yè" },
-  { "type": "类", "zigens": ["长"], "code": "hd", "description": "长 cháng" },
-  { "type": "类", "zigens": ["歹"], "code": "ve", "description": "歹 dǎi" },
-  { "type": "类", "zigens": ["山"], "code": "vd", "description": "山 shān" },
-  { "type": "类", "zigens": ["丁"], "code": "hi", "description": "丁 dīng" },
-  { "type": "类", "zigens": ["匚"], "code": "re", "description": "匚 fāng" },
-  { "type": "类", "zigens": ["雨"], "code": "he", "description": "雨 yǔ" },
-  { "type": "类", "zigens": ["皿"], "code": "bj", "description": "皿 mǐn" },
-  { "type": "类", "zigens": ["身"], "code": "lk", "description": "身 shēn" },
-  { "type": "类", "zigens": ["爪"], "code": "wk", "description": "爪 zhuǎ" },
-  { "type": "类", "zigens": ["瓜"], "code": "tk", "description": "瓜 guā" },
-  { "type": "类", "zigens": ["三"], "code": "gj", "description": "三 sān" },
-  { "type": "类", "zigens": ["生"], "code": "ld", "description": "生 shēng" },
-  { "type": "类", "zigens": ["气"], "code": "ad", "description": "气 qì" },
-  { "type": "类", "zigens": ["入"], "code": "xj", "description": "入 rù" },
-  { "type": "类", "zigens": ["西"], "code": "vk", "description": "西 xī" },
-  { "type": "类", "zigens": ["酉"], "code": "se", "description": "酉 yǒu" },
-  { "type": "类", "zigens": ["臼"], "code": "ge", "description": "臼 jiù" },
-  { "type": "类", "zigens": ["鬼"], "code": "cd", "description": "鬼 guǐ" },
-  { "type": "类", "zigens": ["麻"], "code": "af", "description": "麻 má" },
-  { "type": "类", "zigens": ["鹿"], "code": "ve", "description": "鹿 lù" },
-  { "type": "类", "zigens": ["臣"], "code": "qi", "description": "臣 chén" },
-  { "type": "类", "zigens": ["舟"], "code": "bj", "description": "舟 zhōu" },
-  { "type": "类", "zigens": ["骨"], "code": "wj", "description": "骨 gǔ" },
-  { "type": "类", "zigens": ["甲"], "code": "ae", "description": "甲 jiǎ" },
-  { "type": "类", "zigens": ["里"], "code": "gd", "description": "里 lǐ" },
-  { "type": "类", "zigens": ["瓦"], "code": "cj", "description": "瓦 wǎ" },
-  { "type": "类", "zigens": ["卯"], "code": "xf", "description": "卯 mǎo" },
-  { "type": "类", "zigens": ["片"], "code": "re", "description": "片 piàn" },
-  { "type": "类", "zigens": ["革"], "code": "gf", "description": "革 gé" },
-  { "type": "类", "zigens": ["习"], "code": "sd", "description": "习 xí" },
-  { "type": "类", "zigens": ["七"], "code": "ye", "description": "七 qī" },
-  { "type": "类", "zigens": ["戈"], "code": "ak", "description": "戈 gē" },
-  { "type": "类", "zigens": ["乃"], "code": "pj", "description": "乃 nǎi" },
-  { "type": "类", "zigens": ["九"], "code": "xk", "description": "九 jiǔ" },
-  { "type": "类", "zigens": ["亥"], "code": "td", "description": "亥 hài" },
-  { "type": "类", "zigens": ["亦"], "code": "ui", "description": "亦 yì" },
-  { "type": "类", "zigens": ["专"], "code": "uf", "description": "专 zhuān" },
-  { "type": "类", "zigens": ["斗"], "code": "qk", "description": "斗 dòu" },
-  { "type": "类", "zigens": ["产"], "code": "rk", "description": "产 chǎn" },
-  { "type": "类", "zigens": ["果"], "code": "wk", "description": "果 guǒ" },
-  { "type": "类", "zigens": ["甬"], "code": "ge", "description": "甬 yǒng" },
-  { "type": "类", "zigens": ["象"], "code": "wi", "description": "象 xiàng" },
-  { "type": "类", "zigens": ["五"], "code": "af", "description": "五 wǔ" },
-  { "type": "类", "zigens": ["林"], "code": "pi", "description": "林 lín" },
-  { "type": "类", "zigens": ["另"], "code": "rk", "description": "另 lìng" },
-  { "type": "类", "zigens": ["川"], "code": "gj", "description": "川 chuān" },
-  { "type": "类", "zigens": ["亏"], "code": "qe", "description": "亏 kuī" },
-  { "type": "类", "zigens": ["员"], "code": "he", "description": "员 yuán" },
-  { "type": "类", "zigens": ["仑"], "code": "of", "description": "仑 lún" },
-  { "type": "类", "zigens": ["氏"], "code": "hi", "description": "氏 shì" },
-  { "type": "类", "zigens": ["早"], "code": "ye", "description": "早 zǎo" },
-  { "type": "类", "zigens": ["亡"], "code": "uf", "description": "亡 wáng" },
-  { "type": "类", "zigens": ["支"], "code": "bj", "description": "支 zhī" },
-  { "type": "类", "zigens": ["太"], "code": "pj", "description": "太 tài" },
-  { "type": "类", "zigens": ["友"], "code": "ld", "description": "友 yǒu" },
-  { "type": "类", "zigens": ["平"], "code": "pf", "description": "平 píng" },
-  { "type": "类", "zigens": ["束"], "code": "qf", "description": "束 shù" },
-  { "type": "类", "zigens": ["求"], "code": "uk", "description": "求 qiú" },
-  { "type": "类", "zigens": ["包"], "code": "uk", "description": "包 bāo" },
-  { "type": "类", "zigens": ["亚"], "code": "pk", "description": "亚 yà" },
-  { "type": "类", "zigens": ["句"], "code": "ve", "description": "句 jù" },
-  { "type": "类", "zigens": ["娄"], "code": "se", "description": "娄 lóu" },
-  { "type": "类", "zigens": ["区"], "code": "li", "description": "区 qū" },
-  { "type": "类", "zigens": ["居"], "code": "wd", "description": "居 jū" },
-  { "type": "类", "zigens": ["凶"], "code": "hk", "description": "凶 xiōng" },
-  { "type": "类", "zigens": ["黑"], "code": "ge", "description": "黑 hēi" },
-  { "type": "类", "zigens": ["北"], "code": "nf", "description": "北 běi" },
-  { "type": "类", "zigens": ["金"], "code": "bd", "description": "金 jīn" },
-  { "type": "类", "zigens": ["戋"], "code": "ak", "description": "戋 jiān" },
-  { "type": "类", "zigens": ["夭"], "code": "pf", "description": "夭 yāo" },
-  { "type": "类", "zigens": ["肖"], "code": "hj", "description": "肖 xiāo" },
-  { "type": "类", "zigens": ["执"], "code": "we", "description": "执 zhí" },
-  { "type": "类", "zigens": ["谷"], "code": "xd", "description": "谷 gǔ" },
-  { "type": "类", "zigens": ["疋"], "code": "qi", "description": "疋 pǐ / yǎ" },
-  { "type": "类", "zigens": ["光"], "code": "we", "description": "光 guāng" },
-  { "type": "类", "zigens": ["冉"], "code": "sj", "description": "冉 rǎn" },
-  { "type": "类", "zigens": ["妾"], "code": "vk", "description": "妾 qiè" },
-  { "type": "类", "zigens": ["半"], "code": "gi", "description": "半 bàn" },
-  { "type": "类", "zigens": ["齐"], "code": "pk", "description": "齐 qí" },
-  { "type": "类", "zigens": ["莫"], "code": "mj", "description": "莫 mò" },
-  { "type": "类", "zigens": ["弗"], "code": "ue", "description": "弗 fú" },
-  { "type": "类", "zigens": ["牙"], "code": "pe", "description": "牙 yá" },
-  { "type": "类", "zigens": ["甘"], "code": "ck", "description": "甘 gān" },
-  { "type": "类", "zigens": ["韦"], "code": "qj", "description": "韦 wéi" },
-  { "type": "类", "zigens": ["风"], "code": "mi", "description": "风 fēng" },
-  { "type": "类", "zigens": ["鸟"], "code": "mj", "description": "鸟 niǎo" },
-  { "type": "类", "zigens": ["乌"], "code": "oj", "description": "乌 wū" },
-  { "type": "类", "zigens": ["圭"], "code": "qd", "description": "圭 guī" },
-  { "type": "类", "zigens": ["景"], "code": "yk", "description": "景 jǐng" },
-  { "type": "类", "zigens": ["缶"], "code": "wf", "description": "缶 fǒu" },
-  { "type": "类", "zigens": ["刍"], "code": "wd", "description": "刍 chú" },
-  { "type": "类", "zigens": ["羽"], "code": "md", "description": "羽 yǔ" },
-  { "type": "类", "zigens": ["龹"], "code": "yk", "description": "龹 juǎn" },
-  { "type": "类", "zigens": ["免"], "code": "be", "description": "免 miǎn" },
-  { "type": "类", "zigens": ["百"], "code": "rj", "description": "百 bǎi" },
-  { "type": "类", "zigens": ["父"], "code": "sf", "description": "父 fù" },
-  { "type": "类", "zigens": ["甫"], "code": "cd", "description": "甫 fǔ" },
-  { "type": "类", "zigens": ["双"], "code": "lf", "description": "双 shuāng" },
-  { "type": "类", "zigens": ["卅"], "code": "wd", "description": "卅 sà" },
-  { "type": "类", "zigens": ["兵"], "code": "oi", "description": "兵 bīng" },
-  { "type": "类", "zigens": ["飞"], "code": "gd", "description": "飞 fēi" },
-  { "type": "类", "zigens": ["尺"], "code": "tj", "description": "尺 chǐ" },
-  { "type": "类", "zigens": ["虎"], "code": "gi", "description": "虎 hǔ" },
-  { "type": "类", "zigens": ["龙"], "code": "yj", "description": "龙 lóng" },
-  { "type": "类", "zigens": ["君"], "code": "vi", "description": "君 jūn" },
-  { "type": "类", "zigens": ["凡"], "code": "lf", "description": "凡 fán" },
-  { "type": "类", "zigens": ["曲"], "code": "lk", "description": "曲 qū" },
-  { "type": "类", "zigens": ["巨"], "code": "mk", "description": "巨 jù" },
-  { "type": "类", "zigens": ["辰"], "code": "vd", "description": "辰 chén" },
-  { "type": "类", "zigens": ["六"], "code": "re", "description": "六 liù" },
-  { "type": "类", "zigens": ["屯"], "code": "uj", "description": "屯 tún" },
-  { "type": "类", "zigens": ["曷"], "code": "tf", "description": "曷 hé" },
-  { "type": "类", "zigens": ["爻"], "code": "sd", "description": "爻 yáo" },
-  { "type": "类", "zigens": ["辛"], "code": "te", "description": "辛 xīn" },
-  { "type": "类", "zigens": ["血"], "code": "yd", "description": "血 xuè" },
-  { "type": "类", "zigens": ["夹"], "code": "nj", "description": "夹 jiā" },
-  { "type": "类", "zigens": ["我"], "code": "ni", "description": "我 wǒ" },
-  { "type": "类", "zigens": ["奂"], "code": "gf", "description": "奂 huàn" },
-  { "type": "类", "zigens": ["曰"], "code": "si", "description": "曰 yuē" },
-  { "type": "类", "zigens": ["旡"], "code": "we", "description": "旡 jì" },
-  { "type": "类", "zigens": ["尹"], "code": "ad", "description": "尹 yǐn" },
-  { "type": "类", "zigens": ["垂"], "code": "bi", "description": "垂 chuí" },
-  { "type": "类", "zigens": ["唐"], "code": "xe", "description": "唐 táng" },
-  { "type": "类", "zigens": ["酋"], "code": "me", "description": "酋 qiú" },
-  { "type": "类", "zigens": ["肉"], "code": "oe", "description": "肉 ròu" },
-  { "type": "类", "zigens": ["卑"], "code": "yk", "description": "卑 bēi" },
-  { "type": "类", "zigens": ["舛"], "code": "xi", "description": "舛 chuǎn" },
-  { "type": "类", "zigens": ["芒"], "code": "ge", "description": "芒 máng" },
-  { "type": "类", "zigens": ["童"], "code": "bf", "description": "童 tóng" },
-  { "type": "类", "zigens": ["鬲"], "code": "oe", "description": "鬲 lì" },
-  { "type": "类", "zigens": ["矛"], "code": "mf", "description": "矛 máo" },
-  { "type": "类", "zigens": ["卤"], "code": "pk", "description": "卤 lǔ" },
-  { "type": "类", "zigens": ["乡"], "code": "yi", "description": "乡 xiāng" },
-  { "type": "类", "zigens": ["耒"], "code": "oj", "description": "耒 lěi" },
-  { "type": "类", "zigens": ["呙"], "code": "cf", "description": "呙 guō" },
-  { "type": "类", "zigens": ["麦"], "code": "xj", "description": "麦 mài" },
-  { "type": "类", "zigens": ["丹"], "code": "af", "description": "丹 dān" },
-  { "type": "类", "zigens": ["鼻"], "code": "qj", "description": "鼻 bí" },
-  { "type": "类", "zigens": ["屮"], "code": "ci", "description": "屮 cǎo" },
-  { "type": "类", "zigens": ["毋"], "code": "gj", "description": "毋 wú" },
-  { "type": "类", "zigens": ["車"], "code": "tk", "description": "車 chē" },
-  { "type": "类", "zigens": ["敖"], "code": "ce", "description": "敖 áo" },
-  { "type": "类", "zigens": ["鼠"], "code": "qi", "description": "鼠 shǔ" },
-  { "type": "类", "zigens": ["黾"], "code": "oj", "description": "黾 mǐn" },
-  { "type": "类", "zigens": ["卵"], "code": "ge", "description": "卵 luǎn" },
-  { "type": "类", "zigens": ["丸"], "code": "pi", "description": "丸 wán" },
-  { "type": "类", "zigens": ["頁"], "code": "ni", "description": "頁 yè" },
-  { "type": "类", "zigens": ["邑"], "code": "xf", "description": "邑 yì" },
-  { "type": "类", "zigens": ["母"], "code": "gk", "description": "母 mǔ" },
-  { "type": "类", "zigens": ["廿"], "code": "ui", "description": "廿 niàn" },
-  { "type": "类", "zigens": ["四"], "code": "od", "description": "四 sì" },
-  { "type": "类", "zigens": ["分"], "code": "md", "description": "分 fēn" },
-  { "type": "类", "zigens": ["天"], "code": "nd", "description": "天 tiān" },
-  { "type": "类", "zigens": ["两"], "code": "bk", "description": "两 liǎng" },
-  { "type": "类", "zigens": ["关"], "code": "gk", "description": "关 guān" },
-  { "type": "类", "zigens": ["尚"], "code": "td", "description": "尚 shàng" },
-  { "type": "类", "zigens": ["井"], "code": "le", "description": "井 jǐng" },
-  { "type": "类", "zigens": ["定"], "code": "wk", "description": "定 dìng" },
-  { "type": "类", "zigens": ["咅"], "code": "we", "description": "咅 pǒu" },
-  { "type": "类", "zigens": ["化"], "code": "gi", "description": "化 huà" },
-  { "type": "类", "zigens": ["戉"], "code": "ad", "description": "戉 yuè" },
-  { "type": "类", "zigens": ["及"], "code": "qk", "description": "及 jí" },
-  { "type": "类", "zigens": ["吕"], "code": "tj", "description": "吕 lǚ" },
-  { "type": "类", "zigens": ["与"], "code": "lk", "description": "与 yǔ" },
-  { "type": "类", "zigens": ["元"], "code": "wi", "description": "元 yuán" },
-  { "type": "类", "zigens": ["角"], "code": "se", "description": "角 jiǎo" },
-  { "type": "类", "zigens": ["公"], "code": "ai", "description": "公 gōng" },
-  { "type": "类", "zigens": ["交"], "code": "bd", "description": "交 jiāo" },
-  { "type": "类", "zigens": ["更"], "code": "yf", "description": "更 gèng" },
-  { "type": "类", "zigens": ["亲"], "code": "vi", "description": "亲 qīn" },
-  { "type": "类", "zigens": ["比"], "code": "ok", "description": "比 bǐ" },
-  { "type": "类", "zigens": ["非"], "code": "lf", "description": "非 fēi" },
-  { "type": "类", "zigens": ["共"], "code": "vf", "description": "共 gòng" },
-  { "type": "类", "zigens": ["先"], "code": "nd", "description": "先 xiān" },
-  { "type": "类", "zigens": ["少"], "code": "gj", "description": "少 shǎo" },
-  { "type": "类", "zigens": ["介"], "code": "li", "description": "介 jiè" },
-  { "type": "类", "zigens": ["民"], "code": "ud", "description": "民 mín" },
-  { "type": "类", "zigens": ["廴"], "code": "ye", "description": "廴 yǐn" },
-  { "type": "类", "zigens": ["原"], "code": "tj", "description": "原 yuán" },
-  { "type": "类", "zigens": ["果"], "code": "wk", "description": "果 guǒ" },
-  { "type": "类", "zigens": ["甬"], "code": "ge", "description": "甬 yǒng" },
-  { "type": "类", "zigens": ["象"], "code": "wi", "description": "象 xiàng" },
-  { "type": "类", "zigens": ["五"], "code": "af", "description": "五 wǔ" },
-  { "type": "类", "zigens": ["林"], "code": "pi", "description": "林 lín" },
-  { "type": "类", "zigens": ["另"], "code": "rk", "description": "另 lìng" },
-  { "type": "类", "zigens": ["川"], "code": "gj", "description": "川 chuān" },
-  { "type": "类", "zigens": ["亏"], "code": "qe", "description": "亏 kuī" },
-  { "type": "类", "zigens": ["员"], "code": "he", "description": "员 yuán" },
-  { "type": "类", "zigens": ["仑"], "code": "of", "description": "仑 lún" },
-  { "type": "类", "zigens": ["氏"], "code": "hi", "description": "氏 shì" },
-  { "type": "类", "zigens": ["早"], "code": "ye", "description": "早 zǎo" },
-  { "type": "类", "zigens": ["亡"], "code": "uf", "description": "亡 wáng" },
-  { "type": "类", "zigens": ["支"], "code": "bj", "description": "支 zhī" },
-  { "type": "类", "zigens": ["太"], "code": "pj", "description": "太 tài" },
-  { "type": "类", "zigens": ["友"], "code": "ld", "description": "友 yǒu" },
-  { "type": "类", "zigens": ["平"], "code": "pf", "description": "平 píng" },
-  { "type": "类", "zigens": ["束"], "code": "qf", "description": "束 shù" },
-  { "type": "类", "zigens": ["求"], "code": "uk", "description": "求 qiú" },
-  { "type": "类", "zigens": ["包"], "code": "uk", "description": "包 bāo" },
-  { "type": "类", "zigens": ["亚"], "code": "pk", "description": "亚 yà" },
-  { "type": "类", "zigens": ["句"], "code": "ve", "description": "句 jù" },
-  { "type": "类", "zigens": ["娄"], "code": "se", "description": "娄 lóu" },
-  { "type": "类", "zigens": ["区"], "code": "li", "description": "区 qū" },
-  { "type": "类", "zigens": ["居"], "code": "wd", "description": "居 jū" },
-  { "type": "类", "zigens": ["凶"], "code": "hk", "description": "凶 xiōng" },
-  { "type": "类", "zigens": ["金"], "code": "bd", "description": "金 jīn" },
-  { "type": "类", "zigens": ["戋"], "code": "ak", "description": "戋 jiān" },
-  { "type": "类", "zigens": ["夭"], "code": "pf", "description": "夭 yāo" },
-  { "type": "类", "zigens": ["肖"], "code": "hj", "description": "肖 xiāo" },
-  { "type": "类", "zigens": ["执"], "code": "we", "description": "执 zhí" },
-  { "type": "类", "zigens": ["谷"], "code": "xd", "description": "谷 gǔ" },
-  { "type": "类", "zigens": ["光"], "code": "we", "description": "光 guāng" },
-  { "type": "类", "zigens": ["冉"], "code": "sj", "description": "冉 rǎn" },
-  { "type": "类", "zigens": ["妾"], "code": "vk", "description": "妾 qiè" },
-  { "type": "类", "zigens": ["半"], "code": "gi", "description": "半 bàn" },
-  { "type": "类", "zigens": ["齐"], "code": "pk", "description": "齐 qí" },
-  { "type": "类", "zigens": ["莫"], "code": "mj", "description": "莫 mò" },
-  { "type": "类", "zigens": ["弗"], "code": "ue", "description": "弗 fú" },
-  { "type": "类", "zigens": ["牙"], "code": "pe", "description": "牙 yá" },
-  { "type": "类", "zigens": ["甘"], "code": "ck", "description": "甘 gān" },
-  { "type": "类", "zigens": ["韦"], "code": "qj", "description": "韦 wéi" },
-  { "type": "类", "zigens": ["风"], "code": "mi", "description": "风 fēng" },
-  { "type": "类", "zigens": ["鸟"], "code": "mj", "description": "鸟 niǎo" },
-  { "type": "类", "zigens": ["乌"], "code": "oj", "description": "乌 wū" },
-  { "type": "类", "zigens": ["圭"], "code": "qd", "description": "圭 guī" },
-  { "type": "类", "zigens": ["景"], "code": "yk", "description": "景 jǐng" },
-  { "type": "类", "zigens": ["缶"], "code": "wf", "description": "缶 fǒu" },
-  { "type": "类", "zigens": ["刍"], "code": "wd", "description": "刍 chú" },
-  { "type": "类", "zigens": ["羽"], "code": "md", "description": "羽 yǔ" },
-  { "type": "类", "zigens": ["龹"], "code": "yk", "description": "龹 juǎn" },
-  { "type": "类", "zigens": ["免"], "code": "be", "description": "免 miǎn" },
-  { "type": "类", "zigens": ["百"], "code": "rj", "description": "百 bǎi" },
-  { "type": "类", "zigens": ["父"], "code": "sf", "description": "父 fù" },
-  { "type": "类", "zigens": ["甫"], "code": "cd", "description": "甫 fǔ" },
-  { "type": "类", "zigens": ["双"], "code": "lf", "description": "双 shuāng" },
-  { "type": "类", "zigens": ["卅"], "code": "wd", "description": "卅 sà" },
-  { "type": "类", "zigens": ["兵"], "code": "oi", "description": "兵 bīng" },
-  { "type": "类", "zigens": ["飞"], "code": "gd", "description": "飞 fēi" },
-  { "type": "类", "zigens": ["尺"], "code": "tj", "description": "尺 chǐ" },
-  { "type": "类", "zigens": ["虎"], "code": "gi", "description": "虎 hǔ" },
-  { "type": "类", "zigens": ["龙"], "code": "yj", "description": "龙 lóng" },
-  { "type": "类", "zigens": ["君"], "code": "vi", "description": "君 jūn" },
-  { "type": "类", "zigens": ["凡"], "code": "lf", "description": "凡 fán" },
-  { "type": "类", "zigens": ["曲"], "code": "lk", "description": "曲 qū" },
-  { "type": "类", "zigens": ["巨"], "code": "mk", "description": "巨 jù" },
-  { "type": "类", "zigens": ["辰"], "code": "vd", "description": "辰 chén" },
-  { "type": "类", "zigens": ["六"], "code": "re", "description": "六 liù" },
-  { "type": "类", "zigens": ["屯"], "code": "uj", "description": "屯 tún" },
-  { "type": "类", "zigens": ["曷"], "code": "tf", "description": "曷 hé" },
-  { "type": "类", "zigens": ["爻"], "code": "sd", "description": "爻 yáo" },
-  { "type": "类", "zigens": ["血"], "code": "yd", "description": "血 xuè" },
-  { "type": "类", "zigens": ["夹"], "code": "nj", "description": "夹 jiā" },
-  { "type": "类", "zigens": ["我"], "code": "ni", "description": "我 wǒ" },
-  { "type": "类", "zigens": ["奂"], "code": "gf", "description": "奂 huàn" },
-  { "type": "类", "zigens": ["旡"], "code": "we", "description": "旡 jì" },
-  { "type": "类", "zigens": ["尹"], "code": "ad", "description": "尹 yǐn" },
-  { "type": "类", "zigens": ["垂"], "code": "bi", "description": "垂 chuí" },
-  { "type": "类", "zigens": ["唐"], "code": "xe", "description": "唐 táng" },
-  { "type": "类", "zigens": ["酋"], "code": "me", "description": "酋 qiú" },
-  { "type": "类", "zigens": ["肉"], "code": "oe", "description": "肉 ròu" },
-  { "type": "类", "zigens": ["卑"], "code": "yk", "description": "卑 bēi" },
-  { "type": "类", "zigens": ["舛"], "code": "xi", "description": "舛 chuǎn" },
-  { "type": "类", "zigens": ["芒"], "code": "ge", "description": "芒 máng" },
-  { "type": "类", "zigens": ["童"], "code": "bf", "description": "童 tóng" },
-  { "type": "类", "zigens": ["鬲"], "code": "oe", "description": "鬲 lì" },
-  { "type": "类", "zigens": ["矛"], "code": "mf", "description": "矛 máo" },
-  { "type": "类", "zigens": ["卤"], "code": "pk", "description": "卤 lǔ" },
-  { "type": "类", "zigens": ["乡"], "code": "yi", "description": "乡 xiāng" },
-  { "type": "类", "zigens": ["耒"], "code": "oj", "description": "耒 lěi" },
-  { "type": "类", "zigens": ["呙"], "code": "cf", "description": "呙 guō" },
-  { "type": "类", "zigens": ["麦"], "code": "xj", "description": "麦 mài" },
-  { "type": "类", "zigens": ["丹"], "code": "af", "description": "丹 dān" },
-  { "type": "类", "zigens": ["鼻"], "code": "qj", "description": "鼻 bí" },
-  { "type": "类", "zigens": ["屮"], "code": "ci", "description": "屮 cǎo" },
-  { "type": "类", "zigens": ["毋"], "code": "gj", "description": "毋 wú" },
-  { "type": "类", "zigens": ["車"], "code": "tk", "description": "車 chē" },
-  { "type": "类", "zigens": ["敖"], "code": "ce", "description": "敖 áo" },
-  { "type": "类", "zigens": ["黾"], "code": "oj", "description": "黾 mǐn" },
-  { "type": "类", "zigens": ["卵"], "code": "ge", "description": "卵 luǎn" },
-  { "type": "类", "zigens": ["丸"], "code": "pi", "description": "丸 wán" },
-  { "type": "类", "zigens": ["頁"], "code": "ni", "description": "頁 yè" }
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["口"], "code": "le", "classify": "通", "description": "口 kǒu" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["亻"], "code": "ld", "classify": "通", "description": "人 rén（单人旁）" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["月"], "code": "ue", "classify": "通", "description": "月 yuè" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["夕"], "code": "he", "classify": "通", "description": "夕 xī" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["人"], "code": "sj", "classify": "通", "description": "人 rén" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["辶"], "code": "ne", "classify": "通", "description": "辶 chuò" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["手", "扌"], "code": "ck", "classify": "通", "description": "手 shǒu" }
+    ],
+    "description": "此类字根皆与‘手’相关。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["一"], "code": "sj", "classify": "通", "description": "一 yī" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["厂"], "code": "bd", "classify": "通", "description": "厂 chǎng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["正"], "code": "tk", "classify": "通", "description": "正 zhèng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["十"], "code": "vi", "classify": "通", "description": "十 shí" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["干"], "code": "rd", "classify": "通", "description": "干 gān" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["千"], "code": "qe", "classify": "通", "description": "千 qiān" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["壬"], "code": "nf", "classify": "通", "description": "壬 rén" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["毛"], "code": "te", "classify": "通", "description": "毛 máo" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["古"], "code": "wf", "classify": "通", "description": "古 gǔ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["舌"], "code": "yf", "classify": "通", "description": "舌 shé" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["巾"], "code": "yf", "classify": "通", "description": "巾 jīn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["水", "氵"], "code": "of", "classify": "通", "description": "水 shuǐ" }
+    ],
+    "description": "此类字根皆含有‘氵’部件。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["心"], "code": "ak", "classify": "通", "description": "心 xīn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["寸"], "code": "rk", "classify": "通", "description": "寸 cùn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["又"], "code": "xj", "classify": "通", "description": "又 yòu" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["言", "讠"], "code": "sk", "classify": "通", "description": "言 yán" }
+    ],
+    "description": "此类字根皆与‘言’相关。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["日"], "code": "pe", "classify": "通", "description": "日 rì" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["木"], "code": "xi", "classify": "通", "description": "木 mù" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["丶"], "code": "gd", "classify": "通", "description": "主 zhǔ / 顿号 dùn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["土"], "code": "hf", "classify": "通", "description": "土 tǔ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["也"], "code": "hf", "classify": "通", "description": "也 yě" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["上"], "code": "hf", "classify": "通", "description": "上 shàng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["士"], "code": "xf", "classify": "通", "description": "士 shì" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["刂"], "code": "wj", "classify": "通", "description": "刀 dāo（立刀旁）" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["刀"], "code": "te", "classify": "通", "description": "刀 dāo" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["八"], "code": "ci", "classify": "通", "description": "八 bā" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["未"], "code": "me", "classify": "通", "description": "未 wèi" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["末"], "code": "rf", "classify": "通", "description": "末 mò" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["大"], "code": "wk", "classify": "通", "description": "大 dà" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["夫"], "code": "oi", "classify": "通", "description": "夫 fū" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["女"], "code": "vk", "classify": "通", "description": "女 nǚ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["宀"], "code": "ai", "classify": "通", "description": "宀 miǎn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["穴"], "code": "ne", "classify": "通", "description": "穴 xuè" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["力"], "code": "uf", "classify": "通", "description": "力 lì" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["糸", "纟"], "code": "hk", "classify": "通", "description": "丝 sī" }
+    ],
+    "description": "此类字根皆与‘丝’相关。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["阝"], "code": "ti", "classify": "通", "description": "阝 fǔ（左耳旁）" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["艮"], "code": "lk", "classify": "通", "description": "艮 gěn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["禾"], "code": "gk", "classify": "通", "description": "禾 hé" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["冂"], "code": "hd", "classify": "通", "description": "冂 jiǒng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["册"], "code": "vf", "classify": "通", "description": "冊 cè" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["匕"], "code": "rj", "classify": "通", "description": "匕 bǐ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["子"], "code": "sj", "classify": "通", "description": "子 zǐ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["了"], "code": "ve", "classify": "通", "description": "了 liǎo" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["予"], "code": "we", "classify": "通", "description": "予 yǔ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["斤"], "code": "vj", "classify": "通", "description": "斤 jīn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["门"], "code": "sf", "classify": "通", "description": "门 mén" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["囗"], "code": "rk", "classify": "通", "description": "围 wéi" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["王"], "code": "sd", "classify": "通", "description": "王 wáng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["艹"], "code": "qk", "classify": "通", "description": "艹 cǎo" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["厶", "幺"], "code": "si", "classify": "通", "description": "厶（私） sī" }
+    ],
+    "description": "此类字根皆含有‘厶’部件。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["火"], "code": "bi", "classify": "通", "description": "火 huǒ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["工"], "code": "nf", "classify": "通", "description": "工 gōng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["二", "冫"], "code": "od", "classify": "通", "description": "二 èr" }
+    ],
+    "description": "此类字根皆含有‘二’部件（部分字形中“冫”与“二”一致）。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["疒"], "code": "ok", "classify": "通", "description": "疒 nè" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["文"], "code": "oe", "classify": "通", "description": "文 wén" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["目"], "code": "cj", "classify": "通", "description": "目 mù" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["羊"], "code": "ci", "classify": "通", "description": "羊 yáng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["小", "⺌", "⺍"], "code": "aj", "classify": "通", "description": "小 xiǎo" }
+    ],
+    "description": "此类字根皆含有‘⺌’部件。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["米"], "code": "mk", "classify": "通", "description": "米 mǐ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["云"], "code": "ri", "classify": "通", "description": "云 yún" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["戈"], "code": "ak", "classify": "通", "description": "戈 gē" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["方"], "code": "pd", "classify": "通", "description": "方 fāng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["乛", "乙", "亅"], "code": "qi", "classify": "通", "description": "乙 yǐ（基本笔画）" }
+    ],
+    "description": "此类字根包含所有折笔。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["己"], "code": "rj", "classify": "通", "description": "己 jǐ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["已"], "code": "re", "classify": "通", "description": "已 yǐ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["巳"], "code": "rk", "classify": "通", "description": "巳 sì" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["彳"], "code": "nd", "classify": "通", "description": "彳 chì" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["卩"], "code": "he", "classify": "通", "description": "节 jié" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["牛"], "code": "ud", "classify": "通", "description": "牛 niú" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["丨"], "code": "vj", "classify": "通", "description": "竖一 yī（基本笔画）" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["丰"], "code": "gd", "classify": "通", "description": "丰 fēng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["丿"], "code": "ud", "classify": "通", "description": "丿 piě（基本笔画）" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["衣", "衤"], "code": "pf", "classify": "通", "description": "衣 yī" }
+    ],
+    "description": "此类字根皆形似‘衣’。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["竹", "⺮"], "code": "oe", "classify": "通", "description": "竹 zhú" }
+    ],
+    "description": "此类字根皆含有‘竹’头部件。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["贝"], "code": "qj", "classify": "通", "description": "贝 bèi" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["页"], "code": "oe", "classify": "通", "description": "页 yè" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["至"], "code": "hk", "classify": "通", "description": "至 zhì" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["车"], "code": "yd", "classify": "通", "description": "车 chē" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["田"], "code": "me", "classify": "通", "description": "田 tián" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["由"], "code": "af", "classify": "通", "description": "由 yóu" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["申"], "code": "ai", "classify": "通", "description": "申 shēn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["电"], "code": "bd", "classify": "通", "description": "电 diàn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["鱼"], "code": "ni", "classify": "通", "description": "鱼 yú" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["广"], "code": "rj", "classify": "通", "description": "广 guǎng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["见"], "code": "xj", "classify": "通", "description": "见 jiàn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["犬", "犭"], "code": "mi", "classify": "通", "description": "犬 quǎn" }
+    ],
+    "description": "此类字根皆形似‘犬’。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["示", "礻"], "code": "gi", "classify": "通", "description": "示 shì" }
+    ],
+    "description": "此类字根皆与‘示’相关。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["立"], "code": "tk", "classify": "通", "description": "立 lì" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["辛"], "code": "te", "classify": "通", "description": "辛 xīn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["尸"], "code": "nd", "classify": "通", "description": "尸 shī" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["儿"], "code": "me", "classify": "通", "description": "儿 ér" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["几"], "code": "cj", "classify": "通", "description": "几 jǐ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["彐"], "code": "bk", "classify": "通", "description": "彐 jì" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["尢"], "code": "md", "classify": "通", "description": "尢 yóu" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["者"], "code": "aj", "classify": "通", "description": "者 zhě" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["弓"], "code": "tk", "classify": "通", "description": "弓 gōng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["户"], "code": "lk", "classify": "通", "description": "户 hù" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["殳"], "code": "sk", "classify": "通", "description": "殳 shū" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["京"], "code": "xd", "classify": "通", "description": "京 jīng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["白"], "code": "mf", "classify": "通", "description": "白 bái" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["走"], "code": "lj", "classify": "通", "description": "走 zǒu" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["隹"], "code": "ye", "classify": "通", "description": "隹 zhuī" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["而"], "code": "vj", "classify": "通", "description": "而 ér" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["面"], "code": "nk", "classify": "通", "description": "面 miàn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["矢"], "code": "we", "classify": "通", "description": "矢 shǐ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["勹"], "code": "ye", "classify": "通", "description": "包字头 bāo" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["巴"], "code": "yd", "classify": "通", "description": "巴 bā" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["止", "龰"], "code": "ne", "classify": "通", "description": "止 zhǐ" }
+    ],
+    "description": "此类字根皆含有‘止’部件。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["齿"], "code": "qf", "classify": "通", "description": "齿 chǐ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["石"], "code": "cf", "classify": "通", "description": "石 shí" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["不"], "code": "bk", "classify": "通", "description": "不 bù" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["老"], "code": "yi", "classify": "通", "description": "老 lǎo" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["虫"], "code": "wd", "classify": "通", "description": "虫 chóng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["马"], "code": "ri", "classify": "通", "description": "马 mǎ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["高"], "code": "xk", "classify": "通", "description": "高 gāo" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["足"], "code": "te", "classify": "通", "description": "足 zú" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["用"], "code": "aj", "classify": "通", "description": "用 yòng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["弋"], "code": "be", "classify": "通", "description": "弋 yì" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["皮"], "code": "me", "classify": "通", "description": "皮 pí" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["业"], "code": "mf", "classify": "通", "description": "业 yè" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["长"], "code": "hd", "classify": "通", "description": "长 cháng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["歹"], "code": "ve", "classify": "通", "description": "歹 dǎi" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["山"], "code": "vd", "classify": "通", "description": "山 shān" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["丁"], "code": "hi", "classify": "通", "description": "丁 dīng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["匚"], "code": "re", "classify": "通", "description": "匚 fāng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["雨"], "code": "he", "classify": "通", "description": "雨 yǔ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["皿"], "code": "bj", "classify": "通", "description": "皿 mǐn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["身"], "code": "lk", "classify": "通", "description": "身 shēn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["爪"], "code": "wk", "classify": "通", "description": "爪 zhuǎ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["瓜"], "code": "tk", "classify": "通", "description": "瓜 guā" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["三"], "code": "gj", "classify": "通", "description": "三 sān" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["生"], "code": "ld", "classify": "通", "description": "生 shēng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["气"], "code": "ad", "classify": "通", "description": "气 qì" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["入"], "code": "xj", "classify": "通", "description": "入 rù" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["西"], "code": "vk", "classify": "通", "description": "西 xī" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["酉"], "code": "se", "classify": "通", "description": "酉 yǒu" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["臼"], "code": "ge", "classify": "通", "description": "臼 jiù" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["鬼"], "code": "cd", "classify": "通", "description": "鬼 guǐ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["麻"], "code": "af", "classify": "通", "description": "麻 má" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["鹿"], "code": "ve", "classify": "通", "description": "鹿 lù" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["臣"], "code": "qi", "classify": "通", "description": "臣 chén" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["舟"], "code": "bj", "classify": "通", "description": "舟 zhōu" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["骨"], "code": "wj", "classify": "通", "description": "骨 gǔ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["甲"], "code": "ae", "classify": "通", "description": "甲 jiǎ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["里"], "code": "gd", "classify": "通", "description": "里 lǐ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["瓦"], "code": "cj", "classify": "通", "description": "瓦 wǎ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["卯"], "code": "xf", "classify": "通", "description": "卯 mǎo" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["片"], "code": "re", "classify": "通", "description": "片 piàn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["革"], "code": "gf", "classify": "通", "description": "革 gé" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["习"], "code": "sd", "classify": "通", "description": "习 xí" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["七"], "code": "ye", "classify": "通", "description": "七 qī" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["乃"], "code": "pj", "classify": "通", "description": "乃 nǎi" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["九"], "code": "xk", "classify": "通", "description": "九 jiǔ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["亥"], "code": "td", "classify": "通", "description": "亥 hài" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["亦"], "code": "ui", "classify": "通", "description": "亦 yì" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["专"], "code": "uf", "classify": "通", "description": "专 zhuān" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["斗"], "code": "qk", "classify": "通", "description": "斗 dòu" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["产"], "code": "rk", "classify": "通", "description": "产 chǎn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["果"], "code": "wk", "classify": "通", "description": "果 guǒ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["甬"], "code": "ge", "classify": "通", "description": "甬 yǒng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["象"], "code": "wi", "classify": "通", "description": "象 xiàng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["五"], "code": "af", "classify": "通", "description": "五 wǔ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["林"], "code": "pi", "classify": "通", "description": "林 lín" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["另"], "code": "rk", "classify": "通", "description": "另 lìng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["川"], "code": "gj", "classify": "通", "description": "川 chuān" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["亏"], "code": "qe", "classify": "通", "description": "亏 kuī" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["员"], "code": "he", "classify": "通", "description": "员 yuán" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["仑"], "code": "of", "classify": "通", "description": "仑 lún" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["氏"], "code": "hi", "classify": "通", "description": "氏 shì" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["早"], "code": "ye", "classify": "通", "description": "早 zǎo" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["亡"], "code": "uf", "classify": "通", "description": "亡 wáng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["支"], "code": "bj", "classify": "通", "description": "支 zhī" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["太"], "code": "pj", "classify": "通", "description": "太 tài" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["友"], "code": "ld", "classify": "通", "description": "友 yǒu" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["平"], "code": "pf", "classify": "通", "description": "平 píng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["束"], "code": "qf", "classify": "通", "description": "束 shù" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["求"], "code": "uk", "classify": "通", "description": "求 qiú" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["包"], "code": "uk", "classify": "通", "description": "包 bāo" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["亚"], "code": "pk", "classify": "通", "description": "亚 yà" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["句"], "code": "ve", "classify": "通", "description": "句 jù" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["娄"], "code": "se", "classify": "通", "description": "娄 lóu" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["区"], "code": "li", "classify": "通", "description": "区 qū" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["居"], "code": "wd", "classify": "通", "description": "居 jū" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["凶"], "code": "hk", "classify": "通", "description": "凶 xiōng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["黑"], "code": "ge", "classify": "通", "description": "黑 hēi" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["北"], "code": "nf", "classify": "通", "description": "北 běi" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["金"], "code": "bd", "classify": "通", "description": "金 jīn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["戋"], "code": "ak", "classify": "通", "description": "戋 jiān" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["夭"], "code": "pf", "classify": "通", "description": "夭 yāo" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["肖"], "code": "hj", "classify": "通", "description": "肖 xiāo" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["执"], "code": "we", "classify": "通", "description": "执 zhí" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["谷"], "code": "xd", "classify": "通", "description": "谷 gǔ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["疋"], "code": "qi", "classify": "通", "description": "疋 pǐ / yǎ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["光"], "code": "we", "classify": "通", "description": "光 guāng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["冉"], "code": "sj", "classify": "通", "description": "冉 rǎn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["妾"], "code": "vk", "classify": "通", "description": "妾 qiè" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["半"], "code": "gi", "classify": "通", "description": "半 bàn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["齐"], "code": "pk", "classify": "通", "description": "齐 qí" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["莫"], "code": "mj", "classify": "通", "description": "莫 mò" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["弗"], "code": "ue", "classify": "通", "description": "弗 fú" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["牙"], "code": "pe", "classify": "通", "description": "牙 yá" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["甘"], "code": "ck", "classify": "通", "description": "甘 gān" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["韦"], "code": "qj", "classify": "通", "description": "韦 wéi" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["风"], "code": "mi", "classify": "通", "description": "风 fēng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["鸟"], "code": "mj", "classify": "通", "description": "鸟 niǎo" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["乌"], "code": "oj", "classify": "通", "description": "乌 wū" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["圭"], "code": "qd", "classify": "通", "description": "圭 guī" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["景"], "code": "yk", "classify": "通", "description": "景 jǐng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["缶"], "code": "wf", "classify": "通", "description": "缶 fǒu" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["刍"], "code": "wd", "classify": "通", "description": "刍 chú" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["羽"], "code": "md", "classify": "通", "description": "羽 yǔ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["龹"], "code": "yk", "classify": "通", "description": "龹 juǎn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["免"], "code": "be", "classify": "通", "description": "免 miǎn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["百"], "code": "rj", "classify": "通", "description": "百 bǎi" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["父"], "code": "sf", "classify": "通", "description": "父 fù" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["甫"], "code": "cd", "classify": "通", "description": "甫 fǔ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["双"], "code": "lf", "classify": "通", "description": "双 shuāng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["卅"], "code": "wd", "classify": "通", "description": "卅 sà" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["兵"], "code": "oi", "classify": "通", "description": "兵 bīng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["飞"], "code": "gd", "classify": "通", "description": "飞 fēi" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["尺"], "code": "tj", "classify": "通", "description": "尺 chǐ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["虎"], "code": "gi", "classify": "通", "description": "虎 hǔ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["龙"], "code": "yj", "classify": "通", "description": "龙 lóng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["君"], "code": "vi", "classify": "通", "description": "君 jūn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["凡"], "code": "lf", "classify": "通", "description": "凡 fán" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["曲"], "code": "lk", "classify": "通", "description": "曲 qū" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["巨"], "code": "mk", "classify": "通", "description": "巨 jù" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["辰"], "code": "vd", "classify": "通", "description": "辰 chén" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["六"], "code": "re", "classify": "通", "description": "六 liù" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["屯"], "code": "uj", "classify": "通", "description": "屯 tún" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["曷"], "code": "tf", "classify": "通", "description": "曷 hé" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["爻"], "code": "sd", "classify": "通", "description": "爻 yáo" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["血"], "code": "yd", "classify": "通", "description": "血 xuè" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["夹"], "code": "nj", "classify": "通", "description": "夹 jiā" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["我"], "code": "ni", "classify": "通", "description": "我 wǒ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["奂"], "code": "gf", "classify": "通", "description": "奂 huàn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["曰"], "code": "si", "classify": "通", "description": "曰 yuē" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["旡"], "code": "we", "classify": "通", "description": "旡 jì" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["尹"], "code": "ad", "classify": "通", "description": "尹 yǐn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["垂"], "code": "bi", "classify": "通", "description": "垂 chuí" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["唐"], "code": "xe", "classify": "通", "description": "唐 táng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["酋"], "code": "me", "classify": "通", "description": "酋 qiú" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["肉"], "code": "oe", "classify": "通", "description": "肉 ròu" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["卑"], "code": "yk", "classify": "通", "description": "卑 bēi" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["舛"], "code": "xi", "classify": "通", "description": "舛 chuǎn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["芒"], "code": "ge", "classify": "通", "description": "芒 máng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["童"], "code": "bf", "classify": "通", "description": "童 tóng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["鬲"], "code": "oe", "classify": "通", "description": "鬲 lì" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["矛"], "code": "mf", "classify": "通", "description": "矛 máo" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["卤"], "code": "pk", "classify": "通", "description": "卤 lǔ" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["乡"], "code": "yi", "classify": "通", "description": "乡 xiāng" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["耒"], "code": "oj", "classify": "通", "description": "耒 lěi" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["呙"], "code": "cf", "classify": "通", "description": "呙 guō" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["麦"], "code": "xj", "classify": "通", "description": "麦 mài" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["丹"], "code": "af", "classify": "通", "description": "丹 dān" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["鼻"], "code": "qj", "classify": "通", "description": "鼻 bí" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["屮"], "code": "ci", "classify": "通", "description": "屮 cǎo" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["毋"], "code": "gj", "classify": "通", "description": "毋 wú" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["車"], "code": "tk", "classify": "通", "description": "車 chē" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["敖"], "code": "ce", "classify": "通", "description": "敖 áo" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["黾"], "code": "oj", "classify": "通", "description": "黾 mǐn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["卵"], "code": "ge", "classify": "通", "description": "卵 luǎn" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["丸"], "code": "pi", "classify": "通", "description": "丸 wán" }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      { "zigens": ["頁"], "code": "ni", "classify": "通", "description": "頁 yè" }
+    ],
+    "description": ""
+  }
 ]
