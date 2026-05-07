@@ -33,6 +33,6 @@
 		"id": "xiaoxiang",
     	"full_name": "潇湘",
     	"zigen_url": "./zigen/xiaoxiang.json",
-    	"zigen_font": "./Yuniversus.woff"
+    	"zigen_font": "./ChaiPUA-0.2.7.ttf"
     }
 ]
