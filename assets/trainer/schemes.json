@@ -34,5 +34,11 @@
         "full_name": "魔灵",
         "zigen_url": "./zigen/moling.json",
         "zigen_font": "./Yuniversus.woff"
+    },
+    {
+		"id": "xiaoxiang",
+    	"full_name": "潇湘",
+    	"zigen_url": "./zigen/xiaoxiang.json",
+    	"zigen_font": "./ChaiPUA-0.2.7.ttf"
     }
 ]
