@@ -401,7 +401,7 @@
       { "zigens": ["旦"], "code": "nd", "classify": "通", "description": "" },
       { "zigens": ["彳"], "code": "nd", "classify": "通", "description": "" },
       { "zigens": ["先", "天"], "code": "nd", "classify": "通", "description": "先天" },
-      { "zigens": ["尸"], "code": "nd", "classify": "通", "description": "" },
+      { "zigens": ["尸"], "code": "nd", "classify": "通", "description": "" }
     ],
     "description": ""
   },
