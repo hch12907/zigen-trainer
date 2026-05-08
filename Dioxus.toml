@@ -5,7 +5,7 @@
 # HTML title tag content
 title = "慧眼识字根·字根练习器"
 
-base_path = "/zigen-trainer/"
+# base_path = ""
 
 # include `assets` in web platform
 [web.resource]
