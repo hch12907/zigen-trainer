@@ -1,0 +1,4050 @@
+[
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "bcu",
+            "description" : "冊  拼音：cè  首笔：竖(u)",
+            "zigens" : [
+               "冊",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "bfo",
+            "description" : "丰  拼音：fēng  首笔：横(o)",
+            "zigens" : [
+               "丰"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "bgu",
+            "description" : "骨  拼音：gǔ  首笔：竖(u)",
+            "zigens" : [
+               "骨"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "bu",
+            "description" : "咼  拼音：无  首笔：竖(u)",
+            "zigens" : [
+               "咼",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "bhe",
+            "description" : "合  拼音：hé  首笔：撇(e)",
+            "zigens" : [
+               "合"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "be",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "bqe",
+            "description" : "僉  拼音：qiān  首笔：撇(e)",
+            "zigens" : [
+               "僉"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "be",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "bke",
+            "description" : "鱼  拼音：yú  首笔：撇(e)",
+            "zigens" : [
+               "鱼"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "bko",
+            "description" : "牙  拼音：yá  首笔：横(o)",
+            "zigens" : [
+               "牙"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "繁",
+            "code" : "bne",
+            "description" : "鳥  拼音：niǎo  首笔：撇(e)",
+            "zigens" : [
+               "鳥"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "be",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "bwe",
+            "description" : "烏  拼音：wū  首笔：撇(e)",
+            "zigens" : [
+               "烏"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "be",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "bsu",
+            "description" : "山  拼音：shān  首笔：竖(u)",
+            "zigens" : [
+               "山"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "bu",
+            "description" : "囗  拼音：无  首笔：竖(u)",
+            "zigens" : [
+               "囗"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "cco",
+            "description" : "辰  拼音：chén  首笔：横(o)",
+            "zigens" : [
+               "辰"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "cgi",
+            "description" : "广  拼音：guǎng  首笔：点(i)",
+            "zigens" : [
+               "广"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "chu",
+            "description" : "黑  拼音：hēi  首笔：竖(u)",
+            "zigens" : [
+               "黑"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "ci",
+            "description" : "灬  拼音：无  首笔：点(i)",
+            "zigens" : [
+               "灬"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "cje",
+            "description" : "几  拼音：jǐ  首笔：撇(e)",
+            "zigens" : [
+               "几"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "cse",
+            "description" : "殳  拼音：shū  首笔：撇(e)",
+            "zigens" : [
+               "殳"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "cfe",
+            "description" : "風  拼音：fēng  首笔：撇(e)",
+            "zigens" : [
+               "風"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "cki",
+            "description" : "言  拼音：yán  首笔：点(i)",
+            "zigens" : [
+               "言"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "cku",
+            "description" : "业  拼音：yè  首笔：竖(u)",
+            "zigens" : [
+               "业"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "cvu",
+            "description" : "足  拼音：zú  首笔：竖(u)",
+            "zigens" : [
+               "足"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "cwo",
+            "description" : "耳  拼音：ěr  首笔：横(o)",
+            "zigens" : [
+               "耳"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "da",
+            "description" : "㔾  拼音：无  首笔：折(a)",
+            "zigens" : [
+               "㔾",
+               "卩",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "dbe",
+            "description" : "白  拼音：bái  首笔：撇(e)",
+            "zigens" : [
+               "白"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "de",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "dca",
+            "description" : "丑  拼音：chǒu  首笔：折(a)",
+            "zigens" : [
+               "丑"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "du",
+            "description" : "  拼音：无  首笔：竖(u)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "dfe",
+            "description" : "缶  拼音：fǒu  首笔：撇(e)",
+            "zigens" : [
+               "缶"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "dhe",
+            "description" : "禾  拼音：hé  首笔：撇(e)",
+            "zigens" : [
+               "禾"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "di",
+            "description" : "疒  拼音：无  首笔：点(i)",
+            "zigens" : [
+               "疒"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "dju",
+            "description" : "见  拼音：jiàn  首笔：竖(u)",
+            "zigens" : [
+               "见"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "dka",
+            "description" : "也  拼音：yě  首笔：折(a)",
+            "zigens" : [
+               "也"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "dma",
+            "description" : "乜  拼音：miē  首笔：折(a)",
+            "zigens" : [
+               "乜"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "dke",
+            "description" : "乂  拼音：yì  首笔：撇(e)",
+            "zigens" : [
+               "乂"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "de",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "dmu",
+            "description" : "目  拼音：mù  首笔：竖(u)",
+            "zigens" : [
+               "目"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "do",
+            "description" : "  拼音：无  首笔：横(o)",
+            "zigens" : [
+               "",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "dse",
+            "description" : "食  拼音：shí  首笔：撇(e)",
+            "zigens" : [
+               "食"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "dso",
+            "description" : "卅  拼音：sà  首笔：横(o)",
+            "zigens" : [
+               "卅"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "dxo",
+            "description" : "卌  拼音：xì  首笔：横(o)",
+            "zigens" : [
+               "卌"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "do",
+            "description" : "  拼音：无  首笔：横(o)",
+            "zigens" : [
+               "",
+               "",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "du",
+            "description" : "冂  拼音：无  首笔：竖(u)",
+            "zigens" : [
+               "冂",
+               "",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "dvo",
+            "description" : "走  拼音：zǒu  首笔：横(o)",
+            "zigens" : [
+               "走"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "dvu",
+            "description" : "止  拼音：zhǐ  首笔：竖(u)",
+            "zigens" : [
+               "止"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "du",
+            "description" : "  拼音：无  首笔：竖(u)",
+            "zigens" : [
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "dcu",
+            "description" : "齒  拼音：chǐ  首笔：竖(u)",
+            "zigens" : [
+               "齒"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "dwi",
+            "description" : "文  拼音：wén  首笔：点(i)",
+            "zigens" : [
+               "文"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "dxi",
+            "description" : "辛  拼音：xīn  首笔：点(i)",
+            "zigens" : [
+               "辛"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "fce",
+            "description" : "川  拼音：chuān  首笔：撇(e)",
+            "zigens" : [
+               "川"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "fe",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "fa",
+            "description" : "巛  拼音：无  首笔：折(a)",
+            "zigens" : [
+               "巛",
+               "巜"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "fe",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "ffi",
+            "description" : "方  拼音：fāng  首笔：点(i)",
+            "zigens" : [
+               "方"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "fi",
+            "description" : "丶  拼音：无  首笔：点(i)",
+            "zigens" : [
+               "丶",
+               "乀"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "fko",
+            "description" : "一  拼音：yī  首笔：横(o)",
+            "zigens" : [
+               "一"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "gki",
+            "description" : "羊  拼音：yáng  首笔：点(i)",
+            "zigens" : [
+               "羊"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "gi",
+            "description" : "  拼音：无  首笔：点(i)",
+            "zigens" : [
+               "",
+               "",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "gmo",
+            "description" : "木  拼音：mù  首笔：横(o)",
+            "zigens" : [
+               "木"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "go",
+            "description" : "朩  拼音：无  首笔：横(o)",
+            "zigens" : [
+               "朩"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "glo",
+            "description" : "來  拼音：lái  首笔：横(o)",
+            "zigens" : [
+               "來"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "go",
+            "description" : "匚  拼音：无  首笔：横(o)",
+            "zigens" : [
+               "匚",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "gso",
+            "description" : "示  拼音：shì  首笔：横(o)",
+            "zigens" : [
+               "示",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "gwe",
+            "description" : "儿  拼音：ér  首笔：撇(e)",
+            "zigens" : [
+               "儿",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "ha",
+            "description" : "厶  拼音：无  首笔：折(a)",
+            "zigens" : [
+               "厶"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "hbe",
+            "description" : "匕  拼音：bǐ  首笔：撇(e)",
+            "zigens" : [
+               "匕",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "简",
+            "code" : "he",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "ho",
+            "description" : "  拼音：无  首笔：横(o)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "hqe",
+            "description" : "气  拼音：qì  首笔：撇(e)",
+            "zigens" : [
+               "气"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "hru",
+            "description" : "日  拼音：rì  首笔：竖(u)",
+            "zigens" : [
+               "日"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "hku",
+            "description" : "曰  拼音：yuē  首笔：竖(u)",
+            "zigens" : [
+               "曰"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "hu",
+            "description" : "  拼音：无  首笔：竖(u)",
+            "zigens" : [
+               "",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "hsu",
+            "description" : "上  拼音：shàng  首笔：竖(u)",
+            "zigens" : [
+               "上"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "hu",
+            "description" : "丄  拼音：无  首笔：竖(u)",
+            "zigens" : [
+               "丄",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "hvu",
+            "description" : "早  拼音：zǎo  首笔：竖(u)",
+            "zigens" : [
+               "早"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "hxi",
+            "description" : "心  拼音：xīn  首笔：点(i)",
+            "zigens" : [
+               "心"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "jge",
+            "description" : "鬼  拼音：guǐ  首笔：撇(e)",
+            "zigens" : [
+               "鬼"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "je",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               "",
+               "甶",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "jja",
+            "description" : "己  拼音：jǐ  首笔：折(a)",
+            "zigens" : [
+               "己"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "jka",
+            "description" : "已  拼音：yǐ  首笔：折(a)",
+            "zigens" : [
+               "已"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "jsa",
+            "description" : "巳  拼音：sì  首笔：折(a)",
+            "zigens" : [
+               "巳",
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "jba",
+            "description" : "巴  拼音：bā  首笔：折(a)",
+            "zigens" : [
+               "巴"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "jku",
+            "description" : "口  拼音：kǒu  首笔：竖(u)",
+            "zigens" : [
+               "口"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "jla",
+            "description" : "〇  拼音：líng  首笔：折(a)",
+            "zigens" : [
+               "〇"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "繁",
+            "code" : "jmo",
+            "description" : "馬  拼音：mǎ  首笔：横(o)",
+            "zigens" : [
+               "馬"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "jo",
+            "description" : "  拼音：无  首笔：横(o)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "jo",
+            "description" : "丂  拼音：无  首笔：横(o)",
+            "zigens" : [
+               "丂",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "jqe",
+            "description" : "千  拼音：qiān  首笔：撇(e)",
+            "zigens" : [
+               "千",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "jse",
+            "description" : "矢  拼音：shǐ  首笔：撇(e)",
+            "zigens" : [
+               "矢"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "jso",
+            "description" : "三  拼音：sān  首笔：横(o)",
+            "zigens" : [
+               "三"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "jvi",
+            "description" : "之  拼音：zhī  首笔：点(i)",
+            "zigens" : [
+               "之"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "ji",
+            "description" : "辶  拼音：无  首笔：点(i)",
+            "zigens" : [
+               "辶",
+               "⻍"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "jvo",
+            "description" : "正  拼音：zhèng  首笔：横(o)",
+            "zigens" : [
+               "正"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "kbo",
+            "description" : "不  拼音：bù  首笔：横(o)",
+            "zigens" : [
+               "不"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "简",
+            "code" : "kce",
+            "description" : "长  拼音：cháng  首笔：撇(e)",
+            "zigens" : [
+               "长"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "kco",
+            "description" : "车  拼音：chē  首笔：横(o)",
+            "zigens" : [
+               "车"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "ke",
+            "description" : "勹  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               "勹",
+               "",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "kga",
+            "description" : "艮  拼音：gèn  首笔：折(a)",
+            "zigens" : [
+               "艮"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "ka",
+            "description" : "  拼音：无  首笔：折(a)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "kgo",
+            "description" : "革  拼音：gé  首笔：横(o)",
+            "zigens" : [
+               "革"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "khi",
+            "description" : "户  拼音：hù  首笔：点(i)",
+            "zigens" : [
+               "户"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "khe",
+            "description" : "戶  拼音：hù  首笔：撇(e)",
+            "zigens" : [
+               "戶"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "kho",
+            "description" : "戸  拼音：hù  首笔：横(o)",
+            "zigens" : [
+               "戸"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "khu",
+            "description" : "虎  拼音：hǔ  首笔：竖(u)",
+            "zigens" : [
+               "虎"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "ku",
+            "description" : "虍  拼音：无  首笔：竖(u)",
+            "zigens" : [
+               "虍",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "kje",
+            "description" : "臼  拼音：jiù  首笔：撇(e)",
+            "zigens" : [
+               "臼"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "ke",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "kla",
+            "description" : "了  拼音：le  首笔：折(a)",
+            "zigens" : [
+               "了"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "kva",
+            "description" : "子  拼音：zǐ  首笔：折(a)",
+            "zigens" : [
+               "子"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "kja",
+            "description" : "孑  拼音：jié  首笔：折(a)",
+            "zigens" : [
+               "孑"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "kka",
+            "description" : "予  拼音：yǔ  首笔：折(a)",
+            "zigens" : [
+               "予"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "kve",
+            "description" : "竹  拼音：zhú  首笔：撇(e)",
+            "zigens" : [
+               "竹"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "ke",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               "",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "kwi",
+            "description" : "亡  拼音：wáng  首笔：点(i)",
+            "zigens" : [
+               "亡"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "ki",
+            "description" : "  拼音：无  首笔：点(i)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "kwo",
+            "description" : "未  拼音：wèi  首笔：横(o)",
+            "zigens" : [
+               "未"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "kmo",
+            "description" : "末  拼音：mò  首笔：横(o)",
+            "zigens" : [
+               "末"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "kxa",
+            "description" : "习  拼音：xí  首笔：折(a)",
+            "zigens" : [
+               "习"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "kxo",
+            "description" : "西  拼音：xī  首笔：横(o)",
+            "zigens" : [
+               "西"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "kko",
+            "description" : "酉  拼音：yǒu  首笔：横(o)",
+            "zigens" : [
+               "酉"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "lbe",
+            "description" : "八  拼音：bā  首笔：撇(e)",
+            "zigens" : [
+               "八"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "le",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "lgo",
+            "description" : "工  拼音：gōng  首笔：横(o)",
+            "zigens" : [
+               "工"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "lka",
+            "description" : "乙  拼音：yǐ  首笔：折(a)",
+            "zigens" : [
+               "乙",
+               "亅",
+               "",
+               "",
+               "",
+               "",
+               "",
+               "",
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "la",
+            "description" : "乚  拼音：无  首笔：折(a)",
+            "zigens" : [
+               "乚",
+               "",
+               "",
+               "",
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "lfa",
+            "description" : "飛  拼音：fēi  首笔：折(a)",
+            "zigens" : [
+               "飛"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "lke",
+            "description" : "夭  拼音：yāo  首笔：撇(e)",
+            "zigens" : [
+               "夭"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "lna",
+            "description" : "乃  拼音：nǎi  首笔：折(a)",
+            "zigens" : [
+               "乃"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "la",
+            "description" : "廴  拼音：无  首笔：折(a)",
+            "zigens" : [
+               "廴"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "le",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "lse",
+            "description" : "手  拼音：shǒu  首笔：撇(e)",
+            "zigens" : [
+               "手"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "le",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "lo",
+            "description" : "  拼音：无  首笔：横(o)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "lsu",
+            "description" : "尚  拼音：shàng  首笔：竖(u)",
+            "zigens" : [
+               "尚"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "lu",
+            "description" : "  拼音：无  首笔：竖(u)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "繁",
+            "code" : "lu",
+            "description" : "  拼音：无  首笔：竖(u)",
+            "zigens" : [
+               "",
+               "",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "lve",
+            "description" : "隹  拼音：zhuī  首笔：撇(e)",
+            "zigens" : [
+               "隹"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "lwo",
+            "description" : "而  拼音：ér  首笔：横(o)",
+            "zigens" : [
+               "而"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "lmo",
+            "description" : "面  拼音：miàn  首笔：横(o)",
+            "zigens" : [
+               "面"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "lxe",
+            "description" : "夕  拼音：xī  首笔：撇(e)",
+            "zigens" : [
+               "夕"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "mbu",
+            "description" : "贝  拼音：bèi  首笔：竖(u)",
+            "zigens" : [
+               "贝"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "mcu",
+            "description" : "虫  拼音：chóng  首笔：竖(u)",
+            "zigens" : [
+               "虫"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "mfu",
+            "description" : "非  拼音：fēi  首笔：竖(u)",
+            "zigens" : [
+               "非"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "mgo",
+            "description" : "干  拼音：gàn  首笔：横(o)",
+            "zigens" : [
+               "干"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "mi",
+            "description" : "丷  拼音：无  首笔：点(i)",
+            "zigens" : [
+               "丷"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "mu",
+            "description" : "  拼音：无  首笔：竖(u)",
+            "zigens" : [
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "mi",
+            "description" : "  拼音：无  首笔：点(i)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "mki",
+            "description" : "亦  拼音：yì  首笔：点(i)",
+            "zigens" : [
+               "亦",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "mku",
+            "description" : "由  拼音：yóu  首笔：竖(u)",
+            "zigens" : [
+               "由"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "msu",
+            "description" : "申  拼音：shēn  首笔：竖(u)",
+            "zigens" : [
+               "申"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "mdu",
+            "description" : "电  拼音：diàn  首笔：竖(u)",
+            "zigens" : [
+               "电"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "mqo",
+            "description" : "其  拼音：qí  首笔：横(o)",
+            "zigens" : [
+               "其"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "mre",
+            "description" : "人  拼音：rén  首笔：撇(e)",
+            "zigens" : [
+               "人"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "msa",
+            "description" : "糸  拼音：sī  首笔：折(a)",
+            "zigens" : [
+               "糸",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "na",
+            "description" : "凵  拼音：无  首笔：折(a)",
+            "zigens" : [
+               "凵",
+               "丩",
+               "",
+               "屮",
+               "丱"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "nco",
+            "description" : "臣  拼音：chén  首笔：横(o)",
+            "zigens" : [
+               "臣"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "no",
+            "description" : "  拼音：无  首笔：横(o)",
+            "zigens" : [
+               "",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "ndo",
+            "description" : "土  拼音：dù  首笔：横(o)",
+            "zigens" : [
+               "土"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "nso",
+            "description" : "士  拼音：shì  首笔：横(o)",
+            "zigens" : [
+               "士"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "ne",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "nje",
+            "description" : "九  拼音：jiǔ  首笔：撇(e)",
+            "zigens" : [
+               "九"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "nme",
+            "description" : "卯  拼音：mǎo  首笔：撇(e)",
+            "zigens" : [
+               "卯",
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "ne",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               "",
+               "",
+               "",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "nqe",
+            "description" : "欠  拼音：qiàn  首笔：撇(e)",
+            "zigens" : [
+               "欠"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "nre",
+            "description" : "壬  拼音：rén  首笔：撇(e)",
+            "zigens" : [
+               "壬"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "nwo",
+            "description" : "王  拼音：wáng  首笔：横(o)",
+            "zigens" : [
+               "王"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "nxu",
+            "description" : "小  拼音：xiǎo  首笔：竖(u)",
+            "zigens" : [
+               "小"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "nu",
+            "description" : "⺌  拼音：无  首笔：竖(u)",
+            "zigens" : [
+               "⺌",
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "ni",
+            "description" : "  拼音：无  首笔：点(i)",
+            "zigens" : [
+               "",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "pco",
+            "description" : "長  拼音：cháng  首笔：横(o)",
+            "zigens" : [
+               "長"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "po",
+            "description" : "镸  拼音：无  首笔：横(o)",
+            "zigens" : [
+               "镸",
+               "髟"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "pdo",
+            "description" : "大  拼音：dà  首笔：横(o)",
+            "zigens" : [
+               "大"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "pe",
+            "description" : "夊  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               "夊",
+               "攵"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "pgo",
+            "description" : "古  拼音：gǔ  首笔：横(o)",
+            "zigens" : [
+               "古"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "pi",
+            "description" : "  拼音：无  首笔：点(i)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "繁",
+            "code" : "pju",
+            "description" : "見  拼音：jiàn  首笔：竖(u)",
+            "zigens" : [
+               "見"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "pka",
+            "description" : "幺  拼音：yāo  首笔：折(a)",
+            "zigens" : [
+               "幺"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "pma",
+            "description" : "马  拼音：mǎ  首笔：折(a)",
+            "zigens" : [
+               "马"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "ppe",
+            "description" : "片  拼音：piàn  首笔：撇(e)",
+            "zigens" : [
+               "片"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "ppa",
+            "description" : "爿  拼音：pán  首笔：折(a)",
+            "zigens" : [
+               "爿"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "pqo",
+            "description" : "七  拼音：qī  首笔：横(o)",
+            "zigens" : [
+               "七",
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "pko",
+            "description" : "弋  拼音：yì  首笔：横(o)",
+            "zigens" : [
+               "弋"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "pre",
+            "description" : "入  拼音：rù  首笔：撇(e)",
+            "zigens" : [
+               "入"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "pse",
+            "description" : "舌  拼音：shé  首笔：撇(e)",
+            "zigens" : [
+               "舌"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "pwo",
+            "description" : "兀  拼音：wù  首笔：横(o)",
+            "zigens" : [
+               "兀"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "po",
+            "description" : "丌  拼音：无  首笔：横(o)",
+            "zigens" : [
+               "丌",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "qbu",
+            "description" : "卜  拼音：bo  首笔：竖(u)",
+            "zigens" : [
+               "卜"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "qu",
+            "description" : "  拼音：无  首笔：竖(u)",
+            "zigens" : [
+               "",
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "qo",
+            "description" : "  拼音：无  首笔：横(o)",
+            "zigens" : [
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "qlu",
+            "description" : "鹵  拼音：lǔ  首笔：竖(u)",
+            "zigens" : [
+               "鹵"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "qgi",
+            "description" : "高  拼音：gāo  首笔：点(i)",
+            "zigens" : [
+               "高",
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "qi",
+            "description" : "  拼音：无  首笔：点(i)",
+            "zigens" : [
+               "",
+               "",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "qke",
+            "description" : "用  拼音：yòng  首笔：撇(e)",
+            "zigens" : [
+               "用"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "qmi",
+            "description" : "门  拼音：mén  首笔：点(i)",
+            "zigens" : [
+               "门"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "简",
+            "code" : "qne",
+            "description" : "鸟  拼音：niǎo  首笔：撇(e)",
+            "zigens" : [
+               "鸟"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "qe",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "qwe",
+            "description" : "乌  拼音：wū  首笔：撇(e)",
+            "zigens" : [
+               "乌"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "qo",
+            "description" : "艹  拼音：无  首笔：横(o)",
+            "zigens" : [
+               "艹",
+               "廾"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "qxi",
+            "description" : "穴  拼音：xué  首笔：点(i)",
+            "zigens" : [
+               "穴"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "ra",
+            "description" : "  拼音：无  首笔：折(a)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "ra",
+            "description" : "  拼音：无  首笔：折(a)",
+            "zigens" : [
+               "",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "rco",
+            "description" : "厂  拼音：chǎng  首笔：横(o)",
+            "zigens" : [
+               "厂"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "ro",
+            "description" : "丆  拼音：无  首笔：横(o)",
+            "zigens" : [
+               "丆"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "rga",
+            "description" : "弓  拼音：gōng  首笔：折(a)",
+            "zigens" : [
+               "弓"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "ri",
+            "description" : "丬  拼音：无  首笔：点(i)",
+            "zigens" : [
+               "丬"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "ri",
+            "description" : "  拼音：无  首笔：点(i)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "rje",
+            "description" : "金  拼音：jīn  首笔：撇(e)",
+            "zigens" : [
+               "金"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "rko",
+            "description" : "页  拼音：yè  首笔：横(o)",
+            "zigens" : [
+               "页"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "rma",
+            "description" : "母  拼音：mǔ  首笔：折(a)",
+            "zigens" : [
+               "母"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "ra",
+            "description" : "  拼音：无  首笔：折(a)",
+            "zigens" : [
+               "",
+               "彑",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "ro",
+            "description" : "  拼音：无  首笔：横(o)",
+            "zigens" : [
+               "",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "ro",
+            "description" : "  拼音：无  首笔：横(o)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "rqu",
+            "description" : "且  拼音：qiě  首笔：竖(u)",
+            "zigens" : [
+               "且"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "ru",
+            "description" : "  拼音：无  首笔：竖(u)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "rso",
+            "description" : "世  拼音：shì  首笔：横(o)",
+            "zigens" : [
+               "世"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "rso",
+            "description" : "豕  拼音：shǐ  首笔：横(o)",
+            "zigens" : [
+               "豕"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "re",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "rtu",
+            "description" : "田  拼音：tián  首笔：竖(u)",
+            "zigens" : [
+               "田"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "繁",
+            "code" : "sbu",
+            "description" : "貝  拼音：bèi  首笔：竖(u)",
+            "zigens" : [
+               "貝"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "se",
+            "description" : "彳  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               "彳",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "sfo",
+            "description" : "夫  拼音：fū  首笔：横(o)",
+            "zigens" : [
+               "夫"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "so",
+            "description" : "  拼音：无  首笔：横(o)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "sgo",
+            "description" : "戈  拼音：gē  首笔：横(o)",
+            "zigens" : [
+               "戈"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "swo",
+            "description" : "戊  拼音：wù  首笔：横(o)",
+            "zigens" : [
+               "戊"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "shi",
+            "description" : "亥  拼音：hài  首笔：点(i)",
+            "zigens" : [
+               "亥"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "si",
+            "description" : "亠  拼音：无  首笔：点(i)",
+            "zigens" : [
+               "亠"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "ske",
+            "description" : "月  拼音：yuè  首笔：撇(e)",
+            "zigens" : [
+               "月"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "se",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               "",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "sko",
+            "description" : "尤  拼音：yóu  首笔：横(o)",
+            "zigens" : [
+               "尤"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "so",
+            "description" : "尢  拼音：无  首笔：横(o)",
+            "zigens" : [
+               "尢"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "sla",
+            "description" : "力  拼音：lì  首笔：折(a)",
+            "zigens" : [
+               "力"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "sli",
+            "description" : "鹿  拼音：lù  首笔：点(i)",
+            "zigens" : [
+               "鹿"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "si",
+            "description" : "  拼音：无  首笔：点(i)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "smi",
+            "description" : "米  拼音：mǐ  首笔：点(i)",
+            "zigens" : [
+               "米"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "ssa",
+            "description" : "尸  拼音：shī  首笔：折(a)",
+            "zigens" : [
+               "尸",
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "sa",
+            "description" : "  拼音：无  首笔：折(a)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "sve",
+            "description" : "自  拼音：zì  首笔：撇(e)",
+            "zigens" : [
+               "自"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "sse",
+            "description" : "身  拼音：shēn  首笔：撇(e)",
+            "zigens" : [
+               "身"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "ta",
+            "description" : "彐  拼音：无  首笔：折(a)",
+            "zigens" : [
+               "彐"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "to",
+            "description" : "  拼音：无  首笔：横(o)",
+            "zigens" : [
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "ta",
+            "description" : "肀  拼音：无  首笔：折(a)",
+            "zigens" : [
+               "肀"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "tla",
+            "description" : "隶  拼音：lì  首笔：折(a)",
+            "zigens" : [
+               "隶"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "ti",
+            "description" : "  拼音：无  首笔：点(i)",
+            "zigens" : [
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "te",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               "",
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "to",
+            "description" : "  拼音：无  首笔：横(o)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "tju",
+            "description" : "甲  拼音：jiǎ  首笔：竖(u)",
+            "zigens" : [
+               "甲"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "tlu",
+            "description" : "里  拼音：lǐ  首笔：竖(u)",
+            "zigens" : [
+               "里"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "tku",
+            "description" : "禺  拼音：yú  首笔：竖(u)",
+            "zigens" : [
+               "禺"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "繁",
+            "code" : "tke",
+            "description" : "魚  拼音：yú  首笔：撇(e)",
+            "zigens" : [
+               "魚"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "tme",
+            "description" : "毛  拼音：máo  首笔：撇(e)",
+            "zigens" : [
+               "毛"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "tmi",
+            "description" : "麻  拼音：má  首笔：点(i)",
+            "zigens" : [
+               "麻"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "tne",
+            "description" : "牛  拼音：niú  首笔：撇(e)",
+            "zigens" : [
+               "牛"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "te",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "tse",
+            "description" : "生  拼音：shēng  首笔：撇(e)",
+            "zigens" : [
+               "生"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "tso",
+            "description" : "石  拼音：shí  首笔：横(o)",
+            "zigens" : [
+               "石"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "tve",
+            "description" : "豸  拼音：zhì  首笔：撇(e)",
+            "zigens" : [
+               "豸"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "two",
+            "description" : "二  拼音：èr  首笔：横(o)",
+            "zigens" : [
+               "二"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "ti",
+            "description" : "  拼音：无  首笔：点(i)",
+            "zigens" : [
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "te",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "ti",
+            "description" : "⺀  拼音：无  首笔：点(i)",
+            "zigens" : [
+               "⺀"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "to",
+            "description" : "亍  拼音：无  首笔：横(o)",
+            "zigens" : [
+               "亍"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "vdo",
+            "description" : "丁  拼音：dīng  首笔：横(o)",
+            "zigens" : [
+               "丁"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "vo",
+            "description" : "丅  拼音：无  首笔：横(o)",
+            "zigens" : [
+               "丅"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "vxo",
+            "description" : "下  拼音：xià  首笔：横(o)",
+            "zigens" : [
+               "下"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "vu",
+            "description" : "  拼音：无  首笔：竖(u)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "ve",
+            "description" : "丿  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               "丿"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "vka",
+            "description" : "又  拼音：yòu  首笔：折(a)",
+            "zigens" : [
+               "又"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "va",
+            "description" : "  拼音：无  首笔：折(a)",
+            "zigens" : [
+               "",
+               "",
+               "癶"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "vo",
+            "description" : "耂  拼音：无  首笔：横(o)",
+            "zigens" : [
+               "耂"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "vsu",
+            "description" : "水  拼音：shuǐ  首笔：竖(u)",
+            "zigens" : [
+               "水",
+               "氺"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "vi",
+            "description" : "  拼音：无  首笔：点(i)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "vwo",
+            "description" : "瓦  拼音：wǎ  首笔：横(o)",
+            "zigens" : [
+               "瓦"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "wa",
+            "description" : "  拼音：无  首笔：折(a)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "繁",
+            "code" : "wco",
+            "description" : "車  拼音：chē  首笔：横(o)",
+            "zigens" : [
+               "車"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "wo",
+            "description" : "  拼音：无  首笔：横(o)",
+            "zigens" : [
+               "",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "we",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               "",
+               "彡"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "wi",
+            "description" : "冖  拼音：无  首笔：点(i)",
+            "zigens" : [
+               "冖"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "we",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               "",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "wju",
+            "description" : "巾  拼音：jīn  首笔：竖(u)",
+            "zigens" : [
+               "巾"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "wko",
+            "description" : "雨  拼音：yǔ  首笔：横(o)",
+            "zigens" : [
+               "雨"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "wmu",
+            "description" : "皿  拼音：mǐn  首笔：竖(u)",
+            "zigens" : [
+               "皿"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "wu",
+            "description" : "罒  拼音：无  首笔：竖(u)",
+            "zigens" : [
+               "罒"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "wna",
+            "description" : "女  拼音：nǚ  首笔：折(a)",
+            "zigens" : [
+               "女"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "wu",
+            "description" : "丨  拼音：无  首笔：竖(u)",
+            "zigens" : [
+               "丨",
+               "〢",
+               "〣"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "简",
+            "code" : "xa",
+            "description" : "  拼音：无  首笔：折(a)",
+            "zigens" : [
+               "",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "xco",
+            "description" : "寸  拼音：cùn  首笔：横(o)",
+            "zigens" : [
+               "寸"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "xo",
+            "description" : "  拼音：无  首笔：横(o)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "xfo",
+            "description" : "甫  拼音：fǔ  首笔：横(o)",
+            "zigens" : [
+               "甫"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "xje",
+            "description" : "斤  拼音：jīn  首笔：撇(e)",
+            "zigens" : [
+               "斤"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "xe",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "xli",
+            "description" : "立  拼音：lì  首笔：点(i)",
+            "zigens" : [
+               "立"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "繁",
+            "code" : "xmu",
+            "description" : "門  拼音：mén  首笔：竖(u)",
+            "zigens" : [
+               "門"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "xdu",
+            "description" : "鬥  拼音：dòu  首笔：竖(u)",
+            "zigens" : [
+               "鬥"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "xu",
+            "description" : "  拼音：无  首笔：竖(u)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "xve",
+            "description" : "舟  拼音：zhōu  首笔：撇(e)",
+            "zigens" : [
+               "舟"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "yda",
+            "description" : "刀  拼音：dāo  首笔：折(a)",
+            "zigens" : [
+               "刀"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "yhi",
+            "description" : "火  拼音：huǒ  首笔：点(i)",
+            "zigens" : [
+               "火"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "yi",
+            "description" : "宀  拼音：无  首笔：点(i)",
+            "zigens" : [
+               "宀"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "繁",
+            "code" : "yko",
+            "description" : "頁  拼音：yè  首笔：横(o)",
+            "zigens" : [
+               "頁"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "ypa",
+            "description" : "皮  拼音：pí  首笔：折(a)",
+            "zigens" : [
+               "皮"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "yqo",
+            "description" : "犬  拼音：quǎn  首笔：横(o)",
+            "zigens" : [
+               "犬"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "ye",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "yqu",
+            "description" : "曲  拼音：qǔ  首笔：竖(u)",
+            "zigens" : [
+               "曲"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "yo",
+            "description" : "  拼音：无  首笔：横(o)",
+            "zigens" : [
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "yso",
+            "description" : "十  拼音：shí  首笔：横(o)",
+            "zigens" : [
+               "十"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "yve",
+            "description" : "爪  拼音：zhǎo  首笔：撇(e)",
+            "zigens" : [
+               "爪"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "yge",
+            "description" : "瓜  拼音：guā  首笔：撇(e)",
+            "zigens" : [
+               "瓜"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "yvo",
+            "description" : "至  拼音：zhì  首笔：横(o)",
+            "zigens" : [
+               "至"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "yxe",
+            "description" : "向  拼音：xiàng  首笔：撇(e)",
+            "zigens" : [
+               "向"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "ye",
+            "description" : "  拼音：无  首笔：撇(e)",
+            "zigens" : [
+               "",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "门門",
+      "type" : "混",
+      "zigens" : [
+         "门",
+         "門"
+      ]
+   },
+   {
+      "description" : "幺厶",
+      "type" : "混",
+      "zigens" : [
+         "幺",
+         "厶"
+      ]
+   },
+   {
+      "description" : "穴宀",
+      "type" : "混",
+      "zigens" : [
+         "穴",
+         "宀"
+      ]
+   },
+   {
+      "description" : "人",
+      "type" : "混",
+      "zigens" : [
+         "人",
+         ""
+      ]
+   },
+   {
+      "description" : "口囗",
+      "type" : "混",
+      "zigens" : [
+         "口",
+         "囗"
+      ]
+   },
+   {
+      "description" : "心",
+      "type" : "混",
+      "zigens" : [
+         "心",
+         ""
+      ]
+   },
+   {
+      "description" : "火灬",
+      "type" : "混",
+      "zigens" : [
+         "火",
+         "灬"
+      ]
+   },
+   {
+      "description" : "耂土",
+      "type" : "混",
+      "zigens" : [
+         "耂",
+         "",
+         "",
+         "土"
+      ]
+   },
+   {
+      "description" : "糸",
+      "type" : "混",
+      "zigens" : [
+         "",
+         "糸"
+      ]
+   },
+   {
+      "description" : "金",
+      "type" : "混",
+      "zigens" : [
+         "金",
+         ""
+      ]
+   },
+   {
+      "description" : "食",
+      "type" : "混",
+      "zigens" : [
+         "食",
+         ""
+      ]
+   },
+   {
+      "description" : "长長",
+      "type" : "混",
+      "zigens" : [
+         "长",
+         "長"
+      ]
+   },
+   {
+      "description" : "鸟鳥",
+      "type" : "混",
+      "zigens" : [
+         "鸟",
+         "鳥"
+      ]
+   },
+   {
+      "description" : "乌烏",
+      "type" : "混",
+      "zigens" : [
+         "乌",
+         "烏"
+      ]
+   },
+   {
+      "description" : "鱼魚",
+      "type" : "混",
+      "zigens" : [
+         "鱼",
+         "魚"
+      ]
+   },
+   {
+      "description" : "马馬",
+      "type" : "混",
+      "zigens" : [
+         "马",
+         "馬"
+      ]
+   },
+   {
+      "description" : "车車",
+      "type" : "混",
+      "zigens" : [
+         "车",
+         "車"
+      ]
+   },
+   {
+      "description" : "页頁",
+      "type" : "混",
+      "zigens" : [
+         "页",
+         "頁"
+      ]
+   },
+   {
+      "description" : "见見",
+      "type" : "混",
+      "zigens" : [
+         "见",
+         "見"
+      ]
+   },
+   {
+      "description" : "贝貝",
+      "type" : "混",
+      "zigens" : [
+         "贝",
+         "貝"
+      ]
+   },
+   {
+      "description" : "刀",
+      "type" : "混",
+      "zigens" : [
+         "刀",
+         ""
+      ]
+   },
+   {
+      "description" : "立辛",
+      "type" : "混",
+      "zigens" : [
+         "立",
+         "辛"
+      ]
+   },
+   {
+      "description" : "丬",
+      "type" : "混",
+      "zigens" : [
+         "",
+         "丬"
+      ]
+   },
+   {
+      "description" : "言",
+      "type" : "混",
+      "zigens" : [
+         "",
+         "言"
+      ]
+   },
+   {
+      "description" : "田甲",
+      "type" : "混",
+      "zigens" : [
+         "田",
+         "甲"
+      ]
+   },
+   {
+      "description" : "大夫",
+      "type" : "混",
+      "zigens" : [
+         "大",
+         "夫"
+      ]
+   },
+   {
+      "description" : "七戈",
+      "type" : "混",
+      "zigens" : [
+         "七",
+         "戈"
+      ]
+   },
+   {
+      "description" : "丿",
+      "type" : "混",
+      "zigens" : [
+         "丿",
+         ""
+      ]
+   },
+   {
+      "description" : "艹卅",
+      "type" : "混",
+      "zigens" : [
+         "艹",
+         "卅"
+      ]
+   }
+]
+
