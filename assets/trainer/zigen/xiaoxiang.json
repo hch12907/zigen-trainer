@@ -787,7 +787,7 @@
       { "zigens": ["立", "正"], "code": "tk", "classify": "通", "description": "立正" },
       { "zigens": ["弓"], "code": "tk", "classify": "通", "description": "" },
       { "zigens": ["壴"], "code": "tk", "classify": "通", "description": "" },
-      { "zigens": ["瓜", "車"], "code": "tk", "classify": "通", "description": "Gravel Bike→瓜车" },
+      { "zigens": ["瓜", "車"], "code": "tk", "classify": "通", "description": "Gravel Bike→瓜车" }
     ],
     "description": ""
   },
