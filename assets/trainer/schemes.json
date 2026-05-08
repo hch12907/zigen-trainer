@@ -35,7 +35,7 @@
         "zigen_url": "./zigen/moling.json",
         "zigen_font": "./Yuniversus.woff"
     },
-	{
+    {
 		"id": "xiaoxiang",
     	"full_name": "潇湘",
     	"zigen_url": "./zigen/xiaoxiang.json",
