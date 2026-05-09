@@ -30,6 +30,13 @@ impl UserState {
         }
     }
 
+    pub fn load_from_backup(&mut self, backup: String) -> Result<(), String> {
+        let json = serde_json::from_str::<BTreeMap<String, TrainProgress>>(&backup)
+            .map_err(|e| e.to_string())?;
+        self.progresses.extend(json.into_iter());
+        Ok(())
+    }
+
     pub fn write_to_local_storage(&self) {
         let _ = LocalStorage::set("currentScheme", &self.current_scheme)
             .inspect_err(|e| tracing::error!("unable to write to localStorage due to {e}"));
@@ -174,6 +181,14 @@ impl TrainProgress {
             UsedScheduler::Novice(scheduler) => Box::new(scheduler.get_card().clone()),
             UsedScheduler::Adept(scheduler) => Box::new(scheduler.get_card().clone()),
             UsedScheduler::V2(scheduler) => Box::new(scheduler.get_card().clone()),
+        }
+    }
+
+    pub fn get_card_mut(&mut self) -> &mut dyn ZigenCard {
+        match &mut self.scheduler {
+            UsedScheduler::Novice(scheduler) => scheduler.get_card(),
+            UsedScheduler::Adept(scheduler) => scheduler.get_card(),
+            UsedScheduler::V2(scheduler) => scheduler.get_card(),
         }
     }
 

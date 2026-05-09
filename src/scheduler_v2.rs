@@ -1,5 +1,6 @@
 use chrono::{DateTime, Duration, Utc};
 use dioxus_logger::tracing;
+use rand::seq::SliceRandom;
 use serde_derive::{Deserialize, Serialize};
 
 use crate::scheduler::{Rating, ZigenCard};
@@ -18,6 +19,10 @@ impl ZigenCard for SchedulerV2Card {
 
     fn zigen_mut(&mut self) -> &mut SchemeZigen {
         &mut self.zigen
+    }
+
+    fn shuffle(&mut self) {
+        self.zigen_mut().as_raw_parts_mut().0.shuffle(&mut rand::rng());
     }
 
     fn is_new_card(&self) -> bool {
@@ -289,9 +294,9 @@ impl SchedulerV2 {
         }
     }
 
-    pub fn get_card(&mut self) -> &SchedulerV2Card {
+    pub fn get_card(&mut self) -> &mut SchedulerV2Card {
         self.populate_learning_cards();
-        self.learning_cards.first().unwrap()
+        self.learning_cards.first_mut().unwrap()
     }
 
     pub fn rate_card(&mut self, rating: Rating) {
