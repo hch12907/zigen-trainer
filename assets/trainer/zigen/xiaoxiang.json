@@ -4817,11 +4817,19 @@
 		"groups": [
 			{
 				"zigens": [
-					"七"
+					"廴"
 				],
 				"code": "ye",
 				"classify": "通",
 				"description": ""
+			},
+			{
+				"zigens": [
+					"七"
+				],
+				"code": "ye",
+				"classify": "通",
+				"description": "<b>廴</b>(建)安<b>七</b>子→邺 <b>yè</b> 中七子"
 			}
 		],
 		"description": ""
@@ -4832,20 +4840,6 @@
 			{
 				"zigens": [
 					"勹"
-				],
-				"code": "ye",
-				"classify": "通",
-				"description": ""
-			}
-		],
-		"description": ""
-	},
-	{
-		"type": "类",
-		"groups": [
-			{
-				"zigens": [
-					"廴"
 				],
 				"code": "ye",
 				"classify": "通",
