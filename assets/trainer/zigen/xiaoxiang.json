@@ -92,7 +92,7 @@
 				],
 				"code": "ai",
 				"classify": "通",
-				"description": "宝盖 g<b>aì</b> "
+				"description": "宝盖 g<b>aì</b>"
 			}
 		],
 		"description": ""
@@ -1153,7 +1153,7 @@
 				"description": ""
 			}
 		],
-		"description": "此类字根皆含有‘土’部件或形似。"
+		"description": "此类字根皆含有‘土’部件或形似‘土’。"
 	},
 	{
 		"type": "类",
@@ -1445,7 +1445,7 @@
 				"description": ""
 			}
 		],
-		"description": "形似"
+		"description": "此类字根皆含有‘亻’部件。"
 	},
 	{
 		"type": "类",
@@ -3917,7 +3917,7 @@
 				],
 				"code": "ue",
 				"classify": "通",
-				"description": ""
+				"description": "月 y<b>uè</b>"
 			}
 		],
 		"description": " + 月 = 肾"
@@ -4817,6 +4817,14 @@
 		"groups": [
 			{
 				"zigens": [
+					"廴"
+				],
+				"code": "ye",
+				"classify": "通",
+				"description": ""
+			},
+			{
+				"zigens": [
 					"七"
 				],
 				"code": "ye",
@@ -4824,7 +4832,7 @@
 				"description": ""
 			}
 		],
-		"description": ""
+		"description": "建 (<b>廴</b>) 安<b>七</b>子 → 邺 (<b>yè</b>) 中<b>七</b>子"
 	},
 	{
 		"type": "类",
@@ -4832,20 +4840,6 @@
 			{
 				"zigens": [
 					"勹"
-				],
-				"code": "ye",
-				"classify": "通",
-				"description": ""
-			}
-		],
-		"description": ""
-	},
-	{
-		"type": "类",
-		"groups": [
-			{
-				"zigens": [
-					"廴"
 				],
 				"code": "ye",
 				"classify": "通",
