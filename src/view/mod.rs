@@ -137,7 +137,6 @@ pub fn Trainer() -> Element {
                         onchange: move |event| async move {
                             let files = event.files();
                             if let Some(file) = files.get(0) {
-                                tracing::debug!("got file");
                                 let content = file.read_string().await;
 
                                 match content {
@@ -160,8 +159,6 @@ pub fn Trainer() -> Element {
 
                     a {
                         onclick: move |_| {
-                            tracing::debug!("export file");
-
                             use_effect(|| {
                                 document::eval(r#"
                                     const time_now = new Date().toISOString().replaceAll(':', '-');
