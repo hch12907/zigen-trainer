@@ -35,6 +35,7 @@ static TUTORIAL_PAGE: Asset = asset!(
 pub fn Trainer() -> Element {
     let mut scheme: Signal<Option<Scheme>> = use_signal(|| None);
     let mut options: Signal<SchemeOptions> = use_signal(|| SchemeOptions::default());
+    let mut user_state: Signal<UserState> = use_signal(|| UserState::read_from_local_storage());
 
     let loaded_scheme = use_resource(move || async move {
         if let Some(scheme) = &*scheme.read() {
@@ -93,9 +94,8 @@ pub fn Trainer() -> Element {
                     a {
                         onclick: move |_| {
                             if to_confirm_reset() {
-                                let mut user_state = UserState::read_from_local_storage();
-                                user_state.reset_current_progress();
-                                user_state.write_to_local_storage();
+                                user_state.write().reset_current_progress();
+                                user_state.read().write_to_local_storage();
 
                                 scheme.set(None);
                                 to_confirm_reset.set(false);
@@ -119,6 +119,61 @@ pub fn Trainer() -> Element {
                             document::eval(r#"document.location.href = "./assets/tutorial.html""#);
                         },
                         "使用教程"
+                    }
+
+                    a {
+                        onclick: move |_| {
+                            document::eval(r#"document.getElementById("import-file-button").click();"#);
+                        },
+                        "导入进度"
+                    }
+
+                    input {
+                        style: "display:none",
+                        r#type: "file",
+                        id: "import-file-button",
+                        accept: "application/json",
+                        multiple: false,
+                        onchange: move |event| async move {
+                            let files = event.files();
+                            if let Some(file) = files.get(0) {
+                                let content = file.read_string().await;
+
+                                match content {
+                                    Ok(content) => {
+                                        if user_state.write().load_from_backup(content).is_err() {
+                                            document::eval(r#"
+                                                let message = await dioxus.recv();
+                                                alert("无法解析备份文件！原因：" + message);
+                                            "#);    
+                                        }
+                                        user_state.read().write_to_local_storage();
+                                    }
+                                    Err(_) => {
+                                        document::eval(r#"alert("无法加载文件！")"#);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    a {
+                        onclick: move |_| {
+                            use_effect(|| {
+                                document::eval(r#"
+                                    const time_now = new Date().toISOString().replaceAll(':', '-');
+                                    const content = localStorage.progresses || {};
+                                    const blob = new Blob([content], { type: "application/json" });
+                                    const url = URL.createObjectURL(blob);
+                                    const a = document.createElement('a');
+                                    a.href = url;
+                                    a.download = `慧根进度备份${time_now}.json`;
+                                    a.click();
+                                    URL.revokeObjectURL(url);
+                                "#);
+                            });
+                        },
+                        "导出进度"
                     }
 
                     a {
@@ -147,6 +202,7 @@ pub fn Trainer() -> Element {
 
             if scheme.read_unchecked().is_none() {
                 Welcome {
+                    user_state,
                     on_scheme_selected: move |(selected, opts)| {
                         scheme.set(Some(selected));
                         options.set(opts);
@@ -166,6 +222,7 @@ pub fn Trainer() -> Element {
                         scheme_id: scheme_id,
                         scheme: scheme.clone(),
                         options: options(),
+                        user_state,
                         on_scheme_completed: |()| {},
                     }
                 },

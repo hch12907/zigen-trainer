@@ -3,6 +3,7 @@ use std::marker::PhantomData;
 
 use chrono::{DateTime, Duration, Utc};
 use dioxus_logger::tracing;
+use rand::seq::SliceRandom;
 use serde_derive::{Deserialize, Serialize};
 
 use crate::scheme::{SchemeZigen};
@@ -13,6 +14,8 @@ pub trait ZigenCard {
     fn zigen_mut(&mut self) -> &mut SchemeZigen;
 
     fn is_new_card(&self) -> bool;
+
+    fn shuffle(&mut self);
 }
 
 #[derive(Clone, Debug, Deserialize, Serialize, Default)]
@@ -28,6 +31,10 @@ impl ZigenCard for SchedulerCard {
 
     fn zigen_mut(&mut self) -> &mut SchemeZigen {
         &mut self.zigen
+    }
+
+    fn shuffle(&mut self) {
+        self.zigen.as_raw_parts_mut().0.shuffle(&mut rand::rng());
     }
 
     fn is_new_card(&self) -> bool {
@@ -222,11 +229,11 @@ impl<Param: ScheduleParam> Scheduler<Param> {
         }
     }
 
-    pub fn get_card(&self) -> &SchedulerCard {
+    pub fn get_card(&mut self) -> &mut SchedulerCard {
         match self.review_status() {
-            ReviewStatus::Review => self.reviewing_cards.front().unwrap(),
-            ReviewStatus::ReviewIntersperse => self.reviewing_cards.back().unwrap(),
-            ReviewStatus::Learn => self.learning_cards.front().unwrap(),
+            ReviewStatus::Review => self.reviewing_cards.front_mut().unwrap(),
+            ReviewStatus::ReviewIntersperse => self.reviewing_cards.back_mut().unwrap(),
+            ReviewStatus::Learn => self.learning_cards.front_mut().unwrap(),
         }
     }
 

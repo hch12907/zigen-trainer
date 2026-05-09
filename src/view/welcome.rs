@@ -5,13 +5,12 @@ use gloo_net::http::Request;
 
 #[derive(PartialEq, Clone, Props)]
 pub struct WelcomeProps {
+    user_state: Signal<UserState>,
     on_scheme_selected: EventHandler<(Scheme, SchemeOptions)>,
 }
 
 #[component]
-pub fn Welcome(props: WelcomeProps) -> Element {
-    let user_state = UserState::read_from_local_storage();
-
+pub fn Welcome(mut props: WelcomeProps) -> Element {
     let mut selected_scheme = use_signal(|| String::new());
     let mut shuffle = use_signal(|| false);
     let mut combined_training = use_signal(|| false);
@@ -23,10 +22,7 @@ pub fn Welcome(props: WelcomeProps) -> Element {
     let mut confirm_reset = use_signal(|| false);
 
     let schemes = {
-        let user_state = user_state.clone();
-
         use_resource(move || {
-            let user_state = user_state.clone();
             async move {
                 let schemes = Request::get("./assets/trainer/schemes.json")
                     .send()
@@ -36,6 +32,7 @@ pub fn Welcome(props: WelcomeProps) -> Element {
                     .await
                     .map_err(|err| err.to_string());
 
+                let user_state = props.user_state.read();
                 let user_scheme = user_state.current_scheme();
 
                 // 加载后，如果用户未曾进行过字根练习，默认选择第一个选项，
@@ -53,15 +50,11 @@ pub fn Welcome(props: WelcomeProps) -> Element {
         })
     };
 
-    let show_continue = {
-        let selected_scheme = selected_scheme.clone();
+    let show_continue = use_memo(move || {
+        props.user_state.read().has_progress(&selected_scheme())
+    });
 
-        use_memo(move || {
-            user_state.has_progress(&selected_scheme())
-        })
-    };
-
-    let make_button = |name: &'static str, onclicked: Option<Box<dyn Fn() -> bool>>| {
+    let make_button = |name: &'static str, mut onclicked: Option<Box<dyn FnMut()>>| {
         rsx! {
             button {
                 onclick: move |_event| {
@@ -89,8 +82,9 @@ pub fn Welcome(props: WelcomeProps) -> Element {
                         v2_sched: v2_sched(),
                     };
                     let start_training = {
-                        if let Some(onclicked) = &onclicked {
-                            onclicked()
+                        if let Some(onclicked) = &mut onclicked {
+                            onclicked();
+                            false
                         } else {
                             true
                         }
@@ -216,15 +210,12 @@ pub fn Welcome(props: WelcomeProps) -> Element {
                                         let mut confirm_reset = confirm_reset;
 
                                         if confirm_reset() {
-                                            let mut user_state = UserState::read_from_local_storage();
-                                            user_state.reset_progress(&selected_scheme());
-                                            user_state.write_to_local_storage();
+                                            props.user_state.write().reset_progress(&selected_scheme());
+                                            props.user_state.read().write_to_local_storage();
 
                                             confirm_reset.set(false);
-                                            true
                                         } else {
                                             confirm_reset.set(true);
-                                            false
                                         }
                                     })))
                                 }
