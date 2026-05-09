@@ -1153,7 +1153,7 @@
 				"description": ""
 			}
 		],
-		"description": "此类字根皆含有‘土’部件或形似。"
+		"description": "此类字根皆含有‘土’部件或形似‘土’。"
 	},
 	{
 		"type": "类",
@@ -1445,7 +1445,7 @@
 				"description": ""
 			}
 		],
-		"description": "形似"
+		"description": "此类字根皆含有‘亻’部件。"
 	},
 	{
 		"type": "类",
