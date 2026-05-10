@@ -3,6 +3,7 @@ use std::rc::Rc;
 
 use chrono::{DateTime, Utc};
 use dioxus::prelude::*;
+use dioxus_logger::tracing;
 // use dioxus_sdk::utils::timing::use_debounce;
 
 use crate::scheduler::{Rating, ZigenCard};
@@ -144,6 +145,23 @@ async fn handle_input_event(
     } else {
         value.as_str()
     };
+
+    // 有些手机游览器似乎有bug，在切换输入框时会莫名发送一个重复的事件
+    // 因为切换输入框一般发生在用户输入了某组字根的编码后，重复的事件
+    // 会表现为用户一瞬间输入长度>1的字符串（即：上一组字根的编码）。
+    // 下面这个逻辑，首先会diff用户输入框中的字符串（由事件提供），与系统状态中（input_boxes）的字符串
+    // 如果diff的长度>1，忽略该事件。
+    let diff = input_boxes.read()[box_idx]
+        .iter()
+        .take_while(|c| **c != ' ')
+        .take(value.len())
+        .enumerate()
+        .take_while(|(i, c)| **c as u8 == value.as_bytes()[*i])
+        .count();
+    if diff.abs_diff(value.len()) > 1 {
+        tracing::info!("input too fast, ignoring");
+        return;
+    }
 
     input_boxes.write()[box_idx].iter_mut().enumerate().for_each(|(i, c)| {
         if let Some(v) = value.chars().nth(i) {
@@ -352,6 +370,7 @@ pub fn Card(props: CardProps) -> Element {
                                     r#type: "text",
                                     id: "trainer_input_{i}",
                                     maxlength: "{group.code.chars().count()}",
+                                    spellcheck: false,
                                     oninput: move |event| {
                                         let start_time2 = start_time2.clone();
                                         async move {
