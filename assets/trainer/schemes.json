@@ -40,5 +40,11 @@
     	"full_name": "潇湘",
     	"zigen_url": "./zigen/xiaoxiang.json",
     	"zigen_font": "./ChaiPUA-0.2.7.ttf"
-    }
+    },
+	{
+		"id": "xiaoxiang",
+		"full_name": "真灵",
+		"zigen_url": "./zigen/zhenling.json",
+		"zigen_font": "./Yuniversus.woff"
+	}
 ]
