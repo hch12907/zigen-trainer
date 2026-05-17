@@ -42,9 +42,9 @@
     	"zigen_font": "./ChaiPUA-0.2.7.ttf"
     },
 	{
-		"id": "zhenling",
-		"full_name": "真灵",
-		"zigen_url": "./zigen/zhenling.json",
+		"id": "yueling",
+		"full_name": "月灵",
+		"zigen_url": "./zigen/yueling.json",
 		"zigen_font": "./Yuniversus.woff"
 	}
 ]
