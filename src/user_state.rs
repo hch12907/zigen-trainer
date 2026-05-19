@@ -54,7 +54,7 @@ impl UserState {
         self.current_scheme = scheme_id.to_owned();
 
         if !self.progresses.contains_key(scheme_id) {
-            let mut scheme = scheme.clone().populate_confusables();
+            let mut scheme = scheme.clone().populate_confusables()?;
             scheme.sort_to_options(&options);
             tracing::debug!("{:?}", &scheme);
 

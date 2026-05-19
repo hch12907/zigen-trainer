@@ -50,7 +50,7 @@ pub enum CombineMode {
 pub struct LoadedScheme<Z>(pub Vec<SchemeZigen<Z>>);
 
 impl LoadedScheme<ZigenConfusableUnpopulated> {
-    pub fn populate_confusables(self) -> LoadedScheme<ZigenConfusable> {
+    pub fn populate_confusables(self) -> Result<LoadedScheme<ZigenConfusable>, String> {
         let mut populated_confusables = self
             .0
             .iter()
@@ -77,22 +77,27 @@ impl LoadedScheme<ZigenConfusableUnpopulated> {
                 }
             });
 
+        let mut error_groups = Vec::new();
         let new_scheme =
             self.0
                 .into_iter()
                 .map(|zigen| match zigen {
                     SchemeZigen::Category(cat) => SchemeZigen::Category(cat),
                     SchemeZigen::Confusable(con) => SchemeZigen::Confusable({
+                        let mut groups = Vec::new();
+                        for zigen in con.zigens.iter() {
+                            let populated_confusable = populated_confusables
+                                .remove(zigen)
+                                .unwrap();
+                            if let Some(p) = populated_confusable {
+                                groups.push(p);
+                            } else {
+                                error_groups.push(zigen.clone());
+                            }
+                        }
+
                         let new_con = ZigenConfusable {
-                            groups: con
-                                .zigens
-                                .iter()
-                                .map(|z| {
-                                    populated_confusables.remove(z).unwrap().expect(
-                                        "混淆集使用的字根不在字根码表内，或不属于代表性字根",
-                                    )
-                                })
-                                .collect(),
+                            groups,
                             description: con.description.to_owned(),
                         };
 
@@ -101,7 +106,11 @@ impl LoadedScheme<ZigenConfusableUnpopulated> {
                 })
                 .collect::<Vec<_>>();
 
-        LoadedScheme(new_scheme)
+        if !error_groups.is_empty() {
+            return Err(format!("混淆集使用的字根不在字根码表内，或不属于代表性字根：{error_groups:#?}"))
+        }
+
+        Ok(LoadedScheme(new_scheme))
     }
 }
 
