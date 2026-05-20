@@ -92,7 +92,7 @@ impl LoadedScheme<ZigenConfusableUnpopulated> {
                             if let Some(p) = populated_confusable {
                                 groups.push(p);
                             } else {
-                                error_groups.push(zigen.clone());
+                                error_groups.push(zigen.0.clone());
                             }
                         }
 
@@ -107,7 +107,9 @@ impl LoadedScheme<ZigenConfusableUnpopulated> {
                 .collect::<Vec<_>>();
 
         if !error_groups.is_empty() {
-            return Err(format!("混淆集使用的字根不在字根码表内，或不属于代表性字根：{error_groups:#?}"))
+            let mut err_msg = String::from("混淆集使用的字根不在字根码表内，或不属于代表性字根：");
+            err_msg.push_str(&error_groups.join("、"));
+            return Err(err_msg);
         }
 
         Ok(LoadedScheme(new_scheme))

@@ -26,7 +26,7 @@ pub fn Scheme(mut props: SchemeProps) -> Element {
                 "出错了！ "
             }
             p {
-                style: "margin:1em",
+                style: "margin:1em; font-family:zigen-font,sans-serif;",
                 "{e}"
             }
         }
