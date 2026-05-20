@@ -206,6 +206,11 @@ nav picture, nav img {
   to { opacity: 0; display: none }
 }
 
+.trainer-error-screen {
+    font-family: zigen-font, var(--body-fonts);
+    margin: 1em;
+}
+
 .trainer-zigen-confusable {
     position: absolute;
     top: 2em;

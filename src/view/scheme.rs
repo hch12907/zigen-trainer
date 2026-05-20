@@ -26,8 +26,11 @@ pub fn Scheme(mut props: SchemeProps) -> Element {
                 "出错了！ "
             }
             p {
-                style: "margin:1em; font-family:zigen-font,sans-serif;",
+                class: "trainer-error-screen",
                 "{e}"
+            }
+            p {
+                "基于以上故障，本方案暂不可用。"
             }
         }
     }
