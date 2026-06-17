@@ -20,6 +20,21 @@ pub struct SchemeProps {
 pub fn Scheme(mut props: SchemeProps) -> Element {
     let res = props.user_state.write().try_initialize_scheme(&props.scheme_id, &props.scheme, props.options);
 
+    if let Err(e) = res {
+        return rsx! {
+            h2 {
+                "出错了！ "
+            }
+            p {
+                class: "trainer-error-screen",
+                "{e}"
+            }
+            p {
+                "基于以上故障，本方案暂不可用。"
+            }
+        }
+    }
+
     tracing::info!("initialized scheme! {}", &props.scheme_id);
 
     let zigens = props.user_state.write().current_progress_mut().get_card();
