@@ -52,5 +52,11 @@
     	"full_name": "星月",
     	"zigen_url": "./zigen/starmoon.json",
     	"zigen_font": "./Yuniversus.woff"
+    },
+	{
+		"id": "yaoling",
+    	"full_name": "妖灵",
+    	"zigen_url": "./zigen/yaoling.json",
+    	"zigen_font": "./Yuniversus.woff"
     }
 ]
