@@ -46,5 +46,11 @@
 		"full_name": "月灵",
 		"zigen_url": "./zigen/yueling.json",
 		"zigen_font": "./Yuniversus.woff"
-	}
+	},
+	{
+		"id": "starmoon",
+    	"full_name": "星月",
+    	"zigen_url": "./zigen/starmoon.json",
+    	"zigen_font": "./Yuniversus.woff"
+    }
 ]
