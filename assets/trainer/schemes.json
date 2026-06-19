@@ -2,60 +2,100 @@
     {
         "id": "yuhao_star",
         "full_name": "宇浩星陈",
+        "author": "朱宇浩",
+        "maintainer": "hch12907",
+        "category": "宇浩官方",
+        "description": "易学",
         "zigen_url": "./zigen/yuhao_star.json",
         "zigen_font": "./Yuniversus.woff"
     },
     {
         "id": "yuhao_ming",
         "full_name": "宇浩日月",
+        "author": "朱宇浩",
+        "maintainer": "hch12907",
+        "category": "宇浩官方",
+        "description": "五码自定码",
         "zigen_url": "./zigen/yuhao_ming.json",
         "zigen_font": "./Yuniversus.woff"
     },
     {
         "id": "yuhao_joy",
         "full_name": "宇浩卿云",
+        "author": "朱宇浩",
+        "maintainer": "hch12907",
+        "category": "宇浩官方",
+        "description": "四码乱序",
         "zigen_url": "./zigen/yuhao_joy.json",
         "zigen_font": "./Yuniversus.woff"
     },
     {
         "id": "yuhao_light",
         "full_name": "宇浩光华",
+        "author": "朱宇浩",
+        "maintainer": "hch12907",
+        "category": "宇浩官方",
+        "description": "笔画分区",
         "zigen_url": "./zigen/yuhao_light.json",
         "zigen_font": "./Yuniversus.woff"
     },
     {
         "id": "yuhao_ling",
         "full_name": "宇浩灵明",
+        "author": "朱宇浩",
+        "maintainer": "hch12907",
+        "category": "宇浩官方",
+        "description": "四码自定码",
         "zigen_url": "./zigen/yuhao_ling.json",
         "zigen_font": "./Yuniversus.woff"
     },
     {
         "id": "moling",
         "full_name": "魔灵",
+        "author": "qq3qq",
+        "maintainer": "qq3qq",
+        "category": "宇浩衍生方案",
+        "description": "类星陈自定码",
         "zigen_url": "./zigen/moling.json",
         "zigen_font": "./Yuniversus.woff"
     },
     {
 		"id": "xiaoxiang",
     	"full_name": "潇湘",
+        "author": "荒",
+        "maintainer": "枕月",
+        "category": "其他方案",
+        "description": "大小码乱序",
     	"zigen_url": "./zigen/xiaoxiang.json",
     	"zigen_font": "./ChaiPUA-0.2.7.ttf"
     },
 	{
 		"id": "yueling",
 		"full_name": "月灵",
+        "author": "枕月",
+        "maintainer": "枕月",
+        "category": "宇浩衍生方案",
+        "description": "韵码映射",
 		"zigen_url": "./zigen/yueling.json",
 		"zigen_font": "./Yuniversus.woff"
 	},
 	{
 		"id": "starmoon",
     	"full_name": "星月",
+        "author": "枕月",
+        "maintainer": "枕月",
+        "category": "宇浩衍生方案",
+        "description": "双乱序星陈",
     	"zigen_url": "./zigen/starmoon.json",
     	"zigen_font": "./Yuniversus.woff"
     },
 	{
 		"id": "yaoling",
     	"full_name": "妖灵",
+        "author": "Evildoer",
+        "maintainer": "Evildoer",
+        "category": "宇浩衍生方案",
+        "description": "声码映射",
     	"zigen_url": "./zigen/yaoling.json",
     	"zigen_font": "./Yuniversus.woff"
     },

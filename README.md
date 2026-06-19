@@ -25,6 +25,10 @@ dx bundle --web --release
 {
     "id": "xin_fangan_id",
     "full_name": "新方案名称",
+    "author": "输入法方案原作者姓名",
+    "maintainer": "字根表维护者",
+    "category": "方案类型",
+    "description": "方案描述（字数越少越好）",
     "zigen_url": "./zigen/xin_fangan_mabiao.json",
     "zigen_font": "./xin_fangan_ziti.woff" // 如果不需要字根字体集，可以留空
 }

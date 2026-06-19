@@ -12,6 +12,14 @@ pub struct Scheme {
     pub id: String,
     /// 方案名字，面向用户。
     pub full_name: String,
+    /// 方案描述，面向用户。
+    pub description: String,
+    /// 方案原作者。
+    pub author: String,
+    /// 该方案的慧根字根表维护者。
+    pub maintainer: String,
+    /// 方案标签。
+    pub category: String,
     /// 方案字根集的URL，字根集的格式详情请参考 LoadedScheme 与 ZigenCategory 。
     /// 如果不是绝对地址，则默认根目录为 scheme.json 的所在目录。
     pub zigen_url: String,
