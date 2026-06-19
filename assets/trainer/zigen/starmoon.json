@@ -2164,6 +2164,14 @@
     "groups": [
       {
         "zigens": [
+          ""
+        ],
+        "code": "sk",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
           "丷",
           ""
         ],
@@ -3280,20 +3288,6 @@
           ""
         ],
         "code": "ry",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          ""
-        ],
-        "code": "sk",
         "classify": "通",
         "description": ""
       }
