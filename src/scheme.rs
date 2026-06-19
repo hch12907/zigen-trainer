@@ -6,7 +6,7 @@ use serde::{Deserialize, Serialize};
 
 /// scheme.json的结构。这个JSON文件将列出练习器实例所支持的所有方案。
 /// 练习器开始加载时，这将会是练习器第一个下载的文件。
-#[derive(Clone, Debug, Deserialize)]
+#[derive(Clone, Debug, Deserialize, PartialEq)]
 pub struct Scheme {
     /// 方案ID，必须是独一无二的。
     pub id: String,

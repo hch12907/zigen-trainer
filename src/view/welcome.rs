@@ -1,5 +1,6 @@
 use crate::scheme::{CombineMode, Scheme, SchemeOptions};
 use crate::user_state::UserState;
+use crate::view::scheme_selector::SchemeSelector;
 use dioxus::prelude::*;
 use gloo_net::http::Request;
 
@@ -21,7 +22,7 @@ pub fn Welcome(mut props: WelcomeProps) -> Element {
     let mut v2_sched = use_signal(|| false);
     let mut confirm_reset = use_signal(|| false);
 
-    let schemes = {
+    let schemes_loader = {
         use_resource(move || {
             async move {
                 let schemes = Request::get("./assets/trainer/schemes.json")
@@ -50,6 +51,12 @@ pub fn Welcome(mut props: WelcomeProps) -> Element {
         })
     };
 
+    let schemes = use_memo(move || {
+        let loaded_schemes = schemes_loader.read().clone();
+
+        loaded_schemes.and_then(|loaded| loaded.ok()).unwrap_or(Vec::new())
+    });
+
     let show_continue = use_memo(move || {
         props.user_state.read().has_progress(&selected_scheme())
     });
@@ -61,10 +68,6 @@ pub fn Welcome(mut props: WelcomeProps) -> Element {
                     let name = &*selected_scheme.read();
                     let scheme = (*schemes
                         .read_unchecked())
-                        .as_ref()
-                        .unwrap()
-                        .as_ref()
-                        .unwrap()
                         .iter()
                         .find(|s| s.id == *name)
                         .cloned();
@@ -112,25 +115,16 @@ pub fn Welcome(mut props: WelcomeProps) -> Element {
                 "by hch12907"
             }
 
-            match &*schemes.read_unchecked() {
+            match *schemes_loader.read_unchecked() {
                 // 加载成功
-                Some(Ok(read_schemes)) => {
+                Some(Ok(_)) => {
                     rsx!{
-                        select {
-                            class: "trainer-scheme-selector",
-                            id: "trainer-scheme",
-                            onchange: move |event| {
+                        SchemeSelector {
+                            schemes: schemes,
+                            selected_scheme,
+                            on_scheme_selected: move |selected| {
                                 confirm_reset.set(false);
-                                selected_scheme.set(event.value())
-                            },
-
-                            for scheme in read_schemes {
-                                option {
-                                    key: "{scheme.id}",
-                                    value: "{scheme.id}",
-                                    selected: selected_scheme() == scheme.id,
-                                    "{scheme.full_name}",
-                                }
+                                selected_scheme.set(selected);
                             }
                         }
 
@@ -298,14 +292,14 @@ pub fn Welcome(mut props: WelcomeProps) -> Element {
                 },
 
                 // 加载失败
-                Some(Err(e)) => rsx! {
+                Some(Err(ref e)) => rsx! {
                     p {
                         "数据加载出错！错误信息：{e}"
                     }
                 },
 
                 // 尚未加载完成
-                None => rsx! {
+                _ => rsx! {
                     p {
                         "数据加载中……"
                     }
