@@ -46,9 +46,9 @@
           "肀",
           ""
         ],
-        "code": "bji",
+        "code": "bo",
         "classify": "通",
-        "description": "彐 <b>jì</b>"
+        "description": "<b>ø</b> 无读音字根"
       },
       {
         "zigens": [
@@ -549,9 +549,9 @@
           "",
           ""
         ],
-        "code": "fo",
+        "code": "fye",
         "classify": "繁",
-        "description": "<b>ø</b> 无读音字根"
+        "description": "业 <b>yè</b>"
       }
     ],
     "description": ""
@@ -585,20 +585,13 @@
       },
       {
         "zigens": [
+          "",
           "",
-          ""
+          "彑"
         ],
         "code": "fo",
         "classify": "通",
         "description": "<b>ø</b> 无读音字根"
-      },
-      {
-        "zigens": [
-          "彑"
-        ],
-        "code": "fji",
-        "classify": "通",
-        "description": "彑 <b>jì</b>"
       }
     ],
     "description": "此类字根皆形似‘彑’字。"
@@ -942,14 +935,6 @@
         "code": "hye",
         "classify": "通",
         "description": "曰 yuē → <b>ye</b><br>（跳过中间i、u音）"
-      },
-      {
-        "zigens": [
-          "黑"
-        ],
-        "code": "hhe",
-        "classify": "通",
-        "description": "黑 hēi → <b>he</b>"
       }
     ],
     "description": "此类字根皆含有‘日’部件。"
@@ -2692,9 +2677,17 @@
         "code": "swu",
         "classify": "繁",
         "description": "烏（乌） <b>wū</b>"
+      },
+      {
+        "zigens": [
+          "黑"
+        ],
+        "code": "she",
+        "classify": "通",
+        "description": "黑 hēi → <b>he</b>"
       }
     ],
-    "description": "此类字根皆与动物相关。"
+    "description": "此类字根皆含有‘灬’（四点水）部件。"
   },
   {
     "type": "类",
