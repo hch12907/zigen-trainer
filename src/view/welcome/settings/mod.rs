@@ -1,0 +1,175 @@
+mod setting_option;
+
+use dioxus::prelude::*;
+
+use crate::scheme::{CombineMode, SchemeOptions};
+use setting_option::{BooleanSetting, DropdownSetting, TextboxSetting};
+
+const SCHEME_SETTINGS_CSS: Asset = asset!("/assets/scheme_settings.css");
+
+#[derive(Clone, Debug, PartialEq, Props)]
+pub struct SettingsProp {
+    selected_scheme: ReadSignal<String>,
+    on_back: EventHandler<()>,
+    on_confirm: EventHandler<SchemeOptions>,
+}
+
+#[component]
+pub fn Settings(props: SettingsProp) -> Element {
+    let shuffle = use_signal(|| true);
+    let combined_training = use_signal(|| false);
+    let prioritize_trad = use_signal(|| false);
+    let adept = use_signal(|| false);
+    let combined_mode_str = use_signal(|| String::new());
+    let combine_mode = use_memo(move || match combined_mode_str.read().as_str() {
+        "category" => CombineMode::Category,
+        "group" => CombineMode::Group,
+        "none" | _ => CombineMode::None,
+    });
+    let limit_keys = use_signal(|| String::new());
+    let v2_sched = use_signal(|| false);
+    let confirm_reset = use_signal(|| false);
+
+    let mut show_advanced = use_signal(|| false);
+
+    rsx! {
+        document::Link { rel: "stylesheet", href: SCHEME_SETTINGS_CSS }
+
+        div {
+            class: "scheme-settings",
+
+            div {
+                class: "scheme-settings-header",
+
+                h1 {
+                    "本轮练习设置"
+                }
+
+                p {
+                    "这里可以根据个人需求与学习方式，自定义字根的调度算法（即：字根出现的先后顺序）。"
+                }
+            }
+
+            div {
+                class: "scheme-settings-body",
+
+                BooleanSetting {
+                    name: "乱序",
+                    description: "随机安排字根，而非按字母顺序出现。",
+                    value: shuffle,
+                }
+
+                BooleanSetting {
+                    name: "简繁混练",
+                    description: "无论用户是否熟练简体字根，繁体字根都会被安排进入练习队列。",
+                    value: combined_training,
+                }
+
+                BooleanSetting {
+                    name: "繁体优先",
+                    description: "优先练习繁体字根。在用户熟练繁体字根后，才会安排简体字根。（简繁混练开启时，本设置无效）",
+                    value: prioritize_trad,
+                }
+
+                BooleanSetting {
+                    name: "复习模式",
+                    description: "关闭提示，并且减少每轮练习所需的时间。用于巩固字根记忆。",
+                    value: adept,
+                }
+
+                // 高级设置
+                div {
+                    class: "scheme-settings-advanced-section-container",
+
+                    // 高级设置的开关
+                    div {
+                        class: "scheme-settings-advanced-section-toggle",
+                        class: if show_advanced() { "expanded" },
+                        tabindex: 0,
+                        role: "button",
+                        onclick: move |_| {
+                            let opened = !show_advanced();
+                            show_advanced.set(opened);
+                        },
+
+                        span { "高级设置" }
+                        span {
+                            class: "arrow",
+                            // 一个小箭头
+                            svg {
+                                view_box: "0 0 24 24",
+                                fill: "none",
+                                stroke: "currentColor",
+                                stroke_width: 2.5,
+                                stroke_linecap: "round",
+                                stroke_linejoin: "round",
+                                polyline {
+                                    points: "6 9 12 15 18 9"
+                                }
+                            }
+                        }
+                    }
+
+                    div {
+                        class: "scheme-settings-advanced-section",
+                        class: if show_advanced() { "expanded" },
+
+                        DropdownSetting {
+                            name: "卡片合并模式",
+                            description: "调整练习器处理字根卡片的方式。",
+                            options: &[
+                                ("category", "同聚类合并（适合新手）"),
+                                ("group", "同归并合并"),
+                                ("none", "无合并"),
+                            ],
+                            value: combined_mode_str,
+                        }
+
+                        TextboxSetting {
+                            name: "仅训练键面",
+                            description: "只练习编码开头为规定键面的字根。留空以训练所有字根。",
+                            placeholder: "ABCDE",
+                            value: limit_keys,
+                        }
+
+                        BooleanSetting {
+                            name: "使用新型调度器（BETA）",
+                            description: "（开发中。）",
+                            value: v2_sched,
+                        }
+                    }
+                }
+
+                div {
+                    class: "scheme-settings-button",
+                    button {
+                        class: "selector-confirm-button",
+                        onclick: move |_| (props.on_back)(()),
+                        "上一步"
+                    }
+                    button {
+                        class: "selector-confirm-button",
+                        onclick: move |_| {
+                            let settings = SchemeOptions {
+                                shuffle: shuffle(),
+                                combined_training: combined_training(),
+                                prioritize_trad: prioritize_trad(),
+                                adept: adept(),
+                                combine_mode: combine_mode(),
+                                limit_keys: if !limit_keys.read().is_empty() {
+                                    Some(limit_keys.read().chars().map(|c| c.to_ascii_uppercase()).collect())
+                                } else {
+                                    None
+                                },
+                                v2_sched: v2_sched()
+                            };
+
+                            (props.on_confirm)(settings);
+                        },
+                        "开始练习"
+                    }
+                }
+            }
+        }
+    }
+}

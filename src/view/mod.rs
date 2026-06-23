@@ -1,6 +1,5 @@
 mod card;
 mod scheme;
-mod scheme_selector;
 mod welcome;
 
 use dioxus_logger::tracing;

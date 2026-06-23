@@ -18,8 +18,10 @@ pub struct Scheme {
     pub author: String,
     /// 该方案的慧根字根表维护者。
     pub maintainer: String,
-    /// 方案标签。
-    pub category: String,
+    /// 该方案的代表性图标，若含有 '/' 符号则视为图片URL，否则直接渲染。
+    pub icon: String,
+    /// 方案标签。第一个元素为主分类，第二个元素为次分类，以此类推。
+    pub category: Vec<String>,
     /// 方案字根集的URL，字根集的格式详情请参考 LoadedScheme 与 ZigenCategory 。
     /// 如果不是绝对地址，则默认根目录为 scheme.json 的所在目录。
     pub zigen_url: String,

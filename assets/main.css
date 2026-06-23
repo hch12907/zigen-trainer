@@ -1,23 +1,27 @@
 :root {
     --primary-color: #0f1116;
-    --primary-bg-color: #f0f0f4;
-    --secondary-bg-color: #f6f6f9;
-    --tertiary-bg-color: #e9e9e9;
-    --body-fonts: sans-serif, 'Source Han Sans', 'Microsoft YaHei', 'Plangothic P0', 'Plangothic P1', 'WenJin Mincho Plane 0', 'WenJin Mincho Plane 1', 'WenJin Mincho Plane 2';
+    --primary-bg-color: #fafafa;
+    --secondary-bg-color: #f6f6f5;
+    --tertiary-bg-color: #e9e9e5;
+    --body-fonts: sans-serif, 'Source Han Sans SC', 'Microsoft YaHei', 'Source Han Sans', 'Plangothic P0', 'Plangothic P1', 'WenJin Mincho Plane 0', 'WenJin Mincho Plane 1', 'WenJin Mincho Plane 2';
 }
 
 @media(prefers-color-scheme: dark) {
     :root {
         --primary-color: #e9e9e9;
-        --primary-bg-color: #0f1116;
-        --secondary-bg-color: #1a1d24;
+        --primary-bg-color: #2e2f38;
+        --secondary-bg-color: #1e1f24;
         --tertiary-bg-color: #2e2f38;
     }
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
-    background-color: var(--primary-bg-color);
+    background: linear-gradient(135deg, #f5f0e7 0%, #e8e0d3 100%);
     color: var(--primary-color);
     margin: 0 20px;
     height: 100vh;
@@ -26,16 +30,29 @@ body {
     font-family: var(--body-fonts);
 }
 
+@media(prefers-color-scheme: dark) {
+    body::before {
+        background: radial-gradient(circle at 30% 30%, rgba(179, 139, 91, 0.06) 0%, transparent 60%);
+    }
+    body {
+        background: linear-gradient(145deg, #1a1a1f 0%, #121418 40%, #0f1117 100%);
+    }
+    body::after {
+        background: radial-gradient(circle at 70% 60%, rgba(180, 160, 130, 0.05) 0%, transparent 55%);
+    }
+}
+
 .root-nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 28px;
-    background-color: var(--tertiary-bg-color);
+    background-color: var(--primary-bg-color);
     display: flex;
     flex-direction: row;
     align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     z-index: 1;
 }
 
@@ -66,16 +83,16 @@ nav picture, nav img {
 .trainer-root {
     background-color: var(--secondary-bg-color);
     width: 800px;
-    min-height: 580px;
-    max-height: 640px;
+    max-height: calc(100vh - 2em);
     overflow-y: auto;
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 2em;
     position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
@@ -85,19 +102,21 @@ nav picture, nav img {
     align-items: center;
     justify-content: center;
     height: 100%;
+    width: 100%;
     padding-bottom: 2em;
 }
 
 .trainer-welcome > h1 {
-    font-size: 3em;
-    margin-bottom: 0.2em;
+    font-size: 2em;
+    font-weight: 800;
+    margin: 1em 0.5em 0.2em 0.5em;
     text-align: center;
 }
 
 .trainer-welcome > h2 {
     margin: 0;
     padding-top: 0;
-    padding-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .trainer-welcome > p {
@@ -231,6 +250,7 @@ nav picture, nav img {
     padding-top: 1em;
     font-family: zigen-font, var(--body-fonts);
     gap: 0.5em;
+    min-height: calc(90vh - 2em);
 }
 
 .trainer-zigen-group {
