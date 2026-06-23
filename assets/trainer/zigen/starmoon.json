@@ -307,8 +307,8 @@
     "groups": [
       {
         "zigens": [
-          "",
-          "雨"
+          "雨",
+          ""
         ],
         "code": "uf",
         "classify": "通",
@@ -662,7 +662,7 @@
           "",
           "彑"
         ],
-        "code": "sg",
+        "code": "sv",
         "classify": "通",
         "description": ""
       },
@@ -1330,20 +1330,6 @@
           "八"
         ],
         "code": "md",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          ""
-        ],
-        "code": "sp",
         "classify": "通",
         "description": ""
       }
@@ -2178,6 +2164,14 @@
         "code": "sm",
         "classify": "通",
         "description": ""
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "sp",
+        "classify": "通",
+        "description": ""
       }
     ],
     "description": ""
@@ -2203,17 +2197,10 @@
         "zigens": [
           "羊",
           "",
-          ""
-        ],
-        "code": "bj",
-        "classify": "通",
-        "description": ""
-      },
-      {
-        "zigens": [
+          "",
           ""
         ],
-        "code": "br",
+        "code": "bj",
         "classify": "通",
         "description": ""
       }
@@ -3072,7 +3059,7 @@
         "zigens": [
           ""
         ],
-        "code": "rd",
+        "code": "rv",
         "classify": "通",
         "description": ""
       },
