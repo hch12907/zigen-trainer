@@ -87,7 +87,7 @@
          {
             "classify" : "通",
             "code" : "bi",
-            "description" : "匕  拼音：i  𡆧不取声码",
+            "description" : "匕  拼音：Bĭ  𡆧不取声码",
             "zigens" : [
                "匕",
                ""
@@ -132,22 +132,7 @@
             "code" : "bla",
             "description" : "户  拼音：Hù  🈤映射：h->la",
             "zigens" : [
-               "户"
-            ]
-         },
-         {
-            "classify" : "通",
-            "code" : "bu",
-            "description" : "戶  拼音：Hù  𡆧不取声码",
-            "zigens" : [
-               "戶"
-            ]
-         },
-         {
-            "classify" : "通",
-            "code" : "bla",
-            "description" : "戸  拼音：无  ㊟同「户」归并  🈤映射：h->la",
-            "zigens" : [
+               "户",
                "戸"
             ]
          }
@@ -165,6 +150,14 @@
                "卩",
                ""
             ]
+         },
+         {
+            "classify" : "通",
+            "code" : "gne",
+            "description" : "㔾  拼音：Jié  🈤映射：j->ne",
+            "zigens" : [
+               "㔾"
+            ]
          }
       ],
       "type" : "类"
@@ -178,14 +171,6 @@
             "description" : "  拼音：🈤无读音取o",
             "zigens" : [
                ""
-            ]
-         },
-         {
-            "classify" : "通",
-            "code" : "bvi",
-            "description" : "鹵  拼音：Lǔ  🈤映射：l->vi",
-            "zigens" : [
-               "鹵"
             ]
          }
       ],
@@ -332,6 +317,14 @@
             "zigens" : [
                ""
             ]
+         },
+         {
+            "classify" : "通",
+            "code" : "cvi",
+            "description" : "鹵  拼音：Lǔ  🈤映射：l->vi",
+            "zigens" : [
+               "鹵"
+            ]
          }
       ],
       "type" : "类"
@@ -346,20 +339,6 @@
             "zigens" : [
                "馬",
                ""
-            ]
-         }
-      ],
-      "type" : "类"
-   },
-   {
-      "description" : "",
-      "groups" : [
-         {
-            "classify" : "通",
-            "code" : "cwo",
-            "description" : "缶  拼音：Fǒu  🈤映射：f->wo",
-            "zigens" : [
-               "缶"
             ]
          }
       ],
@@ -730,14 +709,6 @@
             "zigens" : [
                "刀"
             ]
-         },
-         {
-            "classify" : "通",
-            "code" : "gke",
-            "description" : "  拼音：Dāo  🈤映射：d->ke",
-            "zigens" : [
-               ""
-            ]
          }
       ],
       "type" : "类"
@@ -762,9 +733,10 @@
          {
             "classify" : "通",
             "code" : "gdo",
-            "description" : "矢  拼音：Ŝǐ  🈤映射：s->do",
+            "description" : "巳  拼音：Sì  🈤映射：s->do",
             "zigens" : [
-               "矢"
+               "巳",
+               ""
             ]
          }
       ],
@@ -789,12 +761,40 @@
       "groups" : [
          {
             "classify" : "通",
+            "code" : "ggu",
+            "description" : "已  拼音：Yǐ  🈤映射：y->gu",
+            "zigens" : [
+               "已"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
             "code" : "gi",
             "description" : "水  拼音：Ŝuǐ  𡆧不取声码",
             "zigens" : [
                "水",
                "氺",
-               ""
+               "氵"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "gke",
+            "description" : "  拼音：Dāo  🈤映射：d->ke",
+            "zigens" : [
+               ""
             ]
          }
       ],
@@ -824,31 +824,6 @@
             "zigens" : [
                "己"
             ]
-         },
-         {
-            "classify" : "通",
-            "code" : "ggu",
-            "description" : "已  拼音：Yǐ  🈤映射：y->gu",
-            "zigens" : [
-               "已"
-            ]
-         },
-         {
-            "classify" : "通",
-            "code" : "gdo",
-            "description" : "巳  拼音：Sì  🈤映射：s->do",
-            "zigens" : [
-               "巳",
-               ""
-            ]
-         },
-         {
-            "classify" : "通",
-            "code" : "gne",
-            "description" : "㔾  拼音：Jié  🈤映射：j->ne",
-            "zigens" : [
-               "㔾"
-            ]
          }
       ],
       "type" : "类"
@@ -861,14 +836,7 @@
             "code" : "go",
             "description" : "癶  拼音：Bō  𡆧不取声码",
             "zigens" : [
-               "癶"
-            ]
-         },
-         {
-            "classify" : "通",
-            "code" : "ge",
-            "description" : "  拼音：无  ㊟同「月」韵码取「e」",
-            "zigens" : [
+               "癶",
                ""
             ]
          }
@@ -967,10 +935,10 @@
          {
             "classify" : "通",
             "code" : "ha",
-            "description" : "  拼音：无  ㊟同「彡」韵码取「a」",
+            "description" : "彡  拼音：Ŝān  𡆧不取声码",
             "zigens" : [
-               "",
-               "彡"
+               "彡",
+               ""
             ]
          }
       ],
@@ -1136,24 +1104,17 @@
             "code" : "jdi",
             "description" : "日  拼音：Rì  🈤映射：r->di",
             "zigens" : [
-               "日"
-            ]
-         },
-         {
-            "classify" : "通",
-            "code" : "jgu",
-            "description" : "曰  拼音：Yuē  🈤映射：y->gu",
-            "zigens" : [
-               "曰"
-            ]
-         },
-         {
-            "classify" : "通",
-            "code" : "jdi",
-            "description" : "  拼音：㊟同「日」归并  🈤映射：r->di",
-            "zigens" : [
+               "日",
                "",
                ""
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "ke",
+            "description" : "曰  拼音：Yuē  𡆧不取声码",
+            "zigens" : [
+               "曰"
             ]
          }
       ],
@@ -1165,11 +1126,11 @@
          {
             "classify" : "通",
             "code" : "je",
-            "description" : "  拼音：㊟同「儿」归并  🈤映射：零声母->je",
+            "description" : "儿  拼音：ér  🈤映射：零声母->je",
             "zigens" : [
-               "",
                "儿",
-               ""
+               "",
+               ""
             ]
          }
       ],
@@ -1185,15 +1146,6 @@
             "zigens" : [
                "鬼",
                ""
-            ]
-         },
-         {
-            "classify" : "通",
-            "code" : "ju",
-            "description" : "甶  拼音：Fǔ  𡆧不取声码",
-            "zigens" : [
-               "甶",
-               ""
             ]
          }
       ],
@@ -1279,8 +1231,23 @@
       "groups" : [
          {
             "classify" : "通",
+            "code" : "ju",
+            "description" : "甶  拼音：Fǔ  𡆧不取声码",
+            "zigens" : [
+               "甶",
+               ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
             "code" : "jvi",
-            "description" : "了  拼音：Liǎo  🈤映射：l->vi",
+            "description" : "了  拼音：Le  🈤映射：l->vi",
             "zigens" : [
                "了"
             ]
@@ -1482,6 +1449,20 @@
       "groups" : [
          {
             "classify" : "通",
+            "code" : "kjo",
+            "description" : "戊  拼音：Wù  🈤映射：w->jo",
+            "zigens" : [
+               "戊"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
             "code" : "kna",
             "description" : "片  拼音：Piàn  🈤映射：p->na",
             "zigens" : [
@@ -1605,14 +1586,6 @@
             "zigens" : [
                "戈"
             ]
-         },
-         {
-            "classify" : "通",
-            "code" : "kjo",
-            "description" : "戊  拼音：Wù  🈤映射：w->jo",
-            "zigens" : [
-               "戊"
-            ]
          }
       ],
       "type" : "类"
@@ -1631,9 +1604,9 @@
          {
             "classify" : "通",
             "code" : "kke",
-            "description" : "  拼音：Dí  🈤映射：d->ke",
+            "description" : "𡗗  拼音：Dí  🈤映射：d->ke",
             "zigens" : [
-               ""
+               "𡗗"
             ]
          }
       ],
@@ -2058,6 +2031,14 @@
             "zigens" : [
                "火"
             ]
+         },
+         {
+            "classify" : "通",
+            "code" : "nsi",
+            "description" : "灬  拼音：Biāo  🈤映射：b->si",
+            "zigens" : [
+               "灬"
+            ]
          }
       ],
       "type" : "类"
@@ -2071,20 +2052,6 @@
             "description" : "米  拼音：Mǐ  🈤映射：m->ro",
             "zigens" : [
                "米"
-            ]
-         }
-      ],
-      "type" : "类"
-   },
-   {
-      "description" : "",
-      "groups" : [
-         {
-            "classify" : "通",
-            "code" : "nsi",
-            "description" : "灬  拼音：Biāo  🈤映射：b->si",
-            "zigens" : [
-               "灬"
             ]
          }
       ],
@@ -2207,12 +2174,12 @@
          {
             "classify" : "通",
             "code" : "pi",
-            "description" : "艹  拼音：㊟同「卌」韵码取「i」",
+            "description" : "卌  拼音：Xì  𡆧不取声码",
             "zigens" : [
-               "艹",
+               "卌",
                "廾",
                "卅",
-               "卌",
+               "艹",
                "",
                "",
                ""
@@ -2296,7 +2263,13 @@
             "zigens" : [
                "幺"
             ]
-         },
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
          {
             "classify" : "通",
             "code" : "qi",
@@ -2494,7 +2467,13 @@
             "zigens" : [
                "而"
             ]
-         },
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
          {
             "classify" : "通",
             "code" : "rro",
@@ -2533,6 +2512,20 @@
       "groups" : [
          {
             "classify" : "通",
+            "code" : "rwo",
+            "description" : "缶  拼音：Fǒu  🈤映射：f->wo",
+            "zigens" : [
+               "缶"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
             "code" : "scu",
             "description" : "丑  拼音：Ĉǒu  🈤映射：c->cu",
             "zigens" : [
@@ -2558,7 +2551,14 @@
             "code" : "sdo",
             "description" : "手  拼音：Ŝǒu  🈤映射：s->do",
             "zigens" : [
-               "手",
+               "手"
+            ]
+         },
+         {
+            "classify" : "通",
+            "code" : "so",
+            "description" : "  拼音：🈤无读音取o",
+            "zigens" : [
                ""
             ]
          }
@@ -2732,16 +2732,6 @@
             "zigens" : [
                ""
             ]
-         },
-         {
-            "classify" : "通",
-            "code" : "to",
-            "description" : "  拼音：🈤无读音取o",
-            "zigens" : [
-               "",
-               "",
-               ""
-            ]
          }
       ],
       "type" : "类"
@@ -2812,7 +2802,8 @@
             "description" : "合  拼音：Hé  🈤映射：h->la",
             "zigens" : [
                "合",
-               ""
+               "",
+               ""
             ]
          },
          {
@@ -2821,14 +2812,6 @@
             "description" : "僉  拼音：Qiān  𡆧不取声码",
             "zigens" : [
                "僉"
-            ]
-         },
-         {
-            "classify" : "通",
-            "code" : "tla",
-            "description" : "  拼音：无  ㊟同「合」归并  🈤映射：h->la",
-            "zigens" : [
-               ""
             ]
          }
       ],
@@ -2853,6 +2836,22 @@
             "description" : "隶  拼音：Lì  𡆧不取声码",
             "zigens" : [
                "隶"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "to",
+            "description" : "  拼音：🈤无读音取o",
+            "zigens" : [
+               "",
+               "",
+               ""
             ]
          }
       ],
@@ -3013,6 +3012,20 @@
       "groups" : [
          {
             "classify" : "通",
+            "code" : "vla",
+            "description" : "戶  拼音：Hù  🈤映射：h->la",
+            "zigens" : [
+               "戶"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
             "code" : "vme",
             "description" : "田  拼音：Tián  🈤映射：t->me",
             "zigens" : [
@@ -3076,9 +3089,15 @@
                "木",
                "朩"
             ]
-         },
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
          {
-            "classify" : "通",
+            "classify" : "繁",
             "code" : "vvi",
             "description" : "來  拼音：Lái  🈤映射：l->vi",
             "zigens" : [
@@ -3097,14 +3116,6 @@
             "description" : "犬  拼音：Quǎn  𡆧不取声码",
             "zigens" : [
                "犬"
-            ]
-         },
-         {
-            "classify" : "通",
-            "code" : "wje",
-            "description" : "  拼音：Quǎn  🈤映射：q->je",
-            "zigens" : [
-               ""
             ]
          }
       ],
@@ -3155,6 +3166,20 @@
             "description" : "  拼音：🈤无读音取o",
             "zigens" : [
                ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "wje",
+            "description" : "  拼音：Quǎn  🈤映射：q->je",
+            "zigens" : [
+               ""
             ]
          }
       ],
@@ -3222,6 +3247,34 @@
       "description" : "",
       "groups" : [
          {
+            "classify" : "通",
+            "code" : "xdo",
+            "description" : "矢  拼音：Ŝǐ  🈤映射：s->do",
+            "zigens" : [
+               "矢"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "xgu",
+            "description" : "禺  拼音：Yǔ  🈤映射：y->gu",
+            "zigens" : [
+               "禺"
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
             "classify" : "繁",
             "code" : "xgu",
             "description" : "魚  拼音：Yú  🈤映射：y->gu",
@@ -3238,7 +3291,7 @@
          {
             "classify" : "通",
             "code" : "xi",
-            "description" : "十  拼音：Ŝi  𡆧不取声码",
+            "description" : "十  拼音：十  拼音：Ŝi  𡆧不取声码",
             "zigens" : [
                "十"
             ]
@@ -3339,22 +3392,6 @@
             "zigens" : [
                "甲"
             ]
-         },
-         {
-            "classify" : "通",
-            "code" : "xvi",
-            "description" : "里  拼音：Lǐ  🈤映射：l->vi",
-            "zigens" : [
-               "里"
-            ]
-         },
-         {
-            "classify" : "通",
-            "code" : "xgu",
-            "description" : "禺  拼音：yǔ  🈤映射：y->gu",
-            "zigens" : [
-               "禺"
-            ]
          }
       ],
       "type" : "类"
@@ -3392,6 +3429,20 @@
             "zigens" : [
                "烏",
                ""
+            ]
+         }
+      ],
+      "type" : "类"
+   },
+   {
+      "description" : "",
+      "groups" : [
+         {
+            "classify" : "通",
+            "code" : "xvi",
+            "description" : "里  拼音：Lǐ  🈤映射：l->vi",
+            "zigens" : [
+               "里"
             ]
          }
       ],
@@ -3557,7 +3608,7 @@
          },
          {
             "classify" : "通",
-            "code" : "ygu",
+            "code" : "jgu",
             "description" : "酉  拼音：Yǒu  🈤映射：y->gu",
             "zigens" : [
                "酉"
@@ -3702,14 +3753,13 @@
       ]
    },
    {
-      "description" : "耂土士",
+      "description" : "耂土",
       "type" : "混",
       "zigens" : [
          "耂",
          "",
          "",
-         "土",
-         "士"
+         "土"
       ]
    },
    {
@@ -3825,6 +3875,14 @@
       ]
    },
    {
+      "description" : "丬",
+      "type" : "混",
+      "zigens" : [
+         "丷",
+         "丬"
+      ]
+   },
+   {
       "description" : "言",
       "type" : "混",
       "zigens" : [
@@ -3833,27 +3891,70 @@
       ]
    },
    {
-      "description" : "田甲",
+      "description" : "田甲由",
       "type" : "混",
       "zigens" : [
          "田",
-         "甲"
+         "甲",
+         "由"
       ]
    },
    {
-      "description" : "大夫",
+      "description" : "大夫𡗗",
       "type" : "混",
       "zigens" : [
          "大",
-         "夫"
+         "夫",
+         "𡗗"
       ]
    },
    {
-      "description" : "七戈",
+      "description" : "七戈弋",
       "type" : "混",
       "zigens" : [
          "七",
-         "戈"
+         "戈",
+         "弋"
+      ]
+   },
+   {
+      "description" : "日曰",
+      "type" : "混",
+      "zigens" : [
+         "日",
+         "曰"
+      ]
+   },
+   {
+      "description" : "西酉",
+      "type" : "混",
+      "zigens" : [
+         "西",
+         "酉"
+      ]
+   },
+   {
+      "description" : "卩㔾",
+      "type" : "混",
+      "zigens" : [
+         "卩",
+         "㔾"
+      ]
+   },
+   {
+      "description" : "户戶",
+      "type" : "混",
+      "zigens" : [
+         "户",
+         "戶"
+      ]
+   },
+   {
+      "description" : "丿彡",
+      "type" : "混",
+      "zigens" : [
+         "丿",
+         "彡"
       ]
    }
 ]
