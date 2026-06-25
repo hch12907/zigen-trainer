@@ -58,5 +58,11 @@
     	"full_name": "妖灵",
     	"zigen_url": "./zigen/yaoling.json",
     	"zigen_font": "./Yuniversus.woff"
+    },
+	{
+		"id": "lingluan",
+    	"full_name": "灵乱",
+    	"zigen_url": "./zigen/lingluan.json",
+    	"zigen_font": "./Yuniversus.woff"
     }
 ]
