@@ -801,17 +801,10 @@
       },
       {
         "zigens": [
-          "丁"
-        ],
-        "code": "xne",
-        "classify": "通",
-        "description": ""
-      },
-      {
-        "zigens": [
+          "丁",
           "丅"
         ],
-        "code": "xmo",
+        "code": "xne",
         "classify": "通",
         "description": ""
       },
