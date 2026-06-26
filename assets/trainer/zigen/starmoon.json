@@ -402,6 +402,42 @@
         "code": "pt",
         "classify": "通",
         "description": ""
+      },
+      {
+        "zigens": [
+          "魚"
+        ],
+        "code": "pi",
+        "classify": "繁",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "田"
+        ],
+        "code": "pw",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "",
+          "",
+          "甶",
+          "鬼"
+        ],
+        "code": "pf",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "臼",
+          ""
+        ],
+        "code": "px",
+        "classify": "通",
+        "description": ""
       }
     ],
     "description": ""
@@ -460,32 +496,6 @@
           "白"
         ],
         "code": "ds",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          "",
-          "",
-          "甶",
-          "鬼"
-        ],
-        "code": "pf",
-        "classify": "通",
-        "description": ""
-      },
-      {
-        "zigens": [
-          "臼",
-          ""
-        ],
-        "code": "px",
         "classify": "通",
         "description": ""
       }
@@ -716,28 +726,6 @@
           ""
         ],
         "code": "wk",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          "尤"
-        ],
-        "code": "uc",
-        "classify": "通",
-        "description": ""
-      },
-      {
-        "zigens": [
-          "尢"
-        ],
-        "code": "ut",
         "classify": "通",
         "description": ""
       }
@@ -1544,6 +1532,22 @@
           ""
         ],
         "code": "ug",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "尤"
+        ],
+        "code": "uc",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "尢"
+        ],
+        "code": "ut",
         "classify": "通",
         "description": ""
       }
@@ -2848,28 +2852,6 @@
     "groups": [
       {
         "zigens": [
-          "魚"
-        ],
-        "code": "pi",
-        "classify": "繁",
-        "description": ""
-      },
-      {
-        "zigens": [
-          "田"
-        ],
-        "code": "pw",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
           "禺"
         ],
         "code": "kb",
@@ -3028,13 +3010,7 @@
         "code": "vc",
         "classify": "通",
         "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
+      },
       {
         "zigens": [
           "囗"
