@@ -1060,6 +1060,14 @@
         "code": "og",
         "classify": "通",
         "description": ""
+      },
+      {
+        "zigens": [
+          "米"
+        ],
+        "code": "os",
+        "classify": "通",
+        "description": ""
       }
     ],
     "description": ""
@@ -2170,20 +2178,6 @@
           "革"
         ],
         "code": "bi",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          "米"
-        ],
-        "code": "os",
         "classify": "通",
         "description": ""
       }
