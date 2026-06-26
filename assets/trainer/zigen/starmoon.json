@@ -206,20 +206,6 @@
     "groups": [
       {
         "zigens": [
-          "丑"
-        ],
-        "code": "mx",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
           "言"
         ],
         "code": "pv",
@@ -1233,6 +1219,14 @@
           "且"
         ],
         "code": "mf",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "丑"
+        ],
+        "code": "mx",
         "classify": "通",
         "description": ""
       }
