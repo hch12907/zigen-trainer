@@ -83,21 +83,6 @@
     "groups": [
       {
         "zigens": [
-          "",
-          ""
-        ],
-        "code": "jx",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
           "皮"
         ],
         "code": "qu",
@@ -857,7 +842,7 @@
       },
       {
         "zigens": [
-          "士",
+          "士"
         ],
         "code": "hs",
         "classify": "通",
@@ -1699,6 +1684,15 @@
       {
         "zigens": [
           "壬"
+        ],
+        "code": "jx",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "",
+          ""
         ],
         "code": "jx",
         "classify": "通",
