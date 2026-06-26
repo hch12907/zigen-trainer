@@ -285,6 +285,22 @@
         "code": "uw",
         "classify": "通",
         "description": ""
+      },
+      {
+        "zigens": [
+          "雨"
+        ],
+        "code": "uf",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "uf",
+        "classify": "通",
+        "description": ""
       }
     ],
     "description": ""
@@ -298,21 +314,6 @@
           ""
         ],
         "code": "yb",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          "雨",
-          ""
-        ],
-        "code": "uf",
         "classify": "通",
         "description": ""
       }
