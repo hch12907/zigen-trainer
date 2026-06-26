@@ -2860,20 +2860,6 @@
     "groups": [
       {
         "zigens": [
-          "习"
-        ],
-        "code": "fy",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
           "夕"
         ],
         "code": "us",
@@ -3091,6 +3077,14 @@
           ""
         ],
         "code": "fh",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "习"
+        ],
+        "code": "fy",
         "classify": "通",
         "description": ""
       }
