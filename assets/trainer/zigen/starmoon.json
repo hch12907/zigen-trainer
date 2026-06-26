@@ -2992,7 +2992,14 @@
       },
       {
         "zigens": [
-          "欠",
+          "欠"
+        ],
+        "code": "ry",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
           ""
         ],
         "code": "ry",
