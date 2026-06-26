@@ -1319,6 +1319,14 @@
         "code": "gy",
         "classify": "通",
         "description": ""
+      },
+      {
+        "zigens": [
+          "身"
+        ],
+        "code": "gm",
+        "classify": "通",
+        "description": ""
       }
     ],
     "description": ""
@@ -2201,20 +2209,6 @@
           "自"
         ],
         "code": "ue",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          "身"
-        ],
-        "code": "gm",
         "classify": "通",
         "description": ""
       }
