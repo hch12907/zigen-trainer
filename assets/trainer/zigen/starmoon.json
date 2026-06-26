@@ -565,6 +565,14 @@
         "code": "wh",
         "classify": "通",
         "description": ""
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "wi",
+        "classify": "通",
+        "description": ""
       }
     ],
     "description": ""
@@ -872,7 +880,8 @@
       },
       {
         "zigens": [
-          "士"
+          "士",
+          ""
         ],
         "code": "hs",
         "classify": "通",
@@ -891,6 +900,14 @@
           ""
         ],
         "code": "hv",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "hk",
         "classify": "通",
         "description": ""
       }
@@ -3003,6 +3020,14 @@
         "code": "vl",
         "classify": "通",
         "description": ""
+      },
+      {
+        "zigens": [
+          "凵"
+        ],
+        "code": "vc",
+        "classify": "通",
+        "description": ""
       }
     ],
     "description": ""
@@ -3075,7 +3100,8 @@
       },
       {
         "zigens": [
-          "欠"
+          "欠",
+          ""
         ],
         "code": "ry",
         "classify": "通",
@@ -3208,34 +3234,6 @@
     "groups": [
       {
         "zigens": [
-          ""
-        ],
-        "code": "hk",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          ""
-        ],
-        "code": "hs",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
           "",
           ""
         ],
@@ -3265,51 +3263,9 @@
     "groups": [
       {
         "zigens": [
-          ""
-        ],
-        "code": "ry",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
           ""
         ],
         "code": "tk",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          "凵"
-        ],
-        "code": "vc",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          ""
-        ],
-        "code": "wi",
         "classify": "通",
         "description": ""
       }
