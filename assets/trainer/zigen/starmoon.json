@@ -248,12 +248,28 @@
     "groups": [
       {
         "zigens": [
-          "",
+          "冂",
           "",
-          "冂"
+          ""
         ],
         "code": "lr",
         "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "門"
+        ],
+        "code": "la",
+        "classify": "繁",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "鬥"
+        ],
+        "code": "ld",
+        "classify": "繁",
         "description": ""
       }
     ],
@@ -571,28 +587,6 @@
         ],
         "code": "jt",
         "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          "門"
-        ],
-        "code": "la",
-        "classify": "繁",
-        "description": ""
-      },
-      {
-        "zigens": [
-          "鬥"
-        ],
-        "code": "ld",
-        "classify": "繁",
         "description": ""
       }
     ],
