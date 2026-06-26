@@ -13,6 +13,14 @@
       },
       {
         "zigens": [
+          "寸"
+        ],
+        "code": "ak",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
           "來"
         ],
         "code": "an",
@@ -179,6 +187,15 @@
           ""
         ],
         "code": "tu",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "户",
+          "戸"
+        ],
+        "code": "th",
         "classify": "通",
         "description": ""
       }
@@ -438,6 +455,14 @@
         "code": "px",
         "classify": "通",
         "description": ""
+      },
+      {
+        "zigens": [
+          "甫"
+        ],
+        "code": "pq",
+        "classify": "通",
+        "description": ""
       }
     ],
     "description": ""
@@ -559,28 +584,6 @@
           "片"
         ],
         "code": "jt",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          "戶"
-        ],
-        "code": "wh",
-        "classify": "通",
-        "description": ""
-      },
-      {
-        "zigens": [
-          ""
-        ],
-        "code": "wi",
         "classify": "通",
         "description": ""
       }
@@ -991,21 +994,6 @@
     "groups": [
       {
         "zigens": [
-          "户",
-          "戸"
-        ],
-        "code": "th",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
           "穴"
         ],
         "code": "lg",
@@ -1143,13 +1131,7 @@
         "code": "ox",
         "classify": "通",
         "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
+      },
       {
         "zigens": [
           "早"
@@ -1349,20 +1331,6 @@
           "食"
         ],
         "code": "gy",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          "寸"
-        ],
-        "code": "ak",
         "classify": "通",
         "description": ""
       }
@@ -1904,14 +1872,6 @@
   {
     "type": "类",
     "groups": [
-      {
-        "zigens": [
-          "甫"
-        ],
-        "code": "pq",
-        "classify": "通",
-        "description": ""
-      },
       {
         "zigens": [
           "干"
@@ -2470,20 +2430,6 @@
     "groups": [
       {
         "zigens": [
-          "用"
-        ],
-        "code": "oe",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
           "力"
         ],
         "code": "qj",
@@ -2903,6 +2849,22 @@
         "code": "wy",
         "classify": "通",
         "description": ""
+      },
+      {
+        "zigens": [
+          "戶"
+        ],
+        "code": "wh",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "wi",
+        "classify": "通",
+        "description": ""
       }
     ],
     "description": ""
@@ -2969,6 +2931,14 @@
           ""
         ],
         "code": "oa",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "用"
+        ],
+        "code": "oe",
         "classify": "通",
         "description": ""
       }
