@@ -2201,20 +2201,6 @@
     "groups": [
       {
         "zigens": [
-          "自"
-        ],
-        "code": "ue",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
           "虫"
         ],
         "code": "so",
@@ -2867,6 +2853,14 @@
           "月"
         ],
         "code": "uv",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "自"
+        ],
+        "code": "ue",
         "classify": "通",
         "description": ""
       }
