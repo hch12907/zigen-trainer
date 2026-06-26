@@ -617,20 +617,6 @@
     "groups": [
       {
         "zigens": [
-          "至"
-        ],
-        "code": "hr",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
           "風"
         ],
         "code": "df",
@@ -872,6 +858,13 @@
       {
         "zigens": [
           "士",
+        ],
+        "code": "hs",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
           ""
         ],
         "code": "hs",
@@ -899,6 +892,14 @@
           ""
         ],
         "code": "hk",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "至"
+        ],
+        "code": "hr",
         "classify": "通",
         "description": ""
       }
@@ -1919,20 +1920,6 @@
     "groups": [
       {
         "zigens": [
-          "巴"
-        ],
-        "code": "ke",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
           "夫"
         ],
         "code": "ma",
@@ -1974,6 +1961,14 @@
           "乜"
         ],
         "code": "kt",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "巴"
+        ],
+        "code": "ke",
         "classify": "通",
         "description": ""
       }
@@ -2184,6 +2179,14 @@
         "code": "bj",
         "classify": "通",
         "description": ""
+      },
+      {
+        "zigens": [
+          "革"
+        ],
+        "code": "bi",
+        "classify": "通",
+        "description": ""
       }
     ],
     "description": ""
@@ -2369,20 +2372,6 @@
           "廾"
         ],
         "code": "ix",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          "革"
-        ],
-        "code": "bi",
         "classify": "通",
         "description": ""
       }
