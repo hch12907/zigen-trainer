@@ -3057,14 +3057,6 @@
     "groups": [
       {
         "zigens": [
-          ""
-        ],
-        "code": "rv",
-        "classify": "通",
-        "description": ""
-      },
-      {
-        "zigens": [
           "鱼"
         ],
         "code": "ri",
@@ -3074,7 +3066,8 @@
       {
         "zigens": [
           "冖",
-          ""
+          "",
+					""
         ],
         "code": "rw",
         "classify": "通",
