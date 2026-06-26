@@ -1788,6 +1788,14 @@
       },
       {
         "zigens": [
+          "长"
+        ],
+        "code": "cn",
+        "classify": "简",
+        "description": ""
+      },
+      {
+        "zigens": [
           ""
         ],
         "code": "cv",
@@ -1845,20 +1853,6 @@
         ],
         "code": "wi",
         "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          "长"
-        ],
-        "code": "cn",
-        "classify": "简",
         "description": ""
       }
     ],
