@@ -2127,6 +2127,14 @@
       },
       {
         "zigens": [
+          "业"
+        ],
+        "code": "sn",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
           "丷",
           ""
         ],
@@ -2657,20 +2665,6 @@
           "非"
         ],
         "code": "jw",
-        "classify": "通",
-        "description": ""
-      }
-    ],
-    "description": ""
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          "业"
-        ],
-        "code": "sn",
         "classify": "通",
         "description": ""
       }
