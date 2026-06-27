@@ -1,0 +1,3576 @@
+[
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "又",
+          "マ",
+          "ス"
+        ],
+        "code": "xi",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "癶"
+        ],
+        "code": "xa",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "龷",
+          "",
+          ""
+        ],
+        "code": "ve",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "卌",
+          "卅"
+        ],
+        "code": "vu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "艹",
+          "卄"
+        ],
+        "code": "be",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "廾"
+        ],
+        "code": "bu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "犬"
+        ],
+        "code": "ne",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "犭"
+        ],
+        "code": "nge",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "code": "ja",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "卯"
+        ],
+        "code": "jwi",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "爿"
+        ],
+        "code": "ni",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "片"
+        ],
+        "code": "ngi",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "辶",
+          "⻍"
+        ],
+        "code": "wo",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "之"
+        ],
+        "code": "wu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "乙",
+          "乚"
+        ],
+        "code": "vo",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "飛"
+        ],
+        "code": "vfe",
+        "classify": "繁",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "二",
+          "冫",
+          "⺀",
+          ""
+        ],
+        "code": "rha",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "亍"
+        ],
+        "code": "rhe",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "mo",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "mo",
+        "classify": "繁",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "⺊",
+          "卜"
+        ],
+        "code": "mfu",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "鹵"
+        ],
+        "code": "mlu",
+        "classify": "繁",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "虍",
+          "虎",
+          ""
+        ],
+        "code": "wpe",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "罒",
+          "皿"
+        ],
+        "code": "bje",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "va",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "⺶",
+          "羊",
+          "⺷"
+        ],
+        "code": "vla",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "丶",
+          "乀"
+        ],
+        "code": "ka",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "夫"
+        ],
+        "code": "nti",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "𡗗"
+        ],
+        "code": "nsu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "qe",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "川",
+          "巛",
+          "巜"
+        ],
+        "code": "qhe",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "勹",
+          ""
+        ],
+        "code": "gi",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "臼",
+          "⺽"
+        ],
+        "code": "pu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "鬼",
+          "",
+          "",
+          "甶"
+        ],
+        "code": "yo",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "乜"
+        ],
+        "code": "che",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "也"
+        ],
+        "code": "cu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "",
+          "㐄"
+        ],
+        "code": "che",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "ko",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "龶"
+        ],
+        "code": "ku",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "土"
+        ],
+        "code": "vu",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "士"
+        ],
+        "code": "vi",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "尢"
+        ],
+        "code": "sa",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "尤"
+        ],
+        "code": "sma",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "豕",
+          ""
+        ],
+        "code": "vna",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "烏",
+          ""
+        ],
+        "code": "svi",
+        "classify": "繁",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "鳥",
+          ""
+        ],
+        "code": "sha",
+        "classify": "繁",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "〇"
+        ],
+        "code": "du",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "口"
+        ],
+        "code": "di",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "鸟",
+          ""
+        ],
+        "code": "xha",
+        "classify": "简",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "乌"
+        ],
+        "code": "xvi",
+        "classify": "简",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "tu",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "曲"
+        ],
+        "code": "tke",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "一"
+        ],
+        "code": "fi",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "厂",
+          "丆"
+        ],
+        "code": "yi",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "",
+          ""
+        ],
+        "code": "va",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "彑"
+        ],
+        "code": "vja",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "母"
+        ],
+        "code": "vhe",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "go",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "gi",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "衤"
+        ],
+        "code": "gki",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "",
+          "",
+          ""
+        ],
+        "code": "so",
+        "classify": "繁",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "由"
+        ],
+        "code": "vxu",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "申"
+        ],
+        "code": "vma",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "电"
+        ],
+        "code": "va",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "艮",
+          ""
+        ],
+        "code": "gla",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "馬",
+          ""
+        ],
+        "code": "mti",
+        "classify": "繁",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "xo",
+        "classify": "繁",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "丁",
+          "丅"
+        ],
+        "code": "xne",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "下"
+        ],
+        "code": "xo",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "了"
+        ],
+        "code": "hro",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "予"
+        ],
+        "code": "ho",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "子"
+        ],
+        "code": "hvu",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "孑"
+        ],
+        "code": "hje",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "日",
+          "",
+          ""
+        ],
+        "code": "sja",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "曰"
+        ],
+        "code": "svo",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "長",
+          "镸"
+        ],
+        "code": "mgo",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "髟"
+        ],
+        "code": "mme",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "ㄩ",
+          "丩",
+          ""
+        ],
+        "code": "ma",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "丱"
+        ],
+        "code": "mgu",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "屮"
+        ],
+        "code": "mce",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "",
+          ""
+        ],
+        "code": "ho",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "向"
+        ],
+        "code": "hvi",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "ko",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "寸"
+        ],
+        "code": "kfo",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "上",
+          "丄",
+          ""
+        ],
+        "code": "so",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "ntu",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "丑"
+        ],
+        "code": "ngu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "〢",
+          "〣"
+        ],
+        "code": "ka",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "丨"
+        ],
+        "code": "ke",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "mo",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "彳"
+        ],
+        "code": "ma",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "mvo",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "亡"
+        ],
+        "code": "mwu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "几"
+        ],
+        "code": "tja",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "殳"
+        ],
+        "code": "to",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "風"
+        ],
+        "code": "tfe",
+        "classify": "繁",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "卩",
+          "㔾",
+          "ㄗ"
+        ],
+        "code": "ldo",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "尚",
+          "龸"
+        ],
+        "code": "djo",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "咼",
+          "冎"
+        ],
+        "code": "ko",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "骨"
+        ],
+        "code": "kwi",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "車",
+          ""
+        ],
+        "code": "pje",
+        "classify": "繁",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "叀"
+        ],
+        "code": "pje",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "tda",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "白"
+        ],
+        "code": "tna",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "冂",
+          "",
+          ""
+        ],
+        "code": "qka",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "龵",
+          "手"
+        ],
+        "code": "cja",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "扌"
+        ],
+        "code": "ja",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "未"
+        ],
+        "code": "ldu",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "末"
+        ],
+        "code": "lri",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "戶"
+        ],
+        "code": "ra",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "户",
+          "戸"
+        ],
+        "code": "rla",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "月",
+          "",
+          ""
+        ],
+        "code": "ri",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "龰",
+          "止"
+        ],
+        "code": "nwu",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "齒"
+        ],
+        "code": "nci",
+        "classify": "繁",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "來"
+        ],
+        "code": "lla",
+        "classify": "繁",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "木",
+          "朩"
+        ],
+        "code": "le",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "甲"
+        ],
+        "code": "lci",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "禺"
+        ],
+        "code": "lro",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "里"
+        ],
+        "code": "lvi",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "而"
+        ],
+        "code": "ytu",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "面"
+        ],
+        "code": "ydi",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "丷",
+          "リ"
+        ],
+        "code": "li",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "䒑"
+        ],
+        "code": "le",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "ᅲ",
+          "丌"
+        ],
+        "code": "la",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "兀"
+        ],
+        "code": "lti",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "己"
+        ],
+        "code": "she",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "已"
+        ],
+        "code": "sna",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "巳"
+        ],
+        "code": "sme",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "巴"
+        ],
+        "code": "su",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "鹿",
+          ""
+        ],
+        "code": "tpe",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "ca",
+        "classify": "简",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "纟"
+        ],
+        "code": "ca",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "",
+          ""
+        ],
+        "code": "xe",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "高",
+          ""
+        ],
+        "code": "xye",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "ユ",
+          "コ"
+        ],
+        "code": "fo",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "su",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "且"
+        ],
+        "code": "sdu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "氵",
+          "水"
+        ],
+        "code": "ha",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "乂",
+          ""
+        ],
+        "code": "gu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "⺈",
+          "冖",
+          ""
+        ],
+        "code": "cu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "彐",
+          "肀",
+          ""
+        ],
+        "code": "gya",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "隶"
+        ],
+        "code": "gi",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "",
+          ""
+        ],
+        "code": "ba",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "臣"
+        ],
+        "code": "bo",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "合",
+          "",
+          ""
+        ],
+        "code": "jvi",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "僉"
+        ],
+        "code": "ji",
+        "classify": "繁",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "",
+          "⺍"
+        ],
+        "code": "hi",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "小",
+          "⺌",
+          ""
+        ],
+        "code": "hgi",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "",
+          "竹",
+          ""
+        ],
+        "code": "xa",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "西"
+        ],
+        "code": "ja",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "酉"
+        ],
+        "code": "jti",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "七"
+        ],
+        "code": "la",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "弋"
+        ],
+        "code": "lso",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "戈"
+        ],
+        "code": "wje",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "戊"
+        ],
+        "code": "wma",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "⺧"
+        ],
+        "code": "fa",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "牛"
+        ],
+        "code": "fna",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "生"
+        ],
+        "code": "fu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "尸",
+          ""
+        ],
+        "code": "ske",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "爪"
+        ],
+        "code": "fo",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "瓜"
+        ],
+        "code": "fma",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "ja",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "八"
+        ],
+        "code": "je",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "門"
+        ],
+        "code": "wne",
+        "classify": "繁",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "鬥"
+        ],
+        "code": "wdu",
+        "classify": "繁",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "⺁"
+        ],
+        "code": "no",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "斤"
+        ],
+        "code": "nfo",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "自"
+        ],
+        "code": "fke",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "身"
+        ],
+        "code": "fka",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "jo",
+        "classify": "繁",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "乃"
+        ],
+        "code": "jdu",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "廴"
+        ],
+        "code": "jo",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "丂"
+        ],
+        "code": "gle",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "丬"
+        ],
+        "code": "qo",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "刂"
+        ],
+        "code": "jte",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "匚"
+        ],
+        "code": "rje",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "宀"
+        ],
+        "code": "mu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "灬"
+        ],
+        "code": "fme",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "耂"
+        ],
+        "code": "hde",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "讠"
+        ],
+        "code": "ga",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "貝"
+        ],
+        "code": "qbo",
+        "classify": "繁",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "贝"
+        ],
+        "code": "kbo",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "匕"
+        ],
+        "code": "ru",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "不"
+        ],
+        "code": "gne",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "长"
+        ],
+        "code": "kgo",
+        "classify": "简",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "冊"
+        ],
+        "code": "kci",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "车"
+        ],
+        "code": "xje",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "辰"
+        ],
+        "code": "dla",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "虫"
+        ],
+        "code": "tu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "刀"
+        ],
+        "code": "he",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "大"
+        ],
+        "code": "hfu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "丿"
+        ],
+        "code": "co",
+        "classify": "通",
+        "description": ""
+      },
+      {
+        "zigens": [
+          "",
+          "彡"
+        ],
+        "code": "cu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "亻"
+        ],
+        "code": "ki",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "囗"
+        ],
+        "code": "rwa",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "疒"
+        ],
+        "code": "rku",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "方"
+        ],
+        "code": "tje",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "丰"
+        ],
+        "code": "qo",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "非"
+        ],
+        "code": "bke",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "缶"
+        ],
+        "code": "jsa",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "甫"
+        ],
+        "code": "wa",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "干"
+        ],
+        "code": "kdu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "广"
+        ],
+        "code": "ndu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "革"
+        ],
+        "code": "nso",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "工"
+        ],
+        "code": "go",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "弓"
+        ],
+        "code": "xla",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "古"
+        ],
+        "code": "jgi",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "亥"
+        ],
+        "code": "kvu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "禾"
+        ],
+        "code": "tku",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "黑"
+        ],
+        "code": "jdo",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "火"
+        ],
+        "code": "xu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "厶"
+        ],
+        "code": "ke",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "夊"
+        ],
+        "code": "pxi",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "忄"
+        ],
+        "code": "fi",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "钅"
+        ],
+        "code": "pe",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "饣"
+        ],
+        "code": "vpe",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "見"
+        ],
+        "code": "rso",
+        "classify": "繁",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "见"
+        ],
+        "code": "kso",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "巾"
+        ],
+        "code": "lru",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "金"
+        ],
+        "code": "we",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "九"
+        ],
+        "code": "rya",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "夭"
+        ],
+        "code": "ydu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "幺"
+        ],
+        "code": "pvi",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "牙"
+        ],
+        "code": "hso",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "言"
+        ],
+        "code": "na",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "业"
+        ],
+        "code": "dpe",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "頁"
+        ],
+        "code": "yro",
+        "classify": "繁",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "页"
+        ],
+        "code": "wro",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "亦"
+        ],
+        "code": "gmo",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "用"
+        ],
+        "code": "pe",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "雨"
+        ],
+        "code": "mdu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "魚"
+        ],
+        "code": "qxu",
+        "classify": "繁",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "鱼"
+        ],
+        "code": "jxu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "力"
+        ],
+        "code": "bne",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "立"
+        ],
+        "code": "cko",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "毛"
+        ],
+        "code": "tme",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "马"
+        ],
+        "code": "pti",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "麻"
+        ],
+        "code": "nvu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "门"
+        ],
+        "code": "sne",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "米"
+        ],
+        "code": "pdu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "目"
+        ],
+        "code": "ghe",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "女"
+        ],
+        "code": "si",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          ""
+        ],
+        "code": "co",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "ナ"
+        ],
+        "code": "fje",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "亠"
+        ],
+        "code": "qo",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "皮"
+        ],
+        "code": "vne",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "千"
+        ],
+        "code": "mvu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "欠"
+        ],
+        "code": "hti",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "其"
+        ],
+        "code": "mso",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "气"
+        ],
+        "code": "the",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "人"
+        ],
+        "code": "wi",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "壬"
+        ],
+        "code": "ska",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "入"
+        ],
+        "code": "kdo",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "三"
+        ],
+        "code": "tka",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "山"
+        ],
+        "code": "vye",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "舌"
+        ],
+        "code": "lgu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "世"
+        ],
+        "code": "bma",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "十"
+        ],
+        "code": "me",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "矢"
+        ],
+        "code": "jso",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "石"
+        ],
+        "code": "xke",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "示"
+        ],
+        "code": "kke",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "糸"
+        ],
+        "code": "ya",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "食"
+        ],
+        "code": "gpe",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "田"
+        ],
+        "code": "yfu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "壴"
+        ],
+        "code": "rmo",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "阝"
+        ],
+        "code": "na",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "早"
+        ],
+        "code": "qi",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "正"
+        ],
+        "code": "do",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "至"
+        ],
+        "code": "lva",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "豸"
+        ],
+        "code": "kva",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "隹"
+        ],
+        "code": "bi",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "舟"
+        ],
+        "code": "tmo",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "走"
+        ],
+        "code": "gje",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "足"
+        ],
+        "code": "wya",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "王"
+        ],
+        "code": "qu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "瓦"
+        ],
+        "code": "ltu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "儿"
+        ],
+        "code": "ye",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "文"
+        ],
+        "code": "jru",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "耳"
+        ],
+        "code": "dji",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "穴"
+        ],
+        "code": "wla",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "习"
+        ],
+        "code": "pa",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "夕"
+        ],
+        "code": "jfu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "心"
+        ],
+        "code": "mvi",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "辛"
+        ],
+        "code": "ysu",
+        "classify": "通",
+        "description": ""
+      }
+    ],
+    "description": ""
+  }
+]
