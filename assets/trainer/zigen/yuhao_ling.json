@@ -1991,14 +1991,6 @@
         "code": "na",
         "classify": "通",
         "description": "⺍ xiǎo → x<b>a</b> <br>（小根，不取声母）<br>（跳过中间i、u音）"
-      },
-      {
-        "zigens": [
-          "米"
-        ],
-        "code": "nmi",
-        "classify": "通",
-        "description": "米 <b>mǐ</b>"
       }
     ],
     "description": "此类字根皆含有‘⺌’部件。"
@@ -2878,6 +2870,20 @@
       }
     ],
     "description": "这类字根皆含有‘甶’部件。"
+  },
+  {
+    "type": "类",
+    "groups": [
+      {
+        "zigens": [
+          "米"
+        ],
+        "code": "vmi",
+        "classify": "通",
+        "description": "米 <b>mǐ</b>"
+      }
+    ],
+    "description": ""
   },
   {
     "type": "类",
