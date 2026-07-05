@@ -1454,20 +1454,13 @@
       {
         "zigens": [
           "卯",
-          ""
-        ],
-        "code": "sj",
-        "classify": "通",
-        "description": ""
-      },
-      {
-        "zigens": [
+          "",
           "",
           "",
           "",
           ""
         ],
-        "code": "sy",
+        "code": "sj",
         "classify": "通",
         "description": ""
       }
@@ -2762,7 +2755,8 @@
     "groups": [
       {
         "zigens": [
-          "厂"
+          "厂",
+          "丆"
         ],
         "code": "we",
         "classify": "通",
@@ -2773,14 +2767,6 @@
           "石"
         ],
         "code": "wo",
-        "classify": "通",
-        "description": ""
-      },
-      {
-        "zigens": [
-          "丆"
-        ],
-        "code": "wy",
         "classify": "通",
         "description": ""
       },
