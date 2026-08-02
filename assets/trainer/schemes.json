@@ -112,6 +112,11 @@
 	{
 		"id": "lingluan",
     	"full_name": "灵乱",
+        "author": "枕月",
+        "maintainer": "枕月",
+        "category": ["宇浩系列", "衍生方案"],
+        "description": "乱序灵明",
+        "icon": "🫟",
     	"zigen_url": "./zigen/lingluan.json",
     	"zigen_font": "./Yuniversus.woff"
     }
