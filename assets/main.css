@@ -24,7 +24,6 @@ body {
     background: linear-gradient(135deg, #f5f0e7 0%, #e8e0d3 100%);
     color: var(--primary-color);
     margin: 0 20px;
-    height: 100vh;
     justify-content: center;
     align-items: center;
     font-family: var(--body-fonts);
@@ -83,7 +82,6 @@ nav picture, nav img {
 .trainer-root {
     background-color: var(--secondary-bg-color);
     width: 800px;
-    max-height: calc(100vh - 2em);
     overflow-y: auto;
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -117,72 +115,6 @@ nav picture, nav img {
     margin: 0;
     padding-top: 0;
     margin-bottom: 1em;
-}
-
-.trainer-welcome > p {
-    font-size: 20px;
-    padding: 2em;
-}
-
-.trainer-welcome > select {
-    background-color: var(--tertiary-bg-color);
-    color: var(--primary-color);
-    font-size: 1.2em;
-    border: 0;
-    border-radius: 8px;
-    padding: 0.5em 1.0em;
-}
-
-.trainer-welcome-buttons > button {
-    background-color: var(--tertiary-bg-color);
-    color: var(--primary-color);
-    font-size: 1.2em;
-    border: 0;
-    border-radius: 6px;
-    min-width: 5em;
-    padding: 0 0.5em;
-    height: 2em;
-    margin: 0.5em 0.5em;
-}
-
-.trainer-scheme-options {
-    display: flex;
-    flex-direction: row;
-    margin: 1em;
-}
-
-.trainer-scheme-options > input[type="checkbox"] {
-    margin: 0 0.5em;
-}
-
-.trainer-scheme-advanced-options >* {
-    margin: 0.5em;
-}
-
-.trainer-scheme-advanced-options > summary {
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.trainer-scheme-advanced-options > select {
-    background-color: var(--tertiary-bg-color);
-    color: var(--primary-color);
-    font-size: 1em;
-    border: 0;
-    border-radius: 8px;
-    padding: 0.5em 0.5em;
-    flex-basis: 300px;
-}
-
-.trainer-scheme-advanced-options > input[type="text"] {
-    background-color: var(--tertiary-bg-color);
-    border: none;
-    width: 90%;
-    height: 2em;
-    color: var(--primary-color);
-    font-size: 0.9em;
-    font-weight: 400;
-    text-align: center
 }
 
 .break-flex-row {

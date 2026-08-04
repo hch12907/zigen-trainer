@@ -62,11 +62,22 @@ pub fn Welcome(mut props: WelcomeProps) -> Element {
             .unwrap_or(Vec::new())
     });
 
+    use_effect(move || {
+        // 随state更新而更新
+        state.read();
+        document::eval(
+            r#"
+            document.getElementById("welcome_top").scrollIntoView({ behavior: "smooth" });
+        "#,
+        );
+    });
+
     rsx! {
         div {
             class: "trainer-welcome",
 
             h1 {
+                id: "welcome_top",
                 "慧眼识字根·字根练习器"
             }
 
@@ -82,10 +93,21 @@ pub fn Welcome(mut props: WelcomeProps) -> Element {
                             SchemeSelector {
                                 schemes: schemes,
                                 selected_scheme,
-                                on_scheme_selected: move |selected| {
+                                user_state: props.user_state,
+                                on_scheme_selected: move |(selected_scheme_id, skip_setting): (_, bool)| {
                                     // confirm_reset.set(false);
-                                    selected_scheme.set(selected);
-                                    state.set(WelcomeState::Settings);
+                                    if !skip_setting {
+                                        selected_scheme.set(selected_scheme_id);
+                                        state.set(WelcomeState::Settings);
+                                    } else {
+                                        let scheme = schemes
+                                            .read()
+                                            .iter()
+                                            .find(|scheme| scheme.id == selected_scheme_id)
+                                            .cloned()
+                                            .unwrap();
+                                        (props.on_scheme_selected)((scheme, SchemeOptions::default()))
+                                    }
                                 }
                             }
                         },
@@ -93,16 +115,20 @@ pub fn Welcome(mut props: WelcomeProps) -> Element {
                         WelcomeState::Settings => rsx! {
                             Settings {
                                 selected_scheme,
+                                user_state: props.user_state,
                                 on_back: move || state.set(WelcomeState::ChooseScheme),
-                                on_confirm: move |opts| {
+                                on_confirm: move |(opts, reset)| {
                                     let scheme = schemes
                                         .read()
                                         .iter()
                                         .find(|scheme| scheme.id == *selected_scheme.read())
                                         .cloned()
                                         .unwrap();
+                                    if reset {
+                                        props.user_state.write().reset_progress(&scheme.id);
+                                    }
                                     (props.on_scheme_selected)((scheme, opts))
-                                }
+                                },
                             }
                         }
                     }

@@ -247,6 +247,19 @@
 .scheme-settings-button {
     display: flex;
     justify-content: center;
-    margin-top: 3em;
+    margin: 3em 1em;
     gap: 10px;
+    flex-flow: row wrap;
+}
+
+.scheme-settings-button .scheme-settings-reset-label {
+    flex-basis: 100%;
+    margin: 1em 0 0 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.scheme-settings-button > button {
+    word-break: keep-all;
+    align-self: center;
 }

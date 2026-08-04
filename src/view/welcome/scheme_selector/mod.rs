@@ -4,6 +4,7 @@ mod category_tree;
 use dioxus::prelude::*;
 
 use crate::scheme::Scheme;
+use crate::user_state::UserState;
 use category::Category;
 use category_tree::{CategoryNode, CategoryTree};
 
@@ -13,7 +14,9 @@ const SCHEME_SELECTOR_CSS: Asset = asset!("/assets/scheme_selector.css");
 pub struct SchemeSelectorProps {
     schemes: ReadSignal<Vec<Scheme>>,
     selected_scheme: Signal<String>,
-    on_scheme_selected: EventHandler<String>,
+    user_state: ReadSignal<UserState>,
+    /// 参数：方案ID、是否跳过设置界面
+    on_scheme_selected: EventHandler<(String, bool)>,
 }
 
 #[component]
@@ -39,29 +42,34 @@ pub fn SchemeSelector(props: SchemeSelectorProps) -> Element {
             .clone()
     });
 
+    let scheme_in_training = {
+        let user_state = props.user_state.read();
+        let id = user_state.current_scheme();
+        
+        props.schemes.read().iter().any(|scheme| scheme.id == id).then(|| id.to_owned())
+    };
+
     rsx! {
         document::Link { rel: "stylesheet", href: SCHEME_SELECTOR_CSS }
 
-        p {
-            class: "trainer-scheme-selector-description",
-            "选择想要学习的方案后，点击下一步"
+        if let Some(scheme_id) = scheme_in_training.clone() {
+            button {
+                class: "selector-confirm-button",
+                style: "margin: 2em",
+                onclick: move |_| {
+                    (props.on_scheme_selected)((scheme_id.clone(), true))
+                },
+                "继续上次练习"
+            }
         }
 
-        select {
-            style: "display:none",
-            class: "trainer-scheme-selector",
-            id: "trainer-scheme",
-            onchange: move |event| {
-                props.on_scheme_selected.call(event.value());
-            },
+        p {
+            class: "trainer-scheme-selector-description",
 
-            for scheme in props.schemes.iter() {
-                option {
-                    key: "{scheme.id}",
-                    value: "{scheme.id}",
-                    selected: *props.selected_scheme.read() == scheme.id,
-                    "{scheme.full_name}",
-                }
+            if scheme_in_training.is_none() {
+                "选择想要学习的方案后，点击下一步"
+            } else {
+                "……或在选择想要学习的方案后，点击下一步"
             }
         }
 
@@ -80,7 +88,7 @@ pub fn SchemeSelector(props: SchemeSelectorProps) -> Element {
         Category {
             category: selected_main_category,
             schemes: props.schemes,
-            on_scheme_selected: move |scheme_id| (props.on_scheme_selected)(scheme_id),
+            on_scheme_selected: move |scheme_id| (props.on_scheme_selected)((scheme_id, false)),
         }
     }
 }

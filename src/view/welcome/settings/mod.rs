@@ -3,6 +3,7 @@ mod setting_option;
 use dioxus::prelude::*;
 
 use crate::scheme::{CombineMode, SchemeOptions};
+use crate::user_state::UserState;
 use setting_option::{BooleanSetting, DropdownSetting, TextboxSetting};
 
 const SCHEME_SETTINGS_CSS: Asset = asset!("/assets/scheme_settings.css");
@@ -10,26 +11,34 @@ const SCHEME_SETTINGS_CSS: Asset = asset!("/assets/scheme_settings.css");
 #[derive(Clone, Debug, PartialEq, Props)]
 pub struct SettingsProp {
     selected_scheme: ReadSignal<String>,
+    user_state: ReadSignal<UserState>,
     on_back: EventHandler<()>,
-    on_confirm: EventHandler<SchemeOptions>,
+    /// 参数：方案设置、是否重置
+    on_confirm: EventHandler<(SchemeOptions, bool)>,
 }
 
 #[component]
 pub fn Settings(props: SettingsProp) -> Element {
+    let has_existing_session = use_memo(move || {
+        let user_state = props.user_state.read();
+        let selected_scheme = props.selected_scheme.read();
+        user_state.has_progress(&selected_scheme)
+    });
+
     let shuffle = use_signal(|| true);
     let combined_training = use_signal(|| false);
     let prioritize_trad = use_signal(|| false);
     let adept = use_signal(|| false);
     let combined_mode_str = use_signal(|| String::new());
     let combine_mode = use_memo(move || match combined_mode_str.read().as_str() {
-        "category" => CombineMode::Category,
         "group" => CombineMode::Group,
-        "none" | _ => CombineMode::None,
+        "none" => CombineMode::None,
+        "category" | _ => CombineMode::Category,
     });
     let limit_keys = use_signal(|| String::new());
     let v2_sched = use_signal(|| false);
-    let confirm_reset = use_signal(|| false);
-
+    
+    let mut confirm_reset = use_signal(|| false);
     let mut show_advanced = use_signal(|| false);
 
     rsx! {
@@ -40,6 +49,7 @@ pub fn Settings(props: SettingsProp) -> Element {
 
             div {
                 class: "scheme-settings-header",
+                id: "settings_header_top",
 
                 h1 {
                     "本轮练习设置"
@@ -128,7 +138,7 @@ pub fn Settings(props: SettingsProp) -> Element {
                         TextboxSetting {
                             name: "仅训练键面",
                             description: "只练习编码开头为规定键面的字根。留空以训练所有字根。",
-                            placeholder: "ABCDE",
+                            placeholder: "例：ABCDE",
                             value: limit_keys,
                         }
 
@@ -147,6 +157,14 @@ pub fn Settings(props: SettingsProp) -> Element {
                         onclick: move |_| (props.on_back)(()),
                         "上一步"
                     }
+
+                    if confirm_reset() {
+                        p {
+                            class: "scheme-settings-reset-label",
+                            "该方案已存在学习进程，是否重置？"
+                        }
+                    }
+
                     button {
                         class: "selector-confirm-button",
                         onclick: move |_| {
@@ -164,9 +182,22 @@ pub fn Settings(props: SettingsProp) -> Element {
                                 v2_sched: v2_sched()
                             };
 
-                            (props.on_confirm)(settings);
+                            if !has_existing_session() {
+                                (props.on_confirm)((settings, false));
+                            } else {
+                                if confirm_reset() {
+                                    (props.on_confirm)((settings, true));
+                                } else {
+                                    confirm_reset.set(true);
+                                }
+                            }
                         },
-                        "开始练习"
+                        
+                        if confirm_reset() {
+                            "开始练习（确认）"
+                        } else {
+                            "开始练习"
+                        }
                     }
                 }
             }
