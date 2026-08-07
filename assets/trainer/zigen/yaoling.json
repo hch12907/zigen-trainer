@@ -1111,7 +1111,7 @@
          },
          {
             "classify" : "通",
-            "code" : "ke",
+            "code" : "re",
             "description" : "曰  拼音：Yuē  𡆧不取声码",
             "zigens" : [
                "曰"
@@ -2905,7 +2905,7 @@
       "groups" : [
          {
             "classify" : "通",
-            "code" : "va",
+            "code" : "ra",
             "description" : "巴  拼音：Bā  𡆧不取声码",
             "zigens" : [
                "巴"
@@ -2956,8 +2956,8 @@
       "groups" : [
          {
             "classify" : "通",
-            "code" : "vgu",
-            "description" : "夭  拼音：yāo  🈤映射：y->gu",
+            "code" : "va",
+            "description" : "夭  拼音：yāo  𡆧不取声码",
             "zigens" : [
                "夭"
             ]
@@ -3054,7 +3054,7 @@
       "groups" : [
          {
             "classify" : "繁",
-            "code" : "vo",
+            "code" : "mo",
             "description" : "  拼音：🈤无读音取o",
             "zigens" : [
                ""
@@ -3872,14 +3872,6 @@
       "zigens" : [
          "立",
          "辛"
-      ]
-   },
-   {
-      "description" : "丬",
-      "type" : "混",
-      "zigens" : [
-         "丷",
-         "丬"
       ]
    },
    {
