@@ -8,6 +8,9 @@ use crate::view::welcome::settings::Settings;
 use dioxus::prelude::*;
 use gloo_net::http::Request;
 
+const SCHEME_SELECTOR_CSS: Asset = asset!("/assets/scheme_selector.css");
+const SCHEME_SETTINGS_CSS: Asset = asset!("/assets/scheme_settings.css");
+
 #[derive(PartialEq, Clone, Props)]
 pub struct WelcomeProps {
     user_state: Signal<UserState>,
@@ -73,6 +76,9 @@ pub fn Welcome(mut props: WelcomeProps) -> Element {
     });
 
     rsx! {
+        document::Link { rel: "stylesheet", href: SCHEME_SELECTOR_CSS }
+        document::Link { rel: "stylesheet", href: SCHEME_SETTINGS_CSS }
+
         div {
             class: "trainer-welcome",
 

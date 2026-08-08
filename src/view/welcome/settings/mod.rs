@@ -6,8 +6,6 @@ use crate::scheme::{CombineMode, SchemeOptions};
 use crate::user_state::UserState;
 use setting_option::{BooleanSetting, DropdownSetting, TextboxSetting};
 
-const SCHEME_SETTINGS_CSS: Asset = asset!("/assets/scheme_settings.css");
-
 #[derive(Clone, Debug, PartialEq, Props)]
 pub struct SettingsProp {
     selected_scheme: ReadSignal<String>,
@@ -42,7 +40,6 @@ pub fn Settings(props: SettingsProp) -> Element {
     let mut show_advanced = use_signal(|| false);
 
     rsx! {
-        document::Link { rel: "stylesheet", href: SCHEME_SETTINGS_CSS }
 
         div {
             class: "scheme-settings",

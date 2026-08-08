@@ -8,8 +8,6 @@ use crate::user_state::UserState;
 use category::Category;
 use category_tree::{CategoryNode, CategoryTree};
 
-const SCHEME_SELECTOR_CSS: Asset = asset!("/assets/scheme_selector.css");
-
 #[derive(PartialEq, Clone, Props)]
 pub struct SchemeSelectorProps {
     schemes: ReadSignal<Vec<Scheme>>,
@@ -50,8 +48,6 @@ pub fn SchemeSelector(props: SchemeSelectorProps) -> Element {
     };
 
     rsx! {
-        document::Link { rel: "stylesheet", href: SCHEME_SELECTOR_CSS }
-
         if let Some(scheme_id) = scheme_in_training.clone() {
             button {
                 class: "selector-confirm-button",
