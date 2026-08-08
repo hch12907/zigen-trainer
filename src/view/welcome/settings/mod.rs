@@ -33,7 +33,7 @@ pub fn Settings(props: SettingsProp) -> Element {
     let combine_mode = use_memo(move || match combined_mode_str.read().as_str() {
         "group" => CombineMode::Group,
         "none" => CombineMode::None,
-        "category" | _ => CombineMode::Category,
+        "cluster" | _ => CombineMode::Cluster,
     });
     let limit_keys = use_signal(|| String::new());
     let v2_sched = use_signal(|| false);
@@ -128,7 +128,7 @@ pub fn Settings(props: SettingsProp) -> Element {
                             name: "卡片合并模式",
                             description: "调整练习器处理字根卡片的方式。",
                             options: &[
-                                ("category", "同聚类合并（适合新手）"),
+                                ("cluster", "同聚类合并（适合新手）"),
                                 ("group", "同归并合并"),
                                 ("none", "无合并"),
                             ],

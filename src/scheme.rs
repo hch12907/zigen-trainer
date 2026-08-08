@@ -20,9 +20,9 @@ pub struct Scheme {
     pub maintainer: String,
     /// 该方案的代表性图标，若含有 '/' 符号则视为图片URL，否则直接渲染。
     pub icon: String,
-    /// 方案标签。第一个元素为主分类，第二个元素为次分类，以此类推。
+    /// 方案分类。第一个元素为主分类，第二个元素为次分类，以此类推。
     pub category: Vec<String>,
-    /// 方案字根集的URL，字根集的格式详情请参考 LoadedScheme 与 ZigenCategory 。
+    /// 方案字根集的URL，字根集的格式详情请参考 LoadedScheme 与 ZigenCluster 。
     /// 如果不是绝对地址，则默认根目录为 scheme.json 的所在目录。
     pub zigen_url: String,
     /// 方案字根集所需字体的URL。
@@ -50,7 +50,7 @@ pub struct SchemeOptions {
 #[derive(Clone, Debug, PartialEq, Eq, Default)]
 pub enum CombineMode {
     #[default]
-    Category,
+    Cluster,
     Group,
     None,
 }
@@ -75,7 +75,7 @@ impl LoadedScheme<ZigenConfusableUnpopulated> {
         self.0
             .iter()
             .filter_map(|zigen| match zigen {
-                SchemeZigen::Category(cat) => Some(&cat.groups),
+                SchemeZigen::Cluster(cat) => Some(&cat.groups),
                 _ => None,
             })
             .for_each(|groups| {
@@ -92,7 +92,7 @@ impl LoadedScheme<ZigenConfusableUnpopulated> {
             self.0
                 .into_iter()
                 .map(|zigen| match zigen {
-                    SchemeZigen::Category(cat) => SchemeZigen::Category(cat),
+                    SchemeZigen::Cluster(cat) => SchemeZigen::Cluster(cat),
                     SchemeZigen::Confusable(con) => SchemeZigen::Confusable({
                         let mut groups = Vec::new();
                         for zigen in con.zigens.iter() {
@@ -136,7 +136,7 @@ impl LoadedScheme<ZigenConfusable> {
             .0
             .iter()
             .filter(|zigens| match zigens {
-                SchemeZigen::Category(_) => false,
+                SchemeZigen::Cluster(_) => false,
                 SchemeZigen::Confusable(con) => {
                     let ZigenConfusable { groups, .. } = con;
                     if let Some(limit_keys) = &options.limit_keys {
@@ -153,12 +153,12 @@ impl LoadedScheme<ZigenConfusable> {
             .collect::<Vec<_>>();
 
         let categories = self.0.iter().filter_map(|zigens| match zigens {
-            SchemeZigen::Category(cat) => Some((&cat.groups, &cat.description)),
+            SchemeZigen::Cluster(cat) => Some((&cat.groups, &cat.description)),
             SchemeZigen::Confusable(_con) => None,
         });
 
         for (cat, cat_desc) in categories.clone() {
-            let common = ZigenCategory {
+            let common = ZigenCluster {
                 groups: cat
                     .iter()
                     .filter(|group| {
@@ -179,7 +179,7 @@ impl LoadedScheme<ZigenConfusable> {
                     .collect::<Vec<_>>(),
                 description: cat_desc.to_owned(),
             };
-            let outlier = ZigenCategory {
+            let outlier = ZigenCluster {
                 groups: cat
                     .iter()
                     .filter(|group| {
@@ -199,7 +199,7 @@ impl LoadedScheme<ZigenConfusable> {
                     .collect::<Vec<_>>(),
                 description: cat_desc.to_owned(),
             };
-            let uncommon = ZigenCategory {
+            let uncommon = ZigenCluster {
                 groups: cat
                     .iter()
                     .filter(|group| group.classify == ZigenClass::Uncommon)
@@ -217,12 +217,12 @@ impl LoadedScheme<ZigenConfusable> {
             };
 
             let push_helper =
-                |dest: &mut Vec<SchemeZigen>, src: ZigenCategory| match options.combine_mode {
-                    CombineMode::Category => {
-                        dest.push(SchemeZigen::Category(src));
+                |dest: &mut Vec<SchemeZigen>, src: ZigenCluster| match options.combine_mode {
+                    CombineMode::Cluster => {
+                        dest.push(SchemeZigen::Cluster(src));
                     }
                     CombineMode::Group => dest.extend(src.groups.into_iter().map(|group| {
-                        SchemeZigen::Category(ZigenCategory {
+                        SchemeZigen::Cluster(ZigenCluster {
                             groups: vec![group],
                             description: String::new(),
                         })
@@ -236,7 +236,7 @@ impl LoadedScheme<ZigenConfusable> {
                         } = group;
 
                         zigens.into_iter().map(move |zigen| {
-                            SchemeZigen::Category(ZigenCategory {
+                            SchemeZigen::Cluster(ZigenCluster {
                                 groups: vec![ZigenGroup {
                                     zigens: vec![zigen],
                                     code: code.clone(),
@@ -283,7 +283,7 @@ impl LoadedScheme<ZigenConfusable> {
 pub enum SchemeZigen<Z = ZigenConfusable> {
     /// 属于同一聚类，但编码不同的字根。
     #[serde(rename = "类")]
-    Category(ZigenCategory),
+    Cluster(ZigenCluster),
 
     /// 容易被混淆或记错的几个字根。
     #[serde(rename = "混")]
@@ -292,7 +292,7 @@ pub enum SchemeZigen<Z = ZigenConfusable> {
 
 impl<Z> Default for SchemeZigen<Z> {
     fn default() -> Self {
-        Self::Category(ZigenCategory {
+        Self::Cluster(ZigenCluster {
             groups: Vec::new(),
             description: String::new(),
         })
@@ -302,7 +302,7 @@ impl<Z> Default for SchemeZigen<Z> {
 impl SchemeZigen<ZigenConfusable> {
     pub fn as_raw_parts(&self) -> (&Vec<ZigenGroup>, &String) {
         let (zigen_groups, description) = match self {
-            SchemeZigen::Category(cat) => (&cat.groups, &cat.description),
+            SchemeZigen::Cluster(cat) => (&cat.groups, &cat.description),
 
             SchemeZigen::Confusable(con) => (&con.groups, &con.description),
         };
@@ -312,7 +312,7 @@ impl SchemeZigen<ZigenConfusable> {
 
     pub fn as_raw_parts_mut(&mut self) -> (&mut Vec<ZigenGroup>, &mut String) {
         let (zigen_groups, description) = match self {
-            SchemeZigen::Category(cat) => (&mut cat.groups, &mut cat.description),
+            SchemeZigen::Cluster(cat) => (&mut cat.groups, &mut cat.description),
 
             SchemeZigen::Confusable(con) => (&mut con.groups, &mut con.description),
         };
@@ -348,9 +348,9 @@ pub struct ZigenConfusableUnpopulated {
 /// 在双编码的输入法中，这些字根往往都会共享同一个大码。
 ///
 /// 对那些实质上共同一个大码，但逻辑上不属于同一个聚类的字根（比如：宇浩星陈码中的Ug瓜和Ue业），
-/// 不应该将其放入同一个 ZigenCategory 内，而应该将这些字根分成两个或者更多个 ZigenCategory 。
+/// 不应该将其放入同一个 ZigenCluster 内，而应该将这些字根分成两个或者更多个 ZigenCluster 。
 #[derive(Clone, Debug, PartialEq, Eq, Serialize, Deserialize)]
-pub struct ZigenCategory {
+pub struct ZigenCluster {
     pub groups: Vec<ZigenGroup>,
     #[serde(default)]
     pub description: String,
