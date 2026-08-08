@@ -27,8 +27,9 @@ dx bundle --web --release
     "full_name": "新方案名称",
     "author": "输入法方案原作者姓名",
     "maintainer": "字根表维护者",
-    "category": "方案类型",
+    "category": ["方案主分类", "方案次分类"],
     "description": "方案描述（字数越少越好）",
+    "icon": "方案图标", // 可以是图片URL，也可以是一个emoji
     "zigen_url": "./zigen/xin_fangan_mabiao.json",
     "zigen_font": "./xin_fangan_ziti.woff" // 如果不需要字根字体集，可以留空
 }
