@@ -1,0 +1,1856 @@
+[
+    {
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"一",
+                    "󰀞"
+				],
+				"code": "g",
+				"classify": "通",
+				"description": ""
+			}
+		],
+		"description": "单笔画字根。"
+	},
+    {
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"丨",
+					"󰂻"
+				],
+				"code": "h",
+				"classify": "通",
+				"description": ""
+			}
+		],
+		"description": "单笔画字根。"
+	},
+    {
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"丿"
+				],
+				"code": "t",
+				"classify": "通",
+				"description": ""
+			}
+		],
+		"description": "单笔画字根。"
+	},
+    {
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"丶",
+                    "乀"
+				],
+				"code": "y",
+				"classify": "通",
+				"description": "（点笔、捺）"
+			}
+		],
+		"description": "单笔画字根。"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"乙",
+                    "乚",
+					"󰃦",
+					"󰁈",
+					"󰁉",
+					"󰁍",
+					"󰁐",
+					"󰁑",
+					"󰁔"
+				],
+				"code": "y",
+				"classify": "通",
+				"description": "（折笔）"
+			}
+		],
+		"description": "单笔画字根。"
+	},
+    {
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"王",
+					"󰁽",
+                    "󰀝"
+				],
+				"code": "gg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"󰂅",
+					"󰀟",
+					"󰀡",
+                    "󰀢"
+				],
+				"code": "gh",
+				"classify": "通",
+				"description": "（末笔为竖）"
+			},
+			{
+				"zigens": [
+					"󰀠",
+                    "󰁥"
+				],
+				"code": "gt",
+				"classify": "通",
+				"description": "（末笔为撇）"
+			},
+			{
+				"zigens": [
+					"夫",
+                    "󰁶"
+				],
+				"code": "gy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			}
+		],
+		"description": "此类字根起手为横横。（横区、横位）"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"五",
+                    "󰀝"
+				],
+				"code": "gg",
+				"classify": "通",
+				"description": ""
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"二",
+                    "󰀝"
+				],
+				"code": "fg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"土",
+					"士",
+                    "󰀝"
+				],
+				"code": "fg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"甘",
+                    "󰀝"
+				],
+				"code": "fg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"十",
+					"󰀛",
+                    "󰀢"
+				],
+				"code": "fh",
+				"classify": "通",
+				"description": "（末笔为竖）"
+			},
+			{
+				"zigens": [
+					"雨",
+					"󰀙",
+                    "󰁶"
+				],
+				"code": "fy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"寸",
+                    "󰁶"
+				],
+				"code": "fy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			}
+		],
+		"description": "此类字根起手为横竖。（横区、竖位）"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"干",
+                    "󰀢"
+				],
+				"code": "fh",
+				"classify": "通",
+				"description": "（末笔为竖）<br>助记：先二（F）后竖"
+			},
+			{
+				"zigens": [
+					"󰀜",
+                    "󰀢"
+				],
+				"code": "fh",
+				"classify": "通",
+				"description": "（末笔为竖）<br>助记：革末为十（F）"
+			},
+			{
+				"zigens": [
+					"󰀚",
+                    "󰀢"
+				],
+				"code": "fh",
+				"classify": "繁",
+				"description": "（末笔为竖）<br>助记：亞中似十（F）"
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"三",
+                    "󰀝"
+				],
+				"code": "dg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"󰀎",
+					"󰀍",
+                    "󰀝"
+				],
+				"code": "dg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"石",
+                    "󰀝"
+				],
+				"code": "dg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"厂",
+					"󰂢",
+					"󰁼",
+                    "󰁥"
+				],
+				"code": "dt",
+				"classify": "通",
+				"description": "（末笔为撇）"
+			},
+			{
+				"zigens": [
+					"大",
+					"犬",
+                    "󰁶"
+				],
+				"code": "dy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"戊",
+                    "󰁶"
+				],
+				"code": "dy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"󰂞",
+                    "󰁶"
+				],
+				"code": "dy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			}
+		],
+		"description": "此类字根起手为横撇。（横区、撇位）"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"古",
+                    "󰀝"
+				],
+				"code": "dg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"木",
+					"󰄉",
+                    "󰁶"
+				],
+				"code": "sy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"西",
+					"󰄈",
+                    "󰀝"
+				],
+				"code": "sg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"丁",
+                    "󰀢"
+				],
+				"code": "sh",
+				"classify": "通",
+				"description": "（末笔为竖）"
+			},
+			{
+				"zigens": [
+					"甫",
+                    "󰁶"
+				],
+				"code": "sy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。（注：不存在起笔为横、点的汉字）"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"戈",
+                    "󰁶"
+				],
+				"code": "ay",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"󰂋",
+					"󰀄",
+                    "󰁶"
+				],
+				"code": "an",
+				"classify": "通",
+				"description": "（末笔为折）"
+			},
+			{
+				"zigens": [
+					"七",
+					"󰀃",
+					"󰀁",
+                    "󰁀"
+				],
+				"code": "an",
+				"classify": "通",
+				"description": "（末笔为折）"
+			}
+		],
+		"description": "此类字根起手为横折。（横区、折位）"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"工",
+                    "󰀝"
+				],
+				"code": "ag",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"廿",
+					"󰁺",
+					"󰀀",
+                    "󰀝"
+				],
+				"code": "ag",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"艹",
+                    "󰀢"
+				],
+				"code": "ah",
+				"classify": "通",
+				"description": "（末笔为竖）"
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"上",
+					"󰀥",
+                    "󰀝"
+				],
+				"code": "hg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"止",
+                    "󰀝"
+				],
+				"code": "hg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"󰁾",
+                    "󰁶"
+				],
+				"code": "hy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"󰃀",
+                    "󰁀"
+				],
+				"code": "hn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			}
+		],
+		"description": "此类字根起手为竖横。（竖区、横位）"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"目",
+					"󰀣",
+                    "󰀝"
+				],
+				"code": "hg",
+				"classify": "通",
+				"description": "（末笔为横）<br>助记：目日口依次为HJK"
+			},
+			{
+				"zigens": [
+					"卜",
+                    "󰁶"
+				],
+				"code": "hy",
+				"classify": "通",
+				"description": "（末笔为点）<br>助记：卜形似󰀥（H）"
+			},
+			{
+				"zigens": [
+					"󰀤",
+                    "󰁥"
+				],
+				"code": "ht",
+				"classify": "通",
+				"description": "（末笔为撇）<br>助记：止（H）󰀤成步"
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"󰃉",
+					"󰀯",
+                    "󰀢"
+				],
+				"code": "jh",
+				"classify": "通",
+				"description": "（末笔为竖）"
+			},
+			{
+				"zigens": [
+					"󰀳",
+					"󰀲",
+                    "󰀢"
+				],
+				"code": "jh",
+				"classify": "繁",
+				"description": "（末笔为竖）<br>注：视作󰃉的变体"
+			},
+			{
+				"zigens": [
+					"󰀮",
+                    "󰁥"
+				],
+				"code": "jt",
+				"classify": "通",
+				"description": "（末笔为撇）<br>注：视作󰃉的变体"
+			}
+		],
+		"description": "此类字根起手为竖竖。（竖区、竖位）"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"日",
+					"曰",
+					"󰀰",
+					"󰀱",
+                    "󰀝"
+				],
+				"code": "jg",
+				"classify": "通",
+				"description": "（末笔为横）<br>助记：目日口依次为HJK"
+			},
+			{
+				"zigens": [
+					"早",
+                    "󰀢"
+				],
+				"code": "jh",
+				"classify": "通",
+				"description": "（末笔为竖）"
+			},
+			{
+				"zigens": [
+					"虫",
+                    "󰁶"
+				],
+				"code": "jy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"口",
+                    "󰀝"
+				],
+				"code": "kg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"川",
+                    "󰀢"
+				],
+				"code": "kh",
+				"classify": "通",
+				"description": "（末笔为竖）<br>注：视作󰀶的变体"
+			},
+			{
+				"zigens": [
+					"󰀸",
+                    "󰁀"
+				],
+				"code": "kn",
+				"classify": "通",
+				"description": "（末笔为折）<br>注：视作󰀶的变体"
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"田",
+					"󰃒",
+                    "󰀝"
+				],
+				"code": "lg",
+				"classify": "通",
+				"description": "（末笔为横）<br>注：囗为围框"
+			},
+			{
+				"zigens": [
+					"甲",
+                    "󰀢"
+				],
+				"code": "lh",
+				"classify": "通",
+				"description": "（末笔为竖）"
+			},
+			{
+				"zigens": [
+					"四",
+					"皿",
+					"󰃔",
+					"󰀹",
+					"󰀺",
+                    "󰀝"
+				],
+				"code": "ly",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"車",
+                    "车",
+					"󰀢"
+				],
+				"code": "lh",
+				"classify": "通",
+				"description": "（末笔为竖）"
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。（助记：可以整体视为田的变体）"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"山",
+                    "󰀢"
+				],
+				"code": "mh",
+				"classify": "通",
+				"description": "（末笔为竖）"
+			},
+			{
+				"zigens": [
+					"󰃜",
+					"󰀽",
+					"󰀿",
+                    "󰀢"
+				],
+				"code": "mh",
+				"classify": "通",
+				"description": "（末笔为竖）"
+			},
+			{
+				"zigens": [
+					"贝",
+					"貝",
+                    "󰁶"
+				],
+				"code": "my",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"󰀾",
+                    "󰁀"
+				],
+				"code": "mn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			}
+		],
+		"description": "此类字根起手为竖折。（竖区、折位）"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"由",
+                    "󰀝"
+				],
+				"code": "mg",
+				"classify": "通",
+				"description": "（末笔为横）助记：甲之后（M）"
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"禾",
+                    "󰁶"
+				],
+				"code": "ty",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"󰁿",
+                    "󰀝"
+				],
+				"code": "tg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"󰄍",
+                    "󰁶"
+				],
+				"code": "ty",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"󰄏",
+					"󰄐",
+                    "󰁶"
+				],
+				"code": "ty",
+				"classify": "通",
+				"description": "（末笔为点）"
+			}
+		],
+		"description": "此类字根起手为撇横。（撇区、横位）"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"󰄎",
+                    "󰀢"
+				],
+				"code": "th",
+				"classify": "通",
+				"description": "（末笔为竖）"
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"白",
+                    "󰀝"
+				],
+				"code": "rg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"丘",
+                    "󰀝"
+				],
+				"code": "rg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"斤",
+                    "󰀢"
+				],
+				"code": "rh",
+				"classify": "通",
+				"description": "（末笔为竖）<br>注：视作丘的变体"
+			},
+			{
+				"zigens": [
+					"󰃼",
+                    "󰁥"
+				],
+				"code": "rt",
+				"classify": "通",
+				"description": "（末笔为撇）<br>注：视作丘的变体"
+			}
+		],
+		"description": "此类字根起手为撇竖。（撇区、竖位）"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"手",
+					"󰂀",
+					"󰃿",
+                    "󰀢"
+				],
+				"code": "r",
+				"classify": "通",
+				"description": "（末笔为竖）"
+			},
+			{
+				"zigens": [
+					"气",
+                    "󰁀"
+				],
+				"code": "rn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			},
+			{
+				"zigens": [
+					"󰄄",
+					"󰁶"
+				],
+				"code": "ry",
+				"classify": "通",
+				"description": "（末笔为点）"
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"󰀓",
+					"󰀔",
+					"󰀖",
+					"󰀕",
+                    "󰁶"
+				],
+				"code": "ey",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"󰂦",
+					"󰂩",
+                    "󰁥"
+				],
+				"code": "et",
+				"classify": "通",
+				"description": "（末笔为撇）"
+			}
+		],
+		"description": "此类字根起手为撇撇。（撇区、撇位）"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"月",
+					"󰀑",
+					"󰀐",
+                    "󰀝"
+				],
+				"code": "eg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"󰂪",
+					"󰀗",
+                    "󰀝"
+				],
+				"code": "eg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"用",
+					"󰀒",
+                    "󰀢"
+				],
+				"code": "eh",
+				"classify": "通",
+				"description": "（末笔为竖）"
+			},
+			{
+				"zigens": [
+					"毛",
+                    "󰁀"
+				],
+				"code": "en",
+				"classify": "通",
+				"description": "（末笔为折）"
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。作为助记，可以注意到，这些字根有丿+双横的结构。"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"人",
+					"󰄥",
+                    "󰁶"
+				],
+				"code": "wy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"八",
+					"󰄧",
+					"󰁯",
+                    "󰁶"
+				],
+				"code": "wy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"󰁱",
+                    "󰁶"
+				],
+				"code": "wy",
+				"classify": "繁",
+				"description": "（末笔为点）"
+			}
+		],
+		"description": "此类字根起手为撇点。（撇区、点位）"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"几",
+					"󰁰",
+                    "󰁀"
+				],
+				"code": "wn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"󰁚",
+                    "󰁀"
+				],
+				"code": "qn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			},
+			{
+				"zigens": [
+					"夕",
+					"󰁝",
+                    "󰁶"
+				],
+				"code": "qy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"󰄾",
+					"󰃷",
+					"󰁛",
+					"󰁡",
+                    "󰁀"
+				],
+				"code": "qn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			},
+			{
+				"zigens": [
+					"󰁢",
+                    "󰀝"
+				],
+				"code": "qg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"儿",
+					"󰁜",
+                    "󰁀"
+				],
+				"code": "qn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			},
+			{
+				"zigens": [
+					"󰁠",
+                    "󰁀"
+				],
+				"code": "qn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			},
+			{
+				"zigens": [
+					"󰁞",
+					"󰁟",
+                    "󰁀"
+				],
+				"code": "qn",
+				"classify": "繁",
+				"description": "（末笔为折）"
+			},
+			{
+				"zigens": [
+					"󰃻",
+					"󰁥",
+                    "󰁥"
+				],
+				"code": "qtt",
+				"classify": "繁",
+				"description": "（末笔为撇，需补码）"
+			}
+		],
+		"description": "此类字根起手为撇折。（撇区、折位）"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"金",
+					"󰃵",
+					"󰃶",
+                    "󰀝"
+				],
+				"code": "qg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"言",
+					"󰄴",
+					"󰄵",
+                    "󰀝"
+				],
+				"code": "yg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"󰁸",
+					"󰄹",
+                    "󰀝"
+				],
+				"code": "yg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"󰄶",
+					"󰁷",
+                    "󰀝"
+				],
+				"code": "yg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"文",
+                    "󰁶"
+				],
+				"code": "yy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"󰀴",
+                    "󰁶"
+				],
+				"code": "yy",
+				"classify": "繁",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"方",
+                    "󰁀"
+				],
+				"code": "yn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			}
+		],
+		"description": "此类字根起手为点横。（点区、横位）"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"门",
+                    "󰁀"
+				],
+				"code": "un",
+				"classify": "通",
+				"description": "（末笔为折）"
+			},
+			{
+				"zigens": [
+					"門",
+                    "󰁀"
+				],
+				"code": "un",
+				"classify": "繁",
+				"description": "（末笔为折）"
+			}
+		],
+		"description": "此类字根起手为点竖。（点、竖位）"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"立",
+					"󰄶",
+                    "󰀝"
+				],
+				"code": "ug",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"󰄑",
+                    "󰀝"
+				],
+				"code": "ug",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"辛",
+                    "󰀢"
+				],
+				"code": "uh",
+				"classify": "通",
+				"description": "（末笔为竖）"
+			},
+			{
+				"zigens": [
+					"羊",
+					"󰄝",
+                    "󰀢"
+				],
+				"code": "uh",
+				"classify": "通",
+				"description": "（末笔为竖）"
+			},
+			{
+				"zigens": [
+					"󰄗",
+					"󰁩",
+                    "󰀢"
+				],
+				"code": "uh",
+				"classify": "通",
+				"description": "（末笔为竖）"
+			},
+			{
+				"zigens": [
+					"󰄒",
+                    "󰁥"
+				],
+				"code": "ut",
+				"classify": "通",
+				"description": "（末笔为撇）"
+			},
+			{
+				"zigens": [
+					"󰄛",
+                    "󰁥"
+				],
+				"code": "ut",
+				"classify": "通",
+				"description": "（末笔为撇）"
+			},
+			{
+				"zigens": [
+					"󰁨",
+                    "󰁶"
+				],
+				"code": "uy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"六",
+                    "󰁶"
+				],
+				"code": "uy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"󰁪",
+                    "󰁶"
+				],
+				"code": "uy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。助记：字根均有两点"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"󰀨",
+					"󰀩",
+					"󰀪",
+					"󰀫",
+                    "󰁶"
+				],
+				"code": "iy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"水",
+					"󰃁",
+					"󰃃",
+					"󰃈",
+                    "󰁶"
+				],
+				"code": "iy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"小",
+					"󰃆",
+					"󰀧",
+                    "󰁶"
+				],
+				"code": "iy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"󰃇",
+                    "󰁶"
+				],
+				"code": "iy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。助记：全部字根的中心形如󰃃。"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"业",
+                    "󰀝"
+				],
+				"code": "og",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"󰁙",
+                    "󰀝"
+				],
+				"code": "og",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"广",
+                    "󰁥"
+				],
+				"code": "ot",
+				"classify": "通",
+				"description": "（末笔为撇）"
+			},
+			{
+				"zigens": [
+					"火",
+					"󰃨",
+                    "󰁶"
+				],
+				"code": "oy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"󰁖",
+					"󰁗",
+					"󰁘",
+                    "󰁶"
+				],
+				"code": "oy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"米",
+                    "󰁶"
+				],
+				"code": "oy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。<br>助记：除了广，其他字根像火一样被󰄒包夹。"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"󰃲",
+					"󰁶",
+                    "󰁶"
+				],
+				"code": "pyy",
+				"classify": "通",
+				"description": "（末笔为点，需补码）"
+			},
+			{
+				"zigens": [
+					"󰃳",
+					"󰁧",
+                    "󰁶"
+				],
+				"code": "puy",
+				"classify": "通",
+				"description": "（末笔为点，需补码）"
+			},
+			{
+				"zigens": [
+					"󰃱",
+					"󰃰",
+                    "󰁀"
+				],
+				"code": "pn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			},
+			{
+				"zigens": [
+					"之",
+					"󰃮",
+					"󰃯",
+                    "󰁀"
+				],
+				"code": "pn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			}
+		],
+		"description": "此类字根起手为点折。（点区、折位）"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"󰁃",
+					"󰁄",
+					"󰁆",
+                    "󰀝"
+				],
+				"code": "ng",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"󰃧",
+                    "󰀝"
+				],
+				"code": "ng",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"尸",
+					"󰁅",
+                    "󰁥"
+				],
+				"code": "nt",
+				"classify": "通",
+				"description": "（末笔为撇）"
+			},
+			{
+				"zigens": [
+					"󰃟",
+					"󰁁",
+                    "󰁀"
+				],
+				"code": "nn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			},
+			{
+				"zigens": [
+					"󰃞",
+                    "󰁀"
+				],
+				"code": "nn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			},
+			{
+				"zigens": [
+					"󰃠",
+					"󰁂",
+                    "󰁀"
+				],
+				"code": "nn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			},
+			{
+				"zigens": [
+					"乙",
+                    "󰁀"
+				],
+				"code": "nn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			}
+		],
+		"description": "此类字根起手为折横。（折区、横位）"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"心",
+					"󰃣",
+					"󰃤",
+                    "󰁶"
+				],
+				"code": "ny",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"羽",
+                    "󰁶"
+				],
+				"code": "ny",
+				"classify": "通",
+				"description": "（末笔为点）"
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"子",
+					"孑",
+                    "󰀝"
+				],
+				"code": "bg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"了",
+                    "󰀢"
+				],
+				"code": "bh",
+				"classify": "通",
+				"description": "（末笔为竖）"
+			},
+			{
+				"zigens": [
+					"󰂏",
+					"󰀈",
+					"󰂕",
+                    "󰀢"
+				],
+				"code": "bh",
+				"classify": "通",
+				"description": "（末笔为竖）"
+			},
+			{
+				"zigens": [
+					"耳",
+                    "󰀝"
+				],
+				"code": "bg",
+				"classify": "通",
+				"description": "（末笔为横）注：视作󰂏的变体"
+			},
+			{
+				"zigens": [
+					"󰂔",
+                    "󰀢"
+				],
+				"code": "bh",
+				"classify": "通",
+				"description": "（末笔为竖）"
+			},
+			{
+				"zigens": [
+					"󰀆",
+                    "󰀢"
+				],
+				"code": "bh",
+				"classify": "繁",
+				"description": "（末笔为竖）<br>注：视作󰂔的变体"
+			},
+			{
+				"zigens": [
+					"也",
+                    "󰁀"
+				],
+				"code": "bn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			}
+		],
+		"description": "此类字根起手为折竖。（折区、竖位）"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"皮",
+                    "󰁶"
+				],
+				"code": "by",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"乃",
+                    "󰁥"
+				],
+				"code": "bt",
+				"classify": "通",
+				"description": "（末笔为撇）"
+			},
+			{
+				"zigens": [
+					"󰂑",
+					"󰀇",
+                    "󰁀"
+				],
+				"code": "bn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"女",
+                    "󰀝"
+				],
+				"code": "vg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"刀",
+                    "󰁥"
+				],
+				"code": "vt",
+				"classify": "通",
+				"description": "（末笔为撇）"
+			},
+			{
+				"zigens": [
+					"九",
+                    "󰁀"
+				],
+				"code": "vn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			}
+		],
+		"description": "此类字根起手为折撇。（折区、撇位）"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"󰄢",
+					"󰁬",
+					"󰁭",
+                    "󰀝"
+				],
+				"code": "vg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"艮",
+					"󰁮",
+                    "󰁶"
+				],
+				"code": "vy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"又",
+					"󰀉",
+					"󰂙",
+					"󰁻",
+                    "󰁶"
+				],
+				"code": "cy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			}
+		],
+		"description": "此类字根起手为折点。（折区、点位）"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"󰂛",
+                    "󰀝"
+				],
+				"code": "cg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"󰀊",
+                    "󰁀"
+				],
+				"code": "cn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			},
+			{
+				"zigens": [
+					"巴",
+                    "󰁀"
+				],
+				"code": "cn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"󰄪",
+                    "󰀝"
+				],
+				"code": "xg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"󰄰",
+                    "󰀝"
+				],
+				"code": "xg",
+				"classify": "通",
+				"description": "（末笔为横）"
+			},
+			{
+				"zigens": [
+					"幺",
+                    "󰁶"
+				],
+				"code": "xy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"母",
+					"󰄯",
+                    "󰁶"
+				],
+				"code": "xy",
+				"classify": "通",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"󰅀",
+                    "󰁶"
+				],
+				"code": "xy",
+				"classify": "繁",
+				"description": "（末笔为点）"
+			},
+			{
+				"zigens": [
+					"󰁲",
+                    "󰁀"
+				],
+				"code": "xn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			},
+			{
+				"zigens": [
+					"弓",
+                    "󰁀"
+				],
+				"code": "xn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			},
+			{
+				"zigens": [
+					"󰄱",
+					"󰅤",
+					"󰅥",
+                    "󰁀"
+				],
+				"code": "xn",
+				"classify": "通",
+				"description": "（末笔为折）"
+			}
+		],
+		"description": "此类字根起手为折折。（折区、折位）"
+	},
+	{
+		"type": "类",
+		"groups": [
+			{
+				"zigens": [
+					"匕",
+					"󰁳",
+					"󰁴",
+                    "󰁥"
+				],
+				"code": "xt",
+				"classify": "通",
+				"description": "（末笔为撇）"
+			}
+		],
+		"description": "此类字根不符合其区位，需特别记忆。"
+	}
+]

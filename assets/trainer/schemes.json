@@ -130,5 +130,16 @@
         "icon": "♾️",
     	"zigen_url": "./zigen/weiyang.json",
     	"zigen_font": "./Yuniversus.woff"
+    },
+    {
+        "id": "wubi98",
+        "full_name": "五笔98版",
+        "author": "王永民",
+        "maintainer": "hch12907",
+        "category": ["其他方案", "五笔"],
+        "description": "拆分更科学",
+        "icon": "🖋️",
+        "zigen_url": "./zigen/wubi98.json",
+        "zigen_font": "./Wubi98.woff"
     }
 ]
