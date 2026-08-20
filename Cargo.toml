@@ -8,8 +8,8 @@ edition = "2024"
 
 [dependencies]
 chrono = { version = "0.4.42", features = ["serde"] }
-dioxus = { version = "0.7.9", features = [] }
-dioxus-logger = "0.7.9"
+dioxus = { version = "0.7.10", features = [] }
+dioxus-logger = "0.7.10"
 # dioxus-sdk = { version = "0.7.0", features = ["time"] }
 getrandom = { version = "0.3", features = ["wasm_js"] }
 gloo-net = "0.6.0"
