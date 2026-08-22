@@ -224,7 +224,7 @@ impl SchedulerV2 {
 
         let now = Utc::now();
 
-        if self.new_cards.len() > 0 {
+        if !self.new_cards.is_empty() {
             let currently_learning = self
                 .learning_cards
                 .iter()

@@ -25,7 +25,7 @@ enum WelcomeState {
 
 #[component]
 pub fn Welcome(mut props: WelcomeProps) -> Element {
-    let mut selected_scheme = use_signal(|| String::new());
+    let mut selected_scheme = use_signal(String::new);
     let mut state = use_signal(|| WelcomeState::ChooseScheme);
 
     let schemes_loader = {

@@ -27,13 +27,13 @@ pub fn Settings(props: SettingsProp) -> Element {
     let combined_training = use_signal(|| false);
     let prioritize_trad = use_signal(|| false);
     let adept = use_signal(|| false);
-    let combined_mode_str = use_signal(|| String::new());
+    let combined_mode_str = use_signal(String::new);
     let combine_mode = use_memo(move || match combined_mode_str.read().as_str() {
         "group" => CombineMode::Group,
         "none" => CombineMode::None,
         "cluster" | _ => CombineMode::Cluster,
     });
-    let limit_keys = use_signal(|| String::new());
+    let limit_keys = use_signal(String::new);
     let v2_sched = use_signal(|| false);
 
     let mut confirm_reset = use_signal(|| false);

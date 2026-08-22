@@ -19,7 +19,7 @@ pub struct SchemeSelectorProps {
 
 #[component]
 pub fn SchemeSelector(props: SchemeSelectorProps) -> Element {
-    let categories = use_memo(move || CategoryTree::new(&*props.schemes.read()));
+    let categories = use_memo(move || CategoryTree::new(&props.schemes.read()));
 
     let main_categories = use_memo(move || {
         categories

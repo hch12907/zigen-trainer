@@ -34,15 +34,15 @@ static TUTORIAL_PAGE: Asset = asset!(
 #[component]
 pub fn Trainer() -> Element {
     let mut scheme: Signal<Option<Scheme>> = use_signal(|| None);
-    let mut options: Signal<SchemeOptions> = use_signal(|| SchemeOptions::default());
-    let mut user_state: Signal<UserState> = use_signal(|| UserState::read_from_local_storage());
+    let mut options: Signal<SchemeOptions> = use_signal(SchemeOptions::default);
+    let mut user_state: Signal<UserState> = use_signal(UserState::read_from_local_storage);
 
     let loaded_scheme = use_resource(move || async move {
         if let Some(scheme) = &*scheme.read() {
             if !scheme.zigen_font.is_empty() {
                 let zigen_font = FontFace::new_with_str(
                     "zigen-font",
-                    &format!("url(./assets/trainer/{})", &scheme.zigen_font),
+                    &format!("url(./assets/trainer/{})", scheme.zigen_font),
                 );
 
                 if let Ok(zigen_font) = zigen_font {
@@ -138,7 +138,7 @@ pub fn Trainer() -> Element {
                             multiple: false,
                             onchange: move |event| async move {
                                 let files = event.files();
-                                if let Some(file) = files.get(0) {
+                                if let Some(file) = files.first() {
                                     let content = file.read_string().await;
 
                                     match content {

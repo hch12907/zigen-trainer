@@ -104,12 +104,12 @@ impl LoadedScheme<ZigenConfusableUnpopulated> {
                         }
                     }
 
-                    let new_con = ZigenConfusable {
+                    
+
+                    ZigenConfusable {
                         groups,
                         description: con.description.to_owned(),
-                    };
-
-                    new_con
+                    }
                 }),
             })
             .collect::<Vec<_>>();

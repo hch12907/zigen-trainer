@@ -57,7 +57,7 @@ pub fn Category(props: CategoryProps) -> Element {
             )
     });
 
-    let mut selected_scheme: Signal<String> = use_signal(|| String::new());
+    let mut selected_scheme: Signal<String> = use_signal(String::new);
     let selected_scheme_name = use_memo(move || {
         if !selected_scheme.read().is_empty() {
             let schemes = props.schemes.read();
