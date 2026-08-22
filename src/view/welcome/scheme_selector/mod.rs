@@ -43,8 +43,13 @@ pub fn SchemeSelector(props: SchemeSelectorProps) -> Element {
     let scheme_in_training = {
         let user_state = props.user_state.read();
         let id = user_state.current_scheme();
-        
-        props.schemes.read().iter().any(|scheme| scheme.id == id).then(|| id.to_owned())
+
+        props
+            .schemes
+            .read()
+            .iter()
+            .any(|scheme| scheme.id == id)
+            .then(|| id.to_owned())
     };
 
     rsx! {

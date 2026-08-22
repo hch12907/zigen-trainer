@@ -61,7 +61,9 @@ pub fn Category(props: CategoryProps) -> Element {
     let selected_scheme_name = use_memo(move || {
         if !selected_scheme.read().is_empty() {
             let schemes = props.schemes.read();
-            let scheme = schemes.iter().find(|scheme| scheme.id == *selected_scheme.read());
+            let scheme = schemes
+                .iter()
+                .find(|scheme| scheme.id == *selected_scheme.read());
             scheme.unwrap().full_name.clone()
         } else {
             String::new()

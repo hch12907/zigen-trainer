@@ -123,7 +123,8 @@ async fn handle_key_event(
         expected_answer,
         start_time,
         on_card_completed,
-    ).await
+    )
+    .await
 }
 
 async fn handle_input_event(
@@ -138,7 +139,7 @@ async fn handle_input_event(
     on_card_completed: EventHandler<Rating>,
 ) {
     let value = event.value();
-    
+
     let value = if value.contains(' ') {
         asked_hint.set(true);
         value.trim_ascii()
@@ -163,13 +164,16 @@ async fn handle_input_event(
         return;
     }
 
-    input_boxes.write()[box_idx].iter_mut().enumerate().for_each(|(i, c)| {
-        if let Some(v) = value.chars().nth(i) {
-            *c = v;
-        } else {
-            *c = ' ';
-        }
-    });
+    input_boxes.write()[box_idx]
+        .iter_mut()
+        .enumerate()
+        .for_each(|(i, c)| {
+            if let Some(v) = value.chars().nth(i) {
+                *c = v;
+            } else {
+                *c = ' ';
+            }
+        });
 
     handle_input(
         input_boxes,
@@ -179,7 +183,8 @@ async fn handle_input_event(
         expected_answer,
         start_time,
         on_card_completed,
-    ).await;
+    )
+    .await;
 }
 
 fn receive_input(input_boxes: &mut Memo<Vec<Vec<char>>>, input: char) {
@@ -219,10 +224,13 @@ fn remove_input(input_boxes: &mut Memo<Vec<Vec<char>>>) {
 }
 
 fn move_focus(box_idx: usize) {
-    let _ = document::eval(r#"
+    let _ = document::eval(
+        r#"
         let focus_on = await dioxus.recv();
         document.getElementById("trainer_input_" + focus_on).focus();
-    "#).send(box_idx);
+    "#,
+    )
+    .send(box_idx);
 }
 
 fn clear_input(input_boxes: &mut Memo<Vec<Vec<char>>>) {
@@ -272,7 +280,9 @@ pub fn Card(props: CardProps) -> Element {
             .read()
             .iter()
             .enumerate()
-            .filter_map(|(i, box_group)| box_group.iter().position(|&c| c == ' ').map(|pos| (i, pos)))
+            .filter_map(|(i, box_group)| {
+                box_group.iter().position(|&c| c == ' ').map(|pos| (i, pos))
+            })
             .next();
 
         if let Some((i, _j)) = pos {

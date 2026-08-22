@@ -35,7 +35,7 @@ pub fn Settings(props: SettingsProp) -> Element {
     });
     let limit_keys = use_signal(|| String::new());
     let v2_sched = use_signal(|| false);
-    
+
     let mut confirm_reset = use_signal(|| false);
     let mut show_advanced = use_signal(|| false);
 
@@ -189,7 +189,7 @@ pub fn Settings(props: SettingsProp) -> Element {
                                 }
                             }
                         },
-                        
+
                         if confirm_reset() {
                             "开始练习（确认）"
                         } else {

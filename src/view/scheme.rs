@@ -1,6 +1,4 @@
-use crate::scheme::{
-    LoadedScheme, SchemeOptions, ZigenConfusableUnpopulated,
-};
+use crate::scheme::{LoadedScheme, SchemeOptions, ZigenConfusableUnpopulated};
 use crate::user_state::UserState;
 use crate::view::card::Card;
 
@@ -18,7 +16,11 @@ pub struct SchemeProps {
 
 #[component]
 pub fn Scheme(mut props: SchemeProps) -> Element {
-    let res = props.user_state.write().try_initialize_scheme(&props.scheme_id, &props.scheme, props.options);
+    let res = props.user_state.write().try_initialize_scheme(
+        &props.scheme_id,
+        &props.scheme,
+        props.options,
+    );
 
     if let Err(e) = res {
         return rsx! {
@@ -32,7 +34,7 @@ pub fn Scheme(mut props: SchemeProps) -> Element {
             p {
                 "基于以上故障，本方案暂不可用。"
             }
-        }
+        };
     }
 
     tracing::info!("initialized scheme! {}", &props.scheme_id);

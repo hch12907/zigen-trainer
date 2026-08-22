@@ -22,7 +22,10 @@ impl ZigenCard for SchedulerV2Card {
     }
 
     fn shuffle(&mut self) {
-        self.zigen_mut().as_raw_parts_mut().0.shuffle(&mut rand::rng());
+        self.zigen_mut()
+            .as_raw_parts_mut()
+            .0
+            .shuffle(&mut rand::rng());
     }
 
     fn is_new_card(&self) -> bool {

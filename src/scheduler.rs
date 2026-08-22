@@ -6,7 +6,7 @@ use dioxus_logger::tracing;
 use rand::seq::SliceRandom;
 use serde_derive::{Deserialize, Serialize};
 
-use crate::scheme::{SchemeZigen};
+use crate::scheme::SchemeZigen;
 
 pub trait ZigenCard {
     fn zigen(&self) -> &SchemeZigen;
@@ -116,9 +116,9 @@ pub trait ScheduleParam {
     /// 连续正确回答多少次后，认定用户已经学会一张卡片（从学习阶段转入复习阶段）
     const MAX_LEARNING_ATTEMPTS: usize;
     /// 在学习阶段，在用户正确回答卡片后，卡片将在什么时候（复习多少张其他卡片后）再度出现
-    const LEARNING_INTERVALS_S: &'static [usize] /* [usize; Param::MAX_LEARNING_ATTEMPTS] */ ;
+    const LEARNING_INTERVALS_S: &'static [usize];
     /// 在学习阶段，在用户错误回答卡片后，卡片将在什么时候（复习多少张其他卡片后）再度出现
-    const LEARNING_INTERVALS_F: &'static [usize] /* [usize; Param::MAX_LEARNING_ATTEMPTS] */ ;
+    const LEARNING_INTERVALS_F: &'static [usize];
     /// 学习阶段的卡片数量，必须是 LEARNING_INTERVALS_S[-1] + 1
     const LEARNING_CARDS: usize = Self::LEARNING_INTERVALS_S[Self::MAX_LEARNING_ATTEMPTS - 1] + 1;
     /// 是否为复习模式。
@@ -428,8 +428,7 @@ impl<Param: ScheduleParam> Scheduler<Param> {
 
                 self.reviewing_cards
                     .insert(interval.min(self.reviewing_cards.len()), card);
-                self.done_learning =
-                    self.done_learning.min(Param::LEARN_REVIEW_RATIO / 2); // 防止出现重复卡片
+                self.done_learning = self.done_learning.min(Param::LEARN_REVIEW_RATIO / 2); // 防止出现重复卡片
             }
 
             self.done_learning += 1;

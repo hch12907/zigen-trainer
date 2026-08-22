@@ -88,33 +88,31 @@ impl LoadedScheme<ZigenConfusableUnpopulated> {
             });
 
         let mut error_groups = Vec::new();
-        let new_scheme =
-            self.0
-                .into_iter()
-                .map(|zigen| match zigen {
-                    SchemeZigen::Cluster(cat) => SchemeZigen::Cluster(cat),
-                    SchemeZigen::Confusable(con) => SchemeZigen::Confusable({
-                        let mut groups = Vec::new();
-                        for zigen in con.zigens.iter() {
-                            let populated_confusable = populated_confusables
-                                .remove(zigen)
-                                .unwrap();
-                            if let Some(p) = populated_confusable {
-                                groups.push(p);
-                            } else {
-                                error_groups.push(zigen.0.clone());
-                            }
+        let new_scheme = self
+            .0
+            .into_iter()
+            .map(|zigen| match zigen {
+                SchemeZigen::Cluster(cat) => SchemeZigen::Cluster(cat),
+                SchemeZigen::Confusable(con) => SchemeZigen::Confusable({
+                    let mut groups = Vec::new();
+                    for zigen in con.zigens.iter() {
+                        let populated_confusable = populated_confusables.remove(zigen).unwrap();
+                        if let Some(p) = populated_confusable {
+                            groups.push(p);
+                        } else {
+                            error_groups.push(zigen.0.clone());
                         }
+                    }
 
-                        let new_con = ZigenConfusable {
-                            groups,
-                            description: con.description.to_owned(),
-                        };
+                    let new_con = ZigenConfusable {
+                        groups,
+                        description: con.description.to_owned(),
+                    };
 
-                        new_con
-                    }),
-                })
-                .collect::<Vec<_>>();
+                    new_con
+                }),
+            })
+            .collect::<Vec<_>>();
 
         if !error_groups.is_empty() {
             let mut err_msg = String::from("混淆集使用的字根不在字根码表内，或不属于代表性字根：");

@@ -1,11 +1,7 @@
 use dioxus::prelude::*;
 
 #[component]
-fn Setting(
-    name: &'static str,
-    description: &'static str,
-    children: Element
-) -> Element {
+fn Setting(name: &'static str, description: &'static str, children: Element) -> Element {
     rsx! {
         div {
             class: "scheme-setting-row",

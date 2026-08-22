@@ -6,7 +6,7 @@ use gloo_storage::{LocalStorage, Storage};
 use serde::{Deserialize, Serialize};
 
 use crate::scheduler::{
-    Rating, ScheduleParamsAdept, ScheduleParamsNovice, Scheduler, SchedulerCard, ZigenCard
+    Rating, ScheduleParamsAdept, ScheduleParamsNovice, Scheduler, SchedulerCard, ZigenCard,
 };
 use crate::scheduler_v2::{SchedulerV2, SchedulerV2Card};
 use crate::scheme::{LoadedScheme, SchemeOptions, SchemeZigen, ZigenConfusableUnpopulated};
