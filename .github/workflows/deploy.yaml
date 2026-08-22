@@ -1,0 +1,55 @@
+name: Web
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+    # pass
+permissions:
+  contents: write
+concurrency:
+  group: web-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    name: Build
+    uses: DioxusLabs/dioxus-ci/.github/workflows/web-build.yml@main
+    with:
+      dx-cli-version: 0.7.10
+  publish:
+    name: Publish to cf-pages branch
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Download built site artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dioxus-pages
+          path: ${{ runner.temp }}/dioxus-pages
+      - name: Update cf-pages branch with new commit
+        env:
+          ARTIFACT_ROOT: ${{ runner.temp }}/dioxus-pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout cf-pages
+
+          # Use find to delete everything except .git folder
+          find . -maxdepth 1 ! -name . ! -name .git ! -name .gitignore -exec rm -rf {} + 2>/dev/null || true
+
+          cp -a $ARTIFACT_ROOT/site/. .
+          git add .
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "deploy: workflow run #${{ github.run_id }}"
+          git push origin cf-pages
+
+      - name: Clean up downloaded artifact
+        run: rm -rf ./dioxus-pages
