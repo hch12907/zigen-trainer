@@ -43,7 +43,7 @@ impl CategoryNode {
     }
 
     fn insert(&mut self, category: &[String]) {
-        if category.len() == 0 {
+        if category.is_empty() {
             return;
         }
 

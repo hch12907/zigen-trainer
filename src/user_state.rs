@@ -33,7 +33,7 @@ impl UserState {
     pub fn load_from_backup(&mut self, backup: String) -> Result<(), String> {
         let json = serde_json::from_str::<BTreeMap<String, TrainProgress>>(&backup)
             .map_err(|e| e.to_string())?;
-        self.progresses.extend(json.into_iter());
+        self.progresses.extend(json);
         Ok(())
     }
 

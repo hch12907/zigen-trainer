@@ -188,7 +188,7 @@ impl<Param: ScheduleParam> Scheduler<Param> {
             let diff = Param::LEARNING_CARDS - self.learning_cards.len();
             let split_off = diff.min(self.new_cards.len());
 
-            if self.new_cards.len() > 0 {
+            if !self.new_cards.is_empty() {
                 let start = self.new_cards.len() - split_off;
                 let end = self.new_cards.len();
 

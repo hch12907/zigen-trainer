@@ -94,7 +94,7 @@ async fn handle_key_event(
     match event.key() {
         Key::Character(c) => {
             let c = if c.len() == 1 {
-                c.chars().nth(0).unwrap()
+                c.chars().next().unwrap()
             } else {
                 return;
             };
@@ -309,7 +309,7 @@ pub fn Card(props: CardProps) -> Element {
                         asked_hint,
                         is_wrong,
                         confusable,
-                        &*expected_answer.read(),
+                        &expected_answer.read(),
                         Rc::clone(&start_time0),
                         props.on_card_completed,
                     ).await
@@ -360,7 +360,7 @@ pub fn Card(props: CardProps) -> Element {
                                                     asked_hint,
                                                     is_wrong,
                                                     confusable,
-                                                    &*expected_answer.read(),
+                                                    &expected_answer.read(),
                                                     Rc::clone(&start_time2),
                                                     props.on_card_completed,
                                                 ).await
@@ -391,7 +391,7 @@ pub fn Card(props: CardProps) -> Element {
                                                 asked_hint,
                                                 is_wrong,
                                                 confusable,
-                                                &*expected_answer.read(),
+                                                &expected_answer.read(),
                                                 Rc::clone(&start_time2),
                                                 props.on_card_completed,
                                             ).await
