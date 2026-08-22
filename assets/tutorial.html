@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>慧眼识字根·使用教程</title>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <style>
+            :root {
+                --primary-color: #0f1116;
+                --primary-bg-color: #f0f0f4;
+                --secondary-bg-color: #f6f6f9;
+                --tertiary-bg-color: #e9e9e9;
+                --body-fonts: sans-serif, 'Source Han Sans', 'Microsoft YaHei';
+            }
+
+            @media(prefers-color-scheme: dark) {
+                :root {
+                    --primary-color: #e9e9e9;
+                    --primary-bg-color: #0f1116;
+                    --secondary-bg-color: #1a1d24;
+                    --tertiary-bg-color: #2e2f38;
+                }
+            }
+
+            body {
+                display: flex;
+                background-color: var(--primary-bg-color);
+                color: var(--primary-color);
+                margin: 0 20px;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+                font-family: var(--body-fonts);
+            }
+
+            body > div {
+                background-color: var(--secondary-bg-color);
+                height: 85vh;
+                width: 800px;
+                margin: 1em;
+                padding: 1em 1em 3em 1em;
+                border-radius: 10px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                overflow-y: scroll;
+                line-height: 1.6;
+            }
+
+            ol > li > ul {
+                padding-top: 0.25em;
+            }
+            li {
+                padding-bottom: 0.25em;
+            }
+
+            a {
+                color: var(--primary-color);
+                font-size: 1.25em;
+                text-decoration: none;
+                background-color: var(--tertiary-bg-color);
+                border-radius: 2px;
+                padding: 0.33em;
+            }
+
+            a:hover {
+                opacity: 0.8;
+            }
+
+            @media screen and (max-width: 600px) {
+                body {
+                    margin: 0.5em;
+                    height: 95vh;
+                }
+                body > div {
+                    margin: 0;
+                    width: 100%;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="/">← 回到首页</a>
+            <h2>使用教程</h2>
+            <ol>
+                <li>选择希望学习的方案。</li>
+                <li>根据个人需求与学习方式，自定义字根的调度算法（即：字根出现的先后顺序）。</li>
+                <li>对于有更高需求的用户，可以修改高级设置。</li>
+                <li><b style="font-weight:1000; font-size:1.3em"><u>初学者建议练习进程</u>：</b>
+                    <ul>
+                        <li>第一轮：乱序练习。繁体用户开启繁体优先。</li>
+                        <li>第二轮：乱序练习，并且在高级设置中开启<b>同归并合并</b>。
+                            <ul>
+                                <li><b>注意！</b> 修改设置后，必须点击重置练习！</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+            <h2>选项说明</h2>
+            <ol>
+                <li>基础设置：
+                    <ul>
+                        <li><b>乱序：</b>默认情况下，字根按字典序（A、B、C、……、Z）出现。开启该选项时，字根改为随机出现。</li>
+                        <li><b>简繁混练：</b>默认情况下，练习器是在用户熟练简体字根后才会开始安排繁体字根（若开启<b>繁体优先</b>，则反之）。开启后，简繁字根一视同仁。</li>
+                        <li><b>繁体优先：</b>见上。</li>
+                        <li><b>复习模式：</b>用于巩固用户的字根记忆。开启后，关闭提示，并且减少每轮练习所需的时间。</li>
+                    </ul>
+                </li>
+                <li>高级设置：
+                    <ul>
+                        <li><b>卡片合并模式：</b>用以调整练习器合并字根的方式。
+                            <ul>
+                                <li><b>同聚类合并：</b>合并编码<b>相近</b>，形态近似的字根。</li>
+                                <li><b>同归并合并：</b>合并编码<b>一致</b>，形态近似的字根。</li>
+                            </ul>
+                        </li>
+                        <li><b>仅训练键面：</b>只练习编码开头为规定键面的字根。</li>
+                        <li><b>新型调度器：</b><i>开发中。</i></li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>
