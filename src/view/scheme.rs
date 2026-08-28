@@ -40,7 +40,7 @@ pub fn Scheme(mut props: SchemeProps) -> Element {
     tracing::info!("initialized scheme! {}", &props.scheme_id);
 
     let zigens = props.user_state.write().current_progress_mut().get_card();
-    let adept = props.user_state.read().current_progress().is_adept();
+    let show_hint = props.user_state.read().current_progress().show_hint();
 
     let progress = use_memo(move || {
         let user_state = props.user_state.read();
@@ -72,7 +72,7 @@ pub fn Scheme(mut props: SchemeProps) -> Element {
             Ok(()) => rsx! {
                 Card {
                     zigens: zigens,
-                    adept: adept,
+                    show_hint: show_hint,
                     on_card_completed: move |rating| {
                         tracing::debug!("completed card! {rating:?}");
 

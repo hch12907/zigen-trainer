@@ -2,7 +2,7 @@ mod setting_option;
 
 use dioxus::prelude::*;
 
-use crate::scheme::{CombineMode, SchemeOptions};
+use crate::scheme::{CombineMode, LearnMode, SchemeOptions};
 use crate::user_state::UserState;
 use setting_option::{BooleanSetting, DropdownSetting, TextboxSetting};
 
@@ -26,7 +26,12 @@ pub fn Settings(props: SettingsProp) -> Element {
     let shuffle = use_signal(|| true);
     let combined_training = use_signal(|| false);
     let prioritize_trad = use_signal(|| false);
-    let adept = use_signal(|| false);
+    let learn_mode_str = use_signal(String::new);
+    let learn_mode = use_memo(move || match learn_mode_str.read().as_str() {
+        "adept" => LearnMode::Adept,
+        "rapid" => LearnMode::Rapid,
+        "novice" | _ => LearnMode::Novice,
+    });
     let combined_mode_str = use_signal(String::new);
     let combine_mode = use_memo(move || match combined_mode_str.read().as_str() {
         "group" => CombineMode::Group,
@@ -78,10 +83,15 @@ pub fn Settings(props: SettingsProp) -> Element {
                     value: prioritize_trad,
                 }
 
-                BooleanSetting {
-                    name: "复习模式",
-                    description: "关闭提示，并且减少每轮练习所需的时间。用于巩固字根记忆。",
-                    value: adept,
+                DropdownSetting {
+                    name: "学习模式",
+                    description: "复习与极速模式都会关闭提示，并且减少每轮练习所需的时间。用于巩固字根记忆。",
+                    options: &[
+                        ("novice", "普通模式"),
+                        ("adept", "复习模式"),
+                        ("rapid", "极速模式"),
+                    ],
+                    value: learn_mode_str,
                 }
 
                 // 高级设置
@@ -169,7 +179,7 @@ pub fn Settings(props: SettingsProp) -> Element {
                                 shuffle: shuffle(),
                                 combined_training: combined_training(),
                                 prioritize_trad: prioritize_trad(),
-                                adept: adept(),
+                                learn_mode: learn_mode(),
                                 combine_mode: combine_mode(),
                                 limit_keys: if !limit_keys.read().is_empty() {
                                     Some(limit_keys.read().chars().map(|c| c.to_ascii_uppercase()).collect())

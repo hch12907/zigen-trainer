@@ -4,7 +4,7 @@ use rand::seq::SliceRandom;
 use serde_derive::{Deserialize, Serialize};
 
 use crate::scheduler::{Rating, ZigenCard};
-use crate::scheme::SchemeZigen;
+use crate::scheme::{LearnMode, SchemeZigen};
 
 #[derive(Clone, Debug, PartialEq, Deserialize, Serialize, Default)]
 pub struct SchedulerV2Card {
@@ -48,6 +48,9 @@ enum Card {
         /// 如果回答成功，且attempts = 0，则attempts += 1；
         /// 如果回答成功，且attempts < 0，则attempts = 0。
         attempts: i32,
+        /// 卡片的间隔数，用户每回答一次卡片，队列里的所有学习卡片的间隔数都会减一，
+        /// 间隔数达到零时，卡片再次出现。
+        interval: usize,
         /// 上一次作答的时间。
         last_reviewed: DateTime<Utc>,
     },
@@ -71,13 +74,36 @@ enum Card {
 impl Card {
     fn rate_card(&self, param: &ScheduleParam, rating: Rating) -> Self {
         match self {
-            Card::New => Self::Learning {
-                attempts: 0,
-                last_reviewed: Utc::now(),
-            },
+            Card::New => {
+                let attempts = if rating == Rating::Again {
+                    0
+                } else {
+                    param.attempts_boost()
+                };
+
+                if attempts < param.learning_intervals_s().len() {
+                    Self::Learning {
+                        attempts: 0,
+                        interval: param.learning_intervals_s()[0],
+                        last_reviewed: Utc::now(),
+                    }
+                } else {
+                    Self::Review {
+                        last_interval: 1.0,
+                        repetition: 1,
+                        easiness_factor: 2.5,
+                        last_reviewed: Utc::now(),
+                        due: Utc::now() + Duration::seconds(90),
+                    }
+                }
+            }
 
             Card::Learning { attempts, .. } => {
-                let new_attempts = *attempts + 1;
+                let new_attempts = if rating != Rating::Again {
+                    *attempts + 1
+                } else {
+                    *attempts - 1
+                };
 
                 if new_attempts >= param.max_learning_attempts() as i32 {
                     Self::Review {
@@ -85,11 +111,16 @@ impl Card {
                         repetition: 1,
                         easiness_factor: 2.5,
                         last_reviewed: Utc::now(),
-                        due: Utc::now() + Duration::seconds(300),
+                        due: Utc::now() + Duration::seconds(90),
                     }
                 } else {
                     Self::Learning {
                         attempts: new_attempts,
+                        interval: if new_attempts >= 0 {
+                            param.learning_intervals_s()[new_attempts as usize]
+                        } else {
+                            param.learning_intervals_f()[-new_attempts as usize - 1]
+                        },
                         last_reviewed: Utc::now(),
                     }
                 }
@@ -119,7 +150,7 @@ impl Card {
                     easiness_factor + 0.1 - difficulty * (0.08 + difficulty * 0.2);
                 let easiness_factor = easiness_factor.max(1.3);
 
-                let due = Utc::now() + Duration::seconds((300.0 * last_interval) as i64);
+                let due = Utc::now() + Duration::seconds(30 + (60.0 * last_interval) as i64);
 
                 Self::Review {
                     last_interval,
@@ -135,7 +166,7 @@ impl Card {
     fn needs_learning(&self, now: DateTime<Utc>) -> bool {
         match self {
             Card::New => true,
-            Card::Learning { .. } => true,
+            Card::Learning { interval, .. } => *interval <= 1,
             Card::Review { due, .. } => *due < now,
         }
     }
@@ -148,6 +179,8 @@ enum ScheduleParam {
     Novice,
     /// 适合复习者的调度参数。
     Adept,
+    /// 极速模式。
+    Rapid,
 }
 
 impl ScheduleParam {
@@ -156,15 +189,17 @@ impl ScheduleParam {
         match self {
             ScheduleParam::Novice => 3,
             ScheduleParam::Adept => 2,
+            ScheduleParam::Rapid => 2,
         }
     }
 
     /// 在学习阶段，在用户正确回答卡片后，卡片将在什么时候（复习多少张其他卡片后）再度出现
-    /// 返回数组的长度必须与 self.max_learning_attempts() 一致。
+    /// 返回数组的长度必须与 self.1 () 一致。
     fn learning_intervals_s(&self) -> &'static [usize] {
         match self {
-            ScheduleParam::Novice => &[3, 6, 9],
+            ScheduleParam::Novice => &[1, 3, 6],
             ScheduleParam::Adept => &[3, 6],
+            ScheduleParam::Rapid => &[2, 3],
         }
     }
 
@@ -174,12 +209,25 @@ impl ScheduleParam {
         match self {
             ScheduleParam::Novice => &[2, 4, 6],
             ScheduleParam::Adept => &[2, 4],
+            ScheduleParam::Rapid => &[3, 3],
         }
     }
 
-    /// 学习阶段的卡片数量，必须是 self.learning_intervals_s[-1] + 1
+    /// 卡片在第一次作答后，会得到多大的“已回答次数”奖励。
+    fn attempts_boost(&self) -> usize {
+        match self {
+            ScheduleParam::Rapid => self.max_learning_attempts(),
+            _ => 0,
+        }
+    }
+
+    /// 学习阶段需要维持的卡片数量。
     fn learning_cards(&self) -> usize {
-        self.learning_intervals_s()[self.max_learning_attempts() - 1] + 1
+        match self {
+            ScheduleParam::Novice => 3,
+            ScheduleParam::Adept => 1,
+            ScheduleParam::Rapid => 1,
+        }
     }
 }
 
@@ -191,17 +239,17 @@ pub struct SchedulerV2 {
 }
 
 impl SchedulerV2 {
-    pub fn new(mut pending_cards: Vec<SchedulerV2Card>, adept: bool) -> Self {
+    pub fn new(mut pending_cards: Vec<SchedulerV2Card>, learn_mode: LearnMode) -> Self {
         let len = pending_cards.len();
         pending_cards.reverse();
 
         let mut this = Self {
             new_cards: pending_cards,
             learning_cards: Vec::with_capacity(len),
-            sched_param: if adept {
-                ScheduleParam::Adept
-            } else {
-                ScheduleParam::Novice
+            sched_param: match learn_mode {
+                LearnMode::Novice => ScheduleParam::Novice,
+                LearnMode::Adept => ScheduleParam::Adept,
+                LearnMode::Rapid => ScheduleParam::Rapid,
             },
         };
 
@@ -209,8 +257,8 @@ impl SchedulerV2 {
         this
     }
 
-    pub fn is_adept(&self) -> bool {
-        self.sched_param == ScheduleParam::Adept
+    pub fn show_hint(&self) -> bool {
+        self.sched_param == ScheduleParam::Novice
     }
 
     fn populate_learning_cards(&mut self) {
@@ -238,8 +286,6 @@ impl SchedulerV2 {
             }
         }
 
-        let first = self.learning_cards.first().unwrap().zigen.clone();
-
         // 排序优先度：
         // - 最先：已过期复习阶段卡片，越早过期的越优先
         // - 其次：刚加入队列（New阶段）的卡片。
@@ -255,32 +301,18 @@ impl SchedulerV2 {
                 (Card::New, Card::Review { .. }) => Less,
                 (
                     Card::Learning {
-                        attempts: attempts1,
-                        ..
+                        attempts: _attempts1,
+                        interval: interval1,
+                        last_reviewed: last_reviewed1,
                     },
                     Card::Learning {
-                        attempts: attempts2,
-                        ..
+                        attempts: _attempts2,
+                        interval: interval2,
+                        last_reviewed: last_reviewed2,
                     },
-                ) => {
-                    let card1 = if *attempts1 >= 0 {
-                        let idx = *attempts1 as usize;
-                        self.sched_param.learning_intervals_s()[idx]
-                    } else {
-                        let idx = (-*attempts1 - 1) as usize;
-                        self.sched_param.learning_intervals_f()[idx]
-                    };
-
-                    let card2 = if *attempts2 >= 0 {
-                        let idx = *attempts2 as usize;
-                        self.sched_param.learning_intervals_s()[idx]
-                    } else {
-                        let idx = (-*attempts2 - 1) as usize;
-                        self.sched_param.learning_intervals_f()[idx]
-                    };
-
-                    card1.cmp(&card2)
-                }
+                ) => (*interval1)
+                    .cmp(interval2)
+                    .then(last_reviewed1.cmp(last_reviewed2)),
                 (Card::Learning { .. }, Card::New) => Greater,
                 (Card::Learning { .. }, Card::Review { due, .. }) if *due < now => Greater,
                 (Card::Learning { .. }, Card::Review { .. }) => Less,
@@ -291,10 +323,6 @@ impl SchedulerV2 {
                 (Card::Review { due: due1, .. }, Card::Review { due: due2, .. }) => due1.cmp(due2),
             }
         });
-
-        if self.learning_cards.first().unwrap().zigen == first && self.learning_cards.len() > 1 {
-            self.learning_cards.swap(0, 1);
-        }
     }
 
     pub fn get_card(&mut self) -> &mut SchedulerV2Card {
@@ -309,6 +337,13 @@ impl SchedulerV2 {
             .unwrap()
             .card
             .rate_card(&self.sched_param, rating);
+
+        for card in self.learning_cards.iter_mut() {
+            match &mut card.card {
+                Card::Learning { interval, .. } => *interval = interval.saturating_sub(1),
+                _ => (),
+            };
+        }
 
         self.learning_cards.first_mut().unwrap().card = card;
     }

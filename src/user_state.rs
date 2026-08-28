@@ -9,7 +9,9 @@ use crate::scheduler::{
     Rating, ScheduleParamsAdept, ScheduleParamsNovice, Scheduler, SchedulerCard, ZigenCard,
 };
 use crate::scheduler_v2::{SchedulerV2, SchedulerV2Card};
-use crate::scheme::{LoadedScheme, SchemeOptions, SchemeZigen, ZigenConfusableUnpopulated};
+use crate::scheme::{
+    LearnMode, LoadedScheme, SchemeOptions, SchemeZigen, ZigenConfusableUnpopulated,
+};
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct UserState {
@@ -64,7 +66,7 @@ impl UserState {
 
             self.progresses.insert(
                 scheme_id.to_owned(),
-                TrainProgress::new(scheme.0, options.adept, options.v2_sched),
+                TrainProgress::new(scheme.0, options.learn_mode, options.v2_sched),
             );
         }
 
@@ -114,8 +116,8 @@ enum UsedScheduler {
 }
 
 impl TrainProgress {
-    pub fn new(zigens: Vec<SchemeZigen>, adept: bool, v2: bool) -> Self {
-        if v2 {
+    pub fn new(zigens: Vec<SchemeZigen>, learn_mode: LearnMode, v2: bool) -> Self {
+        if v2 || learn_mode == LearnMode::Rapid {
             let pending_cards = zigens
                 .into_iter()
                 .map(|zigen| {
@@ -132,7 +134,7 @@ impl TrainProgress {
 
             Self {
                 start_time: Utc::now(),
-                scheduler: UsedScheduler::V2(SchedulerV2::new(pending_cards, adept)),
+                scheduler: UsedScheduler::V2(SchedulerV2::new(pending_cards, learn_mode)),
             }
         } else {
             let pending_cards = zigens
@@ -151,7 +153,7 @@ impl TrainProgress {
 
             Self {
                 start_time: Utc::now(),
-                scheduler: if adept {
+                scheduler: if learn_mode != LearnMode::Novice {
                     UsedScheduler::Adept(Scheduler::new(pending_cards))
                 } else {
                     UsedScheduler::Novice(Scheduler::new(pending_cards))
@@ -160,11 +162,11 @@ impl TrainProgress {
         }
     }
 
-    pub fn is_adept(&self) -> bool {
+    pub fn show_hint(&self) -> bool {
         match &self.scheduler {
-            UsedScheduler::Novice(scheduler) => scheduler.is_adept(),
-            UsedScheduler::Adept(scheduler) => scheduler.is_adept(),
-            UsedScheduler::V2(scheduler) => scheduler.is_adept(),
+            UsedScheduler::Novice(scheduler) => scheduler.show_hint(),
+            UsedScheduler::Adept(scheduler) => scheduler.show_hint(),
+            UsedScheduler::V2(scheduler) => scheduler.show_hint(),
         }
     }
 

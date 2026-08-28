@@ -37,14 +37,22 @@ pub struct SchemeOptions {
     pub combined_training: bool,
     /// 繁体优先
     pub prioritize_trad: bool,
-    /// 复习模式
-    pub adept: bool,
+    /// 学习模式
+    pub learn_mode: LearnMode,
     /// 字根合并模式
     pub combine_mode: CombineMode,
     /// 仅训练键面
     pub limit_keys: Option<Vec<char>>,
     /// 使用V2调度器
     pub v2_sched: bool,
+}
+
+#[derive(Clone, Debug, PartialEq, Eq, Default)]
+pub enum LearnMode {
+    #[default]
+    Novice,
+    Adept,
+    Rapid,
 }
 
 #[derive(Clone, Debug, PartialEq, Eq, Default)]

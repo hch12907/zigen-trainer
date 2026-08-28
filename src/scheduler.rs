@@ -116,8 +116,10 @@ pub trait ScheduleParam {
     /// 连续正确回答多少次后，认定用户已经学会一张卡片（从学习阶段转入复习阶段）
     const MAX_LEARNING_ATTEMPTS: usize;
     /// 在学习阶段，在用户正确回答卡片后，卡片将在什么时候（复习多少张其他卡片后）再度出现
+    /// 长度为 Param::MAX_LEARNING_ATTEMPTS。
     const LEARNING_INTERVALS_S: &'static [usize];
     /// 在学习阶段，在用户错误回答卡片后，卡片将在什么时候（复习多少张其他卡片后）再度出现
+    /// 长度为 Param::MAX_LEARNING_ATTEMPTS。
     const LEARNING_INTERVALS_F: &'static [usize];
     /// 学习阶段的卡片数量，必须是 LEARNING_INTERVALS_S[-1] + 1
     const LEARNING_CARDS: usize = Self::LEARNING_INTERVALS_S[Self::MAX_LEARNING_ATTEMPTS - 1] + 1;
@@ -179,8 +181,8 @@ impl<Param: ScheduleParam> Scheduler<Param> {
         this
     }
 
-    pub fn is_adept(&self) -> bool {
-        Param::IS_ADEPT
+    pub fn show_hint(&self) -> bool {
+        !Param::IS_ADEPT
     }
 
     fn populate_learning_cards(&mut self) {
