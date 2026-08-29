@@ -114,12 +114,21 @@ impl Card {
                         due: Utc::now() + Duration::seconds(90),
                     }
                 } else {
+                    // 引入一定的随机性，避免同一批卡片扎堆出现
+                    let noise = rand::random_range(1.0..1.5);
+
                     Self::Learning {
                         attempts: new_attempts,
                         interval: if new_attempts >= 0 {
-                            param.learning_intervals_s()[new_attempts as usize]
+                            let idx = new_attempts as usize;
+                            let idx = idx.min(param.learning_intervals_s().len() - 1);
+                            let interval = param.learning_intervals_s()[idx];
+                            (interval as f64 * noise) as usize
                         } else {
-                            param.learning_intervals_f()[-new_attempts as usize - 1]
+                            let idx = -new_attempts as usize - 1;
+                            let idx = idx.min(param.learning_intervals_f().len() - 1);
+                            let interval = param.learning_intervals_f()[idx];
+                            (interval as f64 * noise) as usize
                         },
                         last_reviewed: Utc::now(),
                     }
@@ -166,7 +175,7 @@ impl Card {
     fn needs_learning(&self, now: DateTime<Utc>) -> bool {
         match self {
             Card::New => true,
-            Card::Learning { interval, .. } => *interval <= 1,
+            Card::Learning { interval, .. } => *interval == 0,
             Card::Review { due, .. } => *due < now,
         }
     }
@@ -193,18 +202,16 @@ impl ScheduleParam {
         }
     }
 
-    /// 在学习阶段，在用户正确回答卡片后，卡片将在什么时候（复习多少张其他卡片后）再度出现
-    /// 返回数组的长度必须与 self.1 () 一致。
+    /// 在学习阶段，在用户正确回答卡片后，卡片将在什么时候（复习多少张其他卡片后）再度出现。
     fn learning_intervals_s(&self) -> &'static [usize] {
         match self {
-            ScheduleParam::Novice => &[1, 3, 6],
-            ScheduleParam::Adept => &[3, 6],
+            ScheduleParam::Novice => &[2, 3, 9],
+            ScheduleParam::Adept => &[2, 6],
             ScheduleParam::Rapid => &[2, 3],
         }
     }
 
-    /// 在学习阶段，在用户错误回答卡片后，卡片将在什么时候（复习多少张其他卡片后）再度出现
-    /// 返回数组的长度必须与 self.max_learning_attempts() 一致。
+    /// 在学习阶段，在用户错误回答卡片后，卡片将在什么时候（复习多少张其他卡片后）再度出现。
     fn learning_intervals_f(&self) -> &'static [usize] {
         match self {
             ScheduleParam::Novice => &[2, 4, 6],
@@ -216,6 +223,7 @@ impl ScheduleParam {
     /// 卡片在第一次作答后，会得到多大的“已回答次数”奖励。
     fn attempts_boost(&self) -> usize {
         match self {
+            ScheduleParam::Adept => 1,
             ScheduleParam::Rapid => self.max_learning_attempts(),
             _ => 0,
         }
@@ -224,9 +232,9 @@ impl ScheduleParam {
     /// 学习阶段需要维持的卡片数量。
     fn learning_cards(&self) -> usize {
         match self {
-            ScheduleParam::Novice => 3,
-            ScheduleParam::Adept => 1,
-            ScheduleParam::Rapid => 1,
+            ScheduleParam::Novice => 6,
+            ScheduleParam::Adept => 3,
+            ScheduleParam::Rapid => 2,
         }
     }
 }
@@ -262,14 +270,6 @@ impl SchedulerV2 {
     }
 
     fn populate_learning_cards(&mut self) {
-        while self.learning_cards.len() < self.sched_param.learning_cards() {
-            let Some(new_card) = self.new_cards.pop() else {
-                break;
-            };
-
-            self.learning_cards.push(new_card);
-        }
-
         let now = Utc::now();
 
         if !self.new_cards.is_empty() {
@@ -279,8 +279,10 @@ impl SchedulerV2 {
                 .filter(|card| card.card.needs_learning(now))
                 .count();
 
-            if currently_learning < self.sched_param.learning_cards() {
-                let new_card = self.new_cards.pop().unwrap();
+            for _ in 0..self.sched_param.learning_cards().saturating_sub(currently_learning) {
+                let Some(new_card) = self.new_cards.pop() else {
+                    break;
+                };
 
                 self.learning_cards.push(new_card);
             }
