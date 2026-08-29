@@ -965,6 +965,14 @@
         "code": "Hv",
         "classify": "通",
         "description": "无读音 <b>v</b>"
+      },
+      {
+        "zigens": [
+          "走"
+        ],
+        "code": "Hz",
+        "classify": "通",
+        "description": "走 <b>z</b>ǒu"
       }
     ]
   },
@@ -978,19 +986,6 @@
         "code": "Hx",
         "classify": "通",
         "description": "頁（页）<b>x</b>iè<br>（古音）"
-      }
-    ]
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          "走"
-        ],
-        "code": "Hz",
-        "classify": "通",
-        "description": "走 <b>z</b>ǒu"
       }
     ]
   },
@@ -2444,7 +2439,12 @@
         "code": "Qj",
         "classify": "通",
         "description": "冂 <b>j</b>iǒng"
-      },
+      }
+    ]
+  },
+  {
+    "type": "类",
+    "groups": [
       {
         "zigens": [
           "彑",
@@ -2454,12 +2454,7 @@
         "code": "Qj",
         "classify": "通",
         "description": "彑（彐）<b>j</b>ì"
-      }
-    ]
-  },
-  {
-    "type": "类",
-    "groups": [
+      },
       {
         "zigens": [
           "母"
@@ -2479,8 +2474,17 @@
           ""
         ],
         "code": "Qn",
-        "classify": "通",
+        "classify": "繁",
         "description": "鳥（鸟）<b>n</b>iǎo"
+      },
+      {
+        "zigens": [
+          "烏",
+          ""
+        ],
+        "code": "Qw",
+        "classify": "繁",
+        "description": "烏（乌）<b>w</b>ū"
       }
     ]
   },
@@ -2516,31 +2520,12 @@
     "groups": [
       {
         "zigens": [
-          "烏",
-          ""
+          "亠"
         ],
-        "code": "Qw",
+        "code": "Rt",
         "classify": "通",
-        "description": "烏（乌）<b>w</b>ū"
-      }
-    ]
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          "亥"
-        ],
-        "code": "Rh",
-        "classify": "通",
-        "description": "亥 <b>h</b>ài"
-      }
-    ]
-  },
-  {
-    "type": "类",
-    "groups": [
+        "description": "京字头 <b>t</b>óu"
+      },
       {
         "zigens": [
           "言"
@@ -2548,6 +2533,14 @@
         "code": "Ri",
         "classify": "通",
         "description": "言 yán = <b>i</b>án"
+      },
+      {
+        "zigens": [
+          "亥"
+        ],
+        "code": "Rh",
+        "classify": "通",
+        "description": "亥 <b>h</b>ài"
       }
     ]
   },
@@ -2634,17 +2627,12 @@
     "groups": [
       {
         "zigens": [
-          "亠"
+          "几"
         ],
-        "code": "Rt",
+        "code": "Sj",
         "classify": "通",
-        "description": "文字头 <b>t</b>óu"
-      }
-    ]
-  },
-  {
-    "type": "类",
-    "groups": [
+        "description": "几 <b>j</b>ǐ"
+      },
       {
         "zigens": [
           "風"
@@ -2682,19 +2670,6 @@
         "code": "Si",
         "classify": "通",
         "description": "衣 yī = <b>ī</b>"
-      }
-    ]
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          "几"
-        ],
-        "code": "Sj",
-        "classify": "通",
-        "description": "几 <b>j</b>ǐ"
       }
     ]
   },
@@ -3100,6 +3075,14 @@
         "code": "Vc",
         "classify": "通",
         "description": "厂 <b>c</b>hǎng"
+      },
+      {
+        "zigens": [
+          "丆"
+        ],
+        "code": "Vh",
+        "classify": "通",
+        "description": "丆 <b>h</b>ǎn<br>（古音）"
       }
     ]
   },
@@ -3113,19 +3096,6 @@
         "code": "Vg",
         "classify": "通",
         "description": "瓜 <b>g</b>uā"
-      }
-    ]
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          "丆"
-        ],
-        "code": "Vh",
-        "classify": "通",
-        "description": "丆 <b>h</b>ǎn<br>（古音）"
       }
     ]
   },
@@ -3330,6 +3300,14 @@
     "groups": [
       {
         "zigens": [
+          "未"
+        ],
+        "code": "Ww",
+        "classify": "通",
+        "description": "未 <b>w</b>èi"
+      },
+      {
+        "zigens": [
           "末"
         ],
         "code": "Wm",
@@ -3383,19 +3361,6 @@
         "code": "Wv",
         "classify": "通",
         "description": "无读音 <b>v</b>"
-      }
-    ]
-  },
-  {
-    "type": "类",
-    "groups": [
-      {
-        "zigens": [
-          "未"
-        ],
-        "code": "Ww",
-        "classify": "通",
-        "description": "未 <b>w</b>èi"
       }
     ]
   },
