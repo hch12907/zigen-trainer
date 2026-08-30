@@ -263,7 +263,7 @@ impl ScheduleParam {
         match self {
             ScheduleParam::Novice => 120.0,
             ScheduleParam::Adept => 240.0,
-            ScheduleParam::Rapid => 600.0,
+            ScheduleParam::Rapid => 6000.0,
         }
     }
 
