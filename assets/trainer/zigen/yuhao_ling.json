@@ -169,7 +169,7 @@
         ],
         "code": "ci",
         "classify": "通",
-        "description": "丌 j<b>ì</b> <br>（小根，不取声母） "
+        "description": "丌（基） j<b>ī</b> <br>（小根，不取声母） "
       }
     ],
     "description": "此类字根皆有”双脚”（类似）。"
@@ -789,7 +789,7 @@
         ],
         "code": "gu",
         "classify": "通",
-        "description": "阝 f<b>ǔ</b> <br>（小根，不取声母） "
+        "description": "阝（阜） f<b>ù</b> <br>（小根，不取声母） "
       },
       {
         "zigens": [
@@ -1135,7 +1135,7 @@
         ],
         "code": "jga",
         "classify": "通",
-        "description": "丱 guān → <b>ga</b><br>（跳过中间i、u音）"
+        "description": "丱（冠） guàn → <b>ga</b><br>（跳过中间i、u音）"
       },
       {
         "zigens": [
@@ -1349,7 +1349,7 @@
         ],
         "code": "ku",
         "classify": "通",
-        "description": "殳 shǔ → s<b>u</b> <br>（小根，不取声母）"
+        "description": "殳 shū → s<b>u</b> <br>（小根，不取声母）"
       }
     ],
     "description": "此类字根皆含有‘几’部件。"
@@ -1378,7 +1378,7 @@
         ],
         "code": "ka",
         "classify": "通",
-        "description": "咼 guǎ → g<b>a</b> <br>（小根，不取声母）<br>（跳过中间i、u音）"
+        "description": "咼（剮） guǎ → g<b>a</b> <br>（小根，不取声母）<br>（跳过中间i、u音）"
       },
       {
         "zigens": [
@@ -2555,7 +2555,7 @@
         ],
         "code": "svu",
         "classify": "通",
-        "description": "壴 zhú → <b>vu</b> <br>（z、zh作v）"
+        "description": "壴 zhù → <b>vu</b> <br>（z、zh作v）"
       },
       {
         "zigens": [
@@ -2607,7 +2607,7 @@
         ],
         "code": "si",
         "classify": "通",
-        "description": "廴 yín → y<b>i</b> <br>（小根，不取声母）"
+        "description": "廴 yǐn → y<b>i</b> <br>（小根，不取声母）"
       }
     ],
     "description": ""
@@ -2705,7 +2705,7 @@
         ],
         "code": "tka",
         "classify": "通",
-        "description": "欠 qiān → <b>ka</b><br>（跳过中间i、u音）<br>（拼音q视作k）"
+        "description": "欠 qiàn → <b>ka</b><br>（跳过中间i、u音）<br>（拼音q视作k）"
       }
     ],
     "description": ""
@@ -2866,7 +2866,7 @@
         ],
         "code": "vfu",
         "classify": "通",
-        "description": "甶 <b>fǔ</b>"
+        "description": "甶 <b>fú</b>"
       }
     ],
     "description": "这类字根皆含有‘甶’部件。"
@@ -3133,7 +3133,7 @@
         ],
         "code": "xja",
         "classify": "通",
-        "description": "甲 jiā → j<b>a</b> <br>（小根，不取声母）<br>（跳过中间i、u音）"
+        "description": "甲 jiǎ → j<b>a</b> <br>（小根，不取声母）<br>（跳过中间i、u音）"
       },
       {
         "zigens": [

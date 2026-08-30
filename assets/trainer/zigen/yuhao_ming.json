@@ -469,7 +469,7 @@
         ],
         "code": "Do",
         "classify": "通",
-        "description": "廴 yín = ín → <b>o</b>"
+        "description": "廴 yǐn = ín → <b>o</b>"
       }
     ]
   },
@@ -602,7 +602,7 @@
         ],
         "code": "Fja",
         "classify": "通",
-        "description": "甲 jiā → <b>ja</b>"
+        "description": "甲 jiǎ → <b>ja</b>"
       },
       {
         "zigens": [
@@ -1296,7 +1296,7 @@
         ],
         "code": "Jga",
         "classify": "通",
-        "description": "咼 guǎ → <b>ga</b>"
+        "description": "咼（剮） guǎ → <b>ga</b>"
       },
       {
         "zigens": [
@@ -1796,7 +1796,7 @@
         ],
         "code": "Lqi",
         "classify": "通",
-        "description": "欠 qiān → <b>qi</b> <br>（声母左手韵码右手）"
+        "description": "欠 qiàn → <b>qi</b> <br>（声母左手韵码右手）"
       }
     ]
   },
@@ -2254,7 +2254,7 @@
         ],
         "code": "Qku",
         "classify": "通",
-        "description": "殳 shǔ → <b>ku</b>"
+        "description": "殳 shū → <b>ku</b>"
       },
       {
         "zigens": [
@@ -2359,7 +2359,7 @@
         ],
         "code": "Rji",
         "classify": "通",
-        "description": "丌 <b>jì</b>"
+        "description": "丌（基） <b>jī</b>"
       }
     ]
   },
@@ -2821,7 +2821,7 @@
         ],
         "code": "Vsu",
         "classify": "通",
-        "description": "壴 zhú → <b>su</b>"
+        "description": "壴 zhù → <b>su</b>"
       },
       {
         "zigens": [
@@ -3201,6 +3201,14 @@
         "code": "Ydi",
         "classify": "通",
         "description": "刀 dāo → <b>di</b>"
+      },
+      {
+        "zigens": [
+          "阝"
+        ],
+        "code": "Yfu",
+        "classify": "通",
+        "description": "阝（阜） <b>fù</b>"
       }
     ]
   },

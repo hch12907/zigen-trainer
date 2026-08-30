@@ -583,7 +583,7 @@
         ],
         "code": "Es",
         "classify": "通",
-        "description": "殳 <b>s</b>hǔ"
+        "description": "殳 <b>s</b>hū"
       }
     ],
     "description": "这类字根含有明显的几部件。"
@@ -732,7 +732,7 @@
         ],
         "code": "Gy",
         "classify": "通",
-        "description": "廴 <b>y</b>ín"
+        "description": "廴 <b>y</b>ǐn"
       },
       {
         "zigens": [
@@ -891,12 +891,19 @@
       },
       {
         "zigens": [
-          "走",
-          "壴"
+          "走"
         ],
         "code": "Hz",
         "classify": "通",
         "description": "走 <b>z</b>ǒu"
+      },
+      {
+        "zigens": [
+          "壴"
+        ],
+        "code": "Hz",
+        "classify": "通",
+        "description": "壴 <b>z</b>hù"
       }
     ],
     "description": "这类字根与‘土’字相似。"
@@ -1401,7 +1408,7 @@
         ],
         "code": "Lj",
         "classify": "通",
-        "description": "丌 <b>j</b>ì"
+        "description": "丌（基） <b>j</b>ī"
       },
       {
         "zigens": [
@@ -2522,7 +2529,7 @@
         ],
         "code": "Vj",
         "classify": "通",
-        "description": "甲 <b>j</b>iā"
+        "description": "甲 <b>j</b>iǎ"
       },
       {
         "zigens": [
@@ -2772,7 +2779,7 @@
         ],
         "code": "Yf",
         "classify": "通",
-        "description": "阝<b>f</b>ǔ"
+        "description": "阝（阜）<b>f</b>ù"
       }
     ],
     "description": "这类字根起笔为顺时钟折笔。"
