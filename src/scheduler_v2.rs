@@ -82,7 +82,11 @@ impl Card {
                 };
 
                 if (attempts.max(0) as usize) < param.learning_intervals_s().len() {
-                    let idx = if attempts < 0 { (-attempts - 1) as usize } else { 0 };
+                    let idx = if attempts < 0 {
+                        (-attempts - 1) as usize
+                    } else {
+                        0
+                    };
                     Self::Learning {
                         attempts: attempts,
                         interval: param.learning_intervals_s()[idx],
@@ -162,7 +166,11 @@ impl Card {
                 let repetition = if rating != Rating::Again {
                     *repetition + 1
                 } else {
-                    0
+                    return Self::Learning {
+                        attempts: -1,
+                        interval: param.learning_intervals_f()[0],
+                        last_reviewed: Utc::now(),
+                    };
                 };
 
                 let difficulty = rating.difficulty();
@@ -170,8 +178,8 @@ impl Card {
                     easiness_factor + 0.1 - difficulty * (0.08 + difficulty * 0.2);
                 let easiness_factor = easiness_factor.max(1.3);
 
-                let due = Utc::now()
-                    + Duration::seconds(30 + (param.review_interval_factor() * last_interval) as i64);
+                let added_time = param.review_interval_factor() * last_interval;
+                let due = Utc::now() + Duration::seconds(30 + added_time as i64);
 
                 Self::Review {
                     last_interval,
@@ -245,8 +253,8 @@ impl ScheduleParam {
     fn initial_review_interval_sec(&self) -> i64 {
         match self {
             ScheduleParam::Novice => 300,
-            ScheduleParam::Adept => 450,
-            ScheduleParam::Rapid => 600,
+            ScheduleParam::Adept => 600,
+            ScheduleParam::Rapid => 6000,
         }
     }
 
@@ -255,7 +263,7 @@ impl ScheduleParam {
         match self {
             ScheduleParam::Novice => 120.0,
             ScheduleParam::Adept => 240.0,
-            ScheduleParam::Rapid => 300.0,
+            ScheduleParam::Rapid => 600.0,
         }
     }
 
