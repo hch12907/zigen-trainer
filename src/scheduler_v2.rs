@@ -81,19 +81,25 @@ impl Card {
                     param.attempts_boost()
                 };
 
-                if attempts < param.learning_intervals_s().len() {
+                if (attempts.max(0) as usize) < param.learning_intervals_s().len() {
+                    let idx = if attempts < 0 { (-attempts - 1) as usize } else { 0 };
                     Self::Learning {
-                        attempts: 0,
-                        interval: param.learning_intervals_s()[0],
+                        attempts: attempts,
+                        interval: param.learning_intervals_s()[idx],
                         last_reviewed: Utc::now(),
                     }
                 } else {
+                    // 引入一定的随机性，避免同一批卡片扎堆出现
+                    let noise = rand::random_range(0.9..1.2);
+                    let interval =
+                        (param.initial_review_interval_sec() as f64 * noise).ceil() as i64;
+
                     Self::Review {
                         last_interval: 1.0,
                         repetition: 1,
                         easiness_factor: 2.5,
                         last_reviewed: Utc::now(),
-                        due: Utc::now() + Duration::seconds(90),
+                        due: Utc::now() + Duration::seconds(interval),
                     }
                 }
             }
@@ -106,16 +112,21 @@ impl Card {
                 };
 
                 if new_attempts >= param.max_learning_attempts() as i32 {
+                    // 引入一定的随机性，避免同一批卡片扎堆出现
+                    let noise = rand::random_range(0.9..1.2);
+                    let interval =
+                        (param.initial_review_interval_sec() as f64 * noise).ceil() as i64;
+
                     Self::Review {
                         last_interval: 1.0,
                         repetition: 1,
                         easiness_factor: 2.5,
                         last_reviewed: Utc::now(),
-                        due: Utc::now() + Duration::seconds(90),
+                        due: Utc::now() + Duration::seconds(interval),
                     }
                 } else {
                     // 引入一定的随机性，避免同一批卡片扎堆出现
-                    let noise = rand::random_range(1.0..1.5);
+                    let noise = rand::random_range(0.9..1.5);
 
                     Self::Learning {
                         attempts: new_attempts,
@@ -123,12 +134,12 @@ impl Card {
                             let idx = new_attempts as usize;
                             let idx = idx.min(param.learning_intervals_s().len() - 1);
                             let interval = param.learning_intervals_s()[idx];
-                            (interval as f64 * noise) as usize
+                            (interval as f64 * noise).ceil() as usize
                         } else {
                             let idx = -new_attempts as usize - 1;
                             let idx = idx.min(param.learning_intervals_f().len() - 1);
                             let interval = param.learning_intervals_f()[idx];
-                            (interval as f64 * noise) as usize
+                            (interval as f64 * noise).ceil() as usize
                         },
                         last_reviewed: Utc::now(),
                     }
@@ -159,7 +170,8 @@ impl Card {
                     easiness_factor + 0.1 - difficulty * (0.08 + difficulty * 0.2);
                 let easiness_factor = easiness_factor.max(1.3);
 
-                let due = Utc::now() + Duration::seconds(30 + (60.0 * last_interval) as i64);
+                let due = Utc::now()
+                    + Duration::seconds(30 + (param.review_interval_factor() * last_interval) as i64);
 
                 Self::Review {
                     last_interval,
@@ -221,11 +233,29 @@ impl ScheduleParam {
     }
 
     /// 卡片在第一次作答后，会得到多大的“已回答次数”奖励。
-    fn attempts_boost(&self) -> usize {
+    fn attempts_boost(&self) -> i32 {
         match self {
             ScheduleParam::Adept => 1,
-            ScheduleParam::Rapid => self.max_learning_attempts(),
+            ScheduleParam::Rapid => self.max_learning_attempts() as i32,
             _ => 0,
+        }
+    }
+
+    /// 卡片从学习阶段转入复习阶段后，多久才会被复习。
+    fn initial_review_interval_sec(&self) -> i64 {
+        match self {
+            ScheduleParam::Novice => 300,
+            ScheduleParam::Adept => 450,
+            ScheduleParam::Rapid => 600,
+        }
+    }
+
+    /// 卡片复习间隔的因子。
+    fn review_interval_factor(&self) -> f64 {
+        match self {
+            ScheduleParam::Novice => 120.0,
+            ScheduleParam::Adept => 240.0,
+            ScheduleParam::Rapid => 300.0,
         }
     }
 
@@ -279,7 +309,11 @@ impl SchedulerV2 {
                 .filter(|card| card.card.needs_learning(now))
                 .count();
 
-            for _ in 0..self.sched_param.learning_cards().saturating_sub(currently_learning) {
+            for _ in 0..self
+                .sched_param
+                .learning_cards()
+                .saturating_sub(currently_learning)
+            {
                 let Some(new_card) = self.new_cards.pop() else {
                     break;
                 };
