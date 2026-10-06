@@ -66,6 +66,17 @@
         "zigen_font": "./Yuniversus.woff"
     },
     {
+        "id": "xiaoming",
+        "full_name": "潇明",
+        "author": "qq3qq",
+        "maintainer": "qq3qq",
+        "category": ["宇浩系列", "衍生方案"],
+        "description": "类潇湘五码自定码",
+        "icon": "📃",
+        "zigen_url": "./zigen/xiaoming.json",
+        "zigen_font": "./Yuniversus.woff"
+    },
+    {
 		"id": "xiaoxiang",
     	"full_name": "潇湘",
         "author": "荒",
