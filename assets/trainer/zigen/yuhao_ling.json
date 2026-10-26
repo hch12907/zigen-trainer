@@ -1976,8 +1976,7 @@
       {
         "zigens": [
           "小",
-          "⺌",
-          ""
+          "𡭔"
         ],
         "code": "nxa",
         "classify": "通",
@@ -1986,14 +1985,16 @@
       {
         "zigens": [
           "⺍",
-          ""
+          "",
+          "⺌",
+          ""
         ],
         "code": "na",
         "classify": "通",
-        "description": "⺍ xiǎo → x<b>a</b> <br>（小根，不取声母）<br>（跳过中间i、u音）"
+        "description": "小 xiǎo → x<b>a</b> <br>（小根，不取声母）<br>（跳过中间i、u音）"
       }
     ],
-    "description": "此类字根皆含有‘⺌’部件。"
+    "description": "此类字根皆形似‘小’。"
   },
   {
     "type": "类",
