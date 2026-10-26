@@ -206,6 +206,16 @@ pub fn Settings(props: SettingsProp) -> Element {
                             "开始练习"
                         }
                     }
+
+                    if has_existing_session() {
+                        button {
+                            class: "selector-confirm-button",
+                            onclick: move |_| {
+                                (props.on_confirm)((SchemeOptions::default(), false));
+                            },
+                            "继续上次练习"
+                        }
+                    }
                 }
             }
         }
